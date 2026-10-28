@@ -1,0 +1,23 @@
+# Local stack that mirrors production: app + Postgres + Redis.
+#   docker compose up --build      → http://localhost:8000
+# In production, point DATABASE_URL at Neon and REDIS_URL at a managed Redis instead.
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      ENVIRONMENT: development
+      DATABASE_URL: postgresql://insight:insight@db:5432/insight
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+  db:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: insight, POSTGRES_PASSWORD: insight, POSTGRES_DB: insight }
+    healthcheck: { test: ["CMD", "pg_isready", "-U", "insight"], interval: 2s, retries: 20 }
+    volumes: [pgdata:/var/lib/postgresql/data]
+  redis:
+    image: redis:7-alpine
+volumes:
+  pgdata:

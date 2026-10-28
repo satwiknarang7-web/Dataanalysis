@@ -1,0 +1,16 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Data · {{ ws.name }} · Insight{% endblock %}
+{% block content %}
+{% include "partials/workspace_head.html" %}
+<section class="card">
+  <div class="card-head">
+    <form class="row" style="flex:1" hx-get="{{ ws.base }}/data" hx-target="#data-table" hx-swap="outerHTML" hx-trigger="input changed delay:300ms from:input[name=q], submit" hx-push-url="true">
+      {{ ui.icon("search") }}
+      <input class="input" style="border:0;box-shadow:none;height:34px;padding:0" name="q" value="{{ q }}" placeholder="Search the rows…" aria-label="Search the rows">
+    </form>
+    <span class="subtle small">Cleaned values, as every chart reads them</span>
+  </div>
+  {% include "partials/data_table.html" %}
+</section>
+{% endblock %}

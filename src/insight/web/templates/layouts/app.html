@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% import "macros.html" as ui %}
+{% block body %}
+<div class="app" id="app">
+  <aside class="sidebar" aria-label="Main">
+    {{ ui.logo("/home" if user else "/") }}
+    {% if user %}
+      <a class="side-link" href="/home" {% if tab == "home" %}aria-current="page"{% endif %}>{{ ui.icon("upload") }}<span class="name">Get data</span></a>
+      <a class="side-link" href="/library" {% if tab == "library" %}aria-current="page"{% endif %}>{{ ui.icon("folder") }}<span class="name">Library</span></a>
+    {% else %}
+      <a class="side-link" href="/">{{ ui.icon("sparkle") }}<span class="name">Overview</span></a>
+      <a class="side-link" href="/pricing">{{ ui.icon("zap") }}<span class="name">Pricing</span></a>
+    {% endif %}
+    {% if ws %}
+      <div class="side-label">{{ "Live demo" if ws.demo else "Open dataset" }}</div>
+      <a class="side-link" href="{{ ws.board_url }}" {% if tab == "dashboard" %}aria-current="page"{% endif %}>{{ ui.icon("grid") }}<span class="name">{{ ws.analysis_title or ws.name }}</span></a>
+    {% endif %}
+    <div class="side-foot">
+      {% if user %}
+        {% set p = plan_of(user.plan) %}
+        {% if p.key == "free" %}
+        <div class="upgrade">
+          <b class="row" style="--gap:6px">{{ ui.icon("zap", "sm") }} Upgrade to Pro</b>
+          <p>Unlimited datasets, sharing and the SQL console.</p>
+          <a class="btn primary sm block" href="/pricing">See plans</a>
+        </div>
+        {% endif %}
+        <div class="me">
+          <span class="avatar">{{ user.initials }}</span>
+          <span class="who"><b>{{ user.display_name }}</b><span>{{ p.name }} plan</span></span>
+          {{ ui.theme_toggle() }}
+          <form method="post" action="/signout"><button class="btn ghost sm" aria-label="Sign out" title="Sign out">{{ ui.icon("logout") }}</button></form>
+        </div>
+      {% else %}
+        <a class="btn primary block" href="/signup">Start free</a>
+        <div class="row">{{ ui.theme_toggle() }}<a class="btn ghost sm" href="/signin">Sign in</a></div>
+      {% endif %}
+    </div>
+  </aside>
+  <div class="main">
+    <div class="mobile-bar">
+      <button class="btn ghost sm" type="button" data-nav-toggle aria-label="Menu">{{ ui.icon("menu") }}</button>
+      {{ ui.logo("/home" if user else "/") }}
+    </div>
+    {% if ws and ws.demo %}
+    <div class="demo-banner">
+      {{ ui.icon("eye") }}<span>You're exploring a live demo built from sample data. Try it on your own spreadsheet in under a minute.</span>
+      <span class="spacer"></span>
+      <a class="btn" href="{{ '/home' if user else '/signup' }}">Use my own data</a>
+    </div>
+    {% endif %}
+    <div class="page">{% block content %}{% endblock %}</div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Get data · Insight{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div class="titles">
+    <h1>{% if recent %}Get data{% else %}Welcome, {{ user.display_name }}{% endif %}</h1>
+    <p class="muted" style="margin-top:6px">Drop in a spreadsheet and get the dashboard an analyst would build, in seconds.</p>
+  </div>
+</div>
+
+{% if error %}<div class="alert error" style="margin-bottom:16px">{{ ui.icon("x") }}<span>{{ error }}{% if "Pro" in error %} <a href="/pricing">See plans</a>{% endif %}</span></div>{% endif %}
+
+<div class="grid-2">
+  <div class="stack" style="--gap:0">
+    <form class="dropzone" id="dropzone" action="/upload" method="post" enctype="multipart/form-data" data-upload data-max-mb="{{ plan.max_upload_mb }}">
+      <input type="file" name="file" id="file" accept=".csv,.tsv,.txt,.xlsx,.xlsm,.xls,.json,.ndjson,.jsonl,.parquet" aria-label="Choose a file">
+      <div class="idle">
+        <div class="ic">{{ ui.icon("upload", "lg") }}</div>
+        <h2>Drop a file here, or click to browse</h2>
+        <p class="muted">Up to {{ plan.max_upload_mb }} MB on {{ plan.name }}. We clean it, read it and build your board.</p>
+        <div class="formats">
+          {% for f in ["CSV", "Excel", "JSON", "Parquet", "TSV"] %}<span class="badge">{{ f }}</span>{% endfor %}
+        </div>
+      </div>
+      <div class="progress" aria-live="polite">
+        <b data-progress-title>Uploading…</b>
+        <div class="track"><div class="fill" data-progress-fill></div></div>
+        <span class="small muted" data-progress-note>Your file is sent over an encrypted connection.</span>
+      </div>
+      <noscript><button class="btn primary" style="margin-top:16px">Upload</button></noscript>
+    </form>
+
+    <div class="or">or paste a link</div>
+    <form class="link-form" method="post" action="/link" data-busy-form>
+      <input class="input" type="url" name="url" placeholder="Google Sheet, GitHub file, Dropbox, or any CSV link" required>
+      <button class="btn primary" style="height:42px">{{ ui.icon("link", "sm") }}Import</button>
+    </form>
+
+    <div style="margin-top:28px">
+      <h3 style="margin-bottom:4px">No file handy? Start from a sample</h3>
+      <p class="muted small" style="margin-bottom:12px">Real-looking data with real patterns in it, so you can see what Insight finds.</p>
+      <div class="sample-row">
+        {% for s in samples %}
+        <form method="post" action="/samples/{{ s.key }}" data-busy-form>
+          <button class="sample-btn" style="width:100%"><b>{{ s.name }}</b><span>{{ s.blurb }}</span></button>
+        </form>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <section class="card">
+    <div class="card-head"><h2>Your datasets</h2><span class="spacer"></span>{% if plan.max_datasets %}<span class="subtle small">{{ recent | length }} of {{ plan.max_datasets }}</span>{% endif %}</div>
+    {% if recent %}
+    <ul class="list">
+      {% for d in recent %}
+      <li class="row" style="--gap:4px">
+        <a class="list-item" style="flex:1;min-width:0" href="/datasets/{{ d.id }}/dashboard">
+          <span class="file-ic">{{ ui.icon("link" if d.source == "link" else "sparkle" if d.source == "sample" else "file") }}</span>
+          <span class="t"><b>{{ d.name }}</b><span>{{ d.row_count | number }} rows · {{ d.column_count }} columns · {{ d.created_at | ago }}</span></span>
+          {{ ui.icon("chevron", "sm") }}
+        </a>
+        <form method="post" action="/datasets/{{ d.id }}/delete" data-confirm="Delete “{{ d.name }}” and any analyses saved from it?">
+          <button class="btn ghost sm" aria-label="Delete {{ d.name }}" title="Delete">{{ ui.icon("trash", "sm") }}</button>
+        </form>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <div class="empty">
+      <div class="ic">{{ ui.icon("database", "lg") }}</div>
+      <h3>Nothing here yet</h3>
+      <p>Datasets you upload or import appear here. Each one opens straight into its dashboard.</p>
+    </div>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

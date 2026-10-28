@@ -1,0 +1,23 @@
+{% import "macros.html" as ui %}
+<div id="data-table">
+  {% if rows %}
+  <div class="table-scroll">
+    <table class="data">
+      <thead><tr>{% for c in columns %}<th><span class="k">{{ view.KIND_LABELS[c.kind] }}</span>{{ c.label }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        {% for r in rows %}<tr>{% for v in r %}{% set c = columns[loop.index0] %}<td class="{{ 'n' if c.kind == 'number' }}{{ ' blank' if v == '' }}" title="{{ v }}">{{ v }}</td>{% endfor %}</tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty"><div class="ic">{{ ui.icon("search", "lg") }}</div><h3>No rows match “{{ q }}”</h3><p>Try a shorter search.</p></div>
+  {% endif %}
+  <div class="pager">
+    <span class="num">{{ matches | number }} row{{ 's' if matches != 1 }}{% if q %} matching “{{ q }}”{% endif %}</span>
+    <span class="spacer"></span>
+    {% set qs = ("&q=" ~ (q | urlencode)) if q else "" %}
+    <button class="btn sm" {% if page <= 1 %}disabled{% endif %} hx-get="{{ ws.base }}/data?page={{ page - 1 }}{{ qs }}" hx-target="#data-table" hx-swap="outerHTML">Previous</button>
+    <span class="num">Page {{ page }} of {{ pages }}</span>
+    <button class="btn sm" {% if page >= pages %}disabled{% endif %} hx-get="{{ ws.base }}/data?page={{ page + 1 }}{{ qs }}" hx-target="#data-table" hx-swap="outerHTML">Next</button>
+  </div>
+</div>

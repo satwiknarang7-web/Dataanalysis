@@ -1,0 +1,1201 @@
+employee_id,hire_date,department,level,office,salary,satisfaction,training_hours,left_company
+E5000,24 Jul 2023,Support,Senior,New York,82500.0,3,10,No
+E5001,09 Apr 2017,Marketing,Mid,Berlin,85400.0,4,77,No
+E5002,22 May 2016,Marketing,Mid,Berlin,90200.0,4,74,No
+E5003,08 Dec 2021,Sales,Lead,London,115400.0,2,73,Yes
+E5004,24 Jun 2020,Finance,Junior,New York,82800.0,4,20,No
+E5005,14 Feb 2018,Finance,Senior,New York,109100.0,5,26,No
+E5006,27 Feb 2022,Engineering,Mid,New York,148600.0,4,37,No
+E5007,07 May 2020,Sales,Senior,London,123200.0,3,0,No
+E5008,14 Dec 2017,Engineering,Mid,Bangalore,148300.0,3,68,No
+E5009,08 Sep 2021,Support,Mid,Bangalore,69900.0,4,14,No
+E5010,15 Dec 2022,Operations,Junior,Bangalore,68000.0,3,54,No
+E5011,22 Aug 2019,Engineering,Lead,Bangalore,187700.0,3,2,No
+E5012,22 Jun 2022,Sales,Mid,London,82700.0,4,10,No
+E5013,04 Feb 2017,Sales,Mid,Bangalore,87000.0,4,54,No
+E5014,08 Jul 2016,Support,Junior,Bangalore,53800.0,3,4,No
+E5015,06 Feb 2016,Sales,Mid,Berlin,98300.0,3,11,No
+E5016,13 Oct 2018,Engineering,Junior,Berlin,94900.0,4,16,No
+E5017,20 Feb 2019,Operations,Mid,London,80300.0,3,38,No
+E5018,29 Mar 2023,Engineering,Senior,Bangalore,144300.0,3,17,No
+E5019,19 Feb 2024,Operations,Mid,Berlin,74300.0,2,14,No
+E5020,23 Mar 2021,Marketing,Junior,Bangalore,64000.0,4,15,No
+E5021,28 Dec 2023,Finance,Senior,New York,129300.0,5,69,No
+E5022,25 Dec 2023,Marketing,Mid,Bangalore,88600.0,4,65,No
+E5023,06 Sep 2019,Engineering,Junior,London,85700.0,5,23,Yes
+E5024,08 Mar 2018,Support,Junior,New York,49600.0,3,51,No
+E5025,01 Jun 2019,Support,Senior,Berlin,83000.0,2,55,Yes
+E5026,14 Feb 2016,Sales,Lead,New York,135900.0,5,19,No
+E5027,22 Apr 2021,Operations,Senior,Berlin,92200.0,3,46,Yes
+E5028,14 Mar 2023,Marketing,Senior,Berlin,122300.0,4,4,No
+E5029,02 Nov 2022,Marketing,Mid,Berlin,103800.0,4,30,No
+E5030,23 Jan 2018,Engineering,Mid,London,118800.0,5,47,No
+E5031,30 Sep 2020,Sales,Senior,Berlin,118000.0,4,60,No
+E5032,11 Apr 2023,Engineering,Mid,London,115300.0,3,29,No
+E5033,12 Dec 2021,Finance,Senior,New York,112500.0,3,9,Yes
+E5034,22 Jun 2016,Finance,Mid,London,94900.0,5,56,No
+E5035,12 Mar 2016,Engineering,Junior,New York,88700.0,4,56,No
+E5036,24 Jun 2023,Operations,Junior,Bangalore,57900.0,5,8,No
+E5037,20 Mar 2023,Engineering,Junior,New York,111300.0,3,14,No
+E5038,13 Mar 2022,Engineering,Junior,London,91100.0,4,22,No
+E5039,04 Jun 2020,Engineering,Mid,London,118000.0,3,6,No
+E5040,05 Jan 2024,Sales,Junior,London,70900.0,4,62,No
+E5041,17 Jan 2020,Finance,Junior,Berlin,72000.0,5,77,No
+E5042,27 Dec 2020,Sales,Junior,Berlin,70800.0,3,67,No
+E5043,10 Oct 2017,Support,Mid,Bangalore,70200.0,2,13,No
+E5044,28 Sep 2018,Sales,Senior,Berlin,123000.0,4,21,No
+E5045,11 Feb 2017,Engineering,Mid,New York,135100.0,4,21,No
+E5046,18 May 2020,Sales,Mid,Berlin,92200.0,5,36,No
+E5047,09 Jan 2019,Operations,Mid,Berlin,75400.0,3,0,No
+E5048,27 Oct 2021,Marketing,Mid,New York,90900.0,4,17,No
+E5049,23 Jul 2023,Sales,Lead,Bangalore,133100.0,4,54,No
+E5050,26 Nov 2022,Engineering,Mid,Berlin,121100.0,3,52,No
+E5051,04 Aug 2020,Operations,Mid,New York,76200.0,3,60,No
+E5052,02 Jul 2022,Sales,Senior,London,101300.0,2,33,Yes
+E5053,20 May 2019,Support,Mid,Berlin,70200.0,1,1,No
+E5054,22 Feb 2021,Sales,Mid,New York,91800.0,4,78,No
+E5055,21 Feb 2017,Engineering,Senior,Bangalore,139500.0,3,41,No
+E5056,15 Oct 2016,Support,Junior,London,58600.0,3,72,No
+E5057,04 Jul 2016,Engineering,Mid,Bangalore,123600.0,4,67,No
+E5058,08 Jun 2018,Engineering,Senior,Berlin,132200.0,3,9,No
+E5059,23 Dec 2020,Operations,Mid,London,82800.0,4,62,No
+E5060,17 Nov 2019,Engineering,Junior,New York,90000.0,2,51,No
+E5061,14 Nov 2023,Sales,Mid,Bangalore,86700.0,3,64,Yes
+E5062,24 Jul 2016,Sales,Senior,Bangalore,107600.0,5,56,No
+E5063,05 Sep 2019,Finance,Mid,New York,109700.0,3,5,No
+E5064,08 Apr 2019,Marketing,Lead,New York,131900.0,5,8,No
+E5065,11 Dec 2017,Operations,Junior,Bangalore,63000.0,5,22,No
+E5066,11 Jun 2020,Support,Mid,New York,58700.0,3,16,No
+E5067,04 Feb 2019,Operations,Junior,London,54900.0,3,41,No
+E5068,08 Oct 2017,Engineering,Mid,London,121900.0,2,79,Yes
+E5069,10 Mar 2020,Finance,Lead,New York,138900.0,4,40,No
+E5070,21 Oct 2017,Finance,Mid,Bangalore,100700.0,4,27,No
+E5071,10 Mar 2022,Sales,Mid,London,95100.0,4,60,Yes
+E5072,30 Dec 2018,Operations,Senior,Berlin,87800.0,5,38,No
+E5073,22 Sep 2019,Sales,Mid,Berlin,84500.0,3,73,No
+E5074,01 Jun 2017,Engineering,Mid,London,122700.0,5,34,No
+E5075,11 Aug 2023,Operations,Junior,New York,50600.0,3,57,No
+E5076,14 Jun 2017,Sales,Mid,New York,97100.0,4,6,No
+E5077,06 Apr 2021,Sales,Senior,London,110300.0,4,38,No
+E5078,08 Apr 2021,Sales,Mid,Bangalore,90300.0,3,34,No
+E5079,27 Dec 2016,Marketing,Junior,Bangalore,69000.0,3,47,No
+E5080,18 Mar 2017,Finance,Junior,Bangalore,84500.0,4,61,No
+E5081,08 Dec 2016,Support,Junior,Berlin,51300.0,2,0,No
+E5082,30 Aug 2023,Operations,Senior,Bangalore,103200.0,3,24,No
+E5083,12 Jul 2020,Support,Lead,Berlin,83400.0,3,36,Yes
+E5084,23 Mar 2017,Engineering,Mid,Berlin,122200.0,3,51,No
+E5085,05 Aug 2022,Engineering,Senior,Berlin,148700.0,2,9,No
+E5086,25 Aug 2023,Finance,Junior,Bangalore,82000.0,1,56,No
+E5087,18 May 2020,Operations,Senior,Berlin,104700.0,4,58,Yes
+E5088,02 Aug 2020,Support,Junior,New York,46600.0,4,43,No
+E5089,08 Aug 2022,Operations,Junior,Berlin,53700.0,2,62,No
+E5090,21 Jun 2019,Engineering,Junior,Bangalore,92400.0,4,41,No
+E5091,29 Aug 2016,Operations,Mid,New York,66000.0,4,79,Yes
+E5092,24 Jan 2022,Engineering,Mid,London,146200.0,3,4,No
+E5093,13 Sep 2018,Sales,Junior,New York,75400.0,4,37,No
+E5094,14 Jun 2021,Operations,Junior,New York,62500.0,5,57,No
+E5095,24 May 2016,Operations,Senior,London,99600.0,4,6,No
+E5096,25 Oct 2018,Sales,Senior,Bangalore,120900.0,5,53,No
+E5097,04 Dec 2018,Operations,Junior,Berlin,57100.0,4,11,No
+E5098,29 Jul 2018,Support,Junior,New York,50500.0,2,48,No
+E5099,02 Sep 2020,Engineering,Mid,Berlin,125000.0,4,72,No
+E5100,24 Jul 2019,Engineering,Mid,New York,116800.0,4,19,No
+E5101,08 Aug 2023,Engineering,Mid,New York,112900.0,5,15,No
+E5102,01 Dec 2021,Sales,Mid,Berlin,85900.0,3,48,No
+E5103,12 Oct 2019,Engineering,Mid,Bangalore,125400.0,3,29,No
+E5104,23 Mar 2018,Sales,Mid,Bangalore,96400.0,2,63,Yes
+E5105,31 Jan 2019,Engineering,Senior,London,133900.0,4,10,No
+E5106,21 Jul 2018,Engineering,Senior,Bangalore,146000.0,4,63,Yes
+E5107,31 Jul 2021,Sales,Mid,Berlin,89200.0,3,65,No
+E5108,27 Aug 2023,Support,Junior,London,46500.0,4,59,No
+E5109,24 Nov 2021,Engineering,Lead,London,181200.0,3,24,No
+E5110,05 Sep 2023,Engineering,Junior,Berlin,94200.0,3,57,No
+E5111,28 May 2017,Sales,Lead,Bangalore,119500.0,5,29,No
+E5112,18 Sep 2016,Support,Mid,London,64000.0,1,34,No
+E5113,02 Oct 2021,Sales,Senior,Bangalore,114000.0,4,59,No
+E5114,23 Jan 2024,Finance,Mid,London,110700.0,4,74,No
+E5115,06 Jun 2020,Engineering,Mid,New York,124900.0,2,47,No
+E5116,18 Sep 2019,Engineering,Junior,London,110600.0,4,78,No
+E5117,07 Mar 2020,Sales,Junior,Berlin,76500.0,3,47,No
+E5118,10 Apr 2017,Operations,Junior,New York,62700.0,5,66,No
+E5119,23 Jan 2024,Finance,Junior,New York,75600.0,4,4,No
+E5120,22 Jun 2016,Engineering,Mid,London,133100.0,4,15,No
+E5121,02 May 2022,Support,Senior,Bangalore,76300.0,1,17,No
+E5122,06 Jun 2019,Sales,Junior,Bangalore,74300.0,3,25,No
+E5123,10 Sep 2022,Marketing,Senior,London,92400.0,3,22,No
+E5124,30 Dec 2021,Support,Junior,Berlin,50000.0,4,55,Yes
+E5125,29 Sep 2022,Sales,Mid,New York,80100.0,4,79,Yes
+E5126,02 Jan 2022,Finance,Mid,New York,100100.0,4,13,No
+E5127,26 Apr 2021,Marketing,Senior,London,99300.0,4,17,No
+E5128,15 May 2020,Engineering,Junior,London,95200.0,5,74,No
+E5129,17 Mar 2016,Engineering,Junior,Bangalore,98600.0,5,29,No
+E5130,13 Oct 2022,Support,Junior,London,49400.0,3,55,No
+E5131,10 Jan 2019,Support,Lead,Bangalore,93300.0,3,15,No
+E5132,02 Mar 2019,Support,Junior,Berlin,52900.0,3,71,No
+E5133,19 Apr 2022,Operations,Mid,London,76500.0,4,37,No
+E5134,05 Aug 2016,Operations,Junior,New York,66800.0,4,69,Yes
+E5135,23 Jun 2017,Engineering,Mid,Berlin,115100.0,3,0,No
+E5136,08 Aug 2023,Operations,Mid,New York,80200.0,4,43,No
+E5137,12 Nov 2023,Sales,Junior,New York,71500.0,4,64,No
+E5138,15 Aug 2023,Sales,Mid,Berlin,78900.0,4,11,Yes
+E5139,22 Jan 2016,Operations,Junior,Bangalore,60400.0,3,70,No
+E5140,05 Mar 2019,Engineering,Junior,Bangalore,94300.0,3,62,No
+E5141,02 Aug 2020,Marketing,Mid,Berlin,88600.0,4,39,No
+E5142,26 Jul 2018,Finance,Senior,Bangalore,143800.0,3,73,No
+E5143,10 Sep 2016,Finance,Junior,Berlin,88700.0,2,67,No
+E5144,17 Apr 2016,Sales,Junior,Bangalore,65900.0,3,14,No
+E5145,31 Mar 2022,Sales,Junior,Bangalore,73600.0,4,0,No
+E5146,30 Jul 2022,Marketing,Senior,Bangalore,119200.0,5,19,No
+E5147,24 Jan 2021,Engineering,Junior,London,96100.0,3,34,No
+E5148,14 Nov 2016,Engineering,Senior,London,135700.0,3,54,No
+E5149,29 Apr 2019,Finance,Junior,Bangalore,74100.0,4,13,No
+E5150,24 Oct 2019,Engineering,Junior,Bangalore,99100.0,4,23,No
+E5151,31 Oct 2016,Sales,Mid,Berlin,93300.0,4,31,No
+E5152,21 Jul 2017,Sales,Mid,Berlin,87600.0,3,42,No
+E5153,17 Sep 2019,Support,Mid,Bangalore,73900.0,3,33,No
+E5154,09 Mar 2018,Operations,Mid,London,86500.0,4,34,No
+E5155,14 Nov 2018,Finance,Lead,Bangalore,165700.0,4,54,No
+E5156,25 Oct 2017,Operations,Mid,Bangalore,86500.0,3,53,No
+E5157,17 Jul 2017,Engineering,Senior,Berlin,148000.0,3,64,No
+E5158,07 Feb 2024,Sales,Senior,Bangalore,98100.0,2,76,Yes
+E5159,05 Jul 2017,Engineering,Mid,Bangalore,118500.0,2,75,Yes
+E5160,03 Nov 2020,Marketing,Senior,London,111300.0,3,68,No
+E5161,17 Dec 2022,Engineering,Mid,Berlin,115600.0,4,23,No
+E5162,21 May 2018,Support,Mid,New York,64600.0,2,54,Yes
+E5163,13 Sep 2018,Engineering,Senior,Berlin,135100.0,2,55,Yes
+E5164,19 Sep 2020,Engineering,Mid,London,128800.0,4,54,No
+E5165,25 Oct 2016,Sales,Mid,Berlin,102100.0,5,66,No
+E5166,15 Apr 2021,Sales,Junior,New York,84700.0,4,62,No
+E5167,19 Apr 2017,Engineering,Lead,London,178300.0,2,32,No
+E5168,01 Mar 2022,Support,Junior,Berlin,51300.0,3,17,No
+E5169,06 Jun 2021,Engineering,Junior,Berlin,94700.0,4,44,No
+E5170,10 Apr 2019,Operations,Junior,Berlin,66900.0,3,47,No
+E5171,13 Jan 2019,Operations,Mid,Berlin,85500.0,3,54,No
+E5172,26 May 2017,Engineering,Junior,Bangalore,93200.0,4,4,No
+E5173,18 Jun 2016,Engineering,Senior,Bangalore,163200.0,4,6,No
+E5174,08 Jan 2024,Marketing,Mid,London,93400.0,4,58,Yes
+E5175,13 Jun 2016,Support,Senior,New York,76500.0,4,49,No
+E5176,21 Jun 2017,Operations,Junior,New York,59300.0,4,58,No
+E5177,27 Jun 2016,Sales,Mid,New York,102700.0,3,43,No
+E5178,07 Dec 2019,Engineering,Mid,New York,128800.0,3,65,No
+E5179,20 Jan 2022,Operations,Junior,Bangalore,57600.0,3,24,No
+E5180,09 Feb 2018,Sales,Mid,Bangalore,96600.0,3,42,No
+E5181,25 Dec 2022,Sales,Senior,Bangalore,115600.0,4,79,No
+E5182,27 Dec 2020,Operations,Mid,New York,74900.0,3,78,No
+E5183,10 Dec 2022,Support,Lead,Berlin,90100.0,4,6,No
+E5184,13 Mar 2019,Support,Mid,Bangalore,60900.0,2,10,Yes
+E5185,24 Jun 2020,Operations,Junior,New York,52600.0,4,76,No
+E5186,03 Nov 2017,Support,Senior,Berlin,77000.0,4,46,Yes
+E5187,22 Mar 2019,Sales,Lead,New York,127000.0,4,51,No
+E5188,14 Jun 2023,Engineering,Mid,Berlin,134500.0,2,1,Yes
+E5189,09 Aug 2018,Sales,Junior,Bangalore,74800.0,4,4,No
+E5190,10 May 2019,Operations,Junior,Berlin,61000.0,3,55,No
+E5191,14 Feb 2022,Finance,Senior,Berlin,107400.0,3,14,No
+E5192,11 Apr 2018,Support,Junior,London,53200.0,3,62,No
+E5193,20 Aug 2022,Marketing,Junior,New York,63100.0,3,62,No
+E5194,12 Apr 2018,Sales,Mid,New York,96100.0,4,76,No
+E5195,17 Sep 2023,Engineering,Senior,New York,159300.0,5,15,No
+E5196,25 Aug 2021,Operations,Mid,London,77100.0,4,30,No
+E5197,02 Feb 2024,Operations,Mid,Berlin,82000.0,3,3,No
+E5198,04 Sep 2020,Operations,Mid,London,83300.0,3,42,No
+E5199,15 Oct 2021,Engineering,Senior,New York,149500.0,4,43,No
+E5200,12 Aug 2021,Sales,Junior,Berlin,69200.0,3,8,No
+E5201,31 Jul 2017,Engineering,Junior,New York,85400.0,3,79,No
+E5202,25 Mar 2016,Marketing,Junior,New York,70000.0,3,46,No
+E5203,26 Nov 2023,Engineering,Junior,Berlin,87700.0,3,30,No
+E5204,23 Nov 2020,Support,Junior,Bangalore,48000.0,4,63,No
+E5205,03 Jan 2017,Finance,Mid,Berlin,96600.0,3,35,No
+E5206,28 Dec 2020,Operations,Junior,New York,51300.0,4,58,No
+E5207,17 Apr 2018,Engineering,Senior,London,160300.0,4,61,Yes
+E5208,17 Oct 2018,Sales,Junior,New York,71200.0,3,65,Yes
+E5209,01 Nov 2022,Engineering,Lead,Berlin,191800.0,3,47,No
+E5210,04 Jul 2020,Engineering,Junior,Bangalore,101300.0,4,23,No
+E5211,25 Mar 2020,Sales,Junior,Berlin,72900.0,4,21,No
+E5212,01 Aug 2020,Sales,Senior,Berlin,116400.0,3,78,Yes
+E5213,02 Jan 2018,Support,Senior,Berlin,82100.0,3,43,No
+E5214,09 Jun 2022,Support,Junior,Berlin,57700.0,4,44,No
+E5215,20 Apr 2020,Support,Senior,New York,77900.0,3,36,No
+E5216,14 Apr 2019,Engineering,Senior,Berlin,148000.0,3,45,No
+E5217,30 Apr 2022,Marketing,Mid,Bangalore,90100.0,4,1,No
+E5218,30 Oct 2020,Engineering,Mid,Berlin,142900.0,3,48,No
+E5219,01 Apr 2018,Operations,Mid,New York,73000.0,4,8,No
+E5220,27 Apr 2022,Marketing,Junior,London,79800.0,4,44,No
+E5221,11 Feb 2020,Sales,Junior,New York,62800.0,3,48,No
+E5222,29 Oct 2016,Engineering,Junior,New York,95800.0,3,75,No
+E5223,11 May 2018,Engineering,Mid,Bangalore,119800.0,3,11,No
+E5224,12 Nov 2021,Sales,Junior,Bangalore,64500.0,4,70,No
+E5225,08 Apr 2019,Engineering,Junior,New York,90100.0,3,61,No
+E5226,14 Oct 2021,Engineering,Junior,Bangalore,98900.0,3,61,No
+E5227,28 Sep 2017,Support,Mid,New York,64800.0,3,39,No
+E5228,25 Oct 2023,Engineering,Mid,Bangalore,112600.0,4,67,Yes
+E5229,23 Oct 2021,Engineering,Senior,Bangalore,159200.0,4,6,No
+E5230,04 Jan 2018,Support,Lead,New York,95500.0,3,38,No
+E5231,31 Jul 2018,Support,Lead,London,98200.0,4,76,No
+E5232,31 Aug 2018,Sales,Junior,London,76400.0,5,47,No
+E5233,29 Feb 2020,Finance,Mid,Berlin,115900.0,4,67,No
+E5234,18 Oct 2018,Engineering,Mid,Berlin,101300.0,3,45,No
+E5235,10 Aug 2022,Operations,Junior,Berlin,59500.0,4,51,No
+E5236,11 Aug 2017,Support,Junior,Bangalore,45500.0,2,56,Yes
+E5237,28 Feb 2017,Sales,Senior,New York,135800.0,4,59,No
+E5238,01 Jun 2016,Engineering,Mid,Berlin,123100.0,3,34,No
+E5239,07 Jun 2021,Marketing,Mid,Berlin,99600.0,4,53,No
+E5240,28 Apr 2023,Operations,Senior,New York,89000.0,4,27,Yes
+E5241,18 Sep 2018,Support,Senior,Berlin,78800.0,3,1,No
+E5242,30 Aug 2022,Sales,Senior,London,119200.0,4,8,No
+E5243,04 Jan 2020,Engineering,Senior,Bangalore,154400.0,4,49,No
+E5244,30 Apr 2018,Operations,Junior,London,68600.0,3,47,No
+E5245,18 Nov 2021,Engineering,Mid,Bangalore,113700.0,3,19,No
+E5246,03 Jan 2016,Engineering,Junior,New York,93400.0,4,35,No
+E5247,02 Aug 2023,Engineering,Lead,London,182100.0,3,75,No
+E5248,02 Feb 2024,Sales,Junior,Berlin,73800.0,5,65,No
+E5249,25 Jan 2023,Sales,Mid,Berlin,92700.0,5,32,No
+E5250,27 Mar 2023,Operations,Lead,New York,99300.0,2,43,No
+E5251,24 May 2023,Engineering,Mid,London,112800.0,4,56,No
+E5252,19 Aug 2019,Sales,Junior,New York,71900.0,5,57,No
+E5253,28 May 2016,Operations,Junior,Berlin,53000.0,3,11,No
+E5254,23 Jul 2020,Marketing,Mid,Berlin,85900.0,4,22,No
+E5255,16 Jun 2019,Finance,Mid,New York,102700.0,3,37,No
+E5256,26 Jul 2022,Support,Mid,Bangalore,62600.0,4,72,No
+E5257,31 Jul 2022,Engineering,Junior,Bangalore,96800.0,3,8,No
+E5258,30 Sep 2022,Support,Senior,New York,80500.0,4,57,No
+E5259,31 Aug 2022,Support,Mid,Bangalore,62500.0,3,32,No
+E5260,26 Nov 2022,Sales,Lead,London,121200.0,3,32,Yes
+E5261,13 Jun 2019,Finance,Mid,New York,113400.0,4,44,No
+E5262,25 Apr 2021,Marketing,Lead,Bangalore,136600.0,4,15,No
+E5263,06 May 2018,Finance,Junior,Berlin,81600.0,2,50,No
+E5264,23 Jan 2021,Operations,Lead,Berlin,110900.0,1,39,No
+E5265,04 Jul 2020,Support,Senior,New York,75400.0,3,31,No
+E5266,13 May 2016,Engineering,Mid,London,116200.0,3,11,No
+E5267,17 Feb 2022,Operations,Lead,London,91100.0,3,12,No
+E5268,06 Jul 2021,Engineering,Senior,London,140800.0,3,16,No
+E5269,05 Sep 2021,Support,Lead,Berlin,91100.0,5,52,No
+E5270,30 Nov 2017,Engineering,Senior,London,154800.0,3,31,No
+E5271,21 Jan 2018,Sales,Lead,New York,122700.0,4,0,No
+E5272,17 Apr 2016,Finance,Junior,Bangalore,85200.0,3,69,No
+E5273,01 Jan 2016,Sales,Junior,London,68600.0,2,64,No
+E5274,04 Dec 2021,Operations,Mid,New York,77700.0,3,56,No
+E5275,12 Apr 2023,Sales,Senior,London,108900.0,2,54,Yes
+E5276,04 Apr 2019,Marketing,Junior,New York,76100.0,2,52,Yes
+E5277,29 Aug 2019,Finance,Mid,New York,112800.0,3,61,No
+E5278,07 Mar 2019,Support,Junior,Bangalore,48100.0,2,74,No
+E5279,02 Nov 2022,Sales,Lead,Berlin,148300.0,3,77,No
+E5280,07 Dec 2022,Operations,Senior,Berlin,87400.0,4,23,No
+E5281,27 Feb 2023,Sales,Junior,Bangalore,69000.0,3,26,No
+E5282,07 Sep 2016,Support,Junior,Bangalore,49800.0,4,13,No
+E5283,17 Sep 2023,Operations,Lead,London,124600.0,3,42,No
+E5284,03 Feb 2016,Sales,Mid,Bangalore,82300.0,3,33,No
+E5285,24 Nov 2018,Sales,Mid,Bangalore,94900.0,2,50,No
+E5286,23 May 2018,Engineering,Lead,Berlin,146500.0,4,49,No
+E5287,02 Jun 2021,Support,Lead,Bangalore,102100.0,5,46,No
+E5288,09 Mar 2018,Engineering,Junior,Berlin,93600.0,4,1,No
+E5289,23 Nov 2020,Engineering,Mid,Berlin,118000.0,3,50,No
+E5290,28 Apr 2023,Sales,Lead,London,121900.0,3,11,No
+E5291,07 May 2017,Operations,Junior,Bangalore,59700.0,5,75,No
+E5292,21 Mar 2023,Operations,Mid,Berlin,74600.0,3,2,No
+E5293,03 Aug 2019,Engineering,Senior,New York,131500.0,3,38,Yes
+E5294,28 Nov 2020,Engineering,Junior,Berlin,89200.0,3,31,No
+E5295,15 Jul 2019,Engineering,Mid,Berlin,129600.0,5,68,No
+E5296,17 Aug 2017,Operations,Junior,Berlin,58100.0,4,0,Yes
+E5297,26 Jul 2017,Support,Junior,New York,48800.0,3,50,No
+E5298,13 May 2016,Support,Junior,New York,52200.0,3,65,No
+E5299,29 Jan 2019,Marketing,Junior,Berlin,74900.0,4,62,No
+E5300,21 Oct 2016,Sales,Mid,New York,94400.0,3,23,No
+E5301,01 Aug 2019,Sales,Lead,London,132300.0,5,26,No
+E5302,24 Nov 2019,Finance,Lead,Bangalore,162100.0,4,16,No
+E5303,27 Jul 2022,Operations,Senior,Bangalore,94000.0,2,26,Yes
+E5304,31 Dec 2021,Engineering,Senior,London,145400.0,4,34,No
+E5305,18 Jan 2023,Engineering,Junior,London,101900.0,4,74,No
+E5306,16 Mar 2016,Sales,Mid,Bangalore,84700.0,4,71,No
+E5307,21 Nov 2021,Marketing,Senior,Berlin,108700.0,3,66,No
+E5308,03 Apr 2018,Support,Lead,Bangalore,84200.0,3,32,Yes
+E5309,12 Aug 2022,Engineering,Mid,New York,140600.0,4,40,No
+E5310,16 Jun 2023,Finance,Senior,Berlin,147500.0,5,40,No
+E5311,22 Oct 2016,Support,Lead,Berlin,94300.0,2,36,No
+E5312,18 Mar 2020,Sales,Mid,New York,95200.0,4,15,No
+E5313,29 Jul 2020,Engineering,Senior,Berlin,156700.0,3,20,No
+E5314,08 Apr 2018,Engineering,Lead,Berlin,177500.0,3,46,No
+E5315,15 Feb 2018,Operations,Senior,London,103200.0,2,16,Yes
+E5316,25 Feb 2017,Engineering,Junior,Bangalore,85900.0,4,6,No
+E5317,09 Jun 2019,Support,Lead,London,94300.0,3,18,No
+E5318,10 Oct 2021,Finance,Senior,Bangalore,105600.0,3,72,No
+E5319,10 Oct 2021,Finance,Junior,Berlin,73800.0,5,75,No
+E5320,15 May 2022,Operations,Lead,Berlin,96900.0,3,4,No
+E5321,11 Oct 2023,Engineering,Junior,Bangalore,82000.0,3,21,No
+E5322,15 Mar 2021,Operations,Lead,Bangalore,106100.0,3,64,No
+E5323,06 Dec 2018,Marketing,Senior,Berlin,115600.0,3,35,No
+E5324,14 Apr 2018,Engineering,Junior,London,90100.0,5,16,No
+E5325,28 Sep 2020,Engineering,Senior,Bangalore,141900.0,4,54,No
+E5326,18 Aug 2019,Sales,Junior,New York,66000.0,5,52,No
+E5327,17 Nov 2016,Marketing,Lead,Berlin,134000.0,3,51,No
+E5328,10 Apr 2019,Engineering,Mid,London,115900.0,4,30,No
+E5329,09 Aug 2021,Marketing,Mid,New York,85000.0,4,61,No
+E5330,09 Jun 2017,Support,Lead,Berlin,103100.0,3,19,No
+E5331,15 Dec 2017,Sales,Junior,Bangalore,65300.0,5,30,No
+E5332,22 Apr 2018,Engineering,Mid,Bangalore,109800.0,4,72,No
+E5333,08 Nov 2019,Sales,Senior,Berlin,115900.0,4,26,No
+E5334,12 Sep 2022,Sales,Junior,New York,61200.0,2,9,No
+E5335,04 Sep 2018,Support,Junior,Bangalore,57400.0,3,40,No
+E5336,17 Jan 2017,Sales,Mid,Berlin,82500.0,4,54,No
+E5337,31 May 2016,Engineering,Junior,Berlin,95600.0,5,50,No
+E5338,15 Jan 2021,Engineering,Mid,London,112300.0,3,20,No
+E5339,31 Jan 2022,Engineering,Mid,London,121700.0,4,79,No
+E5340,18 Sep 2016,Operations,Mid,New York,73700.0,2,59,No
+E5341,01 Feb 2021,Engineering,Junior,Berlin,87800.0,2,46,No
+E5342,08 Jun 2023,Finance,Junior,Berlin,70400.0,4,59,No
+E5343,18 Sep 2022,Marketing,Junior,Bangalore,69000.0,5,61,No
+E5344,05 Sep 2023,Operations,Senior,Bangalore,97200.0,5,46,No
+E5345,09 Oct 2023,Engineering,Junior,London,100300.0,4,73,No
+E5346,15 Jun 2022,Engineering,Lead,Berlin,165000.0,5,22,No
+E5347,17 May 2019,Sales,Junior,Bangalore,66100.0,3,0,No
+E5348,21 Sep 2021,Sales,Junior,New York,69000.0,4,46,No
+E5349,18 Mar 2022,Marketing,Senior,Bangalore,112300.0,3,20,No
+E5350,06 Apr 2022,Operations,Junior,Berlin,60000.0,1,65,Yes
+E5351,18 Jul 2018,Support,Mid,Berlin,64300.0,3,0,No
+E5352,19 Aug 2019,Marketing,Junior,Bangalore,69900.0,4,62,No
+E5353,22 Jul 2019,Engineering,Lead,Bangalore,170800.0,4,72,No
+E5354,18 Aug 2022,Engineering,Junior,Bangalore,78300.0,3,74,No
+E5355,12 Nov 2022,Support,Junior,London,50300.0,3,30,No
+E5356,17 Nov 2023,Engineering,Mid,New York,129500.0,5,65,No
+E5357,19 May 2023,Engineering,Mid,Berlin,135900.0,4,46,No
+E5358,08 Dec 2016,Support,Lead,London,105100.0,2,1,No
+E5359,01 Feb 2019,Engineering,Lead,New York,176100.0,2,38,No
+E5360,29 Apr 2019,Operations,Senior,Berlin,85100.0,3,57,No
+E5361,05 Aug 2022,Engineering,Junior,Bangalore,90900.0,5,60,No
+E5362,18 Mar 2016,Operations,Mid,New York,72300.0,3,30,No
+E5363,16 Apr 2022,Engineering,Junior,Bangalore,84900.0,4,29,No
+E5364,04 May 2023,Support,Junior,Berlin,48200.0,4,51,No
+E5365,13 Jul 2017,Engineering,Junior,New York,89600.0,4,0,No
+E5366,22 Oct 2018,Sales,Mid,Berlin,80100.0,4,68,No
+E5367,19 Feb 2021,Finance,Mid,New York,110300.0,3,28,No
+E5368,18 Nov 2020,Marketing,Senior,Berlin,117900.0,5,46,No
+E5369,28 Jan 2020,Sales,Mid,Bangalore,89200.0,3,37,No
+E5370,12 Jun 2018,Sales,Junior,London,72200.0,4,31,Yes
+E5371,07 Jul 2016,Marketing,Junior,Berlin,73800.0,4,32,No
+E5372,18 Jan 2018,Support,Mid,London,62800.0,3,62,Yes
+E5373,29 Jun 2020,Operations,Mid,Berlin,88700.0,4,21,No
+E5374,28 Nov 2017,Sales,Junior,London,65800.0,2,76,Yes
+E5375,17 Jan 2024,Sales,Mid,Berlin,78400.0,3,7,No
+E5376,02 Aug 2017,Marketing,Senior,New York,113800.0,3,33,No
+E5377,28 May 2022,Support,Junior,London,54400.0,3,2,No
+E5378,21 Sep 2018,Engineering,Senior,London,144700.0,4,31,No
+E5379,25 Aug 2017,Sales,Lead,London,142300.0,4,72,No
+E5380,10 Sep 2017,Engineering,Lead,Bangalore,177300.0,4,44,No
+E5381,25 Oct 2017,Operations,Junior,London,56200.0,4,5,No
+E5382,29 Nov 2023,Finance,Junior,Berlin,76300.0,2,54,Yes
+E5383,15 Aug 2018,Operations,Senior,Berlin,94700.0,2,31,Yes
+E5384,23 Jul 2018,Finance,Mid,New York,103100.0,2,9,No
+E5385,23 Feb 2016,Finance,Junior,London,88200.0,4,6,No
+E5386,15 Sep 2018,Support,Mid,London,71200.0,1,35,Yes
+E5387,08 Aug 2016,Sales,Mid,Bangalore,79000.0,4,8,No
+E5388,20 Jul 2017,Engineering,Junior,Berlin,93700.0,3,52,Yes
+E5389,27 Nov 2021,Marketing,Junior,Berlin,65200.0,4,51,Yes
+E5390,10 Mar 2021,Finance,Senior,London,140200.0,3,70,No
+E5391,27 Jun 2020,Sales,Mid,Bangalore,82900.0,4,73,No
+E5392,06 Nov 2017,Sales,Junior,London,71100.0,3,74,No
+E5393,19 Sep 2021,Operations,Lead,London,104400.0,4,27,No
+E5394,18 Apr 2017,Engineering,Senior,New York,126500.0,5,20,No
+E5395,16 Nov 2021,Operations,Mid,London,69500.0,5,59,Yes
+E5396,05 Oct 2021,Operations,Junior,London,58800.0,3,33,No
+E5397,09 Aug 2016,Support,Senior,Bangalore,84900.0,2,62,No
+E5398,13 Dec 2020,Operations,Senior,London,97700.0,4,66,No
+E5399,08 Oct 2023,Engineering,Senior,New York,133200.0,5,51,Yes
+E5400,31 Jan 2021,Sales,Junior,Berlin,71800.0,4,37,No
+E5401,18 Dec 2023,Sales,Mid,Bangalore,96700.0,4,69,No
+E5402,11 Nov 2022,Sales,Junior,London,72900.0,4,40,No
+E5403,12 Apr 2016,Finance,Lead,London,143000.0,4,14,No
+E5404,30 May 2023,Marketing,Junior,New York,72300.0,5,8,No
+E5405,22 Jul 2016,Operations,Mid,Berlin,77700.0,3,6,No
+E5406,30 Aug 2017,Operations,Senior,London,104700.0,3,8,No
+E5407,25 Sep 2022,Operations,Senior,Berlin,107200.0,4,36,No
+E5408,06 Jan 2020,Finance,Mid,New York,107800.0,5,47,No
+E5409,29 Dec 2020,Engineering,Mid,Bangalore,122100.0,5,42,No
+E5410,24 May 2018,Engineering,Lead,Bangalore,174400.0,4,29,Yes
+E5411,23 Feb 2024,Engineering,Mid,New York,122300.0,4,29,No
+E5412,23 Sep 2016,Finance,Mid,New York,104100.0,3,41,No
+E5413,10 Jan 2018,Support,Senior,New York,77800.0,2,73,No
+E5414,01 Dec 2022,Support,Mid,Bangalore,77900.0,2,58,No
+E5415,14 Jul 2022,Engineering,Mid,London,114100.0,3,9,No
+E5416,02 May 2018,Support,Junior,Berlin,57700.0,3,22,No
+E5417,23 Apr 2020,Support,Junior,Berlin,43600.0,4,74,No
+E5418,19 Apr 2016,Engineering,Mid,Bangalore,119000.0,4,69,Yes
+E5419,23 Jul 2020,Marketing,Junior,New York,70100.0,4,33,No
+E5420,27 Dec 2022,Support,Junior,Berlin,53000.0,3,20,No
+E5421,18 Sep 2017,Sales,Mid,London,87000.0,3,66,No
+E5422,01 Sep 2023,Support,Mid,Berlin,74400.0,2,66,No
+E5423,25 Dec 2020,Marketing,Junior,Berlin,70600.0,3,30,No
+E5424,22 May 2016,Sales,Mid,New York,82500.0,4,7,Yes
+E5425,17 May 2019,Engineering,Junior,Berlin,87900.0,3,40,No
+E5426,25 May 2017,Engineering,Junior,New York,91500.0,3,49,No
+E5427,23 Oct 2017,Operations,Junior,New York,63600.0,5,55,No
+E5428,04 Sep 2016,Sales,Senior,New York,117400.0,5,72,No
+E5429,16 Nov 2022,Sales,Mid,Bangalore,81400.0,5,37,No
+E5430,24 Jun 2021,Support,Lead,Berlin,89700.0,3,72,No
+E5431,04 Oct 2017,Engineering,Mid,Berlin,111700.0,4,69,No
+E5432,07 Sep 2016,Sales,Lead,Berlin,125900.0,4,3,No
+E5433,19 Jun 2018,Support,Junior,London,56200.0,3,42,No
+E5434,03 May 2018,Support,Mid,Bangalore,67500.0,4,11,No
+E5435,17 Sep 2016,Finance,Mid,Berlin,107000.0,4,1,No
+E5436,08 Jan 2017,Sales,Mid,London,95100.0,4,3,No
+E5437,21 Jul 2021,Engineering,Senior,New York,141400.0,1,63,Yes
+E5438,28 Feb 2022,Finance,Mid,London,92400.0,5,69,No
+E5439,01 May 2018,Finance,Junior,Bangalore,76300.0,4,39,No
+E5440,02 Apr 2019,Operations,Senior,Bangalore,100000.0,3,78,No
+E5441,13 Nov 2023,Sales,Junior,London,73500.0,4,53,No
+E5442,27 Oct 2018,Operations,Junior,London,60400.0,4,3,No
+E5443,02 Feb 2022,Operations,Mid,London,82900.0,2,25,Yes
+E5444,24 Nov 2022,Support,Junior,Bangalore,52600.0,2,52,No
+E5445,27 May 2023,Engineering,Senior,Bangalore,144300.0,3,55,No
+E5446,15 Dec 2023,Engineering,Mid,Bangalore,107300.0,3,57,No
+E5447,12 Aug 2017,Sales,Senior,New York,120900.0,4,57,No
+E5448,23 Oct 2023,Finance,Mid,Berlin,101600.0,3,49,No
+E5449,03 Apr 2021,Support,Mid,Bangalore,64200.0,3,79,No
+E5450,03 Dec 2017,Engineering,Mid,New York,120600.0,4,47,No
+E5451,24 Mar 2023,Marketing,Senior,London,126600.0,3,29,No
+E5452,17 Mar 2019,Operations,Junior,Berlin,65000.0,4,15,No
+E5453,24 Nov 2023,Engineering,Junior,Berlin,92300.0,5,17,No
+E5454,30 Oct 2019,Finance,Junior,New York,83100.0,4,34,No
+E5455,04 May 2021,Sales,Mid,New York,98800.0,4,38,No
+E5456,09 Dec 2019,Support,Lead,Berlin,98400.0,4,7,No
+E5457,13 Oct 2023,Marketing,Mid,Bangalore,93100.0,4,55,No
+E5458,15 Nov 2019,Finance,Mid,London,86600.0,4,31,No
+E5459,18 Mar 2017,Engineering,Junior,London,105000.0,3,38,No
+E5460,18 Mar 2023,Sales,Mid,Bangalore,82500.0,4,54,No
+E5461,01 May 2016,Sales,Senior,Berlin,94000.0,4,68,No
+E5462,28 Feb 2022,Engineering,Mid,London,105300.0,4,45,No
+E5463,27 Oct 2019,Marketing,Lead,London,123700.0,5,77,No
+E5464,09 Sep 2021,Finance,Mid,Bangalore,106500.0,3,56,No
+E5465,09 Aug 2018,Sales,Junior,London,76800.0,2,78,No
+E5466,10 Nov 2017,Finance,Senior,Bangalore,128300.0,4,33,No
+E5467,09 Aug 2023,Engineering,Mid,New York,139700.0,4,10,No
+E5468,12 Jul 2017,Engineering,Mid,Berlin,117700.0,3,19,No
+E5469,18 Feb 2016,Engineering,Lead,Berlin,171600.0,4,19,No
+E5470,27 Apr 2019,Finance,Senior,London,107500.0,4,26,No
+E5471,09 Aug 2018,Engineering,Lead,London,166900.0,4,23,No
+E5472,17 Nov 2020,Engineering,Mid,New York,103300.0,3,40,No
+E5473,15 Nov 2018,Engineering,Mid,Bangalore,109200.0,4,74,No
+E5474,11 Dec 2018,Sales,Mid,New York,94200.0,5,8,No
+E5475,08 Nov 2021,Sales,Mid,London,78300.0,3,62,No
+E5476,19 Apr 2022,Sales,Junior,London,61600.0,3,45,No
+E5477,06 Jan 2016,Finance,Senior,Berlin,108400.0,3,9,No
+E5478,19 May 2017,Sales,Junior,Berlin,74500.0,5,63,No
+E5479,24 Dec 2022,Engineering,Senior,New York,169000.0,3,35,Yes
+E5480,11 May 2023,Operations,Junior,New York,59600.0,4,53,No
+E5481,04 Sep 2023,Engineering,Junior,London,102400.0,3,74,No
+E5482,02 Dec 2018,Engineering,Junior,New York,86600.0,5,11,No
+E5483,23 Dec 2019,Finance,Mid,Bangalore,113000.0,3,16,No
+E5484,22 Mar 2017,Engineering,Junior,Bangalore,89700.0,4,14,No
+E5485,20 Nov 2016,Finance,Junior,New York,84400.0,3,44,No
+E5486,03 Dec 2020,Operations,Mid,New York,76600.0,3,78,No
+E5487,01 Jun 2016,Support,Mid,Bangalore,57100.0,3,55,No
+E5488,09 May 2017,Sales,Junior,Bangalore,65200.0,4,46,No
+E5489,14 Feb 2018,Operations,Junior,Berlin,60800.0,4,5,No
+E5490,19 May 2016,Marketing,Junior,New York,62100.0,2,26,Yes
+E5491,07 Feb 2017,Finance,Lead,Berlin,150700.0,3,34,No
+E5492,09 Feb 2016,Sales,Senior,New York,97500.0,3,39,Yes
+E5493,17 Feb 2020,Marketing,Mid,London,96200.0,4,73,No
+E5494,02 Nov 2020,Marketing,Junior,Berlin,64600.0,3,28,Yes
+E5495,15 May 2019,Engineering,Junior,London,98400.0,4,0,No
+E5496,15 Feb 2019,Engineering,Senior,Berlin,158200.0,3,33,No
+E5497,29 Jul 2017,Support,Junior,New York,51300.0,3,50,No
+E5498,12 Feb 2023,Operations,Mid,London,76300.0,3,30,Yes
+E5499,04 Nov 2022,Operations,Junior,New York,67600.0,3,69,Yes
+E5500,13 Jul 2019,Operations,Senior,London,87900.0,4,63,No
+E5501,05 Dec 2020,Engineering,Mid,Bangalore,116500.0,4,34,No
+E5502,03 Nov 2023,Engineering,Junior,Berlin,100000.0,4,72,No
+E5503,21 Feb 2021,Operations,Junior,Bangalore,62100.0,4,20,No
+E5504,29 Mar 2020,Operations,Mid,Berlin,75300.0,5,74,No
+E5505,12 Aug 2021,Operations,Mid,Berlin,69700.0,3,58,No
+E5506,02 Aug 2022,Sales,Mid,Berlin,96900.0,5,12,No
+E5507,07 Feb 2023,Marketing,Junior,Bangalore,65200.0,4,29,No
+E5508,18 Jun 2017,Operations,Mid,New York,92200.0,3,52,No
+E5509,17 Jul 2021,Sales,Junior,Bangalore,63600.0,3,26,No
+E5510,10 May 2023,Marketing,Mid,New York,84400.0,4,64,No
+E5511,02 Feb 2017,Engineering,Senior,Bangalore,152300.0,4,20,No
+E5512,03 Jan 2024,Engineering,Junior,Berlin,99300.0,3,73,No
+E5513,23 Feb 2019,Finance,Senior,New York,115400.0,3,76,No
+E5514,22 May 2023,Sales,Lead,New York,147500.0,4,8,No
+E5515,13 Apr 2020,Finance,Lead,New York,151100.0,3,59,No
+E5516,12 Nov 2019,Operations,Junior,London,58800.0,4,53,No
+E5517,09 Jul 2017,Sales,Senior,London,112600.0,4,11,No
+E5518,17 Jul 2022,Finance,Junior,London,88100.0,3,52,No
+E5519,21 Sep 2023,Engineering,Mid,New York,138300.0,5,23,No
+E5520,17 Oct 2023,Engineering,Mid,London,123500.0,4,64,No
+E5521,26 Jan 2018,Sales,Junior,Berlin,63200.0,3,71,No
+E5522,09 May 2021,Operations,Junior,Berlin,54300.0,4,0,No
+E5523,05 May 2022,Engineering,Lead,Berlin,156100.0,2,66,No
+E5524,06 Nov 2023,Sales,Junior,Bangalore,66500.0,4,78,No
+E5525,25 Oct 2023,Support,Mid,London,66800.0,4,28,No
+E5526,18 Feb 2021,Support,Senior,London,82500.0,5,78,No
+E5527,04 Apr 2018,Support,Junior,London,56900.0,3,56,No
+E5528,30 Jun 2017,Engineering,Lead,Bangalore,148100.0,3,45,No
+E5529,28 Sep 2019,Finance,Lead,Berlin,147100.0,4,8,No
+E5530,06 Apr 2021,Finance,Junior,Bangalore,83000.0,5,39,No
+E5531,16 Jan 2018,Engineering,Mid,Bangalore,97100.0,4,11,No
+E5532,27 Feb 2021,Engineering,Junior,New York,98500.0,4,23,Yes
+E5533,03 Oct 2022,Engineering,Lead,London,217500.0,4,72,No
+E5534,25 Jul 2020,Finance,Junior,London,85100.0,4,8,No
+E5535,13 Jul 2022,Operations,Mid,Berlin,78700.0,2,43,Yes
+E5536,19 Aug 2018,Engineering,Mid,Bangalore,119000.0,2,78,No
+E5537,03 May 2023,Engineering,Mid,Berlin,123900.0,2,10,Yes
+E5538,07 Feb 2024,Finance,Mid,Berlin,115800.0,3,15,No
+E5539,07 Jul 2016,Operations,Junior,New York,58400.0,3,39,No
+E5540,03 Apr 2018,Support,Senior,Bangalore,89200.0,4,39,No
+E5541,29 Jan 2022,Engineering,Senior,Bangalore,153800.0,3,37,No
+E5542,13 Mar 2022,Support,Mid,Berlin,75800.0,3,17,No
+E5543,04 Oct 2020,Engineering,Senior,Berlin,161700.0,3,79,No
+E5544,09 Aug 2020,Sales,Junior,Berlin,71100.0,4,8,No
+E5545,24 Jun 2019,Support,Junior,Bangalore,52500.0,3,1,No
+E5546,28 Aug 2020,Sales,Junior,Berlin,68300.0,3,19,No
+E5547,22 Apr 2023,Marketing,Junior,Bangalore,77900.0,4,59,No
+E5548,26 May 2016,Sales,Junior,New York,66800.0,3,10,No
+E5549,15 Feb 2023,Operations,Junior,London,60500.0,3,60,Yes
+E5550,28 Aug 2016,Sales,Mid,Berlin,88200.0,3,31,No
+E5551,30 Sep 2021,Sales,Mid,Bangalore,80500.0,4,62,No
+E5552,04 Nov 2018,Engineering,Mid,Bangalore,123800.0,3,17,No
+E5553,31 May 2017,Support,Senior,Berlin,71800.0,3,62,No
+E5554,22 Jan 2016,Support,Mid,London,64200.0,3,0,No
+E5555,17 Feb 2018,Finance,Mid,New York,108000.0,4,56,No
+E5556,10 Jan 2016,Support,Junior,Bangalore,52700.0,3,1,No
+E5557,13 Apr 2017,Operations,Senior,New York,94800.0,2,33,No
+E5558,24 Mar 2019,Engineering,Mid,Bangalore,113500.0,4,56,No
+E5559,07 Feb 2018,Engineering,Junior,Bangalore,103300.0,3,3,No
+E5560,28 Aug 2019,Finance,Junior,New York,74500.0,2,73,Yes
+E5561,08 May 2022,Marketing,Junior,Bangalore,76200.0,3,77,No
+E5562,24 Feb 2016,Engineering,Mid,New York,134900.0,3,55,No
+E5563,27 Sep 2018,Engineering,Junior,Berlin,84100.0,5,19,No
+E5564,08 Feb 2019,Support,Senior,London,78500.0,4,56,No
+E5565,27 Apr 2018,Engineering,Junior,Berlin,91300.0,4,24,No
+E5566,24 May 2020,Sales,Lead,Berlin,131600.0,3,53,No
+E5567,16 Jan 2018,Operations,Junior,Bangalore,55600.0,3,12,No
+E5568,20 Oct 2017,Operations,Mid,New York,70000.0,5,49,No
+E5569,31 May 2016,Engineering,Lead,Berlin,174100.0,3,26,No
+E5570,27 Oct 2021,Operations,Junior,Bangalore,57400.0,4,46,No
+E5571,17 Oct 2018,Sales,Senior,Bangalore,107900.0,5,26,No
+E5572,28 Aug 2022,Engineering,Junior,London,102000.0,3,21,No
+E5573,10 Oct 2016,Operations,Mid,New York,67500.0,4,28,No
+E5574,27 Oct 2017,Support,Senior,New York,80400.0,3,70,No
+E5575,12 Aug 2020,Finance,Junior,New York,76300.0,3,32,No
+E5576,27 Dec 2022,Engineering,Junior,New York,95200.0,4,55,No
+E5577,08 Jul 2017,Engineering,Junior,London,90600.0,3,53,No
+E5578,25 Jun 2018,Sales,Junior,Bangalore,63700.0,4,48,No
+E5579,26 Mar 2018,Engineering,Mid,London,125500.0,4,77,No
+E5580,09 Apr 2016,Engineering,Senior,New York,185000.0,4,3,No
+E5581,06 Dec 2019,Engineering,Junior,New York,94200.0,3,41,No
+E5582,13 Jul 2021,Engineering,Mid,Berlin,114700.0,4,78,No
+E5583,17 Feb 2019,Marketing,Senior,Bangalore,106000.0,4,79,No
+E5584,29 Aug 2021,Engineering,Senior,New York,159700.0,2,35,Yes
+E5585,22 Aug 2018,Engineering,Lead,Berlin,163000.0,3,4,No
+E5586,24 Jun 2020,Engineering,Senior,Berlin,164400.0,4,28,No
+E5587,09 Nov 2023,Marketing,Junior,Berlin,63200.0,4,30,No
+E5588,29 Mar 2017,Sales,Junior,London,71100.0,4,29,No
+E5589,24 Jun 2016,Engineering,Senior,Berlin,156300.0,4,2,No
+E5590,04 Jan 2017,Sales,Junior,London,74400.0,3,73,No
+E5591,26 Mar 2023,Engineering,Junior,London,100400.0,5,47,No
+E5592,26 Nov 2020,Finance,Senior,New York,127500.0,4,30,Yes
+E5593,17 Aug 2023,Sales,Mid,London,98300.0,3,78,No
+E5594,03 Mar 2019,Operations,Mid,London,70900.0,5,67,No
+E5595,13 Dec 2023,Operations,Mid,London,72900.0,4,16,No
+E5596,19 Feb 2019,Marketing,Junior,New York,69700.0,3,14,No
+E5597,30 Jan 2023,Marketing,Junior,Bangalore,81100.0,3,57,No
+E5598,26 Jun 2020,Sales,Lead,London,133700.0,4,70,Yes
+E5599,26 Aug 2022,Sales,Junior,London,73900.0,3,61,No
+E5600,03 Jul 2022,Sales,Mid,Bangalore,88300.0,4,65,No
+E5601,11 Dec 2017,Engineering,Junior,London,101400.0,3,8,No
+E5602,10 May 2022,Sales,Junior,New York,61800.0,4,13,No
+E5603,24 Jun 2017,Sales,Junior,London,67700.0,2,34,No
+E5604,29 Feb 2020,Engineering,Junior,Bangalore,93400.0,3,47,No
+E5605,13 Dec 2020,Support,Mid,Bangalore,64100.0,3,11,No
+E5606,23 Jun 2016,Engineering,Junior,Berlin,92600.0,4,4,No
+E5607,25 May 2020,Engineering,Mid,Berlin,127000.0,3,28,No
+E5608,28 Sep 2017,Operations,Mid,Bangalore,78300.0,4,56,No
+E5609,02 Dec 2021,Finance,Mid,London,112700.0,2,64,No
+E5610,18 Nov 2019,Sales,Junior,Bangalore,59200.0,3,65,Yes
+E5611,18 Dec 2016,Marketing,Junior,London,81100.0,4,23,No
+E5612,11 Mar 2024,Engineering,Junior,Bangalore,90200.0,4,23,No
+E5613,08 May 2018,Support,Junior,New York,57800.0,4,74,No
+E5614,07 Jul 2020,Operations,Mid,New York,74300.0,3,12,No
+E5615,09 Jul 2021,Engineering,Mid,Bangalore,125200.0,3,62,Yes
+E5616,01 Sep 2022,Operations,Junior,New York,55000.0,4,0,No
+E5617,09 Jan 2021,Engineering,Junior,New York,86200.0,3,21,No
+E5618,01 Jun 2021,Sales,Mid,New York,93900.0,3,15,No
+E5619,11 Nov 2018,Sales,Junior,New York,56600.0,4,34,No
+E5620,24 Aug 2018,Operations,Mid,London,69700.0,3,8,No
+E5621,20 Mar 2017,Support,Lead,London,101700.0,4,49,No
+E5622,31 Jan 2024,Sales,Senior,London,105600.0,2,35,No
+E5623,17 Jan 2023,Operations,Junior,New York,55900.0,3,48,No
+E5624,17 Nov 2017,Operations,Mid,Bangalore,86700.0,5,58,No
+E5625,29 Oct 2022,Engineering,Lead,London,203100.0,5,45,No
+E5626,24 Jul 2021,Operations,Senior,New York,93600.0,4,41,No
+E5627,14 Mar 2017,Support,Mid,Bangalore,73700.0,4,30,Yes
+E5628,01 Jan 2018,Marketing,Mid,Berlin,104100.0,4,52,No
+E5629,25 Feb 2022,Sales,Senior,Berlin,109100.0,3,75,No
+E5630,03 Jan 2024,Operations,Junior,Bangalore,57600.0,4,11,No
+E5631,01 Mar 2017,Finance,Mid,Berlin,103100.0,3,7,No
+E5632,03 Oct 2023,Engineering,Mid,Berlin,108200.0,2,63,Yes
+E5633,16 Sep 2019,Engineering,Mid,New York,127300.0,4,50,No
+E5634,23 Jun 2023,Operations,Junior,New York,58400.0,4,46,No
+E5635,30 Oct 2019,Engineering,Senior,Berlin,148900.0,3,2,No
+E5636,19 May 2018,Finance,Junior,Bangalore,80300.0,3,34,No
+E5637,20 Apr 2019,Sales,Mid,Bangalore,83700.0,3,44,No
+E5638,19 Feb 2020,Engineering,Lead,New York,174300.0,3,60,Yes
+E5639,23 Oct 2018,Finance,Junior,New York,71800.0,3,14,No
+E5640,09 Apr 2018,Engineering,Junior,Bangalore,91400.0,4,47,No
+E5641,03 Nov 2019,Sales,Mid,London,82000.0,3,6,No
+E5642,20 Jun 2018,Sales,Mid,Berlin,83500.0,3,64,No
+E5643,05 Nov 2021,Finance,Junior,New York,66800.0,5,4,Yes
+E5644,29 Apr 2018,Engineering,Senior,New York,143200.0,4,45,No
+E5645,20 Sep 2018,Operations,Mid,Berlin,79800.0,4,76,Yes
+E5646,23 Jul 2022,Support,Junior,Berlin,52700.0,3,28,No
+E5647,06 Oct 2020,Marketing,Mid,Berlin,100500.0,4,10,No
+E5648,09 Oct 2022,Engineering,Mid,Berlin,112700.0,4,51,No
+E5649,11 Dec 2018,Engineering,Mid,New York,117000.0,4,28,No
+E5650,09 Jun 2022,Marketing,Lead,Berlin,142600.0,4,53,No
+E5651,23 Dec 2023,Sales,Mid,Berlin,89000.0,3,37,No
+E5652,17 Jan 2016,Marketing,Junior,Bangalore,73100.0,4,27,No
+E5653,13 Aug 2021,Marketing,Mid,London,109100.0,3,1,No
+E5654,07 Aug 2023,Operations,Mid,London,75300.0,4,29,No
+E5655,31 Dec 2022,Operations,Mid,Bangalore,73900.0,4,73,No
+E5656,01 Apr 2019,Operations,Junior,London,55400.0,4,79,No
+E5657,20 Jul 2019,Engineering,Junior,London,92800.0,3,1,No
+E5658,09 Jul 2018,Sales,Senior,Bangalore,118500.0,4,15,No
+E5659,08 Feb 2018,Finance,Junior,New York,83800.0,3,72,No
+E5660,03 Aug 2022,Finance,Junior,Berlin,89700.0,4,66,No
+E5661,24 Aug 2016,Engineering,Lead,Berlin,179900.0,4,2,No
+E5662,28 Jul 2019,Engineering,Mid,New York,101600.0,5,34,No
+E5663,17 Sep 2022,Operations,Junior,New York,63100.0,4,32,No
+E5664,06 Oct 2021,Sales,Junior,New York,70600.0,4,78,No
+E5665,25 Sep 2021,Sales,Mid,London,89600.0,3,62,No
+E5666,27 Nov 2019,Engineering,Mid,New York,134000.0,4,61,No
+E5667,29 Sep 2022,Sales,Junior,Berlin,68500.0,3,1,No
+E5668,19 Jan 2019,Engineering,Senior,Berlin,155200.0,5,55,No
+E5669,30 Jul 2021,Engineering,Junior,New York,87200.0,3,64,No
+E5670,04 Apr 2016,Sales,Junior,Bangalore,62000.0,3,33,No
+E5671,23 Apr 2016,Finance,Mid,London,97600.0,4,37,No
+E5672,05 Apr 2018,Support,Senior,London,79100.0,4,20,No
+E5673,28 Jun 2019,Engineering,Mid,New York,127000.0,4,37,No
+E5674,12 Jul 2018,Engineering,Junior,New York,87000.0,3,27,No
+E5675,21 Sep 2018,Engineering,Mid,Bangalore,137200.0,3,14,No
+E5676,28 Sep 2016,Support,Junior,New York,48100.0,3,79,No
+E5677,24 Jul 2019,Engineering,Junior,New York,94300.0,4,18,Yes
+E5678,14 Oct 2016,Support,Mid,Berlin,66600.0,3,15,No
+E5679,27 Jun 2021,Operations,Mid,Berlin,78700.0,3,63,No
+E5680,30 Jun 2022,Finance,Senior,Bangalore,129400.0,5,12,No
+E5681,25 Aug 2020,Engineering,Lead,London,209500.0,5,0,No
+E5682,27 Aug 2018,Operations,Mid,New York,73200.0,5,46,No
+E5683,21 Mar 2021,Engineering,Senior,Bangalore,152000.0,2,25,Yes
+E5684,22 Jan 2023,Operations,Junior,New York,59600.0,3,55,No
+E5685,23 Sep 2017,Operations,Senior,London,101300.0,4,25,No
+E5686,24 Aug 2017,Finance,Junior,Berlin,82900.0,4,7,No
+E5687,28 Jan 2020,Operations,Mid,London,78200.0,3,21,Yes
+E5688,08 Jul 2019,Support,Junior,London,46100.0,2,31,Yes
+E5689,06 Dec 2017,Sales,Mid,London,86400.0,3,24,No
+E5690,17 Aug 2018,Marketing,Mid,London,85200.0,5,47,Yes
+E5691,13 Mar 2020,Engineering,Junior,London,91700.0,2,9,No
+E5692,21 Aug 2023,Engineering,Senior,London,138700.0,2,52,No
+E5693,04 Jun 2018,Engineering,Lead,Bangalore,167700.0,3,13,No
+E5694,01 Apr 2017,Engineering,Mid,Berlin,117700.0,4,48,No
+E5695,13 Oct 2017,Engineering,Junior,Berlin,92100.0,3,44,No
+E5696,15 Nov 2020,Engineering,Senior,Bangalore,144800.0,4,13,Yes
+E5697,21 Sep 2023,Engineering,Junior,Berlin,88200.0,3,44,No
+E5698,10 Jul 2023,Operations,Junior,New York,60200.0,4,77,No
+E5699,15 Mar 2018,Sales,Junior,Bangalore,65100.0,4,74,No
+E5700,01 Jul 2018,Support,Mid,New York,63400.0,4,60,No
+E5701,20 Feb 2021,Sales,Junior,New York,69700.0,5,42,No
+E5702,29 Nov 2017,Engineering,Junior,London,77300.0,3,61,No
+E5703,22 Feb 2021,Finance,Mid,New York,125000.0,4,35,No
+E5704,29 Mar 2023,Finance,Senior,London,130200.0,4,24,No
+E5705,26 Sep 2020,Sales,Senior,New York,112000.0,4,7,No
+E5706,21 Jan 2022,Engineering,Senior,Bangalore,142100.0,4,38,No
+E5707,26 Nov 2021,Support,Junior,New York,52400.0,4,58,No
+E5708,25 May 2017,Support,Senior,Berlin,73600.0,4,68,No
+E5709,30 Dec 2020,Support,Mid,Bangalore,69200.0,3,35,No
+E5710,18 Jan 2018,Sales,Junior,Berlin,61200.0,4,55,No
+E5711,23 Dec 2022,Engineering,Mid,Bangalore,109900.0,4,60,No
+E5712,18 Dec 2021,Sales,Junior,Bangalore,66100.0,3,19,No
+E5713,17 Mar 2016,Marketing,Mid,Berlin,104000.0,3,15,No
+E5714,27 Apr 2018,Engineering,Senior,London,135700.0,2,45,No
+E5715,09 Aug 2016,Engineering,Mid,London,124900.0,4,49,No
+E5716,15 Mar 2019,Support,Junior,New York,44100.0,4,3,No
+E5717,20 Jul 2020,Engineering,Senior,London,148500.0,2,57,No
+E5718,13 Oct 2023,Engineering,Senior,Berlin,170300.0,3,38,No
+E5719,13 Apr 2019,Marketing,Mid,Berlin,95900.0,4,28,No
+E5720,10 Oct 2019,Support,Mid,London,56400.0,3,37,Yes
+E5721,28 Sep 2017,Support,Senior,New York,81400.0,3,38,No
+E5722,29 Oct 2020,Engineering,Junior,London,91500.0,4,57,Yes
+E5723,24 Nov 2018,Operations,Mid,Berlin,84700.0,4,5,No
+E5724,28 Nov 2021,Support,Lead,Berlin,94900.0,3,67,No
+E5725,02 May 2021,Operations,Senior,New York,83400.0,3,21,No
+E5726,03 Dec 2016,Engineering,Junior,Bangalore,94000.0,4,68,No
+E5727,03 Jan 2023,Operations,Lead,London,104400.0,3,13,No
+E5728,11 Jul 2018,Marketing,Junior,London,60600.0,3,28,No
+E5729,28 Jun 2017,Sales,Mid,Bangalore,88400.0,3,29,No
+E5730,10 Apr 2021,Sales,Mid,New York,89600.0,4,14,No
+E5731,26 May 2018,Engineering,Junior,London,97900.0,4,7,No
+E5732,16 Feb 2020,Finance,Junior,Bangalore,86800.0,3,0,No
+E5733,24 Feb 2017,Sales,Mid,Berlin,87600.0,4,66,No
+E5734,14 Aug 2022,Engineering,Junior,Bangalore,84200.0,4,9,No
+E5735,08 Mar 2024,Sales,Mid,New York,83800.0,4,58,No
+E5736,16 Nov 2018,Operations,Senior,London,93500.0,3,1,No
+E5737,29 Feb 2016,Marketing,Mid,New York,101600.0,5,69,No
+E5738,30 Nov 2021,Finance,Senior,Berlin,124800.0,5,19,No
+E5739,18 Apr 2017,Finance,Lead,New York,145700.0,4,75,No
+E5740,28 Dec 2019,Operations,Lead,Berlin,108300.0,4,37,No
+E5741,28 Feb 2019,Marketing,Mid,London,92100.0,4,45,No
+E5742,05 Jan 2017,Marketing,Junior,Bangalore,83900.0,4,38,No
+E5743,19 Aug 2017,Sales,Mid,Bangalore,89000.0,3,59,No
+E5744,07 Feb 2023,Sales,Lead,New York,126100.0,3,17,No
+E5745,02 Aug 2021,Marketing,Senior,London,112700.0,4,39,No
+E5746,24 Jun 2018,Finance,Mid,Bangalore,97000.0,3,19,No
+E5747,09 Mar 2016,Operations,Senior,Bangalore,82600.0,5,62,No
+E5748,05 May 2017,Engineering,Mid,New York,105800.0,4,68,No
+E5749,24 Mar 2020,Support,Mid,New York,62800.0,4,42,No
+E5750,09 Jan 2022,Support,Junior,Berlin,57200.0,4,49,Yes
+E5751,12 Aug 2017,Engineering,Mid,Berlin,133500.0,2,58,Yes
+E5752,19 Sep 2021,Support,Junior,New York,47600.0,4,32,Yes
+E5753,10 Mar 2021,Marketing,Junior,Bangalore,71100.0,3,22,No
+E5754,24 Jul 2016,Engineering,Junior,New York,96000.0,5,75,No
+E5755,17 Dec 2016,Operations,Mid,Berlin,72500.0,5,54,No
+E5756,05 May 2017,Engineering,Mid,New York,135000.0,5,1,No
+E5757,15 Aug 2017,Operations,Senior,London,99500.0,4,46,No
+E5758,21 Feb 2016,Finance,Lead,London,151500.0,4,35,No
+E5759,26 Oct 2022,Sales,Junior,Bangalore,70400.0,4,19,No
+E5760,19 Jan 2023,Sales,Junior,London,61800.0,5,63,No
+E5761,24 May 2023,Engineering,Junior,Bangalore,105900.0,4,54,No
+E5762,26 Mar 2023,Sales,Junior,Bangalore,73300.0,3,37,No
+E5763,20 Dec 2018,Marketing,Senior,London,116100.0,4,29,No
+E5764,11 Mar 2019,Finance,Mid,Bangalore,96500.0,5,17,No
+E5765,28 Oct 2020,Support,Junior,London,49400.0,4,50,No
+E5766,23 Aug 2023,Marketing,Mid,Berlin,95900.0,3,68,No
+E5767,19 Jul 2021,Sales,Senior,Bangalore,119300.0,4,52,No
+E5768,14 Dec 2020,Sales,Junior,London,80400.0,4,0,Yes
+E5769,01 Apr 2022,Marketing,Lead,New York,124900.0,3,53,Yes
+E5770,24 Jan 2023,Engineering,Junior,Berlin,93800.0,3,35,No
+E5771,26 May 2020,Sales,Junior,London,59200.0,5,54,No
+E5772,24 Apr 2022,Marketing,Mid,New York,75700.0,5,30,No
+E5773,01 Oct 2020,Operations,Junior,Bangalore,62600.0,5,33,No
+E5774,24 Feb 2022,Engineering,Junior,Bangalore,88700.0,3,36,No
+E5775,08 Jun 2022,Sales,Junior,New York,59800.0,3,49,No
+E5776,19 Nov 2021,Finance,Junior,London,72900.0,4,67,No
+E5777,27 Jun 2020,Finance,Mid,New York,105200.0,5,72,No
+E5778,18 Apr 2023,Marketing,Junior,New York,74200.0,4,14,Yes
+E5779,01 Jun 2020,Support,Junior,London,45600.0,3,5,No
+E5780,15 Nov 2018,Finance,Mid,Bangalore,113000.0,4,66,No
+E5781,29 Apr 2018,Finance,Mid,New York,96900.0,4,62,No
+E5782,12 Sep 2018,Finance,Mid,New York,104700.0,4,22,No
+E5783,19 Nov 2022,Operations,Mid,Berlin,77000.0,5,10,No
+E5784,08 Nov 2023,Support,Senior,Berlin,81000.0,4,10,No
+E5785,18 Aug 2019,Engineering,Junior,Berlin,88100.0,5,37,No
+E5786,30 Jun 2018,Marketing,Senior,Berlin,112100.0,3,22,No
+E5787,16 Jul 2020,Finance,Mid,New York,104600.0,3,13,No
+E5788,08 Feb 2019,Engineering,Lead,New York,172000.0,3,64,Yes
+E5789,12 Mar 2021,Engineering,Junior,New York,95800.0,4,62,No
+E5790,05 Jun 2016,Sales,Lead,London,140700.0,3,42,No
+E5791,10 Jun 2020,Marketing,Senior,Berlin,108200.0,4,2,Yes
+E5792,06 Oct 2017,Operations,Junior,New York,63200.0,4,11,No
+E5793,20 Aug 2019,Marketing,Mid,Bangalore,90600.0,4,56,No
+E5794,23 Jan 2021,Engineering,Junior,Berlin,106500.0,4,30,No
+E5795,27 Dec 2019,Finance,Junior,London,71500.0,3,32,No
+E5796,08 Nov 2023,Engineering,Mid,New York,135000.0,2,65,Yes
+E5797,26 Oct 2016,Support,Mid,Berlin,63800.0,2,21,No
+E5798,10 Apr 2019,Sales,Mid,New York,106100.0,4,78,No
+E5799,02 Oct 2022,Engineering,Junior,Berlin,98400.0,5,76,No
+E5800,07 Oct 2018,Sales,Junior,Bangalore,74900.0,5,47,No
+E5801,30 Aug 2016,Operations,Junior,New York,59200.0,3,23,No
+E5802,25 Dec 2020,Support,Junior,New York,54900.0,4,79,No
+E5803,09 Feb 2024,Marketing,Mid,Berlin,97300.0,3,16,No
+E5804,19 Jul 2023,Support,Junior,London,51400.0,4,69,No
+E5805,19 Dec 2023,Sales,Senior,Bangalore,116100.0,4,34,No
+E5806,03 May 2019,Engineering,Senior,Berlin,113300.0,4,68,No
+E5807,01 Apr 2023,Sales,Lead,Berlin,122300.0,2,24,No
+E5808,19 Jan 2016,Operations,Junior,Bangalore,60100.0,4,57,No
+E5809,17 Aug 2016,Engineering,Junior,New York,98900.0,5,58,No
+E5810,11 Mar 2022,Engineering,Junior,Berlin,102700.0,4,29,No
+E5811,18 Mar 2016,Operations,Junior,New York,58800.0,4,2,No
+E5812,04 Dec 2020,Sales,Lead,New York,124800.0,3,23,No
+E5813,26 Jan 2021,Finance,Mid,Bangalore,109800.0,3,55,No
+E5814,07 Aug 2017,Engineering,Lead,New York,191700.0,4,63,No
+E5815,11 May 2017,Sales,Lead,New York,136700.0,3,33,No
+E5816,16 May 2017,Marketing,Mid,New York,91000.0,4,71,Yes
+E5817,22 Sep 2023,Support,Mid,Bangalore,81600.0,4,62,No
+E5818,19 Sep 2017,Engineering,Junior,London,95600.0,3,8,No
+E5819,25 May 2021,Engineering,Senior,Bangalore,150800.0,4,26,No
+E5820,15 Jan 2023,Engineering,Mid,Bangalore,138600.0,4,41,No
+E5821,21 Jan 2023,Support,Junior,London,58800.0,3,1,No
+E5822,09 Apr 2018,Engineering,Lead,London,185000.0,4,21,No
+E5823,01 Mar 2024,Finance,Senior,Berlin,116100.0,4,61,No
+E5824,16 Dec 2018,Marketing,Lead,Berlin,133700.0,4,68,No
+E5825,15 Sep 2023,Finance,Junior,London,83400.0,4,10,No
+E5826,10 Apr 2018,Sales,Senior,London,127700.0,4,47,No
+E5827,11 Nov 2016,Sales,Mid,Berlin,113400.0,4,38,No
+E5828,21 Sep 2020,Support,Junior,Berlin,49600.0,3,68,No
+E5829,26 Jan 2024,Engineering,Junior,Bangalore,101700.0,4,66,Yes
+E5830,20 Nov 2021,Operations,Junior,Berlin,56200.0,4,76,No
+E5831,29 Jul 2016,Support,Junior,New York,51500.0,3,73,No
+E5832,27 Aug 2022,Engineering,Mid,New York,113400.0,3,59,No
+E5833,24 May 2022,Finance,Senior,Berlin,142600.0,2,19,No
+E5834,03 Nov 2023,Engineering,Lead,New York,178200.0,4,19,No
+E5835,26 Feb 2022,Engineering,Junior,New York,97300.0,3,67,No
+E5836,19 May 2019,Engineering,Mid,Bangalore,122100.0,5,55,No
+E5837,30 Sep 2017,Operations,Junior,New York,61800.0,3,62,No
+E5838,13 Nov 2023,Engineering,Junior,New York,98200.0,4,22,No
+E5839,20 Feb 2019,Sales,Senior,London,103400.0,3,73,No
+E5840,27 Jun 2020,Operations,Lead,London,96500.0,4,13,No
+E5841,06 Mar 2021,Engineering,Lead,Bangalore,157200.0,3,65,No
+E5842,10 Feb 2024,Engineering,Mid,New York,106900.0,3,26,No
+E5843,01 Feb 2020,Engineering,Senior,Berlin,150500.0,4,7,No
+E5844,08 Mar 2023,Engineering,Mid,Bangalore,113900.0,3,65,No
+E5845,12 Oct 2021,Sales,Senior,Bangalore,118100.0,4,75,No
+E5846,09 Aug 2017,Sales,Junior,Berlin,71400.0,5,77,No
+E5847,28 Jan 2017,Support,Junior,New York,44900.0,2,1,No
+E5848,20 Mar 2021,Operations,Lead,Berlin,106800.0,4,36,Yes
+E5849,06 May 2019,Support,Junior,Berlin,43900.0,2,27,No
+E5850,24 Apr 2016,Finance,Senior,Bangalore,113900.0,3,26,No
+E5851,21 Nov 2021,Support,Junior,Bangalore,50000.0,2,31,Yes
+E5852,18 Sep 2023,Engineering,Senior,Berlin,137400.0,3,1,No
+E5853,25 Jan 2016,Engineering,Lead,Bangalore,203200.0,2,38,No
+E5854,07 Sep 2023,Sales,Junior,New York,74300.0,3,5,No
+E5855,04 May 2021,Sales,Mid,Berlin,87300.0,4,18,No
+E5856,15 Nov 2023,Finance,Senior,Berlin,139900.0,3,57,No
+E5857,10 Jun 2020,Marketing,Junior,New York,66600.0,2,9,No
+E5858,19 Dec 2018,Support,Junior,New York,50600.0,1,53,No
+E5859,06 Aug 2023,Engineering,Junior,Bangalore,101700.0,4,66,No
+E5860,30 Oct 2020,Marketing,Junior,Bangalore,65900.0,4,78,No
+E5861,26 Nov 2023,Operations,Junior,New York,63400.0,4,51,No
+E5862,18 Feb 2018,Engineering,Junior,Bangalore,97300.0,5,70,No
+E5863,29 Aug 2021,Finance,Junior,New York,83900.0,4,37,No
+E5864,26 Nov 2020,Operations,Lead,London,127500.0,4,72,No
+E5865,04 Jun 2020,Engineering,Junior,London,98500.0,4,61,No
+E5866,04 Nov 2022,Sales,Junior,Berlin,70700.0,3,73,No
+E5867,10 May 2020,Operations,Senior,Berlin,83000.0,3,73,No
+E5868,31 Aug 2022,Operations,Senior,London,95200.0,4,55,No
+E5869,26 Aug 2019,Sales,Mid,Berlin,86200.0,4,17,No
+E5870,23 May 2017,Operations,Mid,New York,76000.0,4,3,No
+E5871,24 May 2022,Engineering,Junior,London,91500.0,5,25,No
+E5872,12 Apr 2021,Sales,Lead,New York,134000.0,4,23,No
+E5873,29 Sep 2018,Engineering,Senior,London,136900.0,4,74,No
+E5874,28 Jan 2016,Sales,Junior,London,71200.0,5,3,No
+E5875,27 Dec 2017,Engineering,Mid,London,111900.0,3,43,No
+E5876,23 Jun 2019,Operations,Senior,London,81100.0,5,79,No
+E5877,17 Aug 2019,Support,Senior,New York,78900.0,2,22,No
+E5878,17 Jan 2022,Support,Junior,Berlin,54000.0,3,46,No
+E5879,24 Sep 2018,Sales,Lead,Bangalore,121000.0,2,12,No
+E5880,25 Aug 2016,Operations,Senior,London,94600.0,4,33,No
+E5881,08 Sep 2022,Support,Mid,Bangalore,64700.0,4,79,No
+E5882,13 Nov 2018,Marketing,Mid,Berlin,84800.0,3,53,No
+E5883,05 Apr 2018,Sales,Mid,London,93700.0,3,42,No
+E5884,09 Mar 2022,Engineering,Senior,London,140700.0,3,77,No
+E5885,21 Apr 2019,Engineering,Mid,New York,125300.0,3,68,No
+E5886,31 Jan 2020,Support,Senior,London,72200.0,2,22,No
+E5887,21 Mar 2018,Engineering,Senior,Bangalore,149800.0,4,50,No
+E5888,15 Apr 2023,Engineering,Senior,Bangalore,155800.0,5,51,No
+E5889,02 Jun 2020,Operations,Junior,New York,61700.0,3,35,Yes
+E5890,28 Jul 2018,Finance,Mid,New York,110000.0,4,14,No
+E5891,07 Jul 2018,Engineering,Junior,Bangalore,100000.0,4,68,No
+E5892,20 Jul 2019,Operations,Junior,Bangalore,61500.0,3,12,No
+E5893,23 Feb 2021,Sales,Mid,Bangalore,95900.0,4,28,No
+E5894,04 Jan 2018,Engineering,Mid,London,118000.0,3,19,No
+E5895,15 Aug 2022,Marketing,Junior,Bangalore,75100.0,4,61,No
+E5896,13 Nov 2018,Finance,Mid,Bangalore,102600.0,4,7,Yes
+E5897,27 Feb 2022,Engineering,Junior,Bangalore,110200.0,2,36,No
+E5898,14 Jul 2023,Engineering,Lead,New York,178700.0,2,67,No
+E5899,23 Jun 2018,Support,Mid,Berlin,60100.0,1,71,No
+E5900,03 Mar 2020,Support,Junior,London,53100.0,3,16,No
+E5901,23 Aug 2020,Marketing,Senior,Bangalore,104100.0,4,40,No
+E5902,23 Feb 2022,Engineering,Junior,London,100700.0,3,39,No
+E5903,22 Feb 2019,Engineering,Junior,Berlin,100800.0,3,26,No
+E5904,06 Jan 2022,Engineering,Mid,Berlin,115800.0,3,64,No
+E5905,04 May 2021,Engineering,Junior,Bangalore,87400.0,3,58,No
+E5906,17 Sep 2018,Operations,Senior,Bangalore,94600.0,5,6,No
+E5907,27 Feb 2023,Engineering,Lead,London,162600.0,3,68,No
+E5908,24 Apr 2016,Engineering,Senior,London,138600.0,3,29,Yes
+E5909,25 Nov 2022,Operations,Mid,London,73800.0,3,68,No
+E5910,06 Dec 2018,Engineering,Junior,London,99900.0,4,61,No
+E5911,15 Apr 2023,Engineering,Junior,New York,84400.0,3,38,No
+E5912,04 Jan 2018,Marketing,Junior,London,67800.0,4,53,No
+E5913,23 Apr 2019,Engineering,Lead,Berlin,211800.0,3,35,No
+E5914,08 Nov 2016,Operations,Junior,Bangalore,70200.0,3,62,Yes
+E5915,30 Aug 2022,Engineering,Junior,Bangalore,104700.0,3,11,No
+E5916,08 Oct 2021,Engineering,Senior,Bangalore,148700.0,4,48,No
+E5917,03 Feb 2019,Sales,Mid,London,95200.0,4,3,No
+E5918,06 Dec 2020,Operations,Lead,New York,107100.0,4,57,No
+E5919,31 Oct 2016,Engineering,Lead,London,140800.0,5,74,Yes
+E5920,31 Mar 2021,Support,Mid,London,63600.0,2,60,No
+E5921,01 Nov 2020,Support,Lead,New York,92100.0,2,58,No
+E5922,22 Feb 2023,Sales,Lead,New York,129100.0,3,65,No
+E5923,24 Nov 2020,Engineering,Senior,New York,154000.0,4,46,No
+E5924,27 Jul 2018,Engineering,Lead,Bangalore,199500.0,3,49,No
+E5925,01 Apr 2022,Support,Mid,Bangalore,66700.0,2,46,No
+E5926,10 Mar 2022,Engineering,Junior,New York,87700.0,4,37,No
+E5927,26 Nov 2022,Engineering,Senior,London,145900.0,4,1,No
+E5928,02 Jun 2021,Sales,Junior,New York,73700.0,4,6,No
+E5929,09 May 2023,Engineering,Lead,New York,173200.0,4,36,No
+E5930,19 Jan 2021,Engineering,Mid,London,114000.0,3,21,No
+E5931,07 Oct 2021,Engineering,Mid,Bangalore,126800.0,4,73,Yes
+E5932,11 Aug 2023,Operations,Senior,New York,85400.0,5,78,No
+E5933,23 Feb 2021,Engineering,Mid,Berlin,113300.0,4,36,No
+E5934,13 Nov 2020,Finance,Junior,London,82700.0,4,55,No
+E5935,16 Feb 2016,Sales,Senior,Berlin,102600.0,4,46,Yes
+E5936,23 Nov 2017,Engineering,Junior,New York,92400.0,3,19,Yes
+E5937,06 Dec 2016,Finance,Senior,New York,125000.0,4,30,No
+E5938,02 Jun 2018,Operations,Lead,New York,110000.0,3,30,No
+E5939,24 Feb 2017,Operations,Mid,New York,71100.0,4,8,No
+E5940,05 Feb 2021,Engineering,Mid,London,124800.0,5,1,No
+E5941,16 Feb 2018,Operations,Junior,Berlin,55800.0,5,25,No
+E5942,13 Dec 2017,Finance,Senior,New York,142400.0,4,72,Yes
+E5943,03 May 2023,Support,Mid,Berlin,64500.0,3,6,No
+E5944,01 Aug 2019,Operations,Junior,Berlin,63000.0,5,41,No
+E5945,18 Dec 2021,Sales,Senior,Bangalore,115800.0,3,46,No
+E5946,27 Jun 2016,Finance,Mid,New York,99500.0,5,53,No
+E5947,14 Mar 2021,Engineering,Senior,Bangalore,137200.0,4,78,No
+E5948,27 Mar 2023,Sales,Mid,New York,95000.0,4,31,No
+E5949,08 Jan 2017,Operations,Lead,Bangalore,98500.0,3,29,No
+E5950,19 Jun 2017,Sales,Mid,Berlin,80900.0,3,40,No
+E5951,19 May 2021,Engineering,Mid,Bangalore,127700.0,5,68,No
+E5952,03 Feb 2021,Engineering,Junior,New York,93500.0,4,46,No
+E5953,30 Dec 2021,Engineering,Senior,Berlin,140100.0,3,3,No
+E5954,10 Feb 2018,Finance,Mid,London,98400.0,4,35,No
+E5955,12 Jul 2018,Operations,Senior,Bangalore,87800.0,3,40,No
+E5956,14 Aug 2016,Finance,Senior,Berlin,148600.0,2,70,No
+E5957,01 Jan 2018,Support,Senior,Bangalore,88000.0,3,52,No
+E5958,10 Apr 2021,Sales,Mid,New York,83900.0,2,54,Yes
+E5959,21 Aug 2021,Operations,Senior,Berlin,91300.0,4,25,No
+E5960,15 Aug 2020,Sales,Senior,London,114500.0,5,58,No
+E5961,27 Dec 2016,Finance,Senior,Berlin,115400.0,3,7,No
+E5962,04 Feb 2023,Operations,Lead,New York,105600.0,4,15,No
+E5963,10 Oct 2020,Support,Junior,New York,50800.0,2,17,Yes
+E5964,16 Apr 2016,Finance,Mid,New York,95400.0,4,37,No
+E5965,05 Jan 2024,Engineering,Junior,Berlin,103700.0,3,5,Yes
+E5966,22 Oct 2020,Operations,Senior,New York,88400.0,4,41,No
+E5967,14 Mar 2016,Engineering,Mid,New York,120500.0,5,71,No
+E5968,02 May 2019,Marketing,Senior,Bangalore,113400.0,4,31,No
+E5969,01 Jul 2017,Engineering,Junior,London,107900.0,4,0,No
+E5970,17 Jan 2016,Sales,Mid,New York,89000.0,4,21,No
+E5971,09 May 2020,Finance,Junior,London,94900.0,3,5,No
+E5972,04 Mar 2016,Engineering,Mid,Bangalore,118100.0,5,50,No
+E5973,31 Jul 2016,Engineering,Mid,London,119500.0,3,63,No
+E5974,25 Jan 2020,Sales,Mid,Bangalore,96600.0,2,23,No
+E5975,24 Oct 2021,Engineering,Mid,New York,141800.0,3,23,No
+E5976,15 Dec 2018,Engineering,Senior,London,145100.0,4,25,No
+E5977,30 Aug 2016,Operations,Junior,Berlin,66200.0,3,29,No
+E5978,10 Nov 2021,Operations,Mid,New York,82200.0,4,55,No
+E5979,28 Jul 2017,Marketing,Mid,New York,86700.0,3,24,No
+E5980,25 Dec 2017,Engineering,Junior,London,94900.0,4,30,No
+E5981,01 Jul 2020,Marketing,Senior,Berlin,112000.0,4,71,No
+E5982,31 Jul 2017,Support,Lead,Berlin,88100.0,4,61,No
+E5983,12 Sep 2022,Sales,Junior,London,70900.0,3,74,No
+E5984,27 Jul 2022,Sales,Junior,New York,70400.0,4,28,Yes
+E5985,05 Jan 2019,Sales,Senior,London,112500.0,4,74,No
+E5986,08 Jan 2022,Engineering,Lead,Bangalore,175800.0,3,23,No
+E5987,18 Jun 2016,Engineering,Mid,London,115300.0,4,24,No
+E5988,05 Oct 2022,Operations,Senior,New York,113800.0,5,76,No
+E5989,09 Nov 2018,Engineering,Junior,Bangalore,96700.0,3,16,No
+E5990,03 Nov 2023,Operations,Junior,Berlin,66600.0,3,65,No
+E5991,09 Aug 2016,Sales,Junior,Berlin,72500.0,2,66,Yes
+E5992,06 Sep 2017,Sales,Mid,New York,101100.0,4,74,No
+E5993,19 Jul 2017,Marketing,Mid,London,86600.0,4,67,No
+E5994,04 Feb 2021,Engineering,Mid,Bangalore,120700.0,5,65,No
+E5995,05 Nov 2019,Sales,Junior,New York,67500.0,3,28,No
+E5996,06 Apr 2016,Marketing,Junior,New York,68800.0,4,44,No
+E5997,27 Mar 2023,Operations,Mid,Berlin,78500.0,4,46,No
+E5998,02 Nov 2018,Finance,Mid,New York,100400.0,5,23,No
+E5999,04 May 2023,Finance,Mid,Bangalore,91400.0,4,31,No
+E6000,06 Dec 2018,Sales,Mid,Bangalore,87500.0,4,68,No
+E6001,13 Oct 2021,Engineering,Mid,New York,117900.0,4,1,Yes
+E6002,28 Nov 2023,Engineering,Senior,Berlin,159000.0,4,6,No
+E6003,01 Dec 2022,Engineering,Senior,New York,132000.0,4,32,No
+E6004,31 Aug 2021,Engineering,Junior,Bangalore,91200.0,4,61,No
+E6005,23 May 2020,Engineering,Senior,Bangalore,139600.0,2,71,Yes
+E6006,30 Aug 2022,Operations,Mid,Berlin,81500.0,4,54,No
+E6007,06 Nov 2023,Marketing,Mid,New York,88200.0,4,68,No
+E6008,08 Feb 2020,Engineering,Senior,London,161100.0,3,11,No
+E6009,08 Nov 2022,Operations,Lead,Bangalore,110000.0,4,8,No
+E6010,20 Jan 2016,Finance,Junior,London,83200.0,2,40,No
+E6011,25 May 2021,Engineering,Junior,Berlin,103800.0,4,24,No
+E6012,11 Nov 2023,Engineering,Senior,Berlin,134600.0,4,70,No
+E6013,02 Dec 2017,Sales,Mid,London,87800.0,4,5,No
+E6014,19 Aug 2022,Engineering,Senior,London,153300.0,4,29,No
+E6015,02 Apr 2022,Engineering,Mid,Bangalore,123500.0,3,23,Yes
+E6016,28 Mar 2017,Marketing,Lead,Bangalore,119400.0,2,47,No
+E6017,10 Mar 2023,Marketing,Junior,Berlin,76100.0,4,23,No
+E6018,14 Dec 2020,Finance,Lead,London,147800.0,4,75,No
+E6019,06 Dec 2019,Engineering,Senior,London,149700.0,4,4,No
+E6020,04 Apr 2018,Support,Lead,New York,94000.0,4,5,No
+E6021,26 Dec 2018,Engineering,Junior,London,73700.0,2,71,No
+E6022,14 Jan 2020,Sales,Mid,Berlin,93600.0,5,42,No
+E6023,30 Dec 2018,Engineering,Junior,Bangalore,99600.0,3,67,No
+E6024,26 Aug 2019,Engineering,Senior,Bangalore,143300.0,4,36,No
+E6025,06 Mar 2022,Finance,Junior,Bangalore,71000.0,4,74,No
+E6026,01 Sep 2017,Engineering,Mid,Bangalore,116500.0,3,37,No
+E6027,21 Oct 2023,Engineering,Junior,New York,102900.0,2,59,No
+E6028,13 Nov 2018,Operations,Senior,London,90600.0,3,79,No
+E6029,16 Apr 2019,Engineering,Senior,Berlin,148500.0,4,60,No
+E6030,14 Jun 2019,Operations,Junior,Bangalore,58400.0,4,20,No
+E6031,15 Nov 2016,Support,Mid,London,68300.0,4,62,No
+E6032,30 May 2020,Engineering,Junior,London,85500.0,3,30,No
+E6033,06 May 2016,Engineering,Lead,London,172000.0,4,54,Yes
+E6034,15 Sep 2022,Sales,Senior,Berlin,119200.0,4,52,No
+E6035,30 Oct 2022,Finance,Junior,London,74300.0,4,14,No
+E6036,13 Aug 2018,Support,Junior,Berlin,50900.0,3,22,No
+E6037,21 Jul 2018,Finance,Mid,Berlin,111400.0,3,14,No
+E6038,20 Jan 2018,Operations,Senior,London,99400.0,4,5,No
+E6039,05 Oct 2022,Sales,Lead,London,133500.0,4,40,No
+E6040,08 Jan 2024,Finance,Mid,Berlin,105600.0,4,16,No
+E6041,13 Dec 2016,Finance,Mid,Bangalore,105500.0,5,55,No
+E6042,12 Feb 2017,Engineering,Junior,Berlin,93300.0,3,18,Yes
+E6043,28 Apr 2016,Operations,Junior,Berlin,65500.0,3,2,No
+E6044,27 Jul 2019,Finance,Lead,London,141800.0,5,11,No
+E6045,17 Jul 2018,Support,Lead,London,88400.0,2,43,No
+E6046,09 Apr 2019,Operations,Mid,Berlin,68800.0,4,10,No
+E6047,04 Aug 2018,Operations,Junior,London,57100.0,3,70,No
+E6048,08 Jul 2020,Support,Mid,Berlin,63300.0,2,59,No
+E6049,11 Mar 2024,Engineering,Mid,Berlin,114900.0,4,10,No
+E6050,01 Jan 2024,Marketing,Senior,New York,102200.0,2,68,Yes
+E6051,17 Dec 2017,Support,Mid,New York,68600.0,2,25,No
+E6052,01 Dec 2022,Operations,Mid,Berlin,71200.0,2,71,No
+E6053,02 Feb 2022,Support,Mid,New York,69500.0,4,78,No
+E6054,21 Jun 2023,Engineering,Mid,London,128800.0,4,20,No
+E6055,25 Jul 2023,Engineering,Mid,Bangalore,149400.0,4,26,No
+E6056,30 Oct 2016,Engineering,Mid,New York,117300.0,4,11,No
+E6057,05 Jun 2022,Engineering,Mid,Bangalore,120100.0,4,2,No
+E6058,27 Mar 2022,Operations,Senior,Berlin,88200.0,3,41,No
+E6059,01 Jan 2024,Sales,Junior,London,63700.0,4,54,No
+E6060,11 Mar 2022,Engineering,Junior,London,91900.0,2,44,Yes
+E6061,17 May 2017,Operations,Junior,Berlin,56400.0,2,78,No
+E6062,02 Oct 2018,Operations,Senior,Berlin,85100.0,5,9,No
+E6063,12 Aug 2021,Engineering,Junior,Berlin,96800.0,4,18,No
+E6064,25 Aug 2018,Sales,Mid,London,82200.0,2,71,Yes
+E6065,15 Apr 2020,Operations,Junior,London,62800.0,4,17,No
+E6066,13 Dec 2020,Engineering,Lead,New York,187200.0,2,29,No
+E6067,22 Feb 2023,Finance,Mid,London,95600.0,5,34,No
+E6068,27 Feb 2017,Operations,Junior,New York,67100.0,4,17,No
+E6069,06 Feb 2022,Operations,Mid,Bangalore,79300.0,5,42,No
+E6070,31 Jul 2023,Engineering,Junior,Bangalore,94400.0,3,63,No
+E6071,25 May 2022,Operations,Senior,New York,81200.0,3,65,No
+E6072,05 Jan 2016,Engineering,Senior,New York,129200.0,3,36,No
+E6073,04 Mar 2019,Support,Senior,New York,92000.0,3,79,Yes
+E6074,19 May 2020,Engineering,Mid,Bangalore,135100.0,4,25,No
+E6075,23 Jul 2021,Engineering,Lead,London,198700.0,2,65,Yes
+E6076,25 Jul 2022,Operations,Junior,London,69600.0,4,70,No
+E6077,28 Mar 2023,Sales,Mid,Bangalore,100000.0,3,23,No
+E6078,15 Sep 2022,Sales,Mid,Bangalore,91300.0,3,4,No
+E6079,14 Aug 2017,Engineering,Mid,London,127200.0,5,62,No
+E6080,15 Jun 2021,Finance,Junior,Bangalore,75700.0,4,7,No
+E6081,04 Apr 2016,Sales,Junior,New York,71300.0,4,50,Yes
+E6082,02 Feb 2017,Sales,Senior,Berlin,115900.0,4,39,No
+E6083,23 Jul 2018,Engineering,Mid,Bangalore,129300.0,3,39,No
+E6084,13 Mar 2021,Marketing,Lead,New York,131200.0,4,58,No
+E6085,02 Feb 2023,Marketing,Mid,Berlin,78300.0,2,50,Yes
+E6086,23 Jan 2022,Engineering,Junior,Bangalore,84200.0,3,48,No
+E6087,26 Oct 2019,Engineering,Junior,London,98700.0,4,35,No
+E6088,25 Sep 2016,Operations,Senior,Bangalore,89900.0,3,55,No
+E6089,09 Feb 2018,Engineering,Junior,Bangalore,100200.0,4,50,No
+E6090,07 May 2021,Support,Junior,Berlin,47200.0,3,46,No
+E6091,25 Jun 2023,Engineering,Mid,London,135600.0,3,58,No
+E6092,23 Dec 2016,Engineering,Senior,Berlin,137500.0,3,9,No
+E6093,06 May 2016,Engineering,Mid,New York,136800.0,4,1,No
+E6094,04 Apr 2020,Operations,Junior,Bangalore,53000.0,4,2,Yes
+E6095,16 Aug 2022,Engineering,Senior,London,155500.0,3,49,No
+E6096,17 Oct 2017,Engineering,Lead,London,162200.0,3,60,No
+E6097,25 Jul 2022,Engineering,Senior,Berlin,148100.0,3,12,No
+E6098,03 Mar 2024,Engineering,Junior,Bangalore,103500.0,4,4,No
+E6099,06 Apr 2020,Engineering,Senior,New York,159300.0,4,26,No
+E6100,01 Oct 2021,Sales,Mid,London,83900.0,4,63,No
+E6101,02 Mar 2018,Operations,Junior,Berlin,57100.0,4,35,No
+E6102,05 Oct 2021,Engineering,Mid,London,107200.0,3,53,No
+E6103,27 Jul 2019,Sales,Lead,London,111600.0,2,77,No
+E6104,29 Jul 2022,Support,Mid,London,62300.0,4,41,No
+E6105,28 Nov 2018,Operations,Junior,Bangalore,56000.0,4,26,No
+E6106,14 Sep 2020,Support,Junior,New York,46100.0,2,2,No
+E6107,01 Mar 2017,Engineering,Mid,Bangalore,119600.0,4,65,No
+E6108,05 Jun 2021,Sales,Senior,London,108900.0,5,59,No
+E6109,20 Nov 2020,Engineering,Junior,Bangalore,94900.0,3,26,No
+E6110,28 Dec 2018,Support,Junior,Berlin,48800.0,4,50,No
+E6111,10 Aug 2017,Support,Lead,Berlin,91300.0,4,18,No
+E6112,26 Oct 2023,Marketing,Senior,Berlin,109500.0,4,53,No
+E6113,07 Mar 2024,Sales,Lead,Berlin,137500.0,5,34,No
+E6114,07 Feb 2020,Marketing,Junior,Berlin,68200.0,4,16,No
+E6115,19 Sep 2020,Support,Lead,Berlin,83700.0,3,7,No
+E6116,24 Mar 2021,Marketing,Junior,Berlin,70200.0,3,1,No
+E6117,16 Dec 2016,Finance,Mid,London,98900.0,4,65,No
+E6118,16 Jan 2018,Operations,Mid,London,67500.0,3,5,No
+E6119,17 Jan 2021,Engineering,Lead,Berlin,169300.0,3,39,Yes
+E6120,03 Feb 2021,Finance,Junior,New York,74500.0,3,9,No
+E6121,14 Feb 2019,Engineering,Lead,Berlin,173700.0,3,55,No
+E6122,20 Feb 2020,Support,Lead,Bangalore,98900.0,4,31,No
+E6123,11 Jul 2017,Sales,Lead,New York,123400.0,4,63,No
+E6124,27 Dec 2021,Marketing,Mid,Bangalore,96000.0,4,7,No
+E6125,10 Jun 2018,Engineering,Mid,New York,118700.0,5,32,Yes
+E6126,20 Feb 2024,Engineering,Junior,London,93000.0,5,32,No
+E6127,06 Feb 2018,Finance,Mid,New York,99900.0,3,36,No
+E6128,07 May 2016,Operations,Junior,Bangalore,59100.0,4,22,No
+E6129,14 Oct 2020,Support,Mid,Bangalore,59600.0,2,20,Yes
+E6130,09 Apr 2017,Marketing,Senior,New York,97000.0,4,76,No
+E6131,07 Apr 2018,Engineering,Lead,London,191200.0,3,57,No
+E6132,22 Apr 2020,Engineering,Mid,London,123700.0,3,36,No
+E6133,23 May 2016,Sales,Mid,London,85800.0,4,66,No
+E6134,11 Nov 2017,Sales,Mid,Bangalore,97600.0,3,5,No
+E6135,19 Sep 2022,Sales,Lead,New York,162000.0,3,45,No
+E6136,02 Mar 2018,Engineering,Junior,Bangalore,84300.0,3,54,No
+E6137,06 May 2018,Support,Junior,Bangalore,51800.0,2,3,Yes
+E6138,11 Aug 2019,Engineering,Junior,Berlin,100200.0,4,56,Yes
+E6139,02 Jul 2018,Operations,Senior,London,82200.0,5,56,No
+E6140,16 Oct 2023,Marketing,Mid,Berlin,81600.0,3,42,No
+E6141,23 Jul 2019,Marketing,Lead,Berlin,143000.0,4,53,No
+E6142,20 Oct 2017,Operations,Lead,New York,109900.0,3,75,No
+E6143,07 Jul 2022,Support,Senior,Bangalore,76700.0,3,27,No
+E6144,03 Mar 2016,Operations,Mid,Berlin,67400.0,5,17,No
+E6145,19 Jan 2021,Engineering,Lead,London,179400.0,3,32,No
+E6146,19 Dec 2019,Engineering,Mid,Berlin,108700.0,4,76,No
+E6147,20 Sep 2016,Finance,Mid,Bangalore,94400.0,3,39,No
+E6148,31 Dec 2017,Sales,Mid,Bangalore,83000.0,4,74,No
+E6149,10 Oct 2019,Operations,Mid,New York,74700.0,3,63,No
+E6150,25 Mar 2016,Sales,Junior,Berlin,64100.0,4,9,No
+E6151,20 Mar 2022,Operations,Mid,Berlin,71200.0,4,54,No
+E6152,20 Aug 2022,Sales,Lead,Berlin,138900.0,4,70,No
+E6153,02 May 2016,Sales,Junior,Berlin,70900.0,3,41,No
+E6154,25 Feb 2019,Support,Junior,Bangalore,52100.0,3,24,No
+E6155,01 May 2016,Sales,Lead,Bangalore,133400.0,5,64,Yes
+E6156,06 May 2017,Engineering,Senior,New York,136200.0,3,4,No
+E6157,06 Oct 2021,Marketing,Junior,London,74100.0,2,68,Yes
+E6158,17 Aug 2018,Engineering,Mid,London,125800.0,3,6,No
+E6159,13 Feb 2020,Engineering,Junior,New York,87500.0,4,4,No
+E6160,09 Mar 2018,Operations,Junior,Bangalore,62900.0,4,41,No
+E6161,06 May 2017,Engineering,Junior,Bangalore,96800.0,3,5,No
+E6162,26 Dec 2022,Sales,Junior,New York,71500.0,4,57,No
+E6163,03 Jul 2021,Marketing,Mid,New York,105300.0,3,38,No
+E6164,06 Feb 2023,Engineering,Junior,New York,95900.0,2,59,No
+E6165,02 Sep 2016,Engineering,Junior,Berlin,88200.0,3,62,No
+E6166,24 Sep 2017,Operations,Junior,Berlin,60600.0,4,63,Yes
+E6167,26 Aug 2019,Support,Junior,New York,52100.0,3,8,Yes
+E6168,11 Mar 2024,Sales,Mid,Bangalore,82000.0,2,67,Yes
+E6169,25 Sep 2022,Engineering,Senior,Berlin,126000.0,5,69,No
+E6170,30 Mar 2020,Support,Lead,New York,95200.0,2,40,Yes
+E6171,15 Jun 2017,Finance,Junior,New York,86300.0,4,10,No
+E6172,12 Nov 2023,Support,Junior,Bangalore,56100.0,4,58,No
+E6173,03 Nov 2020,Engineering,Senior,Bangalore,151600.0,4,55,No
+E6174,30 May 2022,Support,Junior,Berlin,59000.0,3,10,No
+E6175,17 Jan 2019,Finance,Mid,London,103800.0,2,64,No
+E6176,30 Mar 2022,Engineering,Senior,Berlin,145900.0,5,54,No
+E6177,04 May 2023,Operations,Mid,London,78100.0,3,3,No
+E6178,23 Jun 2019,Engineering,Mid,New York,114700.0,4,48,No
+E6179,23 Apr 2021,Sales,Mid,New York,81000.0,4,67,Yes
+E6180,30 May 2022,Operations,Mid,Bangalore,71000.0,3,76,No
+E6181,13 Dec 2018,Engineering,Junior,Bangalore,91400.0,3,67,No
+E6182,15 May 2021,Support,Junior,London,55700.0,3,68,No
+E6183,07 Jan 2020,Support,Mid,Berlin,59300.0,4,11,No
+E6184,15 Aug 2020,Support,Junior,Berlin,48100.0,3,1,Yes
+E6185,27 Apr 2020,Engineering,Junior,London,101300.0,4,16,No
+E6186,05 Nov 2017,Operations,Mid,Bangalore,74600.0,3,70,No
+E6187,01 Feb 2024,Support,Mid,Berlin,65500.0,4,68,No
+E6188,04 Aug 2018,Engineering,Junior,London,92200.0,3,6,Yes
+E6189,13 Feb 2022,Operations,Senior,New York,109300.0,3,77,No
+E6190,23 May 2022,Engineering,Junior,New York,99400.0,3,17,No
+E6191,11 Nov 2021,Operations,Senior,Berlin,95500.0,3,38,No
+E6192,15 Sep 2017,Operations,Lead,Bangalore,112200.0,4,48,No
+E6193,30 Jan 2024,Support,Junior,London,53700.0,3,10,No
+E6194,05 Feb 2021,Sales,Junior,Bangalore,81200.0,3,30,No
+E6195,04 Apr 2017,Finance,Junior,Bangalore,77600.0,2,22,No
+E6196,27 Dec 2020,Engineering,Senior,Bangalore,150200.0,3,28,No
+E6197,02 Nov 2019,Operations,Lead,Berlin,110700.0,3,27,No
+E6198,06 Sep 2021,Support,Mid,London,71500.0,2,36,No
+E6199,25 Nov 2023,Operations,Lead,New York,126500.0,3,50,No

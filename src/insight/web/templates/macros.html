@@ -1,0 +1,104 @@
+{# Shared UI pieces. Import with: {% import "macros.html" as ui %} #}
+
+{% set ICONS = {
+  "upload": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/>',
+  "folder": '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  "grid": '<rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/>',
+  "ask": '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/>',
+  "table": '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/>',
+  "shield": '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+  "sparkle": '<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17l.7 1.8L21.5 19.5l-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z"/>',
+  "check": '<path d="M20 6 9 17l-5-5"/>',
+  "arrow": '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  "up": '<path d="M12 19V5M6 11l6-6 6 6"/>',
+  "down": '<path d="M12 5v14M6 13l6 6 6-6"/>',
+  "link": '<path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1 1"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1-1"/>',
+  "file": '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/>',
+  "download": '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>',
+  "bookmark": '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>',
+  "users": '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  "sun": '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  "moon": '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+  "menu": '<path d="M4 6h16M4 12h16M4 18h16"/>',
+  "x": '<path d="M18 6 6 18M6 6l12 12"/>',
+  "chevron": '<path d="m9 18 6-6-6-6"/>',
+  "chevron-down": '<path d="m6 9 6 6 6-6"/>',
+  "trash": '<path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>',
+  "rows": '<path d="M3 6h18M3 12h18M3 18h18"/>',
+  "columns": '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/>',
+  "logout": '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>',
+  "lock": '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  "zap": '<path d="M13 2 3 14h9l-1 8 10-12h-9z"/>',
+  "eye": '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  "clock": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  "database": '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+  "code": '<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>',
+  "search": '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
+  "trend": '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
+  "plus": '<path d="M12 5v14M5 12h14"/>',
+  "logo": '<path d="M4 18 9 12l4 3 7-9"/>'
+} %}
+
+{% macro icon(name, cls="") -%}
+<svg class="icon {{ cls }}" viewBox="0 0 24 24" aria-hidden="true">{{ ICONS[name] | safe }}</svg>
+{%- endmacro %}
+
+{% macro logo(href="/") -%}
+<a class="logo" href="{{ href }}"><span class="logo-mark"><svg viewBox="0 0 24 24">{{ ICONS["logo"] | safe }}</svg></span>Insight</a>
+{%- endmacro %}
+
+{% macro theme_toggle() -%}
+<button class="btn ghost sm theme-toggle" type="button" data-theme-toggle aria-label="Switch light and dark">
+  <span class="sun">{{ icon("sun") }}</span><span class="moon">{{ icon("moon") }}</span>
+</button>
+{%- endmacro %}
+
+{% macro delta(change, tone) -%}
+{% if change %}<span class="delta {{ tone }}">{% if tone != "flat" %}{{ icon("up" if change.startswith("+") else "down", "sm") }}{% endif %}{{ change.lstrip("+-") }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro kpi(k, measure) -%}
+{% set spark = view.sparkline(k.data.get("spark", [])) %}
+<div class="card kpi">
+  <span class="label">{{ k.tile.title }}</span>
+  <span class="value">{{ k.value }}</span>
+  <div class="foot">
+    {{ delta(k.change, view.change_tone(k.change, measure)) }}
+    {% if k.caption.text %}<span class="vs" title="{{ k.caption.text }}">{{ k.caption.text }}</span>{% endif %}
+  </div>
+  {% if spark %}
+  <svg class="spark" width="{{ spark.width }}" height="{{ spark.height }}" viewBox="0 0 {{ spark.width }} {{ spark.height }}" aria-hidden="true">
+    <path class="area" d="{{ spark.area }}"/><path class="line" d="{{ spark.line }}"/>
+    <circle cx="{{ spark.last[0] }}" cy="{{ spark.last[1] }}" r="2.6"/>
+  </svg>
+  {% endif %}
+</div>
+{%- endmacro %}
+
+{% macro tile(t, wide=false) -%}
+<article class="card tile{{ ' wide' if wide or t.tile.kind == 'trend' }}" id="tile-{{ t.tile.id | replace(':', '-') | replace('=', '-') | replace(' ', '-') }}">
+  <div class="tile-head">
+    <div class="t">
+      <h3>{{ t.tile.title }}</h3>
+      {% if t.caption.headline %}<div class="h">{{ t.caption.headline }}</div>{% endif %}
+    </div>
+    {% if t.caption.tone == "finding" %}<span class="badge accent">{{ icon("sparkle", "sm") }}Finding</span>
+    {% elif t.caption.tone == "flat" %}<span class="badge">No clear pattern</span>{% endif %}
+  </div>
+  {% if t.tile.viz == "table" %}
+    {% set top = (t.data["values"] | select("number") | list | max) if t.data["values"] | select("number") | list else 0 %}
+    <div class="table-wrap"><table class="rank-table">
+      {% for label in t.data["labels"] %}
+      <tr>
+        <td class="pos">{{ loop.index }}</td>
+        <td>{{ label }}{% if top and t.data["values"][loop.index0] %}<div class="bar" style="width: {{ (t.data['values'][loop.index0] / top * 100) | round(1) }}%"></div>{% endif %}</td>
+        <td class="n">{{ t.data["text"][loop.index0] }}</td>
+      </tr>
+      {% endfor %}
+    </table></div>
+  {% else %}
+    <div class="chart" data-chart='{{ view.chart_payload(t) }}' role="img" aria-label="{{ t.tile.title }}"></div>
+  {% endif %}
+  {% if t.caption.text %}<p class="caption{{ ' flat' if t.caption.tone == 'flat' }}">{{ t.caption.text }}</p>{% endif %}
+</article>
+{%- endmacro %}

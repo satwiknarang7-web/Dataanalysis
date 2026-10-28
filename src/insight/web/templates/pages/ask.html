@@ -1,0 +1,45 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Ask · {{ ws.name }} · Insight{% endblock %}
+{% block head %}<script src="/static/vendor/plotly-basic-2.35.2.min.js" defer></script>{% endblock %}
+{% block content %}
+{% include "partials/workspace_head.html" %}
+
+<div class="stack" style="--gap:18px; max-width: 980px">
+  <form class="ask-box" id="ask-form" hx-post="{{ ws.base }}/ask" hx-target="#answers" hx-swap="afterbegin" hx-indicator="#loading-bar" data-reset data-busy-form>
+    <label class="sr-only" for="question">Your question</label>
+    <input class="input lg" id="question" name="question" placeholder="Ask in plain words, like “{{ examples[0] if examples else 'revenue by region' }}”" autocomplete="off" required maxlength="300" autofocus>
+    <button class="btn primary">{{ ui.icon("sparkle", "sm") }}Ask</button>
+  </form>
+  {% if examples %}
+  <div class="chips" aria-label="Example questions">
+    {% for q in examples %}<button class="chip" type="button" data-ask="{{ q }}">{{ q }}</button>{% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="answers" id="answers">
+    <div class="card empty" id="ask-empty">
+      <div class="ic">{{ ui.icon("ask", "lg") }}</div>
+      <h3>Ask anything about this table</h3>
+      <p>“Top 10 customers by revenue”, “average price by category in 2025”, “how has churn changed monthly”. Each answer is a chart with a sentence that says what it shows.</p>
+    </div>
+  </div>
+
+  <section class="card sql">
+    <div class="card-head">{{ ui.icon("code") }}<h2>SQL console</h2><span class="spacer"></span>{% if not can_sql %}<span class="badge pro">Pro</span>{% endif %}</div>
+    {% if can_sql %}
+    <form class="stack" style="padding:16px 20px 20px" hx-post="{{ ws.base }}/sql" hx-target="#sql-result" hx-indicator="#loading-bar" data-busy-form>
+      <p class="small muted">Read-only, over the cleaned rows as one table named <code>data</code>. Columns: {% for c in columns[:12] %}<code>{{ c.name }}</code>{{ ", " if not loop.last }}{% endfor %}{% if columns | length > 12 %}…{% endif %}</p>
+      <textarea class="input" name="sql" spellcheck="false">SELECT * FROM data LIMIT 20</textarea>
+      <div class="row"><button class="btn primary sm">Run query</button><span class="subtle tiny">Up to 500 rows · 10 second limit</span></div>
+    </form>
+    <div id="sql-result"></div>
+    {% else %}
+    <div class="locked">
+      <p class="muted" style="margin-bottom:14px">Query every row with SQL: joins of your own, window functions, anything a SELECT can do.</p>
+      <a class="btn primary" href="/pricing">{{ ui.icon("zap", "sm") }}Upgrade to Pro</a>
+    </div>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

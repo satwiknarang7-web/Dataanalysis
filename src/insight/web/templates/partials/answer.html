@@ -1,0 +1,15 @@
+{% import "macros.html" as ui %}
+<div class="stack" style="--gap:8px" data-answer>
+  <div class="answer-q">{{ ui.icon("ask", "sm") }}{{ question }}</div>
+  {% if error %}
+    <div class="alert warn">{{ ui.icon("search") }}<span>{{ error }}</span></div>
+  {% elif t.tile.kind == "kpi" %}
+    <div class="card answer-kpi">
+      <div class="muted">{{ t.tile.title }}{% if t.tile.spec and t.tile.spec.filters %} · {% for f in t.tile.spec.filters %}{{ f.values | join(", ") }}{{ ", " if not loop.last }}{% endfor %}{% endif %}</div>
+      <div class="value">{{ t.value }}</div>
+      {% if t.change %}<div class="row" style="margin-top:6px">{{ ui.delta(t.change, view.change_tone(t.change, measure)) }}<span class="subtle small">{{ t.caption.text }}</span></div>{% endif %}
+    </div>
+  {% else %}
+    {{ ui.tile(t, wide=true) }}
+  {% endif %}
+</div>

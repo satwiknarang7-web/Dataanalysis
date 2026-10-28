@@ -1,0 +1,13 @@
+{% extends "layouts/public.html" %}
+{% import "macros.html" as ui %}
+{% block title %}{{ title }} · Insight{% endblock %}
+{% block content %}
+<div class="error-page">
+  <div class="stack" style="--gap:14px;align-items:center">
+    <div class="code">{{ status }}</div>
+    <h1>{{ title }}</h1>
+    <p class="muted">{{ message }}</p>
+    <a class="btn primary" href="{{ '/home' if user else '/' }}">Back to {{ 'your data' if user else 'the start' }}</a>
+  </div>
+</div>
+{% endblock %}

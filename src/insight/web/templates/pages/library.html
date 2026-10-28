@@ -1,0 +1,41 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Library · Insight{% endblock %}
+{% macro card(a, shared=false) -%}
+<a class="card a-card" href="/analyses/{{ a.id }}">
+  <div class="thumb">{% for h in [42, 70, 55, 88, 64, 96] %}<i style="height: {{ h }}%; opacity: {{ 0.35 + loop.index0 * 0.1 }}"></i>{% endfor %}</div>
+  <h3>{{ a.title }}</h3>
+  <div class="row wrap small subtle" style="--gap:8px">
+    <span>{{ a.dataset.name }}</span><span>·</span><span>{{ a.updated_at | ago }}</span>
+    {% if shared %}<span>·</span><span>from {{ a.owner.name or a.owner.email }}</span>{% endif %}
+  </div>
+  {% if a.filters %}<div class="row wrap" style="--gap:6px">{% for f in a.filters %}<span class="badge">{{ f["values"] | join(", ") }}</span>{% endfor %}</div>{% endif %}
+</a>
+{%- endmacro %}
+{% block content %}
+<div class="page-head">
+  <div class="titles">
+    <h1>Library</h1>
+    <p class="muted" style="margin-top:6px">Saved analyses keep a board and its filters, ready to reopen or share.</p>
+  </div>
+  {% if plan.max_saved %}<span class="badge">{{ mine | length }} of {{ plan.max_saved }} saved</span>{% endif %}
+</div>
+
+{% if mine %}
+<div class="cards" style="margin-bottom:32px">{% for a in mine %}{{ card(a) }}{% endfor %}</div>
+{% else %}
+<div class="card empty" style="margin-bottom:32px">
+  <div class="ic">{{ ui.icon("bookmark", "lg") }}</div>
+  <h3>No saved analyses yet</h3>
+  <p>Open any dashboard, filter it the way you report it, and press “Save analysis”.</p>
+  <a class="btn primary" href="/home">{{ ui.icon("upload", "sm") }}Get data</a>
+</div>
+{% endif %}
+
+<h2 style="margin-bottom:14px">Shared with you</h2>
+{% if shared %}
+<div class="cards">{% for a in shared %}{{ card(a, shared=true) }}{% endfor %}</div>
+{% else %}
+<p class="muted">When someone shares an analysis with {{ user.email }}, it appears here.</p>
+{% endif %}
+{% endblock %}

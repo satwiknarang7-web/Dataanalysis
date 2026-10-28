@@ -1,0 +1,15 @@
+{% extends "layouts/auth.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Create your account · Insight{% endblock %}
+{% block form %}
+<div><h1>Start free</h1><p class="muted" style="margin-top:6px">Your first dashboard is a minute away. No credit card.</p></div>
+{% if error %}<div class="alert error">{{ error }}{% if "exists" in error %} <a href="/signin?next={{ next | urlencode }}">Sign in</a>{% endif %}</div>{% endif %}
+<form class="stack" style="--gap:16px" method="post" action="/signup" data-busy-form>
+  <input type="hidden" name="next" value="{{ next }}">
+  <div class="field"><label for="name">Your name</label><input class="input" id="name" name="name" autocomplete="name" value="{{ name }}" maxlength="120" autofocus></div>
+  <div class="field"><label for="email">Work email</label><input class="input" id="email" name="email" type="email" autocomplete="email" value="{{ email }}" required></div>
+  <div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="new-password" minlength="10" required><span class="subtle tiny">At least 10 characters.</span></div>
+  <button class="btn primary lg block">Create account</button>
+</form>
+<p class="muted small">Already have an account? <a href="/signin?next={{ next | urlencode }}">Sign in</a></p>
+{% endblock %}

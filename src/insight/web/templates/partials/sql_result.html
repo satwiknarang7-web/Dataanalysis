@@ -1,0 +1,13 @@
+{% if error %}
+<div style="padding:0 20px 20px"><div class="alert error">{{ error }}</div></div>
+{% elif result %}
+<div class="table-scroll" style="border-top:1px solid var(--border); max-height:420px">
+  <table class="data">
+    <thead><tr>{% for c in result.columns %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+    <tbody>
+      {% for r in result.rows %}<tr>{% for v in r %}<td class="{{ 'n' if v is number }}{{ ' blank' if v is none }}">{{ "" if v is none else v }}</td>{% endfor %}</tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+<div class="pager">{{ result.rows | length }} row{{ 's' if result.rows | length != 1 }}{% if result.truncated %} · showing the first 500{% endif %}</div>
+{% endif %}

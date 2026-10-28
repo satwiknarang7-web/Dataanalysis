@@ -1,0 +1,38 @@
+{% import "macros.html" as ui %}
+<div id="board" class="board-body">
+  {% if board.rows == 0 %}
+    <div class="card empty">
+      <div class="ic">{{ ui.icon("search", "lg") }}</div>
+      <h3>No rows match these filters</h3>
+      <p>Try removing a filter to see the board again.</p>
+      <a class="btn" href="{{ ws.board_url }}">Clear filters</a>
+    </div>
+  {% else %}
+    <section class="headline">
+      <span class="ic">{{ ui.icon("sparkle") }}</span>
+      <div>
+        <h2>{{ board.headline }}</h2>
+        <p>{{ board.rows | number }} rows{% if board.filters %} match your filters{% endif %} · {{ board.findings | length }} key finding{{ 's' if board.findings | length != 1 }} · computed over every row</p>
+      </div>
+    </section>
+
+    <section class="kpis" aria-label="Headline numbers">
+      {% for k in board.kpis %}{{ ui.kpi(k, measure_of(k.tile)) }}{% endfor %}
+    </section>
+
+    {% if board.findings %}
+    <section class="card findings" aria-label="Key findings">
+      <div class="card-head"><h2>Key findings</h2><span class="spacer"></span><span class="subtle small">Only patterns that pass a significance test</span></div>
+      <ol>
+        {% for f in board.findings %}
+        <li><a href="#tile-{{ f.tile_id | replace(':', '-') | replace('=', '-') | replace(' ', '-') }}" data-jump>{{ f.brief }}<span class="go">{{ ui.icon("arrow", "sm") }}</span></a></li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+
+    <section class="tiles" aria-label="Charts">
+      {% for t in board.tiles %}{{ ui.tile(t) }}{% endfor %}
+    </section>
+  {% endif %}
+</div>

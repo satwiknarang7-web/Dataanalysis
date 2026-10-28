@@ -1,0 +1,27 @@
+{# The header and tabs shared by every page about one table. Expects ws, tab, user, and optional head_actions (HTML). #}
+{% import "macros.html" as ui %}
+<div class="page-head">
+  <div class="titles">
+    <h1>{{ ws.analysis_title or ws.name }}</h1>
+    <div class="meta">
+      <span>{{ ui.icon("rows", "sm") }}{{ ws.rows | number }} rows</span>
+      <span>{{ ui.icon("columns", "sm") }}{{ ws.columns }} columns</span>
+      {% if ws.analysis_title %}<span>{{ ui.icon("database", "sm") }}{{ ws.name }}</span>{% endif %}
+      {% if ws.analysis_id and not ws.owner %}<span class="badge">Shared with you</span>{% endif %}
+    </div>
+  </div>
+  <div class="row wrap">
+    {{ head_actions | default("") }}
+    {% if ws.demo %}
+      <a class="btn sm" href="{{ ws.base }}/export.csv">{{ ui.icon("download", "sm") }}Download CSV</a>
+    {% elif ws.dataset_id %}
+      <a class="btn sm" href="/datasets/{{ ws.dataset_id }}/export.csv">{{ ui.icon("download", "sm") }}Download CSV</a>
+    {% endif %}
+  </div>
+</div>
+<nav class="tabs" aria-label="Views">
+  <a class="tab" href="{{ ws.board_url }}" {% if tab == "dashboard" %}aria-current="page"{% endif %}>{{ ui.icon("grid", "sm") }}Dashboard</a>
+  <a class="tab" href="{{ ws.base }}/ask" {% if tab == "ask" %}aria-current="page"{% endif %}>{{ ui.icon("ask", "sm") }}Ask a question</a>
+  <a class="tab" href="{{ ws.base }}/data" {% if tab == "data" %}aria-current="page"{% endif %}>{{ ui.icon("table", "sm") }}Data</a>
+  <a class="tab" href="{{ ws.base }}/quality" {% if tab == "quality" %}aria-current="page"{% endif %}>{{ ui.icon("shield", "sm") }}Cleaning report</a>
+</nav>

@@ -1,0 +1,60 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}{{ ws.analysis_title or ws.name }} · Insight{% endblock %}
+{% block head %}<script src="/static/vendor/plotly-basic-2.35.2.min.js" defer></script>{% endblock %}
+{% block content %}
+{% set head_actions %}
+  {% if ws.analysis_id and ws.owner %}
+    <button class="btn sm" type="button" hx-post="/analyses/{{ ws.analysis_id }}/filters" hx-include="#filters" hx-target="#toasts" hx-swap="beforeend">{{ ui.icon("check", "sm") }}Save filters</button>
+    <button class="btn sm" type="button" data-open-dialog="share-dialog">{{ ui.icon("users", "sm") }}Share</button>
+  {% elif ws.dataset_id and ws.owner and not ws.analysis_id %}
+    <button class="btn primary sm" type="button" data-open-dialog="save-dialog">{{ ui.icon("bookmark", "sm") }}Save analysis</button>
+  {% endif %}
+{% endset %}
+{% include "partials/workspace_head.html" %}
+
+<form id="filters" class="filters" hx-get="{{ ws.board_url }}" hx-target="#board" hx-swap="outerHTML" hx-trigger="change" hx-push-url="true" hx-indicator="#loading-bar">
+  {% for o in options %}
+    {% set chosen = selected.get(o.param, []) %}
+    <details class="filter{{ ' active' if chosen }}" data-filter>
+      <summary>{{ o.label }}: <b>{% if not chosen %}All{% elif chosen | length == 1 %}{{ chosen | first }}{% else %}{{ chosen | length }} selected{% endif %}</b>{{ ui.icon("chevron-down", "sm") }}</summary>
+      <div class="menu">
+        {% for v in o.values %}
+        <label><input type="checkbox" name="{{ o.param }}" value="{{ v }}" {% if v in chosen %}checked{% endif %}>{{ v }}</label>
+        {% endfor %}
+      </div>
+    </details>
+  {% endfor %}
+  {% if selected %}<a class="filter-clear" href="{{ ws.board_url }}{{ '?f.clear=1' if ws.analysis_id }}">Clear filters</a>{% endif %}
+</form>
+
+{% include "partials/board.html" %}
+
+{% if ws.dataset_id and ws.owner and not ws.analysis_id %}
+<dialog id="save-dialog">
+  <form class="dialog-body" hx-post="/datasets/{{ ws.dataset_id }}/save" hx-include="#filters" hx-target="#toasts" hx-swap="beforeend">
+    <div><h2>Save this analysis</h2><p class="muted small" style="margin-top:4px">Keep this board and its filters in your Library, to come back to or share.</p></div>
+    <div class="field"><label for="title">Name</label><input class="input" id="title" name="title" value="{{ ws.name }}" maxlength="200" required autofocus></div>
+    <div class="dialog-foot"><button class="btn" type="button" data-close-dialog>Cancel</button><button class="btn primary">Save to library</button></div>
+  </form>
+</dialog>
+{% endif %}
+
+{% if ws.analysis_id and ws.owner %}
+<dialog id="share-dialog">
+  <div class="dialog-body">
+    <div><h2>Share “{{ ws.analysis_title }}”</h2><p class="muted small" style="margin-top:4px">People you add see this board and its data when they sign in with that email.</p></div>
+    <form class="row" hx-post="/analyses/{{ ws.analysis_id }}/share" hx-target="#share-list" hx-swap="outerHTML" data-reset>
+      <input class="input" type="email" name="email" placeholder="colleague@company.com" required>
+      <button class="btn primary">Invite</button>
+    </form>
+    {% with emails=ws.shares, error=None, analysis_id=ws.analysis_id %}{% include "partials/share_list.html" %}{% endwith %}
+    <div class="dialog-foot">
+      <form method="post" action="/analyses/{{ ws.analysis_id }}/delete" data-confirm="Delete this saved analysis? The dataset stays."><button class="btn ghost danger sm">{{ ui.icon("trash", "sm") }}Delete analysis</button></form>
+      <span class="spacer"></span>
+      <button class="btn" type="button" data-close-dialog>Done</button>
+    </div>
+  </div>
+</dialog>
+{% endif %}
+{% endblock %}

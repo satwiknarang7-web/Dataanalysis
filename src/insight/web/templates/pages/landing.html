@@ -1,0 +1,92 @@
+{% extends "layouts/public.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Insight · The dashboard an analyst would build, in seconds{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow"><span class="dot"></span>Automated analysis you can trust</span>
+    <h1>Drop in a spreadsheet.<br><span class="grad">Get the analyst's dashboard.</span></h1>
+    <p class="lede">Insight cleans your data, finds what matters and explains it in plain English: the headline numbers, the trend, what drives the outcome. Only patterns that pass a significance test become findings.</p>
+    <div class="ctas">
+      <a class="btn primary lg" href="{{ '/home' if user else '/signup' }}">Start free {{ ui.icon("arrow", "sm") }}</a>
+      <a class="btn lg" href="/demo/retail/dashboard">{{ ui.icon("eye", "sm") }}See a live demo</a>
+    </div>
+    <p class="fine">No credit card. Works with CSV, Excel, JSON, Parquet and Google Sheets.</p>
+
+    <div class="preview" aria-hidden="true">
+      <div class="preview-bar"><i></i><i></i><i></i></div>
+      <div class="preview-body">
+        <div class="card kpi"><span class="label">Revenue</span><span class="value">$3.29M</span><span class="delta good">{{ ui.icon("up", "sm") }}15%</span></div>
+        <div class="card kpi"><span class="label">Orders</span><span class="value">4,000</span><span class="delta good">{{ ui.icon("up", "sm") }}4.5%</span></div>
+        <div class="card kpi"><span class="label">Return rate</span><span class="value">7.6%</span><span class="delta good">{{ ui.icon("down", "sm") }}4.2 pts</span></div>
+        <div class="card kpi"><span class="label">Avg discount</span><span class="value">8.1%</span><span class="delta flat">0.3 pts</span></div>
+        <div class="card wide" style="padding:18px 20px">
+          <div class="small muted" style="font-weight:600">Revenue over time</div>
+          <div style="font-weight:650;font-size:16px;margin:2px 0 8px">Revenue rose 39%</div>
+          <svg class="mock" viewBox="0 0 600 150" preserveAspectRatio="none">
+            <defs><linearGradient id="lg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#6366f1" stop-opacity=".28"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></linearGradient></defs>
+            <path d="M0,118 C40,112 60,120 90,104 S150,96 180,100 S240,80 270,86 S330,70 360,64 S420,72 450,52 S520,40 560,30 L600,24 L600,150 L0,150 Z" fill="url(#lg)"/>
+            <path d="M0,118 C40,112 60,120 90,104 S150,96 180,100 S240,80 270,86 S330,70 360,64 S420,72 450,52 S520,40 560,30 L600,24" fill="none" stroke="#6366f1" stroke-width="3"/>
+          </svg>
+        </div>
+        <div class="card half" style="padding:18px 20px">
+          <div class="small muted" style="font-weight:600">Return rate by category</div>
+          <div style="font-weight:650;font-size:16px;margin:2px 0 12px">Clothing has the highest return rate</div>
+          {% for name, w in [("Clothing", 92), ("Home", 38), ("Sports", 35), ("Electronics", 33), ("Beauty", 31)] %}
+          <div class="row" style="--gap:10px;margin:6px 0"><span class="small" style="width:84px">{{ name }}</span><span style="height:10px;border-radius:5px;background:{{ '#6366f1' if loop.first else '#c7d2fe' }};width:{{ w }}%"></span></div>
+          {% endfor %}
+        </div>
+        <div class="card half" style="padding:18px 20px">
+          <div class="small muted" style="font-weight:600;margin-bottom:10px">Key findings</div>
+          <ol class="stack small" style="--gap:10px;padding-left:18px;margin:0">
+            <li>Revenue rose 39% between the first and last three months.</li>
+            <li>Clothing has the highest return rate at 15.3%, against 5.7% elsewhere.</li>
+            <li>Partner sales carry triple the discount of other channels.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>Analysis that reads like an analyst wrote it</h2><p>Not a chart builder. Insight decides what's worth showing, and says why, in a sentence anyone in the room understands.</p></div>
+    <div class="features">
+      <div class="card feature"><div class="ic">{{ ui.icon("shield") }}</div><h3>Cleaned before it's counted</h3><p>Dates in any format, "1.2K" and "$3M", messy category spellings, emails and phone numbers redacted. Every fix is listed in a cleaning report.</p></div>
+      <div class="card feature"><div class="ic">{{ ui.icon("sparkle") }}</div><h3>Findings, not just charts</h3><p>Every caption is tested before it claims a pattern. If a gap could be chance, Insight says so instead of calling it a finding.</p></div>
+      <div class="card feature"><div class="ic">{{ ui.icon("ask") }}</div><h3>Ask in plain words</h3><p>"Top 10 products by revenue in 2025." Get a chart and a sentence back. A SQL console is there when you want it.</p></div>
+      <div class="card feature"><div class="ic">{{ ui.icon("grid") }}</div><h3>Filter the whole board</h3><p>Pick a region or a year and every number, chart and sentence is recomputed over those rows.</p></div>
+      <div class="card feature"><div class="ic">{{ ui.icon("users") }}</div><h3>Save and share</h3><p>Keep the boards you report from in your library and share them with your team by email.</p></div>
+      <div class="card feature"><div class="ic">{{ ui.icon("zap") }}</div><h3>Fast, every time</h3><p>Boards are computed once and served from a cache, so the second person to open one waits for nothing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head"><h2>From file to findings in three steps</h2></div>
+    <div class="steps">
+      <div class="card step"><h3>Bring your data</h3><p>Drag in a CSV or Excel file, paste a Google Sheets link, or start from a sample.</p></div>
+      <div class="card step"><h3>Insight reads it</h3><p>It works out which column is the timeline, which numbers add up, which to average, and what each row is.</p></div>
+      <div class="card step"><h3>Read the board</h3><p>Headline numbers, key findings and the charts behind them, ready to filter, save and share.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head"><h2>Try it on real-looking data</h2><p>Each demo is a live board, not a screenshot. Filter it, ask it questions, read its cleaning report.</p></div>
+    <div class="samples-grid">
+      {% for s in samples %}
+      <a class="card sample" href="/demo/{{ s.key }}/dashboard"><h3>{{ s.name }}</h3><p>{{ s.blurb }}</p><span class="go">Open the demo {{ ui.icon("arrow", "sm") }}</span></a>
+      {% endfor %}
+    </div>
+    <div class="cta-band">
+      <h2>Your next report, written for you</h2>
+      <p>Start free. Upgrade when your team does.</p>
+      <a class="btn lg" href="{{ '/home' if user else '/signup' }}">Create your free account</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% import "macros.html" as ui %}
+<div id="share-list" class="stack" style="--gap:8px">
+  {% if error %}<div class="alert error">{{ error }}{% if "Pro" in error %} <a href="/pricing">See plans</a>{% endif %}</div>{% endif %}
+  {% if emails %}
+  <ul class="share-list">
+    {% for e in emails %}
+    <li><span class="avatar" style="width:26px;height:26px;font-size:11px">{{ e[:1] | upper }}</span><span class="spacer">{{ e }}</span>
+      <form hx-post="/analyses/{{ analysis_id }}/unshare" hx-target="#share-list" hx-swap="outerHTML"><input type="hidden" name="email" value="{{ e }}"><button class="btn ghost sm" aria-label="Remove {{ e }}">{{ ui.icon("x", "sm") }}</button></form>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="subtle small">Not shared with anyone yet.</p>
+  {% endif %}
+</div>

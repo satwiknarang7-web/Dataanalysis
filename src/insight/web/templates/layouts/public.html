@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "macros.html" as ui %}
+{% block body %}
+<header class="public-nav">
+  <div class="inner">
+    {{ ui.logo("/") }}
+    <span class="spacer"></span>
+    <a class="nav-link" href="/demo/retail/dashboard">Live demo</a>
+    <a class="nav-link" href="/pricing">Pricing</a>
+    {{ ui.theme_toggle() }}
+    {% if user %}
+      <a class="btn primary sm" href="/home">Open app {{ ui.icon("arrow", "sm") }}</a>
+    {% else %}
+      <a class="nav-link" href="/signin">Sign in</a>
+      <a class="btn primary sm" href="/signup">Start free</a>
+    {% endif %}
+  </div>
+</header>
+<main>{% block content %}{% endblock %}</main>
+<footer class="footer">
+  <div class="container row wrap">
+    {{ ui.logo("/") }}
+    <span class="spacer"></span>
+    <span>Your rows stay yours: stored encrypted at rest, never sold, never used to train models.</span>
+  </div>
+</footer>
+{% endblock %}

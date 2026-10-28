@@ -1,0 +1,30 @@
+{% extends "layouts/public.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Pricing · Insight{% endblock %}
+{% block content %}
+<section class="hero" style="padding-bottom:24px">
+  <div class="container">
+    <span class="eyebrow">Simple pricing</span>
+    <h1 style="font-size:clamp(32px,5vw,48px)">Start free. Pay when it's part of how you work.</h1>
+    <p class="lede">Every plan gets the full analysis engine. Pro removes the limits and adds your team.</p>
+  </div>
+</section>
+<section class="container" style="padding-bottom:40px">
+  <div class="pricing">
+    {% for p in plans %}
+    <div class="card price-card{{ ' featured' if p.key == 'pro' }}">
+      {% if p.key == "pro" %}<span class="badge pro ribbon">Most popular</span>{% endif %}
+      <div><h2>{{ p.name }}</h2><p class="muted" style="margin-top:4px">{{ p.tagline }}</p></div>
+      <div class="price">{{ p.price }}<small>{{ " / user / month" if p.key == "pro" else " forever" }}</small></div>
+      <ul class="ticks">{% for f in p.features %}<li>{{ ui.icon("check", "sm") }}{{ f }}</li>{% endfor %}</ul>
+      {% if p.key == "pro" %}
+        <a class="btn primary lg block" href="mailto:{{ contact_email }}?subject=Insight%20Pro">Upgrade to Pro</a>
+      {% else %}
+        <a class="btn lg block" href="{{ '/home' if user else '/signup' }}">{{ "Open the app" if user else "Start free" }}</a>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  <p class="subtle small" style="text-align:center;margin-top:24px">Prices in USD, billed monthly. Cancel any time.</p>
+</section>
+{% endblock %}

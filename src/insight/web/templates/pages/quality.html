@@ -1,0 +1,71 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Cleaning report · {{ ws.name }} · Insight{% endblock %}
+{% block content %}
+{% include "partials/workspace_head.html" %}
+
+<section class="headline">
+  <span class="ic">{{ ui.icon("shield") }}</span>
+  <div>
+    <h2>{{ report.verdict }}</h2>
+    <p>Every change below is one you can see and disagree with. Nothing else was altered.</p>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="card stat"><div class="k">Rows read</div><div class="v">{{ report.rows_in | number }}</div></div>
+  <div class="card stat"><div class="k">Rows kept</div><div class="v">{{ report.rows_out | number }}</div></div>
+  <div class="card stat"><div class="k">Columns</div><div class="v">{{ report.columns | length }}<span class="subtle" style="font-size:15px;font-weight:500"> of {{ report.columns_in }}</span></div></div>
+  <div class="card stat"><div class="k">Duplicate rows</div><div class="v">{{ report.duplicate_rows | number }}</div></div>
+</div>
+
+<div class="grid-2" style="grid-template-columns: minmax(0,1fr) minmax(0,1fr); margin-bottom:18px">
+  <section class="card checks">
+    <div class="card-head"><h2>What was fixed</h2></div>
+    {% for c in checks %}
+    <details>
+      <summary><span class="fix-ic">{{ ui.icon("check", "sm") }}</span>{{ c.title }}<span class="count">{{ c.count | number }}</span>{{ ui.icon("chevron", "sm chev") }}</summary>
+      {% if c.detail %}<ul class="detail">{% for d in c.detail %}<li>{{ d }}</li>{% endfor %}</ul>{% endif %}
+    </details>
+    {% else %}
+    <div class="empty" style="padding:32px"><div class="ic">{{ ui.icon("check", "lg") }}</div><h3>Nothing needed fixing</h3><p>The file was read exactly as written.</p></div>
+    {% endfor %}
+    {% if quiet %}<p class="subtle small" style="padding:14px 20px;border-top:1px solid var(--border)">Also checked, nothing found: {{ quiet | join(", ") | lower }}.</p>{% endif %}
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>Spellings made one</h2></div>
+    {% if report.merges %}
+    <ul class="list">
+      {% for m in report.merges[:20] %}
+      <li class="list-item"><span class="t"><b>{{ m.into }}</b><span>{{ m.column }} · also written {{ m.spellings | map("tojson") | join(", ") }}</span></span></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <div class="empty" style="padding:32px"><div class="ic">{{ ui.icon("check", "lg") }}</div><h3>No duplicate spellings</h3><p>Every category was written one way.</p></div>
+    {% endif %}
+  </section>
+</div>
+
+<section class="card cols">
+  <div class="card-head"><h2>How each column is read</h2><span class="spacer"></span><span class="subtle small">This decides what gets added up, averaged, or split by</span></div>
+  <div class="table-scroll" style="max-height:none">
+    <table class="data">
+      <thead><tr><th>Column</th><th>Type</th><th>Used as</th><th>Missing</th><th>Notes</th></tr></thead>
+      <tbody>
+        {% for c in report.columns %}
+        {% set f = fields.get(c.name) %}
+        {% set missing = (c.missing / report.rows_out * 100) if report.rows_out else 0 %}
+        <tr>
+          <td><b>{{ c.name }}</b></td>
+          <td><span class="badge">{{ kinds.get(c.kind, c.kind) }}</span>{% if c.guessed %} <span class="badge warn">Guessed</span>{% endif %}</td>
+          <td>{% if f %}<span class="badge {{ 'accent' if f.role in ('measure', 'time') }}">{{ roles[f.role] }}{% if f.agg == 'avg' %} · averaged{% elif f.agg == 'sum' %} · summed{% endif %}</span><div class="why">{{ f.why }}</div>{% endif %}</td>
+          <td class="num">{% if c.missing %}<span class="meter"><i style="width: {{ [missing, 100] | min }}%"></i></span>{{ "%.1f" | format(missing) }}%{% else %}<span class="subtle">None</span>{% endif %}</td>
+          <td class="small muted" style="white-space:normal">{{ c.notes | join("; ") }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,2501 @@
+customer_id,signup_date,plan,country,mrr,tenure_months,support_tickets,nps_score,status
+C10000,2023-04-19,Starter,United States,49.75,26,3,4,Active
+C10001,2024-02-10,Starter,India,64.16,2,3,9,Churned
+C10002,2022-04-05,Starter,Canada,59.57,10,6,4,Churned
+C10003,2022-05-08,Enterprise,United States,1599.32,31,0,7,Active
+C10004,2024-01-09,Enterprise,Brazil,1066.43,23,2,7,Active
+C10005,2023-06-05,Enterprise,Canada,1441.61,46,1,6,Active
+C10006,2024-03-14,Enterprise,United States,1101.82,40,1,9,Active
+C10007,2022-12-25,Growth,Germany,224.15,11,3,7,Active
+C10008,2024-01-12,Enterprise,United States,1559.71,47,1,6,Active
+C10009,2023-07-04,Starter,Germany,41.8,41,1,6,Active
+C10010,2022-03-07,Starter,Canada,33.81,20,1,10,Active
+C10011,2023-11-26,Growth,United Kingdom,287.96,30,1,7,Active
+C10012,2024-07-08,Starter,Brazil,54.02,14,4,7,Active
+C10013,2022-07-29,Growth,Brazil,194.78,4,3,7,Active
+C10014,2024-03-07,Growth,United States,192.66,12,2,5,Active
+C10015,2022-07-20,Starter,India,32.22,35,4,8,Active
+C10016,2024-07-13,Starter,United Kingdom,51.09,27,3,8,Active
+C10017,2022-12-04,Growth,Canada,178.97,21,1,10,Active
+C10018,2023-10-09,Starter,Brazil,49.52,23,3,4,Active
+C10019,2024-07-24,Starter,India,49.3,38,2,2,Active
+C10020,2023-07-11,Growth,India,101.27,33,0,9,Active
+C10021,2023-03-21,Starter,United Kingdom,54.04,30,2,6,Active
+C10022,2023-05-05,Starter,India,50.89,24,2,5,Active
+C10023,2022-09-14,Growth,Brazil,212.29,1,0,8,Active
+C10024,2022-02-14,Starter,Canada,47.24,16,3,6,Churned
+C10025,2023-06-04,Enterprise,United States,1211.8,6,2,5,Active
+C10026,2024-02-29,Starter,Canada,50.72,37,4,6,Active
+C10027,2022-06-30,Enterprise,United Kingdom,1267.66,17,2,8,Active
+C10028,2024-07-11,Growth,Canada,218.86,12,0,8,Active
+C10029,2024-02-05,Enterprise,Canada,1269.82,23,3,7,Active
+C10030,2023-10-22,Growth,Brazil,288.08,23,2,8,Active
+C10031,2022-11-16,Growth,Canada,172.1,44,1,5,Churned
+C10032,2023-12-19,Starter,India,45.46,9,1,8,Active
+C10033,2024-09-09,Growth,Brazil,279.19,39,1,8,Active
+C10034,2022-10-14,Starter,Canada,47.51,11,4,6,Active
+C10035,2023-09-22,Starter,United Kingdom,59.04,38,4,5,Active
+C10036,2023-02-26,Starter,Brazil,50.35,26,6,4,Churned
+C10037,2023-09-04,Growth,Brazil,190.14,26,1,7,Active
+C10038,2022-09-10,Starter,Germany,59.68,34,1,9,Active
+C10039,2022-10-18,Growth,India,220.74,5,2,9,Active
+C10040,2024-05-26,Starter,India,36.05,38,2,9,Active
+C10041,2022-06-28,Starter,Germany,50.73,36,3,4,Active
+C10042,2024-04-18,Starter,India,40.16,10,5,5,Active
+C10043,2022-03-19,Growth,Germany,256.6,5,2,8,Active
+C10044,2024-06-17,Starter,Germany,69.58,34,3,9,Churned
+C10045,2024-05-05,Enterprise,Germany,1745.63,5,2,6,Active
+C10046,2024-07-19,Starter,Germany,52.63,28,2,7,Active
+C10047,2024-09-06,Starter,United Kingdom,44.68,12,4,5,Active
+C10048,2024-08-10,Starter,United States,52.26,34,0,8,Active
+C10049,2022-08-04,Starter,India,40.6,44,3,6,Active
+C10050,2024-05-30,Starter,Germany,78.33,40,4,7,Active
+C10051,2024-09-20,Starter,United States,62.22,36,3,5,Active
+C10052,2023-06-30,Growth,India,211.5,31,0,6,Active
+C10053,2023-09-08,Growth,Canada,242.92,4,1,10,Active
+C10054,2024-06-01,Starter,United Kingdom,44.41,45,2,7,Churned
+C10055,2024-02-26,Enterprise,Canada,961.49,44,2,10,Active
+C10056,2024-03-08,Growth,India,127.82,3,1,10,Active
+C10057,2024-09-15,Starter,Germany,49.82,37,4,4,Active
+C10058,2024-04-19,Starter,Canada,47.0,6,4,7,Churned
+C10059,2024-09-02,Starter,Canada,54.36,29,4,4,Active
+C10060,2024-07-12,Growth,Canada,199.52,12,1,7,Active
+C10061,2023-07-23,Starter,Brazil,53.87,6,1,5,Active
+C10062,2023-08-09,Starter,India,57.63,11,5,4,Churned
+C10063,2023-06-12,Starter,Canada,36.59,16,8,4,Churned
+C10064,2022-11-15,Starter,Canada,58.3,17,2,6,Active
+C10065,2023-11-07,Starter,Canada,45.17,15,1,8,Active
+C10066,2023-08-27,Growth,Brazil,220.7,22,5,4,Active
+C10067,2022-08-08,Enterprise,Germany,1472.21,31,0,8,Active
+C10068,2024-05-08,Starter,Canada,60.2,22,0,10,Active
+C10069,2023-01-24,Starter,Brazil,50.28,28,8,5,Active
+C10070,2023-04-10,Starter,Canada,50.78,19,1,7,Active
+C10071,2024-04-07,Starter,United States,58.57,14,5,7,Churned
+C10072,2023-09-03,Growth,United States,147.39,7,2,5,Churned
+C10073,2022-04-20,Enterprise,Canada,992.04,15,2,9,Churned
+C10074,2022-11-11,Growth,India,188.19,10,1,6,Active
+C10075,2023-04-05,Starter,India,37.53,25,4,9,Churned
+C10076,2024-01-02,Enterprise,Brazil,1136.53,31,1,9,Active
+C10077,2022-11-12,Growth,Brazil,186.43,40,3,8,Active
+C10078,2023-04-15,Starter,United States,49.86,14,4,7,Churned
+C10079,2023-08-06,Enterprise,United Kingdom,1186.43,6,1,8,Churned
+C10080,2023-06-23,Growth,India,246.45,39,2,6,Active
+C10081,2022-07-09,Growth,United States,223.16,35,3,5,Active
+C10082,2023-05-18,Starter,Canada,48.31,15,3,9,Active
+C10083,2024-07-17,Starter,United States,45.84,47,5,6,Active
+C10084,2023-10-21,Growth,Germany,197.12,31,1,6,Active
+C10085,2024-03-02,Starter,United States,48.71,36,6,6,Churned
+C10086,2023-12-29,Enterprise,United States,1985.9,17,1,8,Active
+C10087,2022-03-23,Starter,Germany,36.61,21,3,6,Active
+C10088,2023-04-05,Starter,Brazil,40.71,17,1,6,Active
+C10089,2022-11-22,Growth,United Kingdom,160.57,35,3,8,Active
+C10090,2023-05-17,Growth,Germany,210.01,39,2,9,Active
+C10091,2022-02-13,Starter,Canada,51.3,41,7,6,Churned
+C10092,2022-08-17,Growth,Germany,177.45,16,0,8,Active
+C10093,2022-05-04,Growth,Canada,238.06,37,1,6,Active
+C10094,2022-02-23,Growth,Canada,214.27,33,1,8,Churned
+C10095,2023-02-28,Starter,India,59.11,1,3,6,Active
+C10096,2024-02-21,Growth,India,253.15,38,1,6,Active
+C10097,2022-11-26,Starter,Canada,32.0,7,2,9,Active
+C10098,2024-02-18,Growth,Brazil,228.25,7,2,6,Active
+C10099,2023-06-05,Growth,India,153.74,6,1,5,Active
+C10100,2023-11-02,Starter,Canada,51.51,26,2,9,Churned
+C10101,2022-10-18,Starter,Canada,48.29,2,5,3,Active
+C10102,2023-02-25,Starter,United Kingdom,48.7,24,0,7,Active
+C10103,2022-11-29,Starter,Brazil,38.51,34,3,5,Active
+C10104,2023-02-26,Growth,United Kingdom,244.55,26,0,7,Active
+C10105,2024-08-16,Growth,Brazil,153.73,13,0,10,Active
+C10106,2022-04-24,Enterprise,United States,1394.35,16,2,7,Active
+C10107,2024-05-24,Growth,United Kingdom,149.44,34,0,9,Active
+C10108,2024-07-10,Growth,Brazil,198.29,16,2,8,Active
+C10109,2022-01-14,Growth,Brazil,285.48,32,1,7,Active
+C10110,2023-02-10,Starter,Germany,78.58,33,2,9,Active
+C10111,2023-08-26,Growth,Brazil,143.96,25,0,9,Active
+C10112,2022-10-27,Starter,Germany,42.56,18,4,8,Churned
+C10113,2022-05-23,Starter,United States,44.14,3,2,6,Active
+C10114,2023-01-26,Enterprise,Brazil,1883.88,35,1,8,Active
+C10115,2024-02-29,Growth,United States,196.3,15,4,6,Churned
+C10116,2023-04-25,Starter,Brazil,60.75,22,10,6,Active
+C10117,2024-04-15,Starter,Canada,52.03,2,3,6,Churned
+C10118,2023-01-05,Enterprise,United States,944.1,35,2,10,Active
+C10119,2023-10-23,Starter,Canada,33.78,43,4,7,Churned
+C10120,2024-02-15,Enterprise,India,1061.52,42,1,7,Active
+C10121,2023-11-05,Enterprise,India,1907.31,15,3,6,Active
+C10122,2023-03-23,Growth,United Kingdom,209.52,5,2,7,Active
+C10123,2024-05-01,Starter,United Kingdom,60.5,5,1,7,Active
+C10124,2022-06-17,Starter,United States,36.9,18,4,7,Active
+C10125,2022-04-12,Starter,Germany,45.91,1,3,7,Churned
+C10126,2022-02-05,Starter,Brazil,57.26,9,3,10,Churned
+C10127,2023-12-09,Growth,United States,159.98,29,1,7,Active
+C10128,2022-12-19,Enterprise,United Kingdom,1184.75,2,0,8,Active
+C10129,2022-04-30,Starter,Brazil,41.09,30,2,7,Active
+C10130,2022-07-11,Starter,Germany,57.81,41,1,10,Active
+C10131,2022-02-12,Starter,United States,53.07,47,1,5,Active
+C10132,2023-02-16,Starter,Canada,56.18,46,5,6,Active
+C10133,2023-10-01,Starter,Germany,58.33,14,4,7,Churned
+C10134,2022-09-14,Enterprise,United Kingdom,1146.58,31,1,6,Active
+C10135,2022-09-30,Starter,India,59.89,3,2,10,Active
+C10136,2024-08-29,Starter,United States,43.55,12,3,5,Active
+C10137,2022-02-15,Growth,Brazil,225.53,37,2,7,Active
+C10138,2024-04-20,Starter,India,33.04,10,3,9,Active
+C10139,2022-03-05,Enterprise,Canada,1033.6,15,1,7,Active
+C10140,2024-02-27,Enterprise,United Kingdom,1906.91,20,0,8,Active
+C10141,2024-09-06,Starter,Germany,55.37,16,1,7,Active
+C10142,2022-11-01,Growth,Brazil,224.88,35,0,8,Active
+C10143,2022-08-12,Growth,United Kingdom,168.77,43,1,9,Active
+C10144,2022-08-25,Starter,Germany,39.37,26,0,7,Active
+C10145,2023-02-12,Starter,United States,46.48,28,5,2,Active
+C10146,2022-09-25,Enterprise,Brazil,1184.0,35,1,8,Active
+C10147,2022-09-24,Starter,India,71.86,19,3,7,Active
+C10148,2022-06-17,Starter,United States,60.08,22,5,6,Churned
+C10149,2024-07-24,Starter,United States,50.08,45,2,7,Active
+C10150,2022-10-22,Starter,Germany,49.65,19,2,6,Active
+C10151,2022-03-15,Growth,India,231.58,13,1,7,Active
+C10152,2022-11-11,Growth,Brazil,152.86,1,3,9,Active
+C10153,2023-06-28,Growth,Germany,135.51,2,2,7,Active
+C10154,2022-04-26,Starter,Brazil,56.85,37,3,8,Active
+C10155,2023-04-23,Growth,Germany,201.89,11,3,5,Active
+C10156,2024-09-15,Starter,India,37.69,35,2,7,Active
+C10157,2023-11-24,Starter,United Kingdom,32.23,3,7,4,Churned
+C10158,2022-12-11,Starter,India,58.59,38,4,8,Active
+C10159,2024-06-17,Starter,Canada,44.15,20,1,5,Active
+C10160,2022-11-27,Growth,United Kingdom,215.59,39,1,8,Active
+C10161,2022-01-01,Starter,Brazil,46.48,40,2,8,Churned
+C10162,2022-08-27,Starter,Germany,48.67,27,0,8,Active
+C10163,2022-01-17,Starter,India,43.53,46,3,3,Active
+C10164,2023-05-10,Growth,India,195.98,45,1,5,Active
+C10165,2023-01-13,Starter,Germany,54.99,33,2,7,Churned
+C10166,2022-03-10,Growth,India,188.32,24,0,7,Active
+C10167,2023-02-06,Starter,Germany,45.84,44,4,5,Active
+C10168,2022-07-11,Starter,United States,55.33,46,3,6,Active
+C10169,2024-06-09,Starter,Germany,56.07,20,4,5,Active
+C10170,2023-08-26,Starter,Germany,39.03,16,4,5,Active
+C10171,2022-10-06,Starter,Canada,48.72,15,2,7,Active
+C10172,2024-01-23,Starter,India,44.13,44,2,4,Churned
+C10173,2024-04-28,Starter,Germany,49.13,8,7,4,Churned
+C10174,2024-02-09,Starter,Canada,65.28,1,3,6,Churned
+C10175,2022-03-31,Starter,United States,52.65,24,2,7,Active
+C10176,2023-05-17,Growth,Brazil,306.79,45,0,10,Active
+C10177,2022-03-19,Starter,Canada,51.2,16,3,5,Active
+C10178,2023-09-18,Enterprise,Brazil,1160.71,24,0,9,Active
+C10179,2024-01-16,Starter,India,48.81,6,2,8,Active
+C10180,2022-01-26,Starter,India,50.42,39,2,8,Active
+C10181,2024-02-02,Starter,United States,52.27,44,3,6,Active
+C10182,2022-09-01,Growth,United States,163.19,30,1,10,Active
+C10183,2022-04-05,Starter,United States,46.77,6,3,8,Churned
+C10184,2022-10-09,Enterprise,Canada,1038.15,5,1,9,Active
+C10185,2024-09-20,Growth,Germany,244.5,35,0,6,Active
+C10186,2022-10-17,Growth,Canada,135.39,7,4,7,Churned
+C10187,2022-03-22,Starter,India,50.56,4,1,7,Active
+C10188,2022-03-18,Starter,Brazil,36.17,42,4,5,Active
+C10189,2024-06-03,Starter,Canada,53.42,25,4,5,Churned
+C10190,2023-10-16,Enterprise,India,1107.98,28,1,8,Active
+C10191,2022-07-13,Growth,United States,138.37,32,1,8,Active
+C10192,2023-09-22,Starter,Brazil,59.16,17,3,8,Active
+C10193,2022-01-22,Starter,Germany,29.62,12,0,9,Active
+C10194,2023-11-14,Starter,United States,48.69,25,4,7,Active
+C10195,2024-05-04,Growth,United Kingdom,228.5,4,0,8,Churned
+C10196,2024-02-21,Starter,Canada,64.53,14,0,8,Churned
+C10197,2022-07-04,Growth,Germany,144.21,28,6,5,Churned
+C10198,2022-12-19,Starter,India,44.2,45,8,4,Active
+C10199,2023-06-14,Enterprise,Brazil,1490.41,29,1,7,Active
+C10200,2022-03-18,Starter,India,61.69,36,4,7,Active
+C10201,2024-04-06,Starter,United States,63.31,15,7,8,Churned
+C10202,2023-08-31,Enterprise,United States,2002.98,3,0,8,Active
+C10203,2022-06-04,Growth,Canada,179.75,18,1,6,Churned
+C10204,2024-01-21,Starter,United Kingdom,52.79,33,2,9,Churned
+C10205,2024-01-12,Growth,United Kingdom,185.7,3,0,5,Active
+C10206,2022-06-10,Starter,United States,33.01,41,1,9,Active
+C10207,2023-06-16,Starter,Brazil,48.13,14,6,3,Active
+C10208,2022-11-11,Starter,India,32.88,33,2,8,Active
+C10209,2022-09-13,Starter,India,44.15,42,4,6,Active
+C10210,2024-03-16,Growth,United Kingdom,148.36,29,1,8,Active
+C10211,2022-02-11,Starter,India,53.5,9,4,10,Active
+C10212,2023-03-02,Starter,India,41.93,13,7,4,Active
+C10213,2022-09-20,Growth,Canada,139.25,22,3,5,Active
+C10214,2022-11-26,Starter,Brazil,58.26,47,2,7,Active
+C10215,2023-03-01,Starter,India,43.43,32,1,10,Active
+C10216,2023-08-03,Starter,Brazil,44.94,29,2,7,Churned
+C10217,2023-01-03,Growth,Brazil,163.65,38,0,8,Active
+C10218,2023-06-29,Starter,United Kingdom,61.66,7,1,8,Active
+C10219,2023-12-18,Enterprise,India,1266.71,4,3,5,Active
+C10220,2022-06-28,Growth,Canada,176.04,28,5,6,Active
+C10221,2023-02-14,Growth,Brazil,135.71,28,2,7,Active
+C10222,2023-06-21,Growth,Canada,328.79,13,2,9,Active
+C10223,2023-01-16,Growth,United States,295.65,30,0,9,Active
+C10224,2023-07-10,Enterprise,Canada,1601.5,8,2,5,Active
+C10225,2024-03-23,Growth,India,172.89,10,2,7,Active
+C10226,2023-09-04,Starter,United Kingdom,44.33,43,3,8,Churned
+C10227,2023-04-09,Starter,Canada,53.09,2,2,6,Active
+C10228,2023-10-26,Growth,Canada,166.42,27,4,5,Active
+C10229,2024-09-12,Starter,India,40.2,40,2,7,Churned
+C10230,2022-01-18,Growth,Canada,266.4,34,1,8,Active
+C10231,2023-07-29,Enterprise,Brazil,1186.84,21,1,9,Active
+C10232,2022-01-06,Starter,Germany,39.17,15,3,7,Active
+C10233,2024-07-26,Starter,Canada,59.28,3,5,10,Churned
+C10234,2024-01-06,Starter,Germany,43.69,6,2,6,Active
+C10235,2024-06-01,Starter,United States,32.98,28,5,7,Active
+C10236,2023-07-26,Growth,United States,158.59,25,1,6,Active
+C10237,2023-02-19,Starter,Brazil,44.19,18,3,9,Active
+C10238,2022-01-05,Starter,United States,51.2,14,4,8,Active
+C10239,2023-09-05,Starter,Canada,50.71,4,4,7,Active
+C10240,2024-06-27,Starter,Canada,62.64,6,2,5,Active
+C10241,2022-05-21,Starter,United States,46.73,14,4,7,Active
+C10242,2022-09-02,Starter,United Kingdom,44.64,44,5,5,Active
+C10243,2023-06-12,Growth,United Kingdom,255.27,16,2,8,Churned
+C10244,2023-06-18,Starter,Brazil,59.59,6,1,5,Active
+C10245,2023-02-28,Starter,United Kingdom,46.95,28,2,8,Active
+C10246,2022-05-28,Starter,Brazil,51.95,6,3,6,Active
+C10247,2023-04-29,Growth,Canada,180.95,19,1,6,Active
+C10248,2023-05-19,Growth,India,157.73,35,0,9,Active
+C10249,2022-07-04,Starter,Canada,76.04,6,2,7,Churned
+C10250,2023-09-01,Growth,Germany,178.56,44,0,8,Active
+C10251,2024-05-16,Growth,Canada,211.09,30,0,9,Active
+C10252,2022-03-29,Enterprise,Brazil,886.26,43,2,10,Active
+C10253,2022-03-21,Growth,Germany,230.58,35,1,8,Active
+C10254,2023-07-22,Growth,United Kingdom,156.36,46,2,4,Active
+C10255,2024-02-21,Starter,Brazil,68.54,24,2,5,Active
+C10256,2022-04-13,Starter,Brazil,70.2,1,2,7,Churned
+C10257,2024-08-02,Enterprise,United States,1343.73,3,2,9,Churned
+C10258,2023-04-22,Starter,United Kingdom,50.14,9,2,7,Active
+C10259,2022-04-17,Starter,Canada,47.2,5,2,8,Active
+C10260,2023-03-24,Growth,United States,197.12,38,3,7,Active
+C10261,2023-03-10,Enterprise,Canada,1302.35,45,4,8,Churned
+C10262,2023-01-26,Starter,United States,49.89,30,7,6,Active
+C10263,2023-08-08,Growth,India,242.17,9,4,5,Active
+C10264,2022-09-04,Starter,United Kingdom,40.78,47,1,8,Active
+C10265,2024-09-18,Growth,United States,270.13,15,3,4,Active
+C10266,2022-10-13,Enterprise,United Kingdom,1102.73,42,1,8,Active
+C10267,2024-05-15,Growth,Canada,171.42,33,3,6,Active
+C10268,2024-03-29,Enterprise,United Kingdom,1290.26,21,1,8,Active
+C10269,2023-02-19,Enterprise,Canada,1306.87,38,2,8,Active
+C10270,2022-07-12,Enterprise,India,847.88,32,2,8,Active
+C10271,2024-08-25,Starter,Canada,44.5,43,3,9,Active
+C10272,2023-07-27,Starter,Germany,31.73,29,4,6,Active
+C10273,2022-11-28,Starter,India,42.81,19,4,7,Churned
+C10274,2022-05-31,Starter,United States,43.18,5,1,10,Active
+C10275,2022-12-06,Growth,Germany,211.2,47,0,10,Active
+C10276,2023-10-15,Starter,India,41.86,37,1,8,Active
+C10277,2023-05-22,Enterprise,Germany,1074.78,5,0,7,Active
+C10278,2022-03-08,Starter,United Kingdom,63.6,29,6,5,Churned
+C10279,2024-02-19,Starter,Germany,74.04,39,4,7,Active
+C10280,2022-11-18,Starter,Canada,40.76,33,5,6,Active
+C10281,2022-07-12,Starter,Canada,60.08,13,2,5,Active
+C10282,2023-12-01,Starter,Germany,52.95,7,3,8,Churned
+C10283,2024-01-13,Growth,United States,140.55,45,0,9,Active
+C10284,2024-04-01,Starter,United States,41.83,18,5,8,Active
+C10285,2022-01-03,Growth,India,108.61,41,1,10,Active
+C10286,2023-01-23,Starter,Brazil,52.28,22,4,7,Active
+C10287,2022-09-20,Growth,Canada,160.44,36,0,8,Active
+C10288,2023-08-04,Growth,India,204.4,12,1,9,Active
+C10289,2024-09-01,Starter,United Kingdom,81.94,29,5,4,Churned
+C10290,2022-04-30,Starter,United States,67.39,27,2,7,Active
+C10291,2023-10-19,Growth,India,170.7,11,3,7,Churned
+C10292,2023-03-21,Growth,United Kingdom,162.64,33,1,9,Active
+C10293,2023-04-08,Starter,Brazil,63.46,22,4,6,Active
+C10294,2024-07-30,Growth,India,162.77,31,0,7,Active
+C10295,2024-01-02,Starter,India,59.74,2,3,6,Active
+C10296,2022-04-05,Starter,Brazil,84.69,6,2,8,Active
+C10297,2023-03-12,Starter,India,56.09,34,3,7,Active
+C10298,2024-01-13,Growth,India,252.17,47,4,4,Active
+C10299,2022-04-17,Starter,Brazil,60.67,6,5,4,Active
+C10300,2023-05-21,Starter,United States,43.83,2,2,7,Active
+C10301,2023-05-13,Starter,United States,51.93,13,5,6,Churned
+C10302,2022-03-15,Starter,Germany,40.47,3,1,8,Active
+C10303,2024-08-13,Starter,Brazil,63.42,12,2,6,Active
+C10304,2023-01-06,Starter,Germany,39.44,33,1,9,Churned
+C10305,2022-09-30,Growth,Canada,228.95,38,1,8,Active
+C10306,2022-03-31,Growth,Canada,249.55,30,1,8,Churned
+C10307,2022-02-22,Starter,United States,44.41,19,0,9,Active
+C10308,2022-07-16,Starter,India,42.42,8,6,8,Active
+C10309,2024-01-12,Starter,United States,47.36,26,6,4,Active
+C10310,2022-09-25,Growth,Brazil,166.47,46,1,7,Active
+C10311,2023-03-31,Starter,United States,50.56,10,4,6,Active
+C10312,2023-10-24,Growth,United States,165.66,26,0,10,Active
+C10313,2022-12-01,Starter,Brazil,41.38,16,2,7,Churned
+C10314,2023-02-12,Growth,Germany,222.0,17,1,6,Active
+C10315,2023-05-03,Growth,Germany,225.16,25,1,7,Active
+C10316,2024-06-23,Growth,Germany,187.65,8,1,8,Active
+C10317,2024-07-18,Starter,Germany,35.25,10,5,8,Churned
+C10318,2022-10-17,Starter,Brazil,61.93,2,1,7,Churned
+C10319,2022-09-08,Starter,Brazil,44.8,33,5,5,Active
+C10320,2023-02-09,Enterprise,Canada,1812.64,43,2,6,Active
+C10321,2022-07-20,Starter,India,47.72,22,2,7,Active
+C10322,2023-07-23,Growth,Canada,204.48,30,2,10,Churned
+C10323,2023-06-18,Enterprise,India,1100.73,47,1,8,Active
+C10324,2023-04-11,Growth,United States,208.93,36,1,8,Active
+C10325,2023-04-09,Starter,Canada,98.21,12,4,6,Churned
+C10326,2024-05-09,Starter,Germany,45.7,37,2,7,Active
+C10327,2022-05-30,Growth,Germany,256.87,19,1,9,Active
+C10328,2024-02-06,Enterprise,Canada,1221.95,46,1,8,Active
+C10329,2023-08-04,Enterprise,Canada,1517.52,44,4,7,Active
+C10330,2024-03-03,Starter,Canada,33.3,2,0,8,Churned
+C10331,2023-07-29,Enterprise,India,1770.57,42,2,7,Active
+C10332,2024-02-11,Starter,Germany,52.46,12,4,7,Active
+C10333,2023-08-29,Growth,Germany,188.62,23,2,7,Active
+C10334,2023-12-13,Starter,Germany,58.7,36,1,10,Active
+C10335,2023-02-18,Starter,United Kingdom,50.43,6,4,8,Active
+C10336,2024-06-12,Growth,United Kingdom,158.18,1,0,7,Active
+C10337,2022-10-18,Starter,Brazil,30.18,20,3,5,Churned
+C10338,2023-12-19,Enterprise,United Kingdom,1728.98,28,5,5,Active
+C10339,2022-11-25,Starter,India,46.86,28,2,6,Active
+C10340,2024-03-02,Growth,United Kingdom,176.04,45,3,6,Active
+C10341,2024-04-14,Starter,Brazil,44.03,12,2,6,Active
+C10342,2022-07-04,Starter,Germany,65.67,34,1,7,Active
+C10343,2023-09-18,Starter,India,44.42,9,7,5,Churned
+C10344,2023-06-13,Growth,Canada,226.37,22,0,8,Active
+C10345,2023-02-03,Growth,Canada,186.12,25,0,8,Active
+C10346,2022-10-07,Starter,United Kingdom,38.12,21,2,6,Active
+C10347,2023-09-06,Starter,United Kingdom,58.68,9,5,8,Churned
+C10348,2024-04-03,Starter,India,61.09,9,1,8,Active
+C10349,2022-12-16,Growth,Brazil,173.72,42,1,7,Active
+C10350,2022-12-01,Growth,Canada,197.5,45,2,6,Active
+C10351,2024-05-12,Growth,Germany,202.9,4,2,5,Active
+C10352,2024-01-26,Starter,India,53.56,11,2,5,Active
+C10353,2023-12-29,Starter,United States,72.68,47,4,8,Active
+C10354,2023-08-16,Starter,Brazil,45.93,6,2,9,Churned
+C10355,2022-04-11,Enterprise,India,1123.35,26,0,7,Active
+C10356,2022-05-31,Starter,India,47.31,14,0,10,Active
+C10357,2022-02-26,Starter,United Kingdom,40.58,47,1,9,Active
+C10358,2022-11-11,Growth,Germany,141.02,36,0,8,Active
+C10359,2022-02-03,Growth,United States,204.4,36,1,9,Active
+C10360,2023-04-17,Starter,Germany,54.45,4,2,8,Active
+C10361,2022-01-28,Starter,Germany,49.02,8,1,8,Active
+C10362,2024-09-22,Growth,Germany,196.52,38,0,8,Active
+C10363,2023-05-12,Growth,Canada,166.26,11,1,7,Active
+C10364,2022-01-13,Starter,India,51.54,21,5,4,Churned
+C10365,2022-06-30,Starter,Canada,50.69,6,2,6,Churned
+C10366,2022-07-07,Starter,United Kingdom,53.88,2,4,9,Churned
+C10367,2023-11-06,Growth,Canada,212.31,35,4,5,Active
+C10368,2024-02-09,Starter,India,53.02,9,2,4,Active
+C10369,2023-04-28,Starter,United States,63.79,8,5,7,Churned
+C10370,2023-12-28,Starter,Canada,54.94,40,6,6,Active
+C10371,2022-04-04,Enterprise,United States,1321.07,34,3,7,Churned
+C10372,2022-11-10,Starter,Brazil,34.58,11,2,7,Churned
+C10373,2022-01-06,Starter,United Kingdom,60.49,41,2,9,Active
+C10374,2023-02-12,Starter,Brazil,46.17,46,3,9,Active
+C10375,2022-02-06,Growth,Brazil,202.18,20,0,7,Active
+C10376,2024-03-01,Enterprise,United States,930.29,22,0,9,Active
+C10377,2023-06-18,Enterprise,Canada,1822.66,32,2,9,Active
+C10378,2024-01-24,Starter,Canada,29.87,7,0,7,Active
+C10379,2023-08-10,Starter,Germany,65.99,43,4,9,Active
+C10380,2022-02-07,Starter,United Kingdom,53.35,6,3,8,Active
+C10381,2022-12-20,Growth,India,135.94,36,0,6,Active
+C10382,2022-01-13,Growth,Brazil,299.04,28,3,9,Active
+C10383,2022-03-20,Starter,United States,54.3,7,1,6,Churned
+C10384,2024-07-29,Starter,United States,30.57,21,3,6,Churned
+C10385,2024-07-23,Starter,India,45.03,14,4,7,Active
+C10386,2022-04-30,Growth,United Kingdom,221.45,45,3,8,Active
+C10387,2023-02-10,Starter,Canada,69.02,26,5,6,Active
+C10388,2022-10-16,Starter,India,45.15,18,5,5,Churned
+C10389,2023-03-06,Starter,India,28.86,13,1,7,Active
+C10390,2023-09-02,Starter,Germany,65.6,7,1,7,Churned
+C10391,2023-01-17,Starter,India,54.13,24,4,8,Active
+C10392,2024-03-23,Growth,United Kingdom,127.33,24,2,7,Active
+C10393,2022-03-01,Growth,Germany,213.12,45,2,6,Active
+C10394,2023-08-07,Starter,United States,53.6,31,6,3,Active
+C10395,2023-12-12,Starter,Germany,45.92,22,7,4,Churned
+C10396,2023-07-10,Enterprise,Brazil,1017.01,18,2,7,Active
+C10397,2023-10-27,Enterprise,Germany,1062.24,13,6,4,Active
+C10398,2023-09-12,Growth,United States,186.46,31,1,5,Active
+C10399,2022-06-14,Growth,Brazil,213.63,7,1,9,Active
+C10400,2024-02-29,Growth,United Kingdom,232.99,1,0,6,Churned
+C10401,2022-09-26,Growth,India,129.51,43,1,6,Active
+C10402,2022-06-28,Starter,Brazil,51.57,2,2,10,Active
+C10403,2023-07-01,Starter,United Kingdom,54.02,11,2,8,Active
+C10404,2023-09-28,Starter,United Kingdom,50.69,27,3,8,Active
+C10405,2023-01-12,Growth,India,183.52,10,3,8,Churned
+C10406,2022-03-02,Growth,Germany,264.35,32,2,9,Churned
+C10407,2024-09-24,Enterprise,United States,1570.2,26,1,9,Active
+C10408,2024-03-24,Starter,United States,45.54,4,3,6,Active
+C10409,2023-05-12,Starter,United States,48.19,22,2,6,Active
+C10410,2022-12-16,Growth,United Kingdom,232.22,40,4,4,Active
+C10411,2024-06-01,Growth,United States,257.19,19,1,7,Active
+C10412,2022-12-21,Growth,Brazil,169.05,32,2,6,Active
+C10413,2022-07-24,Starter,Canada,39.75,28,6,4,Churned
+C10414,2022-09-10,Enterprise,Brazil,1267.64,22,2,7,Active
+C10415,2023-07-11,Enterprise,United Kingdom,958.49,27,1,10,Active
+C10416,2024-01-17,Enterprise,Germany,813.28,23,0,6,Active
+C10417,2022-11-18,Growth,Canada,168.89,4,1,8,Active
+C10418,2022-07-13,Growth,United States,216.32,21,1,6,Active
+C10419,2024-07-23,Starter,Germany,66.86,20,4,6,Active
+C10420,2022-04-07,Starter,Germany,42.52,37,2,9,Active
+C10421,2023-07-06,Starter,Germany,47.8,34,7,4,Active
+C10422,2022-06-27,Starter,Canada,50.55,27,2,7,Active
+C10423,2023-10-16,Enterprise,Brazil,1054.01,18,2,7,Active
+C10424,2023-01-11,Growth,Canada,172.06,30,0,9,Active
+C10425,2022-03-18,Starter,United Kingdom,52.4,47,4,6,Active
+C10426,2022-06-17,Growth,United States,156.62,40,1,9,Active
+C10427,2023-05-03,Growth,Canada,170.69,12,1,7,Active
+C10428,2022-05-25,Starter,United States,47.05,14,3,8,Active
+C10429,2023-08-03,Growth,India,212.26,24,3,7,Active
+C10430,2024-03-11,Starter,Canada,36.19,32,5,7,Active
+C10431,2022-10-18,Growth,United States,193.86,32,1,10,Active
+C10432,2024-07-26,Growth,India,153.72,37,2,7,Active
+C10433,2024-01-06,Starter,Canada,42.73,26,2,7,Churned
+C10434,2022-03-27,Starter,Canada,57.37,39,3,6,Churned
+C10435,2023-04-12,Growth,United Kingdom,196.08,2,3,6,Churned
+C10436,2023-07-08,Enterprise,United Kingdom,1675.54,11,1,7,Active
+C10437,2023-07-16,Starter,United Kingdom,48.3,25,2,7,Churned
+C10438,2023-04-06,Growth,India,241.51,25,1,6,Active
+C10439,2022-12-27,Growth,Canada,233.28,46,2,6,Active
+C10440,2023-07-23,Starter,Canada,48.87,31,3,2,Active
+C10441,2023-11-08,Starter,United Kingdom,37.66,20,3,9,Active
+C10442,2024-04-27,Starter,India,47.98,28,1,10,Active
+C10443,2022-04-14,Starter,Brazil,44.05,6,1,9,Active
+C10444,2022-05-19,Starter,Brazil,43.71,19,3,5,Active
+C10445,2023-05-22,Growth,United States,205.3,1,0,6,Active
+C10446,2023-03-01,Growth,Canada,148.92,8,3,4,Active
+C10447,2024-06-14,Starter,Canada,41.14,20,3,8,Active
+C10448,2023-07-28,Starter,India,40.02,1,0,10,Churned
+C10449,2022-08-24,Starter,Germany,46.57,9,2,7,Active
+C10450,2024-04-30,Enterprise,Brazil,1029.1,43,2,8,Active
+C10451,2024-05-18,Enterprise,United Kingdom,1042.72,40,1,8,Active
+C10452,2022-02-10,Growth,United Kingdom,204.47,27,1,6,Active
+C10453,2024-06-04,Starter,Canada,44.82,45,3,8,Active
+C10454,2022-12-30,Enterprise,Germany,1201.15,2,0,9,Active
+C10455,2022-08-19,Growth,Brazil,159.2,45,1,6,Active
+C10456,2022-04-26,Starter,Germany,41.52,24,3,8,Active
+C10457,2022-03-22,Starter,Brazil,73.7,18,2,7,Churned
+C10458,2022-03-01,Starter,Brazil,42.62,38,3,6,Active
+C10459,2024-02-04,Growth,India,130.58,22,2,8,Active
+C10460,2024-06-23,Starter,Germany,52.47,29,1,8,Active
+C10461,2024-08-16,Starter,Brazil,42.53,15,3,8,Active
+C10462,2023-05-26,Starter,United Kingdom,51.45,25,3,6,Churned
+C10463,2022-09-13,Starter,United Kingdom,48.13,7,7,6,Active
+C10464,2024-06-07,Growth,United States,222.13,11,0,6,Active
+C10465,2024-07-02,Starter,India,48.03,27,2,7,Active
+C10466,2023-02-06,Starter,India,46.83,45,2,7,Active
+C10467,2022-07-28,Growth,Germany,250.36,9,1,9,Active
+C10468,2024-04-19,Enterprise,Brazil,770.04,28,0,8,Active
+C10469,2022-12-26,Starter,Germany,37.59,3,0,8,Active
+C10470,2023-06-21,Starter,United Kingdom,41.55,24,3,9,Active
+C10471,2024-06-04,Starter,United States,34.93,40,4,6,Churned
+C10472,2022-06-16,Starter,Canada,44.52,16,2,6,Active
+C10473,2022-11-01,Growth,Brazil,177.27,38,1,5,Active
+C10474,2022-07-31,Enterprise,Germany,1458.29,19,0,8,Active
+C10475,2024-01-26,Starter,United Kingdom,48.14,44,6,4,Churned
+C10476,2022-04-28,Starter,India,46.96,30,4,6,Churned
+C10477,2022-05-27,Starter,Germany,45.42,16,5,6,Churned
+C10478,2022-11-27,Growth,Germany,161.24,13,3,5,Active
+C10479,2023-01-14,Starter,India,58.56,41,1,6,Active
+C10480,2024-01-16,Starter,United Kingdom,62.42,23,3,4,Active
+C10481,2024-07-29,Starter,United States,38.45,19,5,5,Churned
+C10482,2023-08-18,Growth,United States,275.15,28,1,6,Active
+C10483,2022-08-15,Enterprise,Germany,1049.3,4,1,10,Active
+C10484,2023-10-24,Starter,Brazil,42.15,9,0,10,Active
+C10485,2023-12-03,Growth,United Kingdom,218.74,22,1,10,Active
+C10486,2022-03-26,Growth,Canada,222.68,14,6,4,Churned
+C10487,2024-07-08,Starter,United States,48.31,27,5,6,Active
+C10488,2023-05-27,Enterprise,Canada,1119.7,17,2,5,Active
+C10489,2024-02-24,Growth,Brazil,251.58,21,0,10,Active
+C10490,2022-02-21,Starter,United States,43.26,37,4,8,Active
+C10491,2024-08-05,Growth,India,196.28,37,0,6,Active
+C10492,2024-08-30,Starter,Brazil,68.76,14,2,8,Churned
+C10493,2024-08-01,Starter,Germany,37.5,17,5,4,Active
+C10494,2023-06-14,Starter,Canada,44.71,31,4,6,Churned
+C10495,2022-04-24,Growth,United States,244.28,44,3,7,Active
+C10496,2023-03-28,Enterprise,India,1333.65,26,1,9,Active
+C10497,2023-08-25,Starter,India,58.59,4,6,7,Active
+C10498,2023-03-25,Starter,India,37.61,29,4,6,Churned
+C10499,2023-03-03,Starter,United Kingdom,52.25,34,5,6,Churned
+C10500,2022-12-16,Enterprise,Germany,1133.47,45,3,2,Active
+C10501,2023-11-14,Starter,United States,77.19,44,2,10,Active
+C10502,2023-07-27,Enterprise,United States,1410.86,33,1,7,Active
+C10503,2024-01-13,Starter,India,48.78,26,2,7,Active
+C10504,2022-03-22,Starter,Brazil,51.88,8,3,10,Active
+C10505,2022-09-03,Starter,Brazil,49.53,42,4,5,Active
+C10506,2024-05-28,Starter,Canada,56.35,23,3,7,Active
+C10507,2024-03-10,Starter,United States,41.29,33,3,8,Active
+C10508,2023-11-05,Enterprise,Germany,1576.75,35,4,8,Active
+C10509,2023-02-14,Starter,United States,37.6,1,3,7,Churned
+C10510,2023-03-04,Starter,Germany,51.05,18,3,9,Active
+C10511,2023-10-19,Growth,Brazil,168.76,32,2,7,Active
+C10512,2024-02-11,Starter,India,49.42,23,3,8,Churned
+C10513,2023-03-04,Growth,United Kingdom,242.48,31,3,7,Active
+C10514,2024-06-16,Growth,United States,141.29,27,1,7,Active
+C10515,2022-12-13,Enterprise,United States,1160.01,1,1,8,Active
+C10516,2022-11-17,Growth,Germany,149.21,15,0,7,Active
+C10517,2023-11-25,Starter,Canada,46.34,20,5,6,Churned
+C10518,2024-03-01,Starter,Germany,36.72,19,4,4,Active
+C10519,2023-06-26,Starter,United Kingdom,50.61,2,3,6,Active
+C10520,2024-08-09,Starter,United Kingdom,45.0,1,6,7,Churned
+C10521,2024-05-02,Starter,Brazil,56.9,14,2,8,Churned
+C10522,2022-07-27,Starter,United Kingdom,62.65,41,4,7,Active
+C10523,2024-02-26,Enterprise,Brazil,1202.56,47,0,6,Active
+C10524,2024-03-21,Enterprise,United States,1434.84,40,1,8,Active
+C10525,2024-05-18,Starter,United Kingdom,64.61,45,2,7,Active
+C10526,2023-06-10,Enterprise,United Kingdom,997.9,44,2,8,Active
+C10527,2024-02-05,Growth,Germany,265.15,33,0,10,Active
+C10528,2023-12-25,Starter,Germany,48.64,6,2,7,Churned
+C10529,2024-07-05,Enterprise,India,986.73,18,0,8,Active
+C10530,2022-10-24,Enterprise,United Kingdom,1273.81,35,2,9,Active
+C10531,2022-06-06,Growth,United Kingdom,196.15,19,0,7,Active
+C10532,2024-02-06,Growth,India,150.19,13,3,7,Active
+C10533,2023-10-03,Starter,United Kingdom,39.32,2,5,3,Active
+C10534,2024-09-03,Growth,Canada,276.1,16,2,7,Active
+C10535,2022-03-24,Growth,Canada,210.4,16,0,10,Active
+C10536,2022-02-04,Growth,United Kingdom,267.65,39,0,9,Active
+C10537,2023-05-15,Starter,United Kingdom,45.08,37,2,9,Active
+C10538,2023-08-31,Growth,Canada,169.52,6,1,9,Active
+C10539,2024-05-11,Growth,Brazil,142.12,25,1,10,Active
+C10540,2023-10-31,Growth,Germany,241.51,43,0,7,Active
+C10541,2023-12-27,Starter,India,53.19,23,2,9,Active
+C10542,2023-01-23,Starter,United Kingdom,45.16,45,5,9,Active
+C10543,2023-08-06,Starter,India,41.82,5,4,6,Active
+C10544,2022-05-21,Growth,Canada,249.31,16,0,6,Active
+C10545,2023-11-25,Starter,Germany,47.29,44,6,5,Active
+C10546,2022-05-21,Enterprise,Germany,1160.69,34,1,8,Active
+C10547,2022-06-23,Growth,India,176.47,14,2,5,Active
+C10548,2022-06-15,Starter,Brazil,45.17,42,1,6,Active
+C10549,2024-07-19,Growth,India,222.14,18,0,8,Active
+C10550,2022-06-23,Starter,Germany,36.91,38,2,7,Active
+C10551,2022-08-01,Starter,Germany,49.8,16,0,10,Active
+C10552,2024-09-22,Starter,United States,59.32,16,3,8,Active
+C10553,2022-06-16,Growth,Brazil,195.66,16,2,6,Active
+C10554,2023-06-28,Enterprise,Germany,1481.67,18,2,10,Active
+C10555,2022-05-21,Starter,Canada,64.07,29,3,7,Active
+C10556,2023-03-24,Growth,Germany,238.42,39,1,5,Active
+C10557,2024-07-25,Starter,United Kingdom,44.01,30,3,5,Churned
+C10558,2022-11-25,Starter,Canada,48.65,2,7,4,Churned
+C10559,2023-04-06,Growth,United States,213.25,29,1,6,Active
+C10560,2024-05-26,Growth,Brazil,181.16,21,1,8,Active
+C10561,2023-06-18,Enterprise,Brazil,1085.13,4,1,4,Active
+C10562,2024-08-06,Growth,United Kingdom,177.8,16,2,9,Active
+C10563,2023-01-15,Starter,United Kingdom,81.49,46,5,7,Active
+C10564,2022-08-20,Starter,United Kingdom,46.41,17,1,7,Active
+C10565,2022-01-28,Starter,Canada,60.68,34,5,7,Active
+C10566,2023-01-31,Enterprise,Germany,1008.48,10,1,6,Active
+C10567,2022-03-08,Growth,United States,279.68,42,0,7,Active
+C10568,2023-07-30,Starter,Germany,45.43,39,4,7,Active
+C10569,2022-01-16,Starter,United States,49.52,8,4,6,Churned
+C10570,2022-04-13,Starter,India,33.96,33,2,6,Active
+C10571,2023-06-23,Growth,United Kingdom,248.79,44,0,8,Active
+C10572,2023-08-31,Starter,United Kingdom,63.97,43,4,8,Active
+C10573,2022-07-13,Enterprise,United States,946.36,34,1,10,Active
+C10574,2024-01-13,Starter,United States,61.98,35,2,8,Active
+C10575,2023-02-07,Growth,Brazil,152.3,24,0,7,Active
+C10576,2022-07-07,Starter,Canada,55.6,8,6,6,Churned
+C10577,2023-04-06,Starter,Germany,46.26,2,5,5,Churned
+C10578,2024-07-11,Starter,United States,64.01,14,4,8,Active
+C10579,2023-06-17,Starter,Canada,51.5,12,4,8,Churned
+C10580,2024-05-04,Enterprise,Germany,1445.73,43,4,9,Active
+C10581,2024-06-11,Growth,Germany,254.9,40,1,6,Active
+C10582,2022-08-15,Starter,Brazil,46.23,16,2,6,Active
+C10583,2022-02-13,Starter,Brazil,48.72,18,2,8,Active
+C10584,2023-11-02,Starter,Brazil,39.24,35,4,6,Active
+C10585,2023-05-10,Growth,Brazil,187.41,32,0,9,Active
+C10586,2022-12-26,Starter,United States,72.04,42,5,8,Active
+C10587,2022-05-12,Starter,United Kingdom,57.0,35,2,10,Active
+C10588,2022-05-28,Starter,Brazil,39.76,33,4,6,Churned
+C10589,2024-07-15,Enterprise,Canada,1662.98,37,0,9,Active
+C10590,2022-05-24,Starter,India,52.96,43,2,6,Active
+C10591,2024-07-06,Growth,Germany,234.95,18,2,8,Active
+C10592,2022-09-23,Enterprise,Canada,1323.7,12,0,8,Active
+C10593,2022-05-20,Starter,India,53.29,43,1,7,Active
+C10594,2023-06-04,Starter,United States,32.86,8,5,9,Active
+C10595,2022-04-28,Starter,Germany,61.14,14,1,6,Active
+C10596,2022-09-30,Growth,Canada,126.78,7,2,7,Active
+C10597,2022-04-20,Starter,Germany,60.04,40,5,6,Active
+C10598,2022-01-20,Starter,India,49.99,44,2,8,Active
+C10599,2022-04-09,Starter,United States,57.91,20,1,6,Active
+C10600,2024-08-26,Growth,India,205.41,5,2,7,Churned
+C10601,2022-06-08,Growth,United Kingdom,245.2,12,1,7,Active
+C10602,2022-08-10,Starter,United States,49.16,28,3,3,Active
+C10603,2022-06-05,Growth,Canada,210.5,17,3,9,Active
+C10604,2022-03-17,Starter,Germany,53.13,36,2,5,Active
+C10605,2022-06-13,Starter,Brazil,71.35,38,3,4,Active
+C10606,2022-04-13,Starter,Brazil,55.25,21,3,8,Active
+C10607,2022-05-29,Growth,Canada,152.92,29,2,7,Active
+C10608,2023-04-02,Growth,Germany,177.77,3,2,7,Active
+C10609,2023-01-13,Starter,Brazil,55.23,7,4,6,Churned
+C10610,2022-06-29,Starter,Canada,63.04,16,2,9,Active
+C10611,2022-09-11,Starter,India,42.41,6,2,6,Active
+C10612,2023-04-11,Starter,India,76.69,1,1,8,Active
+C10613,2023-02-22,Starter,Canada,50.75,33,5,4,Active
+C10614,2022-05-01,Starter,Germany,53.3,2,2,8,Churned
+C10615,2024-06-12,Starter,India,38.13,12,4,8,Active
+C10616,2023-01-25,Starter,Brazil,61.25,34,2,9,Active
+C10617,2022-12-18,Starter,Canada,44.82,10,5,4,Active
+C10618,2023-07-28,Starter,Brazil,42.21,11,1,7,Active
+C10619,2022-10-14,Growth,Germany,186.77,36,0,10,Active
+C10620,2023-09-15,Starter,Brazil,64.61,2,1,9,Active
+C10621,2024-07-03,Growth,India,218.43,16,2,7,Active
+C10622,2024-04-24,Starter,Germany,41.02,26,3,7,Churned
+C10623,2022-11-18,Starter,Germany,44.07,4,3,7,Churned
+C10624,2022-04-05,Starter,Brazil,64.96,31,3,6,Active
+C10625,2022-05-03,Starter,United States,46.74,20,4,7,Active
+C10626,2022-07-30,Growth,Canada,222.6,15,0,9,Active
+C10627,2023-09-11,Starter,United Kingdom,57.56,27,4,5,Active
+C10628,2023-05-09,Starter,Brazil,24.73,2,2,6,Churned
+C10629,2022-10-09,Starter,Canada,63.1,29,0,7,Active
+C10630,2022-07-15,Starter,United Kingdom,41.32,22,8,4,Churned
+C10631,2023-06-04,Enterprise,India,1116.51,3,1,8,Active
+C10632,2024-08-19,Enterprise,India,1632.62,37,0,8,Active
+C10633,2024-02-07,Starter,United States,65.44,22,1,7,Active
+C10634,2022-09-14,Starter,India,54.08,4,3,9,Churned
+C10635,2023-07-20,Starter,Canada,56.68,17,8,5,Active
+C10636,2023-05-24,Starter,Canada,59.59,36,4,9,Active
+C10637,2024-03-19,Starter,Canada,65.22,22,4,9,Active
+C10638,2022-12-11,Starter,Germany,66.91,19,3,5,Churned
+C10639,2022-12-11,Starter,Brazil,50.07,2,3,6,Churned
+C10640,2023-03-25,Starter,United Kingdom,42.28,4,3,6,Active
+C10641,2022-06-18,Starter,United Kingdom,46.56,14,3,7,Active
+C10642,2024-05-19,Growth,Canada,204.13,13,5,7,Active
+C10643,2023-01-30,Growth,United Kingdom,196.9,31,0,8,Active
+C10644,2024-05-10,Starter,Brazil,40.02,23,3,6,Active
+C10645,2023-02-16,Growth,Canada,217.17,6,1,10,Active
+C10646,2023-11-07,Starter,India,35.81,31,7,5,Churned
+C10647,2023-12-17,Starter,United States,49.84,46,3,8,Active
+C10648,2024-03-02,Growth,Canada,205.04,41,2,7,Active
+C10649,2023-11-18,Starter,United Kingdom,50.14,47,2,7,Churned
+C10650,2023-11-21,Enterprise,Canada,1422.71,23,1,9,Active
+C10651,2022-11-06,Enterprise,United States,1385.47,17,3,9,Churned
+C10652,2022-03-04,Starter,Germany,76.43,3,5,6,Churned
+C10653,2024-07-18,Starter,Brazil,44.18,33,4,6,Active
+C10654,2024-04-24,Starter,United States,51.82,21,3,9,Active
+C10655,2022-10-03,Enterprise,Germany,1252.78,30,1,8,Active
+C10656,2022-01-21,Starter,Canada,50.68,15,3,7,Active
+C10657,2024-09-23,Growth,Canada,154.52,8,1,9,Active
+C10658,2022-03-24,Starter,India,38.67,33,2,8,Active
+C10659,2022-02-02,Growth,Brazil,199.26,19,1,10,Active
+C10660,2024-09-15,Starter,Brazil,35.75,25,3,7,Active
+C10661,2023-11-05,Growth,Canada,186.13,47,1,9,Active
+C10662,2023-08-26,Growth,Germany,174.83,14,2,8,Churned
+C10663,2023-09-13,Starter,United Kingdom,46.17,7,3,7,Churned
+C10664,2024-01-12,Starter,Canada,61.45,34,3,6,Active
+C10665,2023-08-08,Starter,Germany,39.49,28,4,6,Active
+C10666,2024-01-17,Starter,India,58.31,19,4,7,Active
+C10667,2024-02-19,Growth,India,177.51,29,2,6,Active
+C10668,2022-07-31,Starter,Brazil,44.81,44,4,6,Active
+C10669,2023-08-14,Enterprise,Canada,1317.1,8,4,6,Active
+C10670,2022-11-28,Starter,Germany,46.39,38,2,9,Active
+C10671,2023-09-02,Growth,Germany,166.47,26,1,8,Active
+C10672,2022-06-20,Enterprise,Canada,1114.34,38,2,7,Active
+C10673,2024-05-27,Growth,United Kingdom,139.49,44,2,6,Active
+C10674,2022-09-23,Enterprise,India,1295.06,8,1,10,Active
+C10675,2022-07-06,Starter,India,26.35,6,2,9,Churned
+C10676,2022-05-02,Growth,Germany,237.68,1,1,9,Active
+C10677,2023-06-16,Starter,India,55.42,9,2,5,Active
+C10678,2022-12-23,Starter,Brazil,67.5,17,0,9,Active
+C10679,2023-12-14,Growth,United Kingdom,307.88,13,0,7,Active
+C10680,2023-02-22,Growth,United Kingdom,239.96,39,1,9,Active
+C10681,2022-11-04,Enterprise,Germany,1058.49,36,4,7,Active
+C10682,2022-11-11,Growth,Canada,307.3,17,0,9,Active
+C10683,2022-08-08,Growth,Germany,156.73,28,2,6,Active
+C10684,2023-11-29,Growth,Germany,136.01,15,5,4,Active
+C10685,2022-05-09,Growth,Germany,288.24,24,0,7,Active
+C10686,2024-06-30,Starter,Brazil,55.26,14,4,7,Churned
+C10687,2022-09-20,Starter,United States,33.67,38,0,8,Active
+C10688,2022-01-10,Starter,India,37.37,11,4,7,Churned
+C10689,2023-10-29,Growth,India,222.2,46,1,6,Active
+C10690,2023-12-13,Growth,United Kingdom,167.22,44,1,8,Active
+C10691,2023-09-07,Growth,United Kingdom,172.1,10,2,9,Active
+C10692,2022-12-28,Enterprise,Brazil,1778.21,27,1,8,Churned
+C10693,2022-06-21,Growth,United States,305.8,39,1,8,Active
+C10694,2024-05-23,Growth,United Kingdom,204.93,40,1,8,Active
+C10695,2023-05-07,Growth,Germany,193.1,18,2,6,Active
+C10696,2023-04-21,Growth,United States,238.36,26,2,10,Active
+C10697,2022-08-02,Starter,United States,43.79,7,2,8,Active
+C10698,2024-02-21,Enterprise,India,768.14,12,0,8,Active
+C10699,2024-07-24,Growth,India,114.55,13,4,7,Active
+C10700,2023-10-08,Growth,Canada,196.09,14,3,8,Active
+C10701,2023-12-26,Starter,India,58.45,19,2,5,Active
+C10702,2023-12-11,Starter,United States,49.16,33,1,8,Active
+C10703,2022-06-23,Growth,India,233.99,43,1,10,Active
+C10704,2023-04-09,Enterprise,United States,1439.49,28,3,9,Active
+C10705,2022-10-17,Enterprise,United States,1583.33,23,1,7,Active
+C10706,2023-02-07,Growth,United Kingdom,206.55,34,1,9,Active
+C10707,2024-05-03,Growth,United States,210.29,29,5,6,Active
+C10708,2024-04-11,Starter,Canada,48.64,21,4,7,Active
+C10709,2023-07-12,Growth,India,188.98,2,1,7,Active
+C10710,2022-04-27,Starter,India,35.78,26,5,5,Active
+C10711,2022-12-22,Growth,United States,251.57,4,4,6,Active
+C10712,2023-12-25,Starter,United States,45.38,29,4,9,Active
+C10713,2023-08-22,Enterprise,United States,1098.68,45,0,7,Active
+C10714,2023-07-13,Starter,India,43.97,38,5,8,Active
+C10715,2023-01-25,Starter,Brazil,37.48,40,1,7,Active
+C10716,2024-08-27,Growth,India,195.62,22,4,6,Active
+C10717,2024-06-30,Growth,United Kingdom,220.65,24,2,8,Active
+C10718,2023-10-07,Growth,United Kingdom,172.82,25,2,5,Active
+C10719,2024-05-23,Growth,Germany,244.89,10,1,9,Active
+C10720,2022-06-28,Growth,Germany,184.86,47,1,7,Active
+C10721,2022-06-10,Starter,United States,36.06,2,7,4,Churned
+C10722,2023-12-15,Growth,Germany,261.92,47,1,6,Active
+C10723,2023-11-09,Enterprise,United Kingdom,1248.59,46,2,10,Active
+C10724,2022-09-02,Growth,United Kingdom,236.5,45,1,8,Active
+C10725,2024-04-17,Starter,Canada,58.51,1,4,6,Churned
+C10726,2024-01-18,Growth,United States,164.69,45,3,8,Active
+C10727,2022-07-31,Starter,Brazil,44.14,12,1,6,Active
+C10728,2023-09-03,Enterprise,United States,1475.77,13,3,9,Active
+C10729,2024-05-21,Starter,United Kingdom,70.73,33,3,7,Active
+C10730,2024-02-09,Starter,Canada,49.62,19,2,5,Active
+C10731,2023-02-24,Starter,United Kingdom,43.22,45,2,6,Active
+C10732,2024-03-29,Growth,United States,278.6,24,1,6,Churned
+C10733,2022-11-04,Growth,Germany,175.56,6,2,7,Churned
+C10734,2024-09-01,Growth,United Kingdom,212.53,12,2,6,Active
+C10735,2024-09-11,Starter,India,44.98,37,3,5,Active
+C10736,2022-10-29,Growth,India,210.0,28,2,8,Active
+C10737,2023-11-20,Starter,India,40.56,16,0,8,Active
+C10738,2024-08-20,Starter,United States,45.46,11,3,9,Churned
+C10739,2022-10-18,Growth,United Kingdom,175.54,32,2,9,Active
+C10740,2023-12-17,Starter,United States,55.94,13,4,6,Active
+C10741,2023-06-14,Growth,Canada,205.6,5,2,8,Active
+C10742,2023-03-20,Starter,United States,58.43,27,3,5,Active
+C10743,2023-10-06,Growth,Canada,168.71,41,2,8,Active
+C10744,2023-04-22,Starter,Canada,47.0,15,4,7,Churned
+C10745,2023-12-13,Starter,India,55.52,34,3,8,Active
+C10746,2024-08-17,Starter,Brazil,58.18,21,2,7,Active
+C10747,2022-07-29,Growth,Canada,149.03,45,2,7,Active
+C10748,2022-06-26,Starter,Canada,52.22,29,4,6,Active
+C10749,2023-09-09,Starter,United Kingdom,41.64,24,2,9,Active
+C10750,2024-08-19,Starter,Brazil,58.77,11,2,8,Active
+C10751,2024-04-27,Starter,United Kingdom,71.09,42,2,5,Active
+C10752,2023-02-09,Starter,United States,29.06,3,3,8,Active
+C10753,2024-03-14,Growth,United Kingdom,174.53,26,2,7,Active
+C10754,2024-06-30,Starter,Canada,51.65,13,2,9,Churned
+C10755,2022-10-22,Starter,United States,48.96,25,2,8,Active
+C10756,2022-04-15,Growth,India,240.14,47,1,9,Active
+C10757,2024-08-28,Starter,United States,49.78,5,4,8,Active
+C10758,2022-06-08,Growth,Germany,178.99,3,2,9,Active
+C10759,2022-01-13,Growth,Canada,162.27,39,1,9,Active
+C10760,2022-11-16,Growth,Canada,156.9,33,0,9,Active
+C10761,2024-02-19,Starter,Canada,42.24,20,3,6,Active
+C10762,2024-01-17,Starter,Canada,43.76,11,4,5,Active
+C10763,2022-11-14,Starter,India,52.91,29,6,4,Active
+C10764,2023-11-17,Starter,United States,47.49,13,2,8,Churned
+C10765,2024-07-30,Growth,India,174.71,31,1,4,Active
+C10766,2022-01-07,Starter,Germany,40.04,20,2,7,Active
+C10767,2024-05-11,Starter,United Kingdom,42.58,37,4,6,Active
+C10768,2023-08-24,Growth,Brazil,177.77,31,1,9,Active
+C10769,2024-05-31,Growth,United States,171.35,28,2,7,Active
+C10770,2022-02-19,Enterprise,United States,1372.93,5,3,6,Active
+C10771,2022-09-09,Starter,Germany,64.42,30,3,9,Active
+C10772,2023-01-18,Growth,United Kingdom,157.29,33,1,7,Active
+C10773,2024-03-07,Growth,Brazil,248.93,25,0,8,Active
+C10774,2023-11-09,Growth,Brazil,228.6,28,1,7,Active
+C10775,2022-11-29,Starter,Brazil,50.79,29,4,7,Active
+C10776,2022-08-30,Starter,United States,66.5,11,0,8,Active
+C10777,2023-03-24,Starter,India,47.36,21,1,7,Active
+C10778,2022-06-15,Growth,Canada,215.66,6,1,10,Active
+C10779,2024-06-23,Starter,Canada,50.23,37,4,6,Active
+C10780,2024-04-10,Starter,United States,49.49,7,4,6,Active
+C10781,2023-12-22,Starter,United Kingdom,53.71,39,4,5,Active
+C10782,2023-04-25,Growth,United Kingdom,200.86,30,2,7,Active
+C10783,2023-10-03,Starter,United Kingdom,53.79,25,5,5,Active
+C10784,2022-09-11,Starter,Canada,42.86,24,1,7,Churned
+C10785,2022-05-09,Growth,United States,175.14,7,1,6,Active
+C10786,2022-08-21,Enterprise,India,1048.59,31,5,6,Active
+C10787,2023-06-23,Growth,Canada,185.0,18,3,5,Churned
+C10788,2024-08-17,Starter,Brazil,60.01,37,0,9,Active
+C10789,2022-05-04,Starter,Germany,44.67,40,0,7,Active
+C10790,2022-11-01,Starter,India,55.83,44,1,9,Active
+C10791,2022-03-17,Starter,Germany,51.67,44,3,8,Churned
+C10792,2023-03-18,Starter,Brazil,44.86,36,2,7,Active
+C10793,2024-08-04,Starter,Canada,63.67,13,3,8,Active
+C10794,2022-02-21,Starter,India,56.77,13,3,9,Churned
+C10795,2023-08-16,Starter,Germany,49.02,45,4,8,Active
+C10796,2022-06-04,Growth,Canada,195.8,46,0,6,Active
+C10797,2022-01-07,Starter,Germany,49.93,14,1,7,Active
+C10798,2023-06-23,Enterprise,United States,883.75,31,1,7,Active
+C10799,2023-04-15,Growth,United Kingdom,168.73,44,3,8,Churned
+C10800,2024-06-19,Starter,India,53.75,40,3,6,Active
+C10801,2022-10-14,Starter,Germany,35.7,44,3,6,Active
+C10802,2023-09-27,Enterprise,Canada,1033.34,17,2,6,Active
+C10803,2022-06-03,Enterprise,Brazil,1109.39,24,5,6,Active
+C10804,2023-08-02,Starter,India,87.58,29,4,7,Active
+C10805,2024-03-30,Starter,Canada,56.07,45,5,4,Active
+C10806,2023-01-21,Enterprise,Brazil,1494.5,47,2,6,Active
+C10807,2022-06-03,Growth,United Kingdom,169.4,26,0,5,Active
+C10808,2023-05-21,Growth,Brazil,213.94,41,1,4,Active
+C10809,2022-06-16,Starter,Brazil,34.46,18,4,7,Active
+C10810,2023-10-09,Growth,Canada,186.27,29,0,8,Active
+C10811,2022-08-21,Growth,United States,220.17,39,0,8,Active
+C10812,2023-10-23,Starter,United States,36.9,42,1,10,Churned
+C10813,2023-12-14,Growth,Brazil,215.28,6,0,5,Active
+C10814,2024-09-26,Starter,Canada,53.89,4,4,3,Active
+C10815,2022-07-10,Starter,United Kingdom,43.44,11,7,4,Active
+C10816,2024-07-20,Growth,Canada,168.4,5,0,5,Active
+C10817,2022-11-18,Growth,United States,172.48,11,1,7,Active
+C10818,2022-06-04,Enterprise,Brazil,1119.56,45,1,8,Active
+C10819,2024-06-21,Growth,Germany,186.78,30,3,7,Active
+C10820,2023-07-25,Starter,India,54.26,5,8,6,Churned
+C10821,2023-07-20,Starter,Canada,44.03,34,4,7,Active
+C10822,2022-10-29,Starter,India,67.51,45,3,6,Churned
+C10823,2022-06-23,Starter,United Kingdom,67.41,40,3,6,Active
+C10824,2022-03-03,Growth,Canada,208.63,41,3,7,Active
+C10825,2024-05-09,Starter,United Kingdom,45.74,43,4,4,Active
+C10826,2022-01-21,Starter,India,44.04,36,3,2,Active
+C10827,2023-05-28,Starter,United Kingdom,52.2,42,3,7,Active
+C10828,2022-09-24,Starter,Canada,54.06,38,2,8,Active
+C10829,2024-04-14,Starter,Canada,47.07,33,3,9,Active
+C10830,2023-12-04,Growth,Germany,183.95,10,1,9,Active
+C10831,2022-03-20,Starter,Germany,52.58,43,2,8,Churned
+C10832,2022-05-09,Enterprise,Germany,1216.68,5,0,8,Active
+C10833,2022-06-11,Starter,Canada,43.7,13,4,5,Active
+C10834,2023-12-15,Growth,India,203.55,34,5,6,Active
+C10835,2022-04-02,Growth,United States,176.31,35,0,9,Active
+C10836,2022-08-23,Growth,Brazil,171.22,42,0,9,Active
+C10837,2023-04-27,Growth,Germany,198.8,4,4,8,Active
+C10838,2022-07-05,Starter,United States,43.68,38,3,7,Active
+C10839,2023-01-23,Starter,Germany,42.32,6,4,5,Active
+C10840,2022-11-01,Growth,United States,245.29,29,1,9,Active
+C10841,2023-02-21,Starter,United Kingdom,45.3,11,2,9,Active
+C10842,2022-01-28,Growth,Brazil,287.72,27,2,7,Active
+C10843,2023-01-02,Growth,Germany,225.57,5,2,8,Active
+C10844,2023-06-21,Starter,Germany,41.58,2,2,8,Active
+C10845,2023-03-01,Starter,Germany,61.79,46,6,5,Active
+C10846,2024-07-30,Growth,Canada,172.43,25,0,8,Active
+C10847,2023-01-17,Growth,United Kingdom,295.29,22,5,5,Active
+C10848,2022-11-01,Growth,Canada,208.21,19,4,6,Active
+C10849,2022-06-09,Growth,Germany,221.81,43,2,9,Active
+C10850,2023-09-07,Starter,Germany,49.3,37,1,9,Active
+C10851,2023-07-24,Starter,India,51.68,23,1,8,Active
+C10852,2022-02-22,Starter,Brazil,46.81,6,4,8,Active
+C10853,2024-05-19,Starter,Germany,40.72,33,3,6,Active
+C10854,2024-09-05,Growth,India,212.99,10,3,5,Active
+C10855,2024-09-21,Growth,Germany,244.27,16,4,6,Active
+C10856,2024-02-18,Growth,Brazil,156.83,32,1,7,Active
+C10857,2022-04-28,Starter,Canada,66.68,45,8,6,Active
+C10858,2024-06-15,Starter,Canada,55.26,11,1,8,Active
+C10859,2023-02-16,Starter,India,44.9,2,1,9,Churned
+C10860,2024-05-13,Starter,United Kingdom,44.74,20,1,5,Active
+C10861,2022-08-30,Starter,India,71.14,33,2,6,Active
+C10862,2023-11-18,Starter,India,59.12,31,2,7,Active
+C10863,2023-07-21,Starter,United Kingdom,61.55,45,4,7,Active
+C10864,2023-04-04,Starter,Canada,46.6,10,2,10,Active
+C10865,2022-12-27,Growth,Brazil,222.38,38,2,6,Active
+C10866,2022-02-23,Growth,Germany,213.4,37,4,5,Active
+C10867,2024-05-27,Starter,United States,47.32,39,3,6,Active
+C10868,2023-12-25,Growth,Brazil,203.4,43,0,7,Active
+C10869,2024-07-24,Starter,United Kingdom,61.18,15,4,5,Churned
+C10870,2023-06-01,Starter,Brazil,67.47,15,4,6,Churned
+C10871,2022-11-22,Growth,Germany,189.24,22,3,8,Active
+C10872,2023-09-08,Starter,Brazil,37.68,17,1,8,Active
+C10873,2022-12-23,Growth,Canada,276.45,7,0,7,Active
+C10874,2024-07-28,Starter,United States,68.24,16,5,6,Active
+C10875,2023-06-19,Starter,United States,53.09,18,2,6,Active
+C10876,2023-11-09,Starter,Brazil,70.13,36,4,8,Active
+C10877,2023-09-28,Starter,Germany,52.32,1,2,9,Active
+C10878,2023-01-24,Starter,Brazil,40.85,36,2,5,Active
+C10879,2024-01-23,Starter,United States,37.69,37,1,8,Active
+C10880,2023-05-07,Starter,Canada,37.62,7,1,6,Active
+C10881,2022-04-11,Starter,United Kingdom,49.04,45,4,6,Active
+C10882,2023-02-13,Growth,United States,181.28,35,1,7,Active
+C10883,2022-02-21,Growth,Germany,177.25,33,2,5,Active
+C10884,2024-01-06,Growth,Brazil,194.79,37,1,9,Active
+C10885,2023-11-10,Growth,United States,236.25,39,2,7,Active
+C10886,2024-06-15,Enterprise,India,1075.64,19,0,7,Active
+C10887,2023-04-24,Growth,Brazil,172.47,25,1,8,Active
+C10888,2024-09-18,Growth,India,180.75,29,4,5,Active
+C10889,2023-11-04,Growth,United States,239.25,10,4,6,Active
+C10890,2023-01-22,Growth,United Kingdom,196.23,3,0,5,Active
+C10891,2022-10-29,Growth,India,210.46,34,1,4,Active
+C10892,2024-08-05,Enterprise,India,1637.1,12,2,6,Active
+C10893,2022-06-22,Starter,United States,86.53,15,1,7,Active
+C10894,2022-01-17,Enterprise,Germany,1363.97,5,2,5,Active
+C10895,2022-04-22,Starter,United States,54.6,22,6,5,Churned
+C10896,2023-11-21,Starter,India,38.66,27,4,6,Active
+C10897,2024-02-26,Starter,Germany,52.75,43,2,7,Active
+C10898,2023-05-25,Growth,India,201.48,24,1,9,Active
+C10899,2023-02-08,Starter,Germany,58.57,18,3,9,Active
+C10900,2022-07-03,Starter,Canada,45.31,38,2,8,Active
+C10901,2022-03-24,Starter,United States,51.01,14,5,5,Active
+C10902,2024-01-16,Growth,United Kingdom,224.61,1,2,8,Active
+C10903,2022-09-04,Starter,United States,71.63,2,6,8,Churned
+C10904,2024-09-11,Growth,Canada,272.07,40,1,6,Active
+C10905,2024-05-11,Growth,United Kingdom,256.34,33,0,6,Active
+C10906,2024-02-10,Growth,United States,230.15,9,1,5,Churned
+C10907,2023-04-27,Growth,Brazil,182.55,11,0,7,Active
+C10908,2022-12-25,Starter,Canada,56.66,40,0,9,Active
+C10909,2024-05-03,Enterprise,Canada,1028.26,31,1,10,Active
+C10910,2022-02-17,Enterprise,United Kingdom,1151.51,23,2,9,Active
+C10911,2024-08-03,Starter,United States,69.93,18,1,8,Active
+C10912,2024-04-03,Starter,United Kingdom,54.57,18,3,7,Active
+C10913,2022-03-08,Starter,United Kingdom,51.28,38,5,7,Active
+C10914,2022-08-08,Growth,Brazil,213.67,10,5,7,Active
+C10915,2024-08-01,Growth,Germany,195.3,42,1,10,Active
+C10916,2023-10-25,Enterprise,Germany,779.7,12,2,7,Active
+C10917,2023-01-07,Enterprise,India,931.88,12,1,8,Active
+C10918,2024-04-13,Growth,Germany,225.15,18,2,7,Active
+C10919,2023-11-30,Starter,United Kingdom,40.76,38,1,8,Active
+C10920,2024-07-13,Starter,United Kingdom,47.96,1,0,8,Churned
+C10921,2023-02-08,Starter,United Kingdom,38.33,8,4,5,Active
+C10922,2023-08-12,Starter,United States,42.44,18,3,8,Active
+C10923,2023-09-07,Starter,India,48.96,7,6,8,Active
+C10924,2022-02-12,Starter,United Kingdom,58.94,19,3,7,Active
+C10925,2023-11-01,Growth,Brazil,249.18,21,2,8,Active
+C10926,2023-12-19,Starter,Germany,42.3,30,6,7,Churned
+C10927,2022-05-13,Growth,Germany,211.59,16,0,8,Active
+C10928,2024-03-22,Enterprise,Canada,902.34,26,5,6,Active
+C10929,2023-03-08,Starter,Brazil,49.56,47,2,7,Active
+C10930,2023-03-03,Starter,United Kingdom,59.29,22,2,6,Active
+C10931,2022-07-26,Starter,United States,48.35,38,3,8,Active
+C10932,2024-05-02,Growth,Brazil,258.9,13,1,8,Active
+C10933,2022-04-30,Growth,United Kingdom,235.26,42,1,9,Active
+C10934,2024-09-05,Starter,United States,51.42,27,6,6,Active
+C10935,2023-08-15,Growth,India,189.31,7,1,6,Active
+C10936,2022-08-25,Growth,Brazil,178.83,43,0,10,Active
+C10937,2023-11-12,Starter,India,36.61,34,2,6,Active
+C10938,2023-12-18,Growth,Brazil,153.59,17,1,6,Active
+C10939,2022-09-15,Starter,United Kingdom,59.79,29,4,6,Active
+C10940,2024-05-26,Starter,Canada,66.32,45,3,4,Active
+C10941,2022-01-08,Enterprise,United Kingdom,966.68,5,1,7,Active
+C10942,2022-05-08,Starter,India,49.67,2,1,9,Active
+C10943,2024-08-28,Growth,United Kingdom,145.24,38,2,7,Active
+C10944,2024-01-31,Growth,India,163.69,14,1,10,Active
+C10945,2023-04-20,Starter,Canada,51.61,41,6,8,Active
+C10946,2022-11-12,Growth,Canada,179.39,37,1,9,Active
+C10947,2023-10-14,Starter,United Kingdom,33.4,43,3,4,Active
+C10948,2023-11-22,Starter,Germany,69.1,36,5,8,Active
+C10949,2022-03-17,Starter,Canada,48.52,45,4,6,Churned
+C10950,2023-03-10,Enterprise,United Kingdom,962.17,30,2,10,Active
+C10951,2023-09-13,Enterprise,Canada,1231.13,6,2,6,Active
+C10952,2023-08-12,Starter,India,48.21,10,0,8,Active
+C10953,2024-02-02,Starter,India,53.31,42,4,7,Active
+C10954,2024-06-30,Enterprise,Canada,1121.15,14,3,5,Churned
+C10955,2022-02-17,Growth,Canada,211.91,45,4,4,Active
+C10956,2023-06-17,Starter,Canada,59.18,42,5,2,Active
+C10957,2023-06-08,Starter,United States,37.64,33,2,10,Active
+C10958,2022-07-27,Starter,United States,42.66,7,1,5,Active
+C10959,2022-05-23,Starter,United States,57.96,9,2,5,Active
+C10960,2024-06-22,Starter,India,43.88,35,2,8,Active
+C10961,2022-05-27,Growth,Germany,195.78,19,6,3,Active
+C10962,2023-03-19,Growth,United Kingdom,181.13,19,1,5,Active
+C10963,2023-09-07,Starter,Brazil,45.16,5,5,2,Churned
+C10964,2023-04-23,Growth,United Kingdom,180.32,22,3,7,Active
+C10965,2023-09-12,Starter,Canada,38.09,1,1,6,Active
+C10966,2022-01-29,Growth,Germany,218.14,7,1,9,Active
+C10967,2023-07-08,Starter,Germany,60.6,44,4,6,Active
+C10968,2024-03-19,Starter,United States,47.3,36,5,6,Churned
+C10969,2023-05-26,Starter,United States,59.25,46,7,5,Active
+C10970,2024-09-19,Starter,United States,44.42,43,4,6,Churned
+C10971,2023-04-15,Growth,United Kingdom,178.27,44,0,7,Active
+C10972,2022-11-04,Growth,United States,216.04,20,2,6,Active
+C10973,2023-04-27,Starter,Germany,53.37,12,6,4,Churned
+C10974,2022-10-28,Starter,Brazil,47.91,33,3,9,Active
+C10975,2022-12-01,Growth,Brazil,227.84,30,0,7,Active
+C10976,2023-03-29,Growth,Brazil,153.84,21,2,4,Active
+C10977,2022-09-15,Growth,India,187.26,24,1,8,Active
+C10978,2022-02-04,Growth,United States,241.35,10,3,6,Active
+C10979,2022-09-23,Growth,Canada,241.22,24,1,8,Active
+C10980,2022-01-31,Starter,Canada,57.92,46,3,6,Active
+C10981,2024-06-27,Growth,United Kingdom,244.07,21,3,9,Active
+C10982,2024-05-18,Starter,Canada,45.48,25,7,5,Churned
+C10983,2022-09-24,Growth,India,141.5,45,2,8,Active
+C10984,2024-06-15,Enterprise,Germany,1139.47,41,3,8,Active
+C10985,2023-01-10,Starter,United States,55.65,38,2,5,Churned
+C10986,2023-01-08,Starter,Canada,57.5,1,6,6,Active
+C10987,2023-05-20,Starter,India,44.1,40,1,6,Active
+C10988,2024-07-01,Enterprise,Germany,988.78,4,2,5,Active
+C10989,2024-01-13,Starter,Brazil,41.19,2,2,5,Active
+C10990,2023-09-28,Growth,Brazil,178.5,17,2,8,Active
+C10991,2024-02-17,Starter,India,33.53,20,4,10,Active
+C10992,2024-05-25,Starter,United Kingdom,44.1,6,3,6,Active
+C10993,2023-12-23,Starter,Germany,49.47,29,3,7,Churned
+C10994,2023-04-14,Growth,India,195.14,44,2,8,Active
+C10995,2022-10-31,Starter,United Kingdom,45.87,31,4,6,Churned
+C10996,2023-04-12,Enterprise,United States,1045.47,46,2,9,Active
+C10997,2022-06-13,Growth,Canada,177.46,43,1,10,Active
+C10998,2023-08-30,Enterprise,India,1073.9,39,1,7,Active
+C10999,2024-03-28,Starter,India,56.43,8,6,8,Active
+C11000,2022-01-29,Starter,Germany,48.99,30,4,6,Churned
+C11001,2024-05-24,Starter,Brazil,92.31,5,2,6,Churned
+C11002,2023-10-01,Starter,Germany,45.85,37,4,6,Active
+C11003,2024-07-01,Growth,United States,217.21,42,2,9,Active
+C11004,2023-12-10,Starter,Brazil,46.05,6,1,7,Active
+C11005,2024-05-08,Enterprise,United Kingdom,1122.38,24,0,9,Active
+C11006,2024-01-22,Starter,Brazil,66.97,6,3,7,Active
+C11007,2022-12-28,Starter,Germany,59.82,26,1,10,Active
+C11008,2023-06-24,Growth,Germany,140.1,22,0,9,Active
+C11009,2022-06-03,Starter,India,39.94,42,4,9,Active
+C11010,2024-04-17,Starter,Germany,47.68,13,3,6,Active
+C11011,2023-11-02,Enterprise,Germany,1082.1,36,3,6,Active
+C11012,2023-08-08,Starter,United Kingdom,36.24,31,2,7,Active
+C11013,2023-10-12,Growth,Germany,203.66,35,1,6,Active
+C11014,2023-12-01,Starter,United Kingdom,33.66,46,3,5,Active
+C11015,2022-09-05,Starter,Germany,50.26,9,2,8,Churned
+C11016,2023-09-05,Starter,Canada,56.7,1,2,8,Active
+C11017,2023-09-13,Growth,Germany,236.95,30,1,8,Active
+C11018,2023-11-21,Starter,India,47.61,6,6,7,Active
+C11019,2024-09-25,Starter,United States,66.29,22,2,6,Churned
+C11020,2022-12-03,Starter,United States,52.36,25,5,5,Churned
+C11021,2022-06-18,Enterprise,Brazil,1421.18,29,0,6,Active
+C11022,2024-09-19,Starter,Brazil,42.29,1,2,7,Active
+C11023,2023-01-14,Growth,Brazil,269.79,28,0,9,Active
+C11024,2022-10-12,Starter,India,48.97,37,6,8,Active
+C11025,2023-01-27,Starter,United Kingdom,67.17,2,4,5,Active
+C11026,2024-02-29,Starter,United States,64.29,19,2,8,Active
+C11027,2022-08-02,Starter,Canada,51.59,17,2,9,Active
+C11028,2022-01-21,Starter,United Kingdom,53.14,17,6,4,Active
+C11029,2024-02-28,Starter,Canada,47.27,22,4,5,Active
+C11030,2023-05-29,Growth,United Kingdom,168.93,7,1,5,Active
+C11031,2023-12-09,Starter,India,55.19,24,3,8,Active
+C11032,2022-09-23,Starter,United States,54.63,4,3,6,Active
+C11033,2022-08-05,Starter,Brazil,35.45,5,9,5,Churned
+C11034,2023-04-08,Starter,Germany,48.2,26,5,6,Active
+C11035,2024-05-07,Starter,India,58.29,43,1,10,Active
+C11036,2024-01-07,Starter,United States,65.69,34,2,8,Active
+C11037,2023-03-02,Starter,United Kingdom,56.65,16,2,6,Active
+C11038,2022-06-14,Starter,Germany,36.17,17,1,7,Active
+C11039,2023-07-05,Starter,United States,39.68,24,2,8,Active
+C11040,2022-02-25,Starter,Brazil,45.72,2,1,6,Active
+C11041,2023-11-16,Starter,Germany,64.82,32,4,8,Churned
+C11042,2023-03-09,Starter,Brazil,43.4,7,5,6,Churned
+C11043,2024-05-24,Starter,United Kingdom,60.55,34,2,8,Active
+C11044,2024-08-25,Starter,United States,43.26,18,4,6,Active
+C11045,2022-08-15,Starter,Canada,54.51,18,1,7,Active
+C11046,2022-04-27,Enterprise,United Kingdom,994.33,21,0,7,Active
+C11047,2023-08-16,Starter,Canada,47.14,7,7,8,Churned
+C11048,2022-02-18,Starter,Brazil,39.08,12,5,6,Active
+C11049,2023-11-03,Growth,India,265.58,10,2,10,Active
+C11050,2024-05-28,Starter,India,42.64,40,2,7,Active
+C11051,2024-06-05,Starter,India,35.96,8,3,6,Churned
+C11052,2024-02-07,Growth,Germany,143.75,7,2,5,Active
+C11053,2024-02-12,Starter,Canada,48.17,12,5,8,Active
+C11054,2022-09-09,Growth,United States,181.58,20,0,8,Active
+C11055,2024-07-03,Starter,Brazil,55.79,29,1,9,Active
+C11056,2024-01-25,Starter,India,46.75,20,5,9,Churned
+C11057,2022-03-17,Starter,United States,61.87,26,3,8,Active
+C11058,2023-08-16,Growth,India,184.24,25,3,7,Churned
+C11059,2023-03-02,Starter,Canada,60.17,8,2,9,Active
+C11060,2022-06-05,Growth,United Kingdom,164.48,1,2,8,Active
+C11061,2022-11-03,Enterprise,India,888.39,33,1,6,Active
+C11062,2024-07-24,Enterprise,Germany,1017.81,45,2,9,Active
+C11063,2023-05-13,Starter,United States,39.1,3,3,7,Active
+C11064,2022-06-03,Growth,United States,155.27,44,2,10,Active
+C11065,2024-03-21,Growth,United Kingdom,216.16,43,1,8,Active
+C11066,2022-08-30,Growth,India,188.75,38,2,9,Active
+C11067,2023-05-08,Enterprise,Brazil,1234.51,27,1,7,Active
+C11068,2022-05-10,Growth,United States,221.14,16,0,6,Active
+C11069,2022-02-05,Growth,United States,142.05,28,1,8,Active
+C11070,2024-09-07,Starter,Canada,54.92,1,4,8,Active
+C11071,2023-11-02,Starter,Canada,38.5,14,4,6,Active
+C11072,2023-08-25,Growth,India,177.32,19,2,7,Active
+C11073,2022-01-11,Growth,Brazil,136.3,25,0,5,Active
+C11074,2023-09-02,Growth,United Kingdom,226.83,13,3,7,Active
+C11075,2022-04-08,Starter,United States,34.95,21,3,5,Active
+C11076,2022-06-02,Starter,Canada,38.54,35,1,8,Active
+C11077,2023-12-29,Enterprise,United Kingdom,957.72,45,3,7,Active
+C11078,2023-05-29,Starter,Germany,47.75,39,2,7,Active
+C11079,2024-04-11,Growth,India,192.76,4,1,10,Churned
+C11080,2022-12-24,Growth,India,234.09,28,0,8,Active
+C11081,2022-11-15,Starter,United States,47.99,22,3,7,Active
+C11082,2024-04-05,Starter,India,59.44,25,1,8,Active
+C11083,2023-07-24,Starter,India,52.86,38,3,6,Active
+C11084,2024-07-03,Growth,Brazil,164.71,16,0,9,Active
+C11085,2023-07-02,Starter,Canada,42.88,26,2,6,Active
+C11086,2022-07-05,Enterprise,Brazil,1623.26,42,4,7,Active
+C11087,2022-02-25,Growth,India,254.37,27,3,9,Active
+C11088,2022-08-06,Starter,Canada,57.78,27,1,6,Active
+C11089,2023-06-29,Starter,Germany,59.32,43,4,4,Active
+C11090,2023-10-18,Starter,United States,53.78,2,6,4,Active
+C11091,2022-01-11,Starter,Canada,52.4,18,4,9,Active
+C11092,2022-09-26,Starter,Canada,49.49,24,6,5,Active
+C11093,2024-03-30,Starter,Canada,68.83,1,3,5,Active
+C11094,2023-01-31,Enterprise,Canada,1093.51,23,2,8,Active
+C11095,2024-01-19,Growth,Canada,208.8,44,1,4,Active
+C11096,2023-01-09,Growth,Brazil,141.41,38,0,7,Active
+C11097,2022-10-11,Growth,United States,149.48,2,2,9,Active
+C11098,2023-11-23,Growth,Brazil,286.1,42,2,6,Active
+C11099,2022-09-20,Enterprise,United States,1357.54,38,1,7,Active
+C11100,2023-10-23,Starter,United States,46.96,42,3,7,Active
+C11101,2022-07-10,Growth,India,202.14,7,2,8,Active
+C11102,2024-01-23,Enterprise,Canada,914.57,43,0,7,Active
+C11103,2024-08-10,Enterprise,United Kingdom,1101.53,1,2,8,Active
+C11104,2024-06-25,Starter,United States,36.61,2,7,7,Churned
+C11105,2024-04-25,Growth,India,187.59,17,0,6,Active
+C11106,2022-01-10,Starter,Germany,56.14,39,3,6,Active
+C11107,2024-04-17,Starter,Canada,53.65,41,1,7,Active
+C11108,2023-09-15,Starter,United Kingdom,67.33,30,4,7,Active
+C11109,2023-04-12,Starter,Canada,51.98,2,5,6,Churned
+C11110,2024-03-16,Starter,United Kingdom,29.85,42,1,7,Active
+C11111,2024-03-22,Starter,Germany,72.38,13,3,4,Active
+C11112,2024-07-23,Starter,Brazil,41.42,36,4,5,Active
+C11113,2023-08-15,Growth,Canada,205.56,14,1,8,Active
+C11114,2023-12-03,Enterprise,Germany,1224.69,27,1,7,Active
+C11115,2022-10-27,Growth,India,208.82,5,1,7,Active
+C11116,2023-11-05,Growth,India,200.92,47,1,8,Active
+C11117,2023-03-07,Enterprise,India,1215.87,5,2,10,Active
+C11118,2023-10-07,Starter,Brazil,37.62,45,3,6,Active
+C11119,2023-02-14,Starter,United States,82.21,43,2,9,Active
+C11120,2022-06-26,Starter,Canada,55.82,8,5,8,Churned
+C11121,2022-12-18,Starter,United States,49.51,33,2,8,Active
+C11122,2022-12-02,Growth,United Kingdom,287.63,17,2,6,Active
+C11123,2022-08-31,Starter,Brazil,39.54,15,1,8,Active
+C11124,2022-04-15,Enterprise,United Kingdom,1427.61,16,3,6,Active
+C11125,2023-02-03,Starter,India,43.85,12,8,8,Churned
+C11126,2023-05-20,Starter,United States,53.11,46,2,8,Active
+C11127,2023-08-23,Starter,Brazil,53.34,3,1,7,Active
+C11128,2023-09-08,Starter,United Kingdom,30.71,17,3,9,Active
+C11129,2022-07-16,Enterprise,United States,901.22,17,0,7,Active
+C11130,2022-05-26,Growth,United States,273.31,20,1,8,Active
+C11131,2022-05-22,Starter,United Kingdom,46.59,15,7,6,Active
+C11132,2023-11-14,Growth,Brazil,296.97,32,2,8,Active
+C11133,2023-11-22,Starter,United States,63.68,44,4,6,Active
+C11134,2023-05-30,Starter,India,46.89,32,2,8,Active
+C11135,2023-06-11,Starter,India,46.07,11,3,6,Active
+C11136,2023-10-01,Starter,United Kingdom,68.14,47,5,8,Active
+C11137,2022-12-19,Growth,India,303.05,20,1,7,Active
+C11138,2024-01-16,Growth,United Kingdom,187.91,15,1,10,Active
+C11139,2024-06-26,Starter,Germany,66.65,33,3,8,Active
+C11140,2022-08-26,Growth,United States,244.52,46,1,8,Active
+C11141,2023-04-07,Growth,United States,253.11,16,1,7,Active
+C11142,2022-11-13,Starter,United States,50.0,10,4,8,Active
+C11143,2022-11-28,Starter,United States,42.83,37,1,8,Active
+C11144,2023-01-25,Starter,Germany,39.68,23,3,2,Active
+C11145,2022-08-05,Starter,United Kingdom,37.75,35,3,6,Active
+C11146,2022-12-15,Starter,United Kingdom,71.81,22,3,7,Active
+C11147,2022-11-20,Starter,United States,49.11,2,4,7,Active
+C11148,2024-03-24,Starter,Brazil,38.97,17,2,8,Active
+C11149,2022-10-01,Growth,Canada,243.18,41,0,10,Active
+C11150,2022-04-07,Starter,Brazil,44.52,44,4,7,Active
+C11151,2024-05-16,Enterprise,United Kingdom,1053.51,18,2,4,Active
+C11152,2024-06-21,Starter,Brazil,74.1,33,5,6,Active
+C11153,2024-06-10,Starter,United Kingdom,37.55,5,4,8,Churned
+C11154,2022-07-03,Growth,United Kingdom,208.58,11,2,7,Active
+C11155,2023-02-17,Starter,Brazil,43.54,33,2,8,Active
+C11156,2022-10-18,Enterprise,United Kingdom,1032.75,2,1,7,Churned
+C11157,2022-09-18,Starter,Canada,36.56,36,5,7,Churned
+C11158,2024-07-06,Starter,Canada,49.59,46,3,6,Active
+C11159,2022-05-11,Growth,India,167.09,4,1,8,Active
+C11160,2023-08-28,Growth,India,223.99,28,1,8,Active
+C11161,2023-12-18,Growth,United Kingdom,197.14,17,2,7,Active
+C11162,2022-03-10,Growth,India,186.94,31,0,9,Active
+C11163,2024-05-29,Starter,Germany,41.19,43,1,8,Active
+C11164,2022-08-14,Growth,India,264.92,4,3,9,Active
+C11165,2023-02-16,Growth,United States,230.54,32,3,8,Active
+C11166,2023-06-26,Growth,Germany,173.65,9,2,9,Active
+C11167,2024-05-24,Starter,United States,37.34,26,0,7,Active
+C11168,2024-09-14,Enterprise,Germany,822.61,21,2,6,Active
+C11169,2022-09-05,Growth,Brazil,249.83,24,1,8,Active
+C11170,2023-02-13,Starter,United States,58.77,36,3,8,Active
+C11171,2023-09-01,Starter,Brazil,60.41,29,3,8,Active
+C11172,2023-02-16,Growth,Brazil,194.27,17,1,6,Active
+C11173,2022-03-23,Enterprise,United Kingdom,1409.91,31,0,9,Active
+C11174,2024-02-20,Starter,United Kingdom,60.18,29,4,5,Churned
+C11175,2023-07-18,Growth,Brazil,196.24,4,1,9,Active
+C11176,2022-05-09,Starter,Brazil,45.61,29,5,6,Active
+C11177,2023-10-01,Starter,India,40.31,16,2,7,Churned
+C11178,2024-06-25,Growth,United States,216.7,7,3,6,Active
+C11179,2023-10-07,Starter,India,54.8,25,3,7,Active
+C11180,2023-04-23,Starter,United Kingdom,45.17,25,3,7,Active
+C11181,2024-02-18,Growth,United Kingdom,187.83,35,3,5,Active
+C11182,2022-09-29,Starter,India,46.92,21,4,7,Active
+C11183,2022-04-05,Starter,Canada,57.4,35,5,8,Active
+C11184,2023-05-06,Starter,United Kingdom,37.22,14,2,8,Active
+C11185,2022-10-06,Starter,United Kingdom,39.28,29,1,8,Active
+C11186,2023-05-06,Starter,United Kingdom,39.44,46,1,7,Churned
+C11187,2023-11-25,Starter,United Kingdom,47.57,28,2,7,Active
+C11188,2024-04-26,Enterprise,Canada,1278.1,33,2,7,Active
+C11189,2023-08-16,Growth,United States,160.7,18,1,8,Active
+C11190,2023-09-01,Growth,United Kingdom,238.68,32,1,9,Active
+C11191,2024-08-07,Starter,India,65.65,40,3,7,Active
+C11192,2024-06-27,Starter,Germany,53.23,42,4,4,Active
+C11193,2024-02-24,Enterprise,Canada,1502.12,44,1,9,Active
+C11194,2024-06-28,Growth,India,165.72,15,1,8,Active
+C11195,2023-04-16,Growth,United States,166.51,40,3,7,Active
+C11196,2024-02-07,Starter,Germany,54.31,17,0,6,Churned
+C11197,2023-06-18,Growth,United States,197.48,41,0,7,Active
+C11198,2023-09-08,Starter,Germany,40.98,1,3,6,Active
+C11199,2023-10-22,Starter,Canada,65.16,43,3,6,Active
+C11200,2022-03-20,Growth,Germany,211.25,11,2,6,Active
+C11201,2022-01-11,Starter,India,56.39,10,3,5,Active
+C11202,2024-08-10,Starter,Germany,42.82,27,1,10,Active
+C11203,2022-12-31,Starter,Canada,68.57,25,3,9,Churned
+C11204,2022-02-20,Growth,India,192.89,8,3,7,Active
+C11205,2022-05-02,Growth,Brazil,243.99,26,1,8,Active
+C11206,2022-02-09,Starter,Brazil,43.61,38,4,9,Active
+C11207,2022-08-28,Enterprise,Brazil,1241.17,23,0,10,Active
+C11208,2023-12-31,Starter,Canada,54.78,28,3,6,Active
+C11209,2024-04-09,Growth,Germany,296.6,40,0,8,Active
+C11210,2022-03-04,Growth,United States,182.25,9,0,8,Active
+C11211,2023-07-03,Enterprise,United Kingdom,1249.61,16,3,6,Active
+C11212,2023-10-24,Growth,United Kingdom,224.01,43,3,7,Active
+C11213,2024-05-10,Starter,India,36.92,8,7,5,Churned
+C11214,2024-06-24,Starter,United States,31.72,12,5,6,Active
+C11215,2024-06-07,Growth,Germany,163.06,13,2,8,Active
+C11216,2023-12-19,Growth,Brazil,241.47,39,2,9,Active
+C11217,2024-03-16,Growth,Germany,280.5,7,1,6,Active
+C11218,2024-01-15,Growth,Germany,165.46,18,2,9,Active
+C11219,2024-02-02,Starter,India,38.42,20,4,5,Churned
+C11220,2024-06-21,Starter,United States,66.6,4,3,7,Churned
+C11221,2022-06-16,Starter,United States,43.76,6,5,8,Active
+C11222,2022-03-28,Growth,Brazil,184.74,18,0,9,Active
+C11223,2022-09-27,Growth,India,266.44,5,1,7,Active
+C11224,2024-08-09,Growth,Brazil,257.82,47,0,8,Active
+C11225,2023-12-06,Growth,Germany,239.87,22,2,10,Churned
+C11226,2023-04-16,Starter,United Kingdom,34.8,1,7,4,Churned
+C11227,2022-10-29,Starter,Brazil,38.1,29,2,8,Active
+C11228,2022-07-19,Starter,Brazil,61.31,36,4,8,Active
+C11229,2023-01-11,Starter,United States,52.22,29,3,6,Active
+C11230,2024-08-09,Growth,Canada,170.33,27,5,9,Active
+C11231,2024-07-25,Growth,India,185.75,5,3,10,Active
+C11232,2024-08-30,Enterprise,United Kingdom,1498.58,35,2,9,Active
+C11233,2023-12-07,Starter,Germany,66.51,46,1,9,Active
+C11234,2023-08-10,Growth,India,198.76,18,2,5,Active
+C11235,2022-04-17,Growth,United States,173.46,6,2,5,Active
+C11236,2023-08-16,Starter,United States,46.37,11,7,5,Churned
+C11237,2023-12-23,Growth,Germany,260.32,32,1,7,Active
+C11238,2023-02-25,Enterprise,Canada,1563.66,31,2,8,Active
+C11239,2024-03-04,Starter,Germany,50.94,42,2,3,Active
+C11240,2023-08-13,Growth,Canada,179.0,20,1,9,Active
+C11241,2024-07-02,Starter,Brazil,60.85,42,6,5,Active
+C11242,2022-04-18,Starter,Canada,67.79,13,6,5,Churned
+C11243,2023-11-17,Starter,United States,36.64,25,4,9,Active
+C11244,2022-12-11,Starter,Canada,46.77,31,3,6,Active
+C11245,2022-04-06,Growth,Brazil,250.76,14,1,5,Active
+C11246,2022-11-01,Starter,Canada,49.73,18,2,8,Active
+C11247,2024-02-05,Growth,United States,180.47,39,3,7,Active
+C11248,2022-07-05,Growth,United Kingdom,206.51,28,1,7,Active
+C11249,2023-10-19,Growth,India,214.31,29,1,10,Active
+C11250,2022-07-21,Starter,India,39.11,30,2,8,Active
+C11251,2023-04-02,Starter,India,49.9,38,6,7,Active
+C11252,2022-05-26,Starter,Canada,52.74,46,2,8,Active
+C11253,2024-01-31,Starter,United States,44.42,19,4,8,Active
+C11254,2024-05-22,Starter,United Kingdom,41.93,17,3,6,Active
+C11255,2023-06-10,Growth,United States,178.7,43,0,6,Active
+C11256,2023-01-27,Growth,India,163.88,23,1,9,Active
+C11257,2024-07-21,Starter,United Kingdom,58.09,44,4,7,Active
+C11258,2024-08-04,Starter,India,40.25,42,0,9,Active
+C11259,2024-07-20,Growth,Germany,206.67,35,1,7,Active
+C11260,2024-02-23,Enterprise,United Kingdom,1113.47,34,3,8,Active
+C11261,2022-08-14,Growth,Germany,172.79,45,2,5,Active
+C11262,2022-06-10,Growth,India,261.8,13,2,6,Active
+C11263,2023-03-17,Growth,Canada,193.86,22,3,6,Active
+C11264,2023-07-22,Starter,United Kingdom,42.86,26,1,8,Active
+C11265,2022-07-18,Enterprise,United Kingdom,1029.73,10,2,6,Active
+C11266,2022-05-26,Starter,Canada,52.44,25,3,5,Active
+C11267,2022-11-27,Growth,Canada,234.77,31,2,6,Active
+C11268,2022-12-17,Starter,Canada,63.18,24,5,7,Active
+C11269,2022-08-12,Growth,Canada,192.44,31,2,7,Active
+C11270,2023-04-07,Growth,United Kingdom,190.14,5,0,7,Active
+C11271,2023-05-27,Growth,United Kingdom,204.28,24,4,8,Active
+C11272,2022-04-07,Starter,India,50.67,44,2,10,Churned
+C11273,2022-01-01,Growth,Brazil,170.53,13,2,9,Active
+C11274,2022-02-06,Growth,Brazil,266.61,22,0,5,Active
+C11275,2024-03-02,Growth,Canada,199.89,30,1,8,Active
+C11276,2024-03-17,Starter,Canada,54.53,30,7,5,Active
+C11277,2022-06-08,Starter,United Kingdom,53.34,9,1,5,Active
+C11278,2024-07-31,Growth,United Kingdom,215.74,6,1,6,Active
+C11279,2022-10-02,Starter,India,40.08,36,4,8,Active
+C11280,2024-06-14,Growth,United Kingdom,198.75,26,3,7,Active
+C11281,2022-06-24,Starter,Brazil,77.32,43,2,7,Active
+C11282,2024-03-28,Growth,Brazil,273.35,47,0,7,Active
+C11283,2022-12-20,Starter,Brazil,50.56,8,2,9,Active
+C11284,2024-02-21,Growth,United States,184.92,17,0,6,Active
+C11285,2022-03-19,Starter,Brazil,31.45,39,0,7,Active
+C11286,2023-07-27,Starter,United Kingdom,44.36,14,5,6,Active
+C11287,2024-05-08,Starter,Germany,48.24,10,4,4,Active
+C11288,2022-05-08,Growth,India,186.76,8,2,6,Active
+C11289,2023-02-19,Starter,United States,46.63,24,6,7,Churned
+C11290,2024-06-10,Starter,Brazil,55.5,18,1,6,Active
+C11291,2024-07-13,Starter,Brazil,40.11,44,4,8,Active
+C11292,2023-05-16,Growth,Germany,210.15,46,1,9,Active
+C11293,2022-02-16,Starter,Germany,47.93,4,3,7,Active
+C11294,2024-08-01,Growth,United Kingdom,166.81,43,1,5,Active
+C11295,2022-06-22,Starter,India,68.49,5,2,7,Churned
+C11296,2023-02-15,Starter,Canada,56.9,34,3,4,Active
+C11297,2024-04-15,Starter,Germany,41.87,46,2,6,Churned
+C11298,2022-04-21,Growth,Canada,220.69,17,0,8,Active
+C11299,2023-04-09,Starter,Germany,37.11,8,2,9,Active
+C11300,2023-09-15,Enterprise,United States,1050.88,4,4,6,Active
+C11301,2022-03-01,Starter,Canada,63.9,17,2,6,Active
+C11302,2023-04-30,Growth,Germany,213.49,45,1,7,Active
+C11303,2022-02-16,Starter,India,51.73,22,5,5,Active
+C11304,2023-10-09,Starter,Germany,59.69,20,2,8,Active
+C11305,2024-06-13,Growth,India,224.88,1,1,8,Active
+C11306,2022-07-23,Growth,Brazil,188.69,32,0,8,Active
+C11307,2022-09-19,Growth,Canada,239.99,9,5,7,Active
+C11308,2022-05-10,Growth,Canada,141.96,33,1,8,Active
+C11309,2023-02-15,Starter,United Kingdom,42.88,39,2,5,Active
+C11310,2022-01-04,Enterprise,United States,1176.96,37,3,5,Active
+C11311,2024-06-16,Starter,Brazil,54.67,25,2,8,Active
+C11312,2022-04-06,Growth,United Kingdom,186.48,31,3,5,Active
+C11313,2023-10-30,Growth,Germany,139.28,19,4,6,Active
+C11314,2022-11-17,Starter,Brazil,33.35,34,3,7,Active
+C11315,2024-02-10,Growth,India,196.31,33,2,6,Active
+C11316,2022-02-21,Enterprise,India,1090.64,9,4,4,Active
+C11317,2023-04-17,Starter,Brazil,40.85,16,4,5,Active
+C11318,2022-04-03,Starter,India,39.5,37,2,4,Churned
+C11319,2023-11-27,Growth,Canada,204.4,21,1,9,Active
+C11320,2022-07-12,Starter,United Kingdom,63.58,12,1,8,Active
+C11321,2023-08-08,Starter,Germany,50.33,47,1,6,Active
+C11322,2023-02-11,Growth,Germany,258.9,41,3,5,Active
+C11323,2022-06-20,Enterprise,Brazil,1113.52,37,2,9,Active
+C11324,2022-07-12,Starter,Canada,53.54,20,2,8,Churned
+C11325,2023-07-27,Enterprise,Germany,1572.6,27,1,7,Active
+C11326,2022-08-04,Starter,Canada,47.48,45,2,9,Active
+C11327,2024-07-14,Starter,India,49.26,25,3,7,Churned
+C11328,2024-02-03,Starter,United Kingdom,45.46,39,5,6,Churned
+C11329,2022-12-12,Starter,Canada,55.16,40,3,5,Active
+C11330,2023-01-27,Growth,United Kingdom,238.35,38,5,4,Active
+C11331,2023-05-09,Starter,Brazil,52.57,29,5,4,Active
+C11332,2024-03-13,Starter,Canada,46.8,17,3,10,Active
+C11333,2023-02-21,Growth,Brazil,147.43,16,3,6,Active
+C11334,2023-02-15,Growth,India,197.08,39,3,7,Active
+C11335,2023-11-20,Growth,Canada,191.51,20,0,9,Active
+C11336,2022-09-14,Growth,United Kingdom,208.62,12,2,7,Active
+C11337,2023-09-20,Enterprise,United Kingdom,1228.36,9,1,7,Active
+C11338,2023-01-20,Growth,India,272.54,29,3,7,Active
+C11339,2023-04-23,Enterprise,Brazil,1043.98,46,1,8,Active
+C11340,2024-02-14,Enterprise,United Kingdom,875.7,18,0,6,Active
+C11341,2022-02-17,Growth,India,158.35,31,2,7,Active
+C11342,2023-10-14,Starter,Brazil,43.17,15,4,3,Churned
+C11343,2022-09-22,Starter,India,60.84,19,4,4,Active
+C11344,2022-01-10,Starter,United States,37.8,20,3,5,Active
+C11345,2022-11-11,Starter,Canada,38.82,17,6,7,Active
+C11346,2024-02-18,Growth,Germany,216.17,40,1,7,Active
+C11347,2024-01-03,Starter,Germany,58.07,43,3,8,Active
+C11348,2022-09-14,Growth,India,145.98,13,3,7,Active
+C11349,2023-02-01,Growth,United Kingdom,139.62,17,1,8,Active
+C11350,2024-05-19,Starter,United States,41.87,1,0,7,Active
+C11351,2023-01-14,Enterprise,Canada,1368.61,36,1,8,Active
+C11352,2022-09-12,Growth,Brazil,204.78,34,1,8,Active
+C11353,2023-03-22,Growth,United Kingdom,171.28,40,2,10,Active
+C11354,2024-02-23,Starter,India,56.81,27,5,5,Active
+C11355,2023-03-08,Enterprise,Brazil,1230.21,43,1,9,Active
+C11356,2023-05-30,Starter,Canada,47.96,7,1,7,Active
+C11357,2023-12-19,Growth,Canada,144.09,18,1,7,Active
+C11358,2024-05-10,Starter,United States,42.0,22,3,8,Active
+C11359,2023-11-02,Starter,Brazil,72.47,36,2,10,Active
+C11360,2023-02-11,Starter,United States,45.81,11,5,6,Churned
+C11361,2024-02-02,Growth,India,164.34,16,1,7,Active
+C11362,2024-02-19,Enterprise,India,1111.68,5,0,9,Active
+C11363,2022-07-27,Growth,Canada,203.8,45,0,8,Active
+C11364,2023-11-27,Growth,India,237.45,22,2,10,Active
+C11365,2024-01-12,Starter,Germany,55.48,1,1,9,Active
+C11366,2022-10-29,Enterprise,India,1048.12,12,1,6,Active
+C11367,2022-10-24,Starter,United States,63.19,27,3,9,Active
+C11368,2023-11-06,Enterprise,United States,1412.36,24,2,8,Active
+C11369,2022-01-01,Growth,Brazil,182.05,24,0,9,Active
+C11370,2022-10-18,Starter,Germany,47.76,3,1,8,Active
+C11371,2023-10-02,Starter,Brazil,55.25,42,4,8,Churned
+C11372,2023-03-31,Growth,Germany,246.72,39,0,9,Active
+C11373,2022-01-12,Enterprise,Canada,885.67,11,2,7,Active
+C11374,2022-05-08,Growth,United Kingdom,201.82,18,0,8,Active
+C11375,2022-04-08,Growth,Germany,197.77,5,2,7,Active
+C11376,2023-06-15,Enterprise,United Kingdom,1070.57,7,1,8,Active
+C11377,2022-02-11,Starter,United States,43.67,40,4,7,Active
+C11378,2024-02-02,Starter,United States,60.5,6,4,6,Active
+C11379,2023-08-30,Growth,United States,221.46,17,0,8,Active
+C11380,2023-05-20,Starter,United States,74.68,47,2,7,Active
+C11381,2022-07-27,Growth,Germany,177.57,16,4,4,Active
+C11382,2022-07-05,Starter,Germany,50.36,33,3,8,Churned
+C11383,2024-03-20,Growth,Brazil,211.72,5,2,8,Active
+C11384,2023-09-08,Starter,Brazil,58.62,42,1,7,Active
+C11385,2022-12-23,Growth,India,261.12,44,3,8,Active
+C11386,2022-07-29,Starter,India,49.93,43,2,6,Active
+C11387,2022-12-02,Growth,United Kingdom,159.87,30,1,7,Active
+C11388,2022-10-29,Starter,United Kingdom,42.51,46,2,8,Churned
+C11389,2023-05-30,Growth,United Kingdom,204.76,33,2,9,Active
+C11390,2022-09-22,Starter,Germany,61.34,18,4,7,Churned
+C11391,2024-02-15,Growth,Germany,149.01,43,0,7,Active
+C11392,2022-02-27,Growth,United Kingdom,157.48,13,0,7,Active
+C11393,2023-11-28,Starter,Germany,57.01,40,2,8,Active
+C11394,2022-01-07,Starter,United States,37.83,44,4,7,Churned
+C11395,2022-07-26,Starter,Canada,39.13,22,5,7,Active
+C11396,2024-07-26,Growth,Brazil,249.79,11,3,7,Active
+C11397,2024-02-03,Starter,Canada,46.88,8,3,8,Active
+C11398,2024-09-09,Starter,United Kingdom,46.17,26,4,9,Active
+C11399,2023-05-22,Starter,India,64.42,32,2,5,Active
+C11400,2022-05-18,Starter,Brazil,39.62,28,2,10,Active
+C11401,2024-09-14,Starter,Germany,38.05,31,3,8,Active
+C11402,2024-01-31,Starter,Canada,67.87,2,1,10,Active
+C11403,2023-06-01,Growth,United Kingdom,208.51,3,2,6,Churned
+C11404,2024-02-08,Growth,United Kingdom,227.98,13,3,7,Active
+C11405,2022-10-14,Starter,India,46.04,43,4,7,Active
+C11406,2024-02-29,Enterprise,Germany,1174.69,24,0,9,Active
+C11407,2024-02-01,Starter,India,42.57,16,2,8,Churned
+C11408,2022-05-19,Growth,Canada,212.07,32,0,9,Active
+C11409,2022-01-30,Growth,United Kingdom,235.0,21,0,9,Active
+C11410,2024-04-26,Starter,Brazil,50.96,7,1,7,Active
+C11411,2023-12-26,Growth,United Kingdom,246.04,25,3,6,Active
+C11412,2022-10-21,Starter,United States,55.94,33,4,7,Active
+C11413,2023-06-28,Enterprise,Brazil,973.0,43,1,7,Active
+C11414,2022-01-30,Growth,India,193.32,18,0,8,Active
+C11415,2022-06-25,Starter,India,44.8,9,2,5,Active
+C11416,2022-03-30,Starter,Germany,56.97,41,4,6,Active
+C11417,2022-01-25,Growth,Germany,218.25,18,1,6,Active
+C11418,2022-05-18,Starter,Brazil,50.26,8,1,8,Churned
+C11419,2022-02-16,Starter,India,60.01,24,2,6,Active
+C11420,2024-08-01,Enterprise,United States,826.29,3,1,8,Active
+C11421,2022-03-23,Starter,India,43.43,47,2,9,Churned
+C11422,2022-05-12,Starter,United States,44.18,37,4,6,Active
+C11423,2023-05-03,Starter,United Kingdom,51.53,21,2,6,Active
+C11424,2023-08-25,Growth,Canada,222.26,26,1,9,Active
+C11425,2023-12-09,Growth,Canada,198.95,19,0,9,Active
+C11426,2022-04-08,Growth,Canada,152.98,23,1,8,Active
+C11427,2022-05-14,Enterprise,United States,1301.71,44,2,7,Active
+C11428,2022-01-17,Starter,Canada,50.27,35,3,6,Churned
+C11429,2022-06-08,Starter,United Kingdom,36.53,32,2,7,Churned
+C11430,2022-07-11,Starter,United Kingdom,46.19,46,2,7,Active
+C11431,2024-03-25,Starter,India,52.81,8,2,5,Active
+C11432,2023-08-14,Starter,Germany,68.2,43,2,6,Active
+C11433,2022-08-16,Starter,Germany,39.41,9,6,7,Churned
+C11434,2022-04-29,Growth,Canada,233.07,13,0,8,Active
+C11435,2024-04-07,Starter,India,39.51,31,6,7,Active
+C11436,2023-12-15,Enterprise,United Kingdom,930.72,7,1,9,Active
+C11437,2022-04-06,Enterprise,Canada,941.77,22,0,8,Active
+C11438,2023-07-14,Starter,Brazil,55.3,16,6,5,Active
+C11439,2024-04-16,Growth,United Kingdom,204.24,1,1,9,Active
+C11440,2022-09-28,Growth,United States,186.86,9,2,8,Active
+C11441,2024-01-03,Starter,United States,53.7,22,3,8,Active
+C11442,2023-01-23,Growth,United Kingdom,200.63,4,2,7,Active
+C11443,2022-05-28,Starter,United States,50.1,45,2,7,Active
+C11444,2022-10-10,Starter,Canada,46.11,21,3,6,Churned
+C11445,2022-12-04,Growth,United States,162.03,36,2,7,Active
+C11446,2022-02-09,Growth,Canada,279.1,10,1,7,Active
+C11447,2022-11-30,Starter,Brazil,64.84,27,4,6,Active
+C11448,2024-08-24,Growth,United States,273.51,6,0,8,Active
+C11449,2022-05-14,Enterprise,Germany,1077.3,10,3,6,Active
+C11450,2022-01-12,Starter,United States,42.75,33,2,8,Active
+C11451,2023-01-13,Starter,United Kingdom,45.1,16,3,5,Churned
+C11452,2024-08-19,Starter,United Kingdom,60.74,47,5,7,Active
+C11453,2023-11-09,Enterprise,Brazil,1199.95,47,1,6,Active
+C11454,2023-05-29,Starter,United Kingdom,43.96,7,2,6,Active
+C11455,2024-01-01,Starter,Brazil,52.7,31,3,6,Active
+C11456,2022-01-10,Growth,Brazil,171.75,37,1,8,Active
+C11457,2022-07-22,Starter,Canada,37.37,13,2,4,Active
+C11458,2024-04-22,Starter,India,50.28,40,3,7,Active
+C11459,2023-12-23,Growth,Germany,179.48,35,1,8,Active
+C11460,2023-04-07,Growth,Brazil,198.46,16,2,6,Active
+C11461,2022-09-24,Starter,Brazil,28.64,5,3,7,Churned
+C11462,2022-08-16,Enterprise,United Kingdom,1003.91,21,0,6,Active
+C11463,2022-02-12,Starter,United Kingdom,48.56,18,2,7,Churned
+C11464,2024-06-01,Starter,India,36.18,25,8,3,Active
+C11465,2022-07-14,Starter,Canada,36.43,11,5,9,Churned
+C11466,2024-03-25,Starter,India,49.38,15,3,8,Active
+C11467,2022-12-09,Growth,Canada,228.98,43,6,6,Active
+C11468,2024-06-28,Starter,India,41.0,40,1,6,Active
+C11469,2022-02-05,Starter,India,46.5,35,1,7,Active
+C11470,2023-06-01,Enterprise,Germany,1143.98,17,2,7,Active
+C11471,2022-04-06,Starter,India,35.85,24,6,6,Active
+C11472,2022-01-02,Starter,United States,62.09,14,2,8,Active
+C11473,2022-12-23,Starter,India,47.24,20,4,7,Active
+C11474,2023-09-30,Growth,Germany,192.26,25,1,8,Active
+C11475,2024-07-13,Starter,India,52.8,41,2,7,Active
+C11476,2022-06-01,Starter,Canada,35.87,38,3,7,Churned
+C11477,2023-09-28,Enterprise,Germany,1442.4,10,0,7,Active
+C11478,2024-03-12,Starter,Brazil,60.46,45,4,5,Active
+C11479,2024-07-23,Growth,Brazil,204.67,4,1,10,Active
+C11480,2022-10-06,Growth,United Kingdom,218.27,3,1,8,Active
+C11481,2022-02-07,Growth,Canada,186.44,41,2,10,Active
+C11482,2024-08-14,Starter,India,58.23,14,7,5,Churned
+C11483,2024-05-18,Enterprise,Brazil,1017.89,41,3,10,Active
+C11484,2022-09-11,Starter,United States,48.68,4,7,5,Churned
+C11485,2022-05-16,Starter,United Kingdom,49.27,12,6,7,Active
+C11486,2023-06-18,Growth,Canada,197.47,39,1,8,Active
+C11487,2022-08-25,Starter,India,60.68,10,3,7,Active
+C11488,2023-07-18,Starter,United States,75.9,25,7,5,Churned
+C11489,2022-04-11,Growth,India,194.68,34,5,5,Active
+C11490,2024-07-16,Starter,Canada,53.83,17,2,9,Active
+C11491,2023-02-16,Starter,United States,41.73,7,3,7,Active
+C11492,2022-05-21,Starter,United Kingdom,60.23,40,3,8,Active
+C11493,2022-07-22,Starter,Germany,44.18,30,1,9,Active
+C11494,2023-10-27,Growth,Germany,373.28,43,1,10,Active
+C11495,2024-01-10,Growth,United States,142.47,33,0,9,Active
+C11496,2022-04-17,Starter,United Kingdom,75.29,35,4,4,Active
+C11497,2024-01-25,Starter,India,59.74,30,3,6,Active
+C11498,2024-07-24,Starter,India,39.15,32,3,7,Active
+C11499,2022-10-18,Starter,United States,77.92,21,5,6,Active
+C11500,2023-09-09,Starter,Brazil,40.7,44,6,8,Active
+C11501,2024-03-10,Growth,Germany,186.87,39,1,9,Active
+C11502,2024-07-30,Starter,Canada,37.81,12,6,5,Churned
+C11503,2022-06-13,Growth,Canada,193.26,44,1,10,Active
+C11504,2024-06-07,Starter,India,48.49,11,3,6,Active
+C11505,2022-02-10,Starter,United States,57.85,34,1,7,Active
+C11506,2023-07-09,Starter,United States,79.8,44,0,6,Active
+C11507,2022-06-15,Starter,United Kingdom,44.22,20,5,4,Active
+C11508,2022-04-24,Growth,Germany,114.75,9,0,6,Active
+C11509,2022-09-03,Growth,Germany,226.56,47,2,9,Active
+C11510,2022-06-06,Enterprise,Brazil,1074.93,38,0,9,Active
+C11511,2022-02-20,Starter,India,70.49,22,4,5,Churned
+C11512,2022-10-28,Starter,United Kingdom,48.66,47,2,7,Active
+C11513,2022-04-20,Growth,Canada,170.97,6,3,8,Active
+C11514,2023-01-19,Growth,Canada,162.51,25,1,5,Active
+C11515,2022-10-30,Starter,India,55.5,9,6,8,Active
+C11516,2023-06-05,Starter,United Kingdom,46.38,9,3,8,Active
+C11517,2024-05-02,Starter,Canada,65.72,17,4,8,Active
+C11518,2022-05-21,Starter,Brazil,46.98,27,1,9,Churned
+C11519,2024-05-05,Growth,United States,264.07,9,2,4,Active
+C11520,2023-06-24,Starter,United Kingdom,37.18,25,4,6,Churned
+C11521,2024-09-20,Enterprise,United Kingdom,847.55,37,1,9,Active
+C11522,2023-02-12,Starter,India,57.84,7,3,7,Active
+C11523,2022-04-09,Growth,Canada,181.35,1,4,8,Active
+C11524,2022-07-30,Starter,United States,46.48,36,4,9,Active
+C11525,2022-01-02,Growth,United States,162.53,20,0,9,Active
+C11526,2024-05-16,Growth,Brazil,160.17,9,1,7,Churned
+C11527,2023-07-20,Starter,Germany,55.64,42,3,8,Active
+C11528,2024-06-01,Starter,United States,48.82,21,2,5,Active
+C11529,2023-08-27,Starter,Germany,39.64,6,3,8,Active
+C11530,2024-07-22,Starter,United States,57.39,15,1,9,Active
+C11531,2022-08-25,Growth,Canada,251.71,28,2,7,Active
+C11532,2022-11-28,Growth,Canada,194.72,14,3,9,Active
+C11533,2024-03-08,Growth,Germany,243.21,44,1,8,Active
+C11534,2024-04-01,Starter,Brazil,40.1,30,2,7,Active
+C11535,2024-08-13,Growth,Canada,223.35,4,1,10,Active
+C11536,2024-06-05,Growth,United States,205.54,17,1,6,Active
+C11537,2022-11-28,Starter,India,41.83,17,4,8,Active
+C11538,2023-11-07,Growth,United Kingdom,300.04,7,1,10,Active
+C11539,2024-08-03,Starter,United Kingdom,51.34,2,2,8,Churned
+C11540,2022-09-23,Starter,India,43.54,6,1,7,Active
+C11541,2022-04-15,Growth,United States,199.78,33,0,9,Active
+C11542,2023-05-19,Starter,Canada,41.18,12,3,6,Active
+C11543,2023-04-21,Starter,Germany,38.88,20,4,6,Churned
+C11544,2023-11-26,Starter,Canada,44.79,7,3,7,Active
+C11545,2022-07-17,Enterprise,United States,1111.8,45,2,6,Active
+C11546,2023-03-25,Starter,Brazil,41.72,47,3,6,Active
+C11547,2023-08-08,Starter,Germany,62.93,33,1,6,Active
+C11548,2023-08-06,Starter,Brazil,42.04,16,3,8,Active
+C11549,2022-03-13,Starter,India,40.67,29,5,8,Active
+C11550,2022-04-12,Starter,India,38.66,19,5,9,Churned
+C11551,2023-05-20,Enterprise,India,928.6,43,3,5,Churned
+C11552,2023-01-06,Growth,Germany,244.4,29,3,6,Active
+C11553,2022-06-23,Enterprise,Germany,1263.59,7,1,8,Active
+C11554,2024-03-16,Growth,Canada,228.46,5,1,9,Active
+C11555,2023-02-22,Starter,Canada,60.07,37,1,7,Active
+C11556,2023-08-03,Starter,India,45.84,35,4,8,Churned
+C11557,2023-11-20,Starter,United States,65.78,35,5,7,Active
+C11558,2023-12-26,Starter,United States,43.23,16,3,4,Churned
+C11559,2022-11-30,Growth,Canada,159.84,32,1,8,Churned
+C11560,2022-01-25,Starter,United Kingdom,52.8,13,2,6,Active
+C11561,2023-06-25,Growth,Brazil,204.84,30,0,7,Active
+C11562,2022-08-28,Starter,Brazil,50.42,16,4,6,Churned
+C11563,2024-08-29,Starter,Brazil,60.03,6,2,8,Active
+C11564,2024-06-13,Enterprise,United Kingdom,1225.76,40,2,7,Active
+C11565,2024-05-25,Starter,India,52.17,39,2,7,Active
+C11566,2024-02-22,Starter,Germany,64.31,37,4,10,Active
+C11567,2024-09-23,Starter,United Kingdom,51.68,30,4,5,Active
+C11568,2024-08-13,Starter,Brazil,54.09,31,7,6,Churned
+C11569,2022-06-27,Starter,Brazil,36.9,37,4,8,Churned
+C11570,2023-09-07,Enterprise,India,2524.77,27,3,7,Active
+C11571,2023-05-10,Growth,Canada,144.77,42,5,5,Active
+C11572,2022-02-01,Growth,India,178.65,37,2,6,Active
+C11573,2024-02-24,Growth,Brazil,177.57,26,1,9,Active
+C11574,2022-04-20,Starter,Brazil,74.7,28,4,8,Active
+C11575,2024-07-18,Enterprise,Canada,1064.18,45,1,8,Active
+C11576,2023-11-27,Starter,India,53.53,24,1,6,Churned
+C11577,2022-08-29,Starter,United States,43.78,6,6,6,Active
+C11578,2022-02-06,Enterprise,Canada,974.63,40,1,10,Active
+C11579,2024-09-14,Starter,Canada,54.92,1,4,5,Active
+C11580,2024-03-19,Starter,Brazil,42.44,12,3,6,Churned
+C11581,2023-03-18,Growth,Canada,207.44,16,3,7,Active
+C11582,2024-03-15,Starter,United Kingdom,55.54,2,3,9,Active
+C11583,2024-02-12,Starter,Canada,71.75,11,2,7,Active
+C11584,2023-09-04,Starter,United States,38.07,9,1,8,Active
+C11585,2023-06-03,Growth,India,193.01,27,1,10,Active
+C11586,2022-02-13,Starter,India,47.92,42,3,5,Active
+C11587,2022-10-25,Starter,Canada,49.01,14,1,6,Active
+C11588,2022-11-07,Starter,India,81.91,19,3,7,Churned
+C11589,2022-04-19,Starter,India,47.33,33,2,9,Active
+C11590,2023-12-11,Starter,United Kingdom,29.6,32,4,7,Active
+C11591,2022-06-11,Starter,Germany,47.09,45,4,8,Active
+C11592,2022-09-16,Starter,Germany,47.85,25,0,6,Active
+C11593,2023-10-10,Starter,Canada,46.69,37,2,8,Churned
+C11594,2023-06-04,Starter,India,42.44,40,2,3,Active
+C11595,2023-07-08,Starter,United Kingdom,37.62,20,4,9,Active
+C11596,2024-05-04,Growth,United States,306.5,40,3,9,Active
+C11597,2023-03-09,Starter,Canada,52.22,47,4,6,Churned
+C11598,2023-09-11,Starter,India,47.15,6,2,4,Active
+C11599,2023-09-19,Starter,Germany,74.99,37,4,6,Active
+C11600,2022-05-06,Growth,United Kingdom,167.26,30,2,9,Active
+C11601,2023-05-23,Starter,United Kingdom,55.27,39,3,8,Active
+C11602,2023-07-03,Growth,India,155.01,26,0,10,Active
+C11603,2022-05-22,Growth,India,231.24,10,2,7,Active
+C11604,2022-05-08,Starter,India,39.05,21,3,10,Active
+C11605,2022-09-19,Starter,India,53.83,33,3,4,Churned
+C11606,2023-03-02,Enterprise,Canada,1773.52,43,1,7,Active
+C11607,2023-03-08,Starter,United Kingdom,49.92,4,4,5,Churned
+C11608,2022-08-17,Starter,India,31.6,9,5,7,Churned
+C11609,2023-02-02,Starter,Brazil,49.35,12,2,6,Churned
+C11610,2022-10-19,Starter,Germany,53.94,28,1,9,Active
+C11611,2024-06-21,Growth,Germany,238.29,1,0,9,Active
+C11612,2023-10-18,Starter,India,65.79,45,2,8,Active
+C11613,2024-07-30,Starter,Brazil,66.47,34,1,8,Active
+C11614,2023-10-12,Growth,Germany,193.86,43,4,5,Churned
+C11615,2023-06-19,Enterprise,United States,1051.73,1,0,9,Active
+C11616,2023-05-06,Starter,United States,39.18,13,3,6,Churned
+C11617,2022-09-23,Growth,United States,178.63,22,1,9,Churned
+C11618,2022-06-28,Starter,Canada,53.9,37,4,9,Active
+C11619,2024-03-09,Growth,United States,151.95,31,5,6,Active
+C11620,2023-01-25,Starter,India,40.71,20,4,9,Active
+C11621,2022-07-01,Starter,United Kingdom,54.83,15,3,7,Active
+C11622,2023-02-22,Enterprise,India,1054.46,16,0,9,Active
+C11623,2023-05-08,Growth,Brazil,214.28,18,1,6,Active
+C11624,2023-11-02,Starter,United States,41.64,33,7,4,Active
+C11625,2024-09-21,Enterprise,Germany,1271.1,41,1,7,Active
+C11626,2024-09-01,Starter,Germany,41.99,23,2,9,Active
+C11627,2024-05-24,Growth,Brazil,136.03,43,0,8,Active
+C11628,2024-04-07,Growth,India,240.93,15,0,9,Churned
+C11629,2024-07-18,Growth,Brazil,173.14,41,4,6,Active
+C11630,2023-12-17,Starter,India,46.62,1,2,7,Active
+C11631,2022-04-08,Growth,United Kingdom,173.31,36,1,6,Active
+C11632,2022-08-28,Growth,India,221.89,45,2,4,Active
+C11633,2023-04-08,Starter,Canada,52.38,14,2,7,Active
+C11634,2024-02-24,Enterprise,Germany,1337.42,33,3,7,Active
+C11635,2024-02-09,Starter,Brazil,43.9,4,2,6,Active
+C11636,2024-05-27,Starter,India,48.52,41,1,8,Active
+C11637,2022-06-06,Growth,United States,216.31,23,3,10,Active
+C11638,2023-08-21,Starter,United States,66.74,20,4,9,Active
+C11639,2024-02-08,Growth,India,211.58,44,1,8,Active
+C11640,2023-01-29,Starter,United Kingdom,40.09,44,4,7,Active
+C11641,2022-12-08,Starter,Germany,51.7,11,5,7,Churned
+C11642,2023-10-23,Growth,Germany,192.54,46,2,8,Active
+C11643,2024-06-06,Enterprise,Germany,804.59,10,0,9,Active
+C11644,2023-03-31,Growth,Brazil,137.59,39,1,8,Active
+C11645,2023-02-22,Starter,Germany,48.35,37,2,7,Churned
+C11646,2022-03-18,Starter,United States,49.17,24,4,6,Churned
+C11647,2022-09-08,Growth,Germany,187.61,28,5,7,Active
+C11648,2022-03-21,Enterprise,Canada,1432.12,19,1,4,Active
+C11649,2024-07-05,Growth,Germany,165.05,20,2,8,Active
+C11650,2024-04-23,Growth,Brazil,150.82,25,2,4,Active
+C11651,2023-12-14,Starter,Germany,41.54,41,1,8,Active
+C11652,2022-08-03,Starter,United Kingdom,43.37,23,0,7,Active
+C11653,2023-04-08,Starter,India,48.43,28,2,9,Active
+C11654,2022-01-12,Starter,Germany,41.77,34,3,7,Active
+C11655,2024-08-19,Starter,Brazil,31.93,44,3,7,Active
+C11656,2022-02-23,Growth,Brazil,119.04,41,2,8,Churned
+C11657,2023-08-26,Starter,United States,50.22,18,4,5,Churned
+C11658,2023-05-12,Starter,United States,39.1,41,8,7,Active
+C11659,2023-08-11,Enterprise,United States,803.52,21,2,8,Churned
+C11660,2022-03-24,Starter,Brazil,55.52,5,2,6,Active
+C11661,2022-12-28,Growth,Germany,271.06,4,2,6,Active
+C11662,2024-04-08,Growth,Germany,195.28,10,2,7,Active
+C11663,2024-04-14,Growth,Germany,209.98,18,0,8,Active
+C11664,2023-02-08,Growth,United States,210.33,19,1,6,Active
+C11665,2023-08-09,Growth,India,125.3,9,2,7,Active
+C11666,2024-03-11,Starter,United States,58.53,9,2,6,Churned
+C11667,2023-09-14,Growth,India,255.0,2,1,7,Active
+C11668,2023-02-22,Growth,United States,287.34,43,4,6,Churned
+C11669,2024-07-25,Starter,United Kingdom,44.89,13,6,6,Active
+C11670,2024-09-21,Growth,Canada,158.58,31,0,8,Churned
+C11671,2022-09-27,Starter,India,64.3,24,2,8,Active
+C11672,2022-02-18,Growth,Canada,219.88,17,2,8,Active
+C11673,2024-03-01,Starter,Germany,58.37,12,1,7,Active
+C11674,2022-04-18,Growth,Brazil,174.84,4,3,8,Active
+C11675,2024-03-21,Starter,Germany,51.73,6,5,2,Churned
+C11676,2024-02-19,Starter,India,39.69,32,0,7,Active
+C11677,2022-03-05,Starter,India,48.95,22,4,6,Active
+C11678,2023-07-03,Growth,United States,185.62,46,2,7,Active
+C11679,2023-12-24,Enterprise,India,1917.52,7,2,6,Active
+C11680,2022-03-22,Starter,United States,54.68,44,6,6,Active
+C11681,2024-04-10,Starter,India,31.86,5,2,8,Active
+C11682,2022-04-19,Growth,United States,198.94,35,2,5,Active
+C11683,2023-06-21,Growth,Brazil,214.21,46,1,8,Active
+C11684,2022-01-21,Starter,India,44.57,8,0,6,Churned
+C11685,2022-04-22,Growth,Germany,159.61,23,2,8,Active
+C11686,2024-01-04,Growth,Canada,227.1,44,1,7,Active
+C11687,2022-03-20,Starter,Canada,40.43,38,4,5,Churned
+C11688,2024-06-17,Starter,United Kingdom,54.98,11,2,5,Churned
+C11689,2022-01-24,Starter,Canada,39.75,9,3,7,Churned
+C11690,2023-09-20,Enterprise,Germany,1078.47,16,1,6,Active
+C11691,2023-01-02,Growth,Germany,240.94,22,3,5,Churned
+C11692,2023-08-29,Starter,Canada,54.04,14,2,7,Active
+C11693,2023-09-14,Enterprise,Canada,1207.56,5,0,9,Active
+C11694,2023-10-06,Starter,Canada,48.71,24,3,7,Churned
+C11695,2023-07-25,Growth,Germany,202.64,20,2,5,Churned
+C11696,2024-08-13,Growth,India,169.86,15,1,7,Active
+C11697,2023-05-25,Growth,Canada,146.93,39,2,8,Active
+C11698,2024-05-02,Growth,United States,222.99,14,2,7,Active
+C11699,2023-02-22,Starter,Canada,66.54,42,1,8,Active
+C11700,2023-09-03,Starter,Canada,55.29,1,3,6,Churned
+C11701,2023-11-12,Starter,Germany,51.56,25,3,6,Churned
+C11702,2023-01-23,Growth,United States,156.27,45,3,6,Active
+C11703,2024-06-02,Starter,Germany,58.4,14,2,8,Active
+C11704,2022-09-28,Starter,United States,53.95,31,0,9,Active
+C11705,2024-04-06,Starter,Brazil,57.05,35,2,6,Active
+C11706,2022-07-09,Starter,Germany,60.26,17,5,7,Churned
+C11707,2023-12-17,Starter,Germany,67.29,31,7,3,Active
+C11708,2024-04-12,Starter,India,39.21,31,3,7,Active
+C11709,2022-10-20,Starter,India,37.86,23,4,4,Active
+C11710,2022-09-13,Starter,United States,50.47,18,3,5,Active
+C11711,2024-07-29,Starter,Germany,40.74,23,4,4,Active
+C11712,2023-09-26,Enterprise,United States,963.85,8,1,7,Active
+C11713,2024-05-11,Growth,India,254.0,24,0,9,Active
+C11714,2024-08-06,Growth,United Kingdom,162.63,16,3,7,Churned
+C11715,2024-08-05,Enterprise,Germany,1197.35,16,3,6,Active
+C11716,2024-03-30,Growth,United Kingdom,143.6,12,2,7,Active
+C11717,2023-09-12,Growth,Brazil,201.52,25,0,5,Active
+C11718,2024-08-05,Starter,United Kingdom,62.08,1,3,8,Churned
+C11719,2022-11-29,Starter,India,62.45,3,2,4,Active
+C11720,2023-06-30,Starter,India,60.39,10,3,6,Active
+C11721,2023-03-29,Enterprise,Brazil,1181.34,27,1,7,Active
+C11722,2022-12-07,Starter,United States,61.2,13,3,7,Active
+C11723,2022-11-24,Starter,Brazil,53.4,24,4,7,Churned
+C11724,2024-08-30,Growth,India,182.27,7,2,7,Active
+C11725,2022-12-17,Starter,Brazil,52.89,20,0,10,Active
+C11726,2022-04-16,Growth,Brazil,237.56,22,1,10,Active
+C11727,2023-03-02,Growth,India,152.59,16,1,8,Active
+C11728,2023-01-10,Starter,Brazil,39.64,3,2,7,Churned
+C11729,2024-07-24,Starter,United Kingdom,47.61,30,5,6,Active
+C11730,2024-02-19,Starter,Germany,38.38,10,4,5,Active
+C11731,2023-05-13,Growth,Germany,155.41,23,2,8,Active
+C11732,2024-04-08,Enterprise,Germany,1103.19,34,1,10,Active
+C11733,2023-02-09,Growth,India,242.67,5,3,3,Active
+C11734,2022-08-12,Starter,Brazil,59.53,32,5,6,Churned
+C11735,2023-10-02,Starter,United Kingdom,52.25,18,3,9,Active
+C11736,2023-09-14,Growth,United Kingdom,206.31,24,2,8,Active
+C11737,2022-10-14,Growth,Brazil,302.11,4,1,8,Active
+C11738,2022-06-21,Starter,Brazil,43.99,24,0,6,Active
+C11739,2022-01-09,Starter,United Kingdom,51.42,18,3,8,Churned
+C11740,2023-01-20,Starter,United States,43.55,9,4,8,Active
+C11741,2023-12-31,Starter,Germany,37.88,26,1,8,Active
+C11742,2024-03-15,Growth,United States,252.21,31,2,6,Churned
+C11743,2022-11-29,Enterprise,India,1128.94,19,1,8,Active
+C11744,2023-10-25,Starter,Brazil,56.31,30,0,6,Active
+C11745,2022-08-26,Starter,Brazil,46.65,17,1,6,Active
+C11746,2022-07-07,Starter,Germany,62.87,40,2,8,Active
+C11747,2023-06-20,Starter,Germany,40.14,14,3,8,Active
+C11748,2022-11-08,Starter,Germany,61.84,38,1,6,Active
+C11749,2022-06-11,Starter,Brazil,58.6,18,2,5,Active
+C11750,2022-08-29,Starter,Canada,34.22,27,1,6,Active
+C11751,2022-10-05,Growth,Canada,179.46,4,1,8,Active
+C11752,2022-11-11,Growth,Germany,244.07,4,0,6,Active
+C11753,2023-05-28,Growth,United States,276.1,47,1,10,Active
+C11754,2024-05-21,Starter,United States,56.54,1,1,7,Active
+C11755,2024-09-01,Starter,Canada,45.26,27,2,8,Active
+C11756,2023-07-29,Starter,Canada,40.37,22,2,6,Active
+C11757,2022-09-01,Starter,India,54.88,30,4,7,Active
+C11758,2022-07-14,Starter,United States,45.0,1,5,7,Active
+C11759,2023-04-13,Starter,Germany,45.38,9,4,4,Active
+C11760,2023-11-06,Enterprise,Brazil,1147.39,16,1,7,Active
+C11761,2023-06-13,Enterprise,Brazil,1431.43,44,0,8,Active
+C11762,2022-05-13,Growth,Brazil,285.6,17,1,7,Active
+C11763,2023-12-14,Growth,Brazil,244.37,27,0,9,Active
+C11764,2022-11-08,Growth,United States,199.38,27,0,7,Active
+C11765,2023-06-07,Growth,Brazil,166.25,20,2,8,Active
+C11766,2024-05-09,Growth,Canada,227.43,39,2,8,Active
+C11767,2024-01-04,Starter,Germany,68.37,34,0,8,Active
+C11768,2023-06-11,Enterprise,India,1466.72,21,2,8,Active
+C11769,2024-05-14,Growth,United Kingdom,207.44,15,2,5,Active
+C11770,2022-07-21,Starter,Brazil,44.43,14,4,6,Active
+C11771,2022-10-10,Starter,Germany,52.5,44,7,4,Churned
+C11772,2022-09-26,Growth,Canada,250.69,6,1,7,Active
+C11773,2024-04-15,Enterprise,India,1257.07,8,4,6,Active
+C11774,2024-04-18,Starter,Germany,48.0,13,4,6,Active
+C11775,2022-09-20,Starter,India,42.71,40,2,7,Churned
+C11776,2022-07-11,Starter,United States,82.25,33,0,8,Active
+C11777,2024-03-20,Starter,Canada,41.0,46,2,7,Active
+C11778,2023-03-27,Starter,Germany,40.25,34,4,7,Active
+C11779,2023-09-29,Starter,Germany,50.63,24,5,4,Active
+C11780,2022-07-17,Starter,Germany,47.06,2,6,6,Active
+C11781,2023-07-23,Starter,India,60.13,42,0,6,Active
+C11782,2023-11-16,Growth,Brazil,245.85,32,1,3,Active
+C11783,2023-04-09,Starter,India,38.43,4,1,10,Active
+C11784,2024-03-31,Starter,United States,42.13,46,1,6,Active
+C11785,2023-06-30,Starter,Brazil,41.13,30,4,6,Churned
+C11786,2023-06-23,Growth,India,232.81,30,1,5,Churned
+C11787,2022-08-23,Starter,Canada,53.38,17,7,5,Active
+C11788,2023-10-30,Growth,United Kingdom,184.75,16,2,8,Active
+C11789,2023-05-14,Starter,Brazil,51.17,18,2,8,Active
+C11790,2023-10-11,Starter,Canada,39.12,3,4,5,Active
+C11791,2023-09-01,Enterprise,United States,1034.39,22,1,7,Active
+C11792,2023-01-04,Starter,Canada,37.78,3,3,7,Active
+C11793,2023-01-17,Starter,Brazil,50.45,29,3,7,Active
+C11794,2022-11-08,Starter,Brazil,50.41,10,4,7,Churned
+C11795,2023-01-17,Starter,Canada,40.24,29,0,9,Active
+C11796,2024-04-25,Growth,United Kingdom,216.49,18,1,7,Active
+C11797,2022-12-14,Growth,United States,245.85,14,0,10,Active
+C11798,2022-05-02,Growth,India,161.94,7,0,8,Active
+C11799,2024-03-28,Starter,India,45.9,19,2,8,Active
+C11800,2022-08-06,Starter,Canada,54.3,4,3,8,Active
+C11801,2023-01-20,Enterprise,India,1198.47,12,1,5,Active
+C11802,2022-07-22,Starter,United States,37.24,22,5,7,Active
+C11803,2023-08-04,Growth,India,182.21,30,0,7,Active
+C11804,2022-09-24,Growth,Germany,181.0,22,0,6,Active
+C11805,2024-08-30,Starter,Canada,47.36,5,0,7,Active
+C11806,2023-03-04,Enterprise,Brazil,1169.71,34,6,6,Churned
+C11807,2022-01-31,Starter,Brazil,67.02,20,6,3,Churned
+C11808,2023-07-07,Growth,Brazil,190.87,30,0,8,Active
+C11809,2022-08-08,Starter,United Kingdom,34.75,46,2,7,Active
+C11810,2022-12-17,Growth,Canada,202.66,3,3,8,Active
+C11811,2024-07-14,Starter,United States,69.5,47,3,6,Active
+C11812,2022-06-29,Starter,United Kingdom,47.39,45,8,7,Churned
+C11813,2023-12-18,Enterprise,United States,1099.33,25,1,8,Active
+C11814,2023-11-21,Starter,United States,46.1,2,4,6,Active
+C11815,2023-01-12,Starter,Canada,55.07,12,6,8,Active
+C11816,2023-03-20,Starter,United States,46.06,11,4,9,Churned
+C11817,2022-03-31,Growth,United States,146.96,28,3,6,Active
+C11818,2023-04-23,Starter,United States,42.84,33,2,6,Active
+C11819,2023-05-29,Growth,India,196.44,23,1,8,Active
+C11820,2023-08-22,Growth,United Kingdom,221.5,17,0,6,Active
+C11821,2024-02-23,Growth,Brazil,177.11,2,2,5,Active
+C11822,2024-07-18,Enterprise,United Kingdom,1130.97,45,2,9,Active
+C11823,2023-02-27,Growth,United Kingdom,200.8,47,0,9,Active
+C11824,2024-06-01,Starter,United States,41.94,2,1,6,Active
+C11825,2024-04-23,Growth,United Kingdom,195.38,16,2,10,Active
+C11826,2022-11-03,Starter,United Kingdom,53.8,47,1,6,Active
+C11827,2022-10-18,Starter,Canada,38.65,19,4,7,Churned
+C11828,2023-06-21,Starter,India,52.1,30,4,5,Churned
+C11829,2023-05-11,Starter,Germany,39.4,25,2,10,Churned
+C11830,2023-01-08,Starter,Canada,39.56,30,1,7,Churned
+C11831,2022-04-01,Starter,Germany,42.92,42,1,7,Active
+C11832,2024-03-05,Growth,Canada,261.49,18,2,4,Active
+C11833,2023-06-10,Enterprise,Germany,851.54,38,1,10,Active
+C11834,2022-06-26,Starter,Canada,44.66,22,3,6,Active
+C11835,2024-05-11,Starter,United Kingdom,48.74,10,3,8,Churned
+C11836,2024-07-14,Starter,India,61.88,4,3,7,Active
+C11837,2022-06-02,Starter,Germany,72.34,34,3,6,Active
+C11838,2023-06-10,Enterprise,Canada,1102.87,29,4,3,Active
+C11839,2023-09-02,Starter,United Kingdom,54.58,42,1,7,Active
+C11840,2022-08-25,Starter,Germany,48.08,12,2,7,Active
+C11841,2022-11-11,Starter,United Kingdom,48.02,34,4,7,Active
+C11842,2023-01-21,Starter,India,51.75,2,6,9,Churned
+C11843,2022-12-20,Starter,United Kingdom,35.68,7,6,7,Churned
+C11844,2023-11-07,Enterprise,Germany,1188.56,28,1,9,Churned
+C11845,2022-01-09,Growth,India,217.77,26,4,6,Active
+C11846,2023-10-13,Starter,United Kingdom,41.26,28,2,5,Active
+C11847,2023-06-17,Growth,United Kingdom,218.06,40,2,7,Active
+C11848,2024-01-29,Growth,United States,140.84,40,2,6,Churned
+C11849,2024-09-12,Starter,United States,49.93,10,1,8,Churned
+C11850,2023-03-08,Growth,Canada,260.28,10,1,7,Active
+C11851,2022-05-27,Growth,Brazil,190.49,26,0,5,Active
+C11852,2023-03-13,Growth,United Kingdom,163.64,45,3,9,Active
+C11853,2022-08-23,Starter,India,36.85,32,4,6,Active
+C11854,2023-05-24,Growth,United States,215.17,7,1,7,Active
+C11855,2022-08-15,Growth,Canada,239.58,30,3,5,Active
+C11856,2022-01-11,Growth,Brazil,196.78,16,2,6,Active
+C11857,2023-07-17,Starter,Brazil,44.66,6,6,4,Churned
+C11858,2022-11-18,Starter,United Kingdom,33.3,34,4,5,Active
+C11859,2022-07-09,Growth,Germany,204.0,14,1,8,Active
+C11860,2022-01-03,Growth,Canada,173.37,37,1,7,Active
+C11861,2024-08-09,Enterprise,India,1057.56,26,1,9,Active
+C11862,2024-04-18,Starter,India,67.7,21,3,6,Active
+C11863,2023-11-28,Starter,Canada,34.18,10,2,7,Active
+C11864,2023-01-07,Growth,Brazil,142.56,14,2,7,Active
+C11865,2023-09-18,Growth,Germany,208.42,16,2,8,Active
+C11866,2023-06-22,Starter,United States,45.37,33,2,6,Active
+C11867,2022-01-04,Growth,United Kingdom,179.39,20,1,9,Churned
+C11868,2024-07-01,Starter,Brazil,51.75,2,1,6,Churned
+C11869,2023-04-16,Starter,United States,51.57,1,4,6,Active
+C11870,2023-04-10,Starter,United Kingdom,40.33,13,5,4,Churned
+C11871,2024-03-20,Starter,Canada,43.53,24,6,5,Churned
+C11872,2023-12-14,Growth,Germany,200.98,16,2,9,Churned
+C11873,2023-05-22,Starter,United Kingdom,50.67,47,7,6,Active
+C11874,2024-05-01,Enterprise,India,1321.77,11,0,10,Active
+C11875,2024-01-09,Starter,Canada,43.61,20,3,6,Churned
+C11876,2023-07-30,Growth,United Kingdom,213.3,19,0,9,Active
+C11877,2023-11-14,Starter,India,59.26,13,1,7,Active
+C11878,2022-06-13,Starter,Brazil,49.46,42,3,6,Active
+C11879,2024-07-18,Growth,India,194.95,12,2,7,Active
+C11880,2024-06-01,Enterprise,Canada,1144.78,1,0,9,Active
+C11881,2023-01-02,Enterprise,Germany,1060.61,25,1,7,Active
+C11882,2022-02-09,Starter,Brazil,40.62,30,4,7,Active
+C11883,2024-04-05,Starter,Germany,46.16,22,3,7,Churned
+C11884,2023-05-20,Starter,United States,53.62,20,2,8,Active
+C11885,2022-09-18,Starter,United Kingdom,41.02,41,2,6,Active
+C11886,2024-09-23,Starter,United States,48.27,18,2,7,Active
+C11887,2023-07-12,Enterprise,Brazil,1154.92,31,3,7,Active
+C11888,2022-07-24,Growth,Germany,283.97,40,3,7,Active
+C11889,2023-09-10,Starter,Brazil,56.62,19,2,6,Active
+C11890,2024-02-01,Enterprise,Brazil,1382.14,26,2,5,Active
+C11891,2023-03-19,Growth,India,239.2,19,1,4,Active
+C11892,2023-11-17,Starter,Canada,43.93,29,1,9,Active
+C11893,2022-04-13,Growth,Germany,262.08,26,0,9,Active
+C11894,2022-10-03,Growth,Brazil,205.44,41,2,4,Active
+C11895,2023-03-11,Starter,India,48.56,12,4,7,Active
+C11896,2022-04-25,Starter,Brazil,38.43,8,2,7,Churned
+C11897,2022-07-16,Starter,Germany,45.22,20,4,8,Churned
+C11898,2023-06-24,Starter,Germany,34.42,29,7,5,Active
+C11899,2023-05-03,Growth,Brazil,189.36,14,1,8,Active
+C11900,2022-12-28,Starter,Canada,43.67,47,1,7,Active
+C11901,2022-01-21,Starter,United States,45.25,25,3,6,Active
+C11902,2023-02-02,Enterprise,Canada,909.49,39,1,9,Active
+C11903,2023-04-29,Enterprise,Canada,1381.32,26,0,10,Active
+C11904,2024-09-13,Growth,India,224.04,19,0,6,Active
+C11905,2023-01-13,Growth,India,279.01,40,1,9,Active
+C11906,2023-05-30,Enterprise,Germany,1672.99,8,0,7,Active
+C11907,2022-01-14,Growth,India,205.32,12,3,3,Churned
+C11908,2022-06-29,Starter,United Kingdom,60.13,36,4,6,Churned
+C11909,2023-09-15,Starter,Germany,51.63,43,3,8,Active
+C11910,2023-04-30,Starter,Canada,44.99,14,2,5,Active
+C11911,2022-11-10,Starter,India,46.35,26,4,3,Churned
+C11912,2023-01-31,Starter,Germany,55.68,23,4,6,Active
+C11913,2023-08-06,Starter,United Kingdom,110.99,35,4,5,Churned
+C11914,2023-03-07,Starter,Brazil,61.88,24,3,9,Active
+C11915,2024-06-04,Growth,Germany,209.05,29,2,7,Active
+C11916,2022-08-07,Starter,India,53.98,32,2,8,Active
+C11917,2024-05-14,Starter,Germany,53.88,39,3,7,Active
+C11918,2024-07-12,Growth,United States,195.44,7,2,10,Churned
+C11919,2023-05-19,Starter,United Kingdom,57.0,32,4,5,Active
+C11920,2022-06-23,Starter,India,47.5,9,2,7,Active
+C11921,2023-04-17,Starter,United Kingdom,40.03,1,4,4,Active
+C11922,2024-06-24,Growth,India,219.12,34,2,8,Active
+C11923,2023-06-18,Growth,Canada,225.06,19,1,9,Active
+C11924,2023-09-20,Starter,United Kingdom,47.59,34,2,9,Active
+C11925,2023-01-26,Growth,Canada,211.72,45,2,7,Active
+C11926,2023-08-05,Growth,United States,241.17,7,0,6,Active
+C11927,2022-10-23,Enterprise,Germany,1187.63,22,0,8,Active
+C11928,2022-09-21,Growth,India,181.98,5,1,7,Active
+C11929,2022-06-07,Growth,United Kingdom,172.68,39,0,9,Active
+C11930,2023-11-30,Starter,United Kingdom,46.57,47,2,7,Active
+C11931,2024-07-04,Starter,Germany,66.61,41,1,7,Active
+C11932,2022-12-25,Starter,United States,47.09,47,2,10,Active
+C11933,2022-03-03,Starter,Canada,52.65,16,4,8,Active
+C11934,2023-02-08,Enterprise,United Kingdom,1124.6,14,1,9,Active
+C11935,2022-12-12,Starter,Brazil,45.14,41,4,6,Active
+C11936,2023-09-14,Starter,United Kingdom,41.1,31,3,5,Active
+C11937,2022-06-16,Enterprise,Brazil,1224.31,18,1,9,Active
+C11938,2024-02-23,Starter,United Kingdom,44.19,10,2,9,Active
+C11939,2022-03-02,Starter,Brazil,63.22,2,5,4,Churned
+C11940,2023-01-20,Starter,Brazil,47.96,2,3,6,Active
+C11941,2022-06-22,Starter,Brazil,48.57,33,3,5,Active
+C11942,2024-05-22,Starter,United States,47.27,13,5,7,Churned
+C11943,2023-04-01,Starter,United States,52.77,39,9,6,Churned
+C11944,2024-06-29,Growth,Canada,268.13,40,3,6,Active
+C11945,2023-07-13,Starter,Germany,39.8,22,1,7,Active
+C11946,2024-01-28,Growth,Brazil,210.37,15,2,4,Active
+C11947,2024-06-13,Starter,Brazil,35.8,9,5,5,Churned
+C11948,2024-04-04,Starter,Brazil,62.58,13,3,9,Active
+C11949,2023-11-15,Starter,United Kingdom,47.95,29,4,7,Active
+C11950,2024-03-04,Growth,Germany,147.57,36,3,8,Churned
+C11951,2024-03-12,Growth,United States,154.18,35,0,7,Active
+C11952,2023-11-01,Starter,United States,57.66,46,1,7,Active
+C11953,2023-07-08,Growth,Canada,142.65,31,4,6,Active
+C11954,2023-05-25,Starter,Germany,51.8,24,5,6,Churned
+C11955,2022-07-21,Growth,Brazil,182.65,17,2,9,Active
+C11956,2023-07-30,Enterprise,United States,1154.16,16,2,6,Active
+C11957,2024-04-29,Starter,United States,42.82,18,3,7,Active
+C11958,2024-05-01,Starter,India,40.5,42,1,6,Active
+C11959,2023-04-20,Starter,India,44.45,26,4,3,Active
+C11960,2023-05-01,Growth,Germany,223.12,11,2,9,Active
+C11961,2024-02-11,Starter,United States,46.21,10,1,10,Churned
+C11962,2024-09-07,Starter,United Kingdom,53.31,2,3,8,Active
+C11963,2022-01-07,Growth,United States,189.59,40,2,8,Active
+C11964,2023-12-02,Starter,United States,55.37,11,1,10,Active
+C11965,2023-03-22,Growth,United Kingdom,216.22,5,2,8,Active
+C11966,2022-08-19,Starter,India,43.98,14,3,8,Churned
+C11967,2022-12-05,Enterprise,Brazil,991.62,23,1,8,Active
+C11968,2024-09-20,Growth,Brazil,240.91,46,2,8,Active
+C11969,2022-10-25,Starter,United Kingdom,41.64,41,6,5,Active
+C11970,2023-05-19,Starter,India,54.16,9,2,8,Churned
+C11971,2023-11-06,Starter,Brazil,49.31,25,3,5,Active
+C11972,2022-09-22,Growth,Germany,181.4,39,1,8,Active
+C11973,2024-04-04,Starter,United States,53.39,36,3,6,Active
+C11974,2022-03-14,Enterprise,Germany,1577.59,23,0,9,Active
+C11975,2024-05-13,Growth,United States,225.52,12,0,10,Active
+C11976,2023-11-27,Enterprise,Germany,1231.43,37,2,8,Active
+C11977,2024-03-11,Starter,United Kingdom,67.77,21,2,9,Active
+C11978,2022-04-03,Starter,Canada,35.06,12,4,8,Active
+C11979,2024-03-22,Starter,Brazil,39.23,34,0,5,Active
+C11980,2022-10-08,Starter,India,44.65,42,3,7,Active
+C11981,2024-04-15,Starter,Canada,65.08,42,2,8,Active
+C11982,2022-12-17,Starter,Canada,59.17,45,4,3,Active
+C11983,2023-11-25,Growth,United Kingdom,141.18,31,1,7,Active
+C11984,2024-09-20,Starter,India,44.9,37,8,5,Active
+C11985,2024-01-30,Starter,India,37.6,12,1,6,Active
+C11986,2022-03-23,Starter,United States,48.61,16,1,6,Churned
+C11987,2022-08-10,Growth,United States,238.33,7,3,9,Active
+C11988,2022-05-09,Growth,Germany,241.88,4,0,3,Active
+C11989,2024-08-15,Growth,United States,209.96,40,2,8,Active
+C11990,2022-11-20,Starter,Brazil,45.01,22,3,9,Active
+C11991,2023-05-19,Growth,United States,195.24,27,0,8,Active
+C11992,2023-08-01,Growth,United Kingdom,228.14,5,1,10,Active
+C11993,2022-09-20,Starter,United States,78.36,9,2,7,Active
+C11994,2023-01-05,Starter,Germany,38.66,4,2,6,Active
+C11995,2023-03-31,Enterprise,Canada,1648.87,23,1,8,Active
+C11996,2022-01-15,Starter,United States,51.45,28,1,7,Active
+C11997,2024-04-03,Starter,India,57.74,6,1,7,Active
+C11998,2024-06-24,Starter,India,50.85,34,1,7,Active
+C11999,2023-11-24,Enterprise,Canada,1589.09,5,0,7,Active
+C12000,2023-03-13,Starter,India,52.34,40,4,5,Active
+C12001,2022-06-02,Enterprise,Canada,1053.98,44,1,6,Active
+C12002,2022-11-24,Growth,Brazil,217.75,31,0,9,Active
+C12003,2023-03-15,Growth,Brazil,249.3,26,1,6,Active
+C12004,2022-07-18,Starter,Germany,49.0,35,4,5,Active
+C12005,2024-01-26,Starter,Germany,32.36,12,5,4,Active
+C12006,2023-03-28,Growth,India,194.48,44,2,8,Active
+C12007,2023-11-25,Enterprise,United States,1223.76,42,0,9,Active
+C12008,2023-05-31,Growth,Brazil,197.22,33,0,9,Active
+C12009,2022-07-09,Enterprise,United States,1086.79,47,4,7,Active
+C12010,2023-10-15,Growth,Canada,259.28,15,0,9,Active
+C12011,2024-01-13,Starter,United States,30.48,42,7,5,Churned
+C12012,2023-03-02,Starter,United States,49.93,2,5,7,Churned
+C12013,2023-11-06,Starter,United Kingdom,50.07,36,2,8,Active
+C12014,2024-09-10,Starter,United Kingdom,74.5,14,2,6,Active
+C12015,2022-09-02,Starter,United States,48.86,46,3,5,Active
+C12016,2024-06-08,Starter,Canada,53.57,27,6,8,Active
+C12017,2022-11-04,Starter,Brazil,50.24,10,3,7,Active
+C12018,2022-02-13,Starter,United Kingdom,49.93,15,1,9,Active
+C12019,2023-02-24,Growth,Germany,283.13,42,1,6,Active
+C12020,2024-03-30,Growth,United Kingdom,159.33,38,1,7,Active
+C12021,2023-11-05,Growth,India,174.14,17,3,5,Active
+C12022,2022-11-29,Growth,Germany,231.4,13,2,8,Active
+C12023,2024-08-09,Starter,Germany,51.58,2,2,6,Active
+C12024,2024-09-11,Starter,Germany,46.3,6,3,6,Active
+C12025,2024-09-21,Starter,United Kingdom,48.31,2,5,9,Churned
+C12026,2023-07-08,Starter,India,58.83,16,1,9,Active
+C12027,2023-11-21,Growth,United States,219.27,9,3,8,Active
+C12028,2023-06-15,Growth,India,172.55,1,1,6,Active
+C12029,2023-02-17,Starter,India,51.39,37,8,2,Churned
+C12030,2023-06-10,Growth,United States,197.03,42,1,9,Active
+C12031,2022-03-10,Starter,Canada,53.83,43,2,4,Active
+C12032,2022-06-12,Starter,Canada,45.95,40,2,6,Active
+C12033,2023-08-16,Growth,Brazil,156.28,7,1,6,Active
+C12034,2023-02-23,Growth,Canada,227.64,8,0,7,Active
+C12035,2023-04-27,Growth,Canada,222.08,40,2,7,Active
+C12036,2024-07-04,Growth,Brazil,264.11,1,2,6,Churned
+C12037,2023-11-02,Starter,Germany,37.66,36,1,6,Active
+C12038,2022-03-14,Growth,United Kingdom,196.22,6,0,8,Active
+C12039,2024-08-22,Growth,Canada,190.04,3,1,9,Active
+C12040,2024-05-13,Starter,Germany,45.27,37,1,5,Churned
+C12041,2022-06-16,Starter,Brazil,36.0,35,5,6,Active
+C12042,2024-05-01,Enterprise,Canada,969.54,5,1,8,Churned
+C12043,2023-01-06,Starter,Canada,51.72,2,1,8,Churned
+C12044,2023-01-08,Enterprise,Brazil,1085.86,42,2,7,Active
+C12045,2023-07-31,Starter,United Kingdom,41.54,13,4,6,Active
+C12046,2024-06-24,Starter,United States,65.23,46,4,8,Active
+C12047,2022-12-17,Growth,Brazil,319.91,25,1,8,Active
+C12048,2023-07-30,Growth,United States,196.77,47,1,5,Active
+C12049,2022-06-26,Starter,India,36.28,43,3,6,Churned
+C12050,2022-03-27,Starter,United Kingdom,53.04,29,4,6,Churned
+C12051,2023-08-22,Starter,Germany,32.29,5,3,5,Churned
+C12052,2022-08-24,Growth,Canada,151.91,43,3,6,Active
+C12053,2022-02-09,Starter,Germany,53.23,17,2,8,Active
+C12054,2022-01-09,Starter,United States,37.15,12,4,5,Active
+C12055,2023-01-13,Starter,Germany,46.18,28,3,7,Active
+C12056,2022-09-06,Starter,United States,36.42,17,1,6,Active
+C12057,2024-08-30,Starter,Canada,49.55,35,3,5,Churned
+C12058,2023-04-24,Starter,United States,61.34,13,4,7,Active
+C12059,2023-04-24,Growth,Canada,176.04,44,1,9,Active
+C12060,2022-06-05,Enterprise,United Kingdom,1195.35,5,0,6,Active
+C12061,2022-04-12,Starter,India,41.62,23,3,8,Active
+C12062,2022-10-27,Starter,Canada,42.21,46,3,7,Active
+C12063,2024-04-14,Enterprise,United Kingdom,1016.18,40,0,5,Active
+C12064,2023-09-13,Starter,Canada,57.34,39,1,5,Active
+C12065,2022-06-29,Starter,Germany,36.93,30,2,8,Churned
+C12066,2022-02-06,Growth,India,186.22,27,2,5,Active
+C12067,2022-09-08,Starter,Germany,53.19,10,7,4,Churned
+C12068,2022-10-01,Starter,Canada,58.78,14,4,6,Active
+C12069,2024-08-20,Enterprise,Brazil,1310.54,28,3,7,Active
+C12070,2022-06-20,Growth,Germany,196.13,15,1,8,Active
+C12071,2024-02-15,Growth,United States,177.6,15,0,10,Active
+C12072,2023-01-22,Starter,Canada,58.96,32,0,7,Active
+C12073,2022-11-18,Starter,India,41.2,34,2,7,Active
+C12074,2022-07-29,Enterprise,United States,1011.95,24,0,9,Active
+C12075,2023-10-10,Enterprise,Germany,1572.74,14,2,8,Active
+C12076,2023-11-22,Growth,United Kingdom,213.87,9,4,8,Active
+C12077,2023-05-03,Starter,United Kingdom,53.03,13,1,7,Active
+C12078,2024-08-05,Growth,Germany,224.31,16,2,8,Active
+C12079,2024-06-11,Starter,United States,48.08,45,2,6,Active
+C12080,2024-02-28,Growth,United Kingdom,149.27,16,1,7,Active
+C12081,2023-07-15,Growth,United States,209.25,43,1,8,Active
+C12082,2023-06-05,Starter,Canada,48.82,26,3,8,Active
+C12083,2023-10-23,Starter,Canada,41.26,22,3,8,Churned
+C12084,2023-08-06,Growth,United States,160.05,13,2,7,Active
+C12085,2022-05-30,Enterprise,India,1188.88,36,0,8,Active
+C12086,2023-10-17,Starter,United Kingdom,37.35,40,3,8,Active
+C12087,2022-09-07,Starter,India,47.61,47,3,10,Churned
+C12088,2024-01-10,Growth,Germany,188.76,39,3,8,Active
+C12089,2022-01-27,Starter,United States,47.85,5,4,7,Active
+C12090,2022-02-19,Starter,Brazil,53.11,42,3,5,Active
+C12091,2023-08-12,Starter,Brazil,55.49,29,1,6,Active
+C12092,2024-02-25,Starter,United States,42.5,25,3,6,Active
+C12093,2023-07-17,Starter,United Kingdom,58.31,12,5,7,Active
+C12094,2022-06-19,Enterprise,United States,1148.49,24,3,5,Active
+C12095,2022-11-04,Growth,Germany,282.58,38,3,8,Active
+C12096,2023-03-20,Starter,Germany,43.59,28,2,7,Active
+C12097,2022-08-21,Starter,India,35.5,5,4,7,Churned
+C12098,2024-08-20,Growth,India,235.11,36,2,7,Active
+C12099,2023-03-30,Starter,United States,53.35,38,2,6,Active
+C12100,2024-06-10,Growth,Germany,253.06,32,1,6,Active
+C12101,2022-04-14,Starter,Brazil,52.13,10,2,8,Active
+C12102,2023-04-11,Growth,Canada,317.76,14,0,8,Active
+C12103,2024-05-02,Starter,Canada,47.18,22,1,6,Active
+C12104,2022-10-08,Growth,United Kingdom,245.32,41,0,8,Active
+C12105,2024-04-11,Growth,India,179.15,39,0,10,Active
+C12106,2024-01-27,Starter,United States,54.06,5,2,7,Churned
+C12107,2023-08-20,Enterprise,Germany,1374.27,4,2,10,Active
+C12108,2022-02-14,Starter,United Kingdom,57.88,3,8,1,Churned
+C12109,2024-06-20,Starter,United Kingdom,57.23,44,2,7,Churned
+C12110,2023-04-23,Growth,Canada,104.16,41,1,9,Active
+C12111,2023-09-06,Growth,Brazil,196.29,11,3,7,Active
+C12112,2023-11-20,Starter,Canada,43.68,44,3,6,Active
+C12113,2023-05-06,Starter,Germany,45.43,24,5,6,Active
+C12114,2022-06-09,Starter,Germany,46.3,15,4,8,Active
+C12115,2023-08-23,Starter,Brazil,59.58,35,5,9,Active
+C12116,2023-08-23,Starter,United States,51.03,4,4,8,Active
+C12117,2022-03-27,Starter,Brazil,44.27,6,0,7,Active
+C12118,2022-07-19,Starter,Brazil,36.53,13,3,6,Active
+C12119,2022-08-06,Growth,Germany,270.4,29,1,7,Active
+C12120,2022-12-29,Growth,Canada,174.83,40,1,6,Active
+C12121,2023-07-13,Enterprise,United Kingdom,1169.04,25,1,7,Churned
+C12122,2023-09-05,Starter,Germany,75.16,21,1,7,Active
+C12123,2022-04-23,Starter,Germany,43.28,28,2,5,Active
+C12124,2024-05-08,Starter,Germany,46.37,1,6,7,Churned
+C12125,2024-03-20,Starter,Germany,51.33,32,5,7,Active
+C12126,2022-04-03,Starter,Germany,35.54,38,2,6,Active
+C12127,2022-06-20,Starter,Canada,34.73,20,2,7,Active
+C12128,2024-04-20,Growth,Germany,180.73,31,0,7,Active
+C12129,2023-02-23,Enterprise,India,1097.37,15,5,5,Active
+C12130,2023-03-20,Starter,Brazil,50.33,45,4,7,Active
+C12131,2023-04-30,Starter,India,40.29,9,2,8,Active
+C12132,2024-09-18,Growth,United Kingdom,217.04,7,1,7,Churned
+C12133,2022-06-07,Growth,United Kingdom,129.28,45,0,8,Active
+C12134,2024-07-30,Starter,Germany,48.32,24,3,7,Active
+C12135,2022-08-31,Growth,Germany,213.86,19,2,6,Active
+C12136,2024-06-17,Starter,Brazil,52.33,39,3,7,Active
+C12137,2023-04-30,Growth,Germany,192.63,14,1,8,Active
+C12138,2024-01-29,Growth,Canada,174.38,14,2,8,Active
+C12139,2022-04-17,Starter,Canada,47.16,3,2,5,Churned
+C12140,2023-01-01,Starter,Brazil,62.72,25,4,7,Active
+C12141,2022-07-07,Growth,Brazil,176.52,36,1,8,Active
+C12142,2023-07-28,Growth,United States,242.0,47,0,5,Active
+C12143,2022-01-24,Enterprise,United States,1506.47,25,5,5,Active
+C12144,2023-01-16,Starter,Brazil,34.63,4,0,9,Active
+C12145,2023-05-22,Growth,Canada,193.96,9,2,9,Active
+C12146,2023-04-23,Growth,Brazil,163.65,14,0,6,Active
+C12147,2024-04-02,Growth,United Kingdom,147.37,42,1,9,Active
+C12148,2023-08-30,Starter,Brazil,57.41,28,0,5,Active
+C12149,2024-03-21,Starter,India,53.87,44,3,9,Churned
+C12150,2023-05-16,Growth,United States,209.77,40,0,8,Active
+C12151,2022-12-21,Starter,Canada,39.44,42,2,6,Active
+C12152,2022-10-20,Starter,Germany,51.11,14,3,7,Active
+C12153,2023-11-19,Starter,India,37.7,27,5,5,Active
+C12154,2024-07-10,Enterprise,Germany,1218.69,3,2,8,Active
+C12155,2024-09-16,Growth,Canada,174.34,18,2,7,Active
+C12156,2022-08-21,Growth,Germany,245.54,15,0,2,Active
+C12157,2023-02-28,Enterprise,Canada,1115.93,8,2,6,Active
+C12158,2023-09-14,Growth,Canada,208.42,3,0,8,Active
+C12159,2024-07-02,Starter,United States,51.34,18,5,8,Active
+C12160,2022-11-06,Starter,Germany,48.26,4,1,8,Active
+C12161,2024-02-18,Growth,Brazil,203.24,29,1,9,Active
+C12162,2024-04-20,Growth,Canada,211.47,14,1,6,Active
+C12163,2022-06-26,Growth,Brazil,166.34,11,1,9,Churned
+C12164,2022-11-10,Starter,India,53.11,6,4,8,Active
+C12165,2023-03-21,Growth,Germany,236.53,22,2,5,Active
+C12166,2024-04-29,Starter,United States,53.05,8,5,8,Churned
+C12167,2024-07-19,Starter,Canada,45.65,27,2,8,Active
+C12168,2022-06-16,Starter,United States,50.74,47,2,7,Active
+C12169,2022-06-17,Starter,Brazil,45.56,35,3,6,Active
+C12170,2023-01-20,Starter,United States,47.85,6,2,6,Active
+C12171,2022-02-27,Growth,Germany,156.92,5,2,8,Active
+C12172,2023-05-31,Starter,Canada,64.58,42,2,8,Active
+C12173,2022-09-25,Enterprise,United Kingdom,1767.24,41,2,8,Active
+C12174,2023-01-22,Starter,United Kingdom,42.57,18,1,8,Active
+C12175,2022-01-05,Starter,United Kingdom,57.34,22,1,8,Active
+C12176,2022-08-20,Starter,Brazil,65.59,18,4,6,Active
+C12177,2022-05-08,Starter,United Kingdom,40.46,28,4,8,Churned
+C12178,2022-08-12,Starter,Brazil,31.82,10,3,8,Active
+C12179,2023-03-03,Starter,India,66.37,45,6,6,Active
+C12180,2022-08-23,Starter,Canada,48.9,19,7,5,Churned
+C12181,2024-02-04,Starter,India,44.16,8,4,4,Active
+C12182,2023-03-28,Growth,Germany,200.89,15,0,5,Active
+C12183,2022-08-02,Starter,United States,45.51,42,3,6,Active
+C12184,2023-09-17,Starter,Germany,88.56,14,1,10,Active
+C12185,2024-04-29,Starter,India,44.07,38,1,7,Active
+C12186,2023-05-14,Starter,Canada,52.32,36,1,7,Active
+C12187,2024-09-14,Growth,United Kingdom,257.69,47,0,7,Active
+C12188,2022-12-23,Starter,Germany,63.39,8,6,4,Active
+C12189,2023-04-10,Growth,Canada,247.77,19,1,6,Active
+C12190,2023-03-01,Growth,Canada,182.76,40,4,7,Active
+C12191,2024-09-19,Starter,Canada,47.53,6,3,6,Churned
+C12192,2023-12-23,Growth,United Kingdom,128.82,2,2,6,Active
+C12193,2023-08-01,Growth,United States,196.06,1,0,7,Active
+C12194,2023-01-01,Growth,Germany,200.31,4,1,8,Active
+C12195,2022-03-02,Growth,United Kingdom,230.82,38,0,9,Active
+C12196,2024-06-21,Starter,United Kingdom,70.17,17,2,4,Churned
+C12197,2022-04-21,Starter,Canada,56.49,7,3,6,Churned
+C12198,2023-12-28,Starter,India,60.7,34,3,7,Active
+C12199,2023-05-28,Growth,United Kingdom,198.31,15,0,9,Active
+C12200,2023-12-01,Starter,Brazil,63.35,7,3,7,Active
+C12201,2024-07-10,Starter,Brazil,49.11,47,3,8,Active
+C12202,2022-07-15,Enterprise,Germany,1507.49,28,1,5,Active
+C12203,2022-04-09,Starter,United States,57.55,21,5,7,Active
+C12204,2023-01-06,Starter,Germany,53.0,44,3,10,Active
+C12205,2023-07-26,Starter,Germany,36.01,11,0,8,Churned
+C12206,2022-03-08,Growth,United Kingdom,247.64,28,0,8,Active
+C12207,2024-03-22,Starter,India,52.85,36,2,8,Active
+C12208,2023-08-29,Starter,Brazil,56.39,1,5,5,Churned
+C12209,2024-09-10,Enterprise,Germany,1277.66,13,2,6,Active
+C12210,2022-10-14,Starter,Germany,54.0,5,4,6,Active
+C12211,2024-06-27,Starter,Brazil,63.56,25,3,4,Active
+C12212,2023-01-19,Growth,United Kingdom,181.0,32,4,7,Active
+C12213,2022-04-17,Starter,Canada,53.8,8,2,8,Churned
+C12214,2024-04-19,Starter,Germany,41.94,7,3,4,Active
+C12215,2022-03-18,Growth,India,223.33,22,1,8,Active
+C12216,2023-12-14,Growth,India,209.26,19,0,8,Churned
+C12217,2022-07-25,Starter,Germany,43.19,6,5,8,Active
+C12218,2023-11-02,Growth,United States,202.76,33,1,10,Active
+C12219,2022-10-07,Growth,Brazil,177.61,37,1,9,Active
+C12220,2022-03-22,Growth,Canada,184.51,21,0,10,Active
+C12221,2024-05-15,Growth,Brazil,213.63,18,2,7,Active
+C12222,2022-12-19,Growth,Brazil,209.97,8,2,8,Active
+C12223,2023-10-08,Starter,United States,33.37,15,4,6,Active
+C12224,2022-02-09,Starter,Brazil,52.77,24,2,6,Active
+C12225,2024-07-31,Starter,Germany,46.12,47,3,7,Active
+C12226,2023-09-13,Starter,United Kingdom,45.1,9,2,7,Active
+C12227,2023-02-23,Enterprise,Germany,957.81,39,2,7,Active
+C12228,2024-06-19,Starter,United Kingdom,48.56,24,0,8,Active
+C12229,2023-02-15,Starter,United Kingdom,44.13,27,2,7,Active
+C12230,2022-11-26,Starter,Brazil,63.21,15,5,7,Active
+C12231,2022-10-07,Growth,Brazil,140.25,45,0,7,Active
+C12232,2023-10-15,Growth,India,164.11,4,1,6,Active
+C12233,2023-03-14,Starter,Canada,39.86,10,6,7,Churned
+C12234,2023-07-24,Growth,United States,209.57,15,2,8,Active
+C12235,2024-03-01,Starter,Canada,61.96,27,5,7,Active
+C12236,2023-10-18,Enterprise,Germany,1327.03,20,0,6,Active
+C12237,2023-11-28,Growth,India,159.87,44,0,8,Active
+C12238,2023-09-02,Starter,Canada,44.97,9,2,8,Active
+C12239,2024-02-29,Enterprise,Brazil,1020.7,27,2,6,Active
+C12240,2023-12-24,Starter,Canada,54.24,23,6,4,Active
+C12241,2024-04-10,Starter,United Kingdom,44.79,15,1,7,Active
+C12242,2023-09-25,Starter,United Kingdom,36.94,2,2,9,Active
+C12243,2022-01-05,Starter,United States,55.08,39,3,7,Active
+C12244,2024-06-27,Enterprise,Brazil,1544.92,10,4,6,Active
+C12245,2022-08-26,Growth,India,192.01,7,2,7,Active
+C12246,2023-12-21,Growth,India,203.85,27,0,7,Active
+C12247,2023-10-17,Enterprise,Germany,887.86,8,0,7,Active
+C12248,2023-10-23,Starter,Germany,32.46,31,1,9,Active
+C12249,2023-03-23,Starter,Canada,33.85,35,5,3,Active
+C12250,2023-03-28,Growth,United Kingdom,197.23,11,2,9,Active
+C12251,2022-04-28,Starter,Brazil,46.07,4,2,10,Active
+C12252,2022-09-03,Growth,United States,221.97,5,0,8,Active
+C12253,2022-03-06,Starter,Germany,47.1,3,5,5,Churned
+C12254,2024-06-26,Starter,United States,59.7,23,5,8,Active
+C12255,2024-08-01,Starter,United States,58.34,18,3,7,Churned
+C12256,2022-04-18,Starter,United States,45.94,37,1,7,Active
+C12257,2024-04-28,Starter,United Kingdom,40.09,19,4,5,Active
+C12258,2023-11-12,Starter,Canada,33.4,31,3,6,Active
+C12259,2022-11-16,Starter,Germany,65.27,23,2,7,Active
+C12260,2022-06-07,Growth,India,164.81,21,3,8,Active
+C12261,2023-10-02,Starter,Brazil,36.33,35,0,8,Active
+C12262,2022-01-28,Starter,Canada,50.29,24,3,7,Active
+C12263,2022-05-27,Starter,Canada,36.39,27,3,6,Active
+C12264,2022-04-16,Starter,United States,50.28,22,2,8,Active
+C12265,2022-05-15,Starter,United Kingdom,45.81,34,4,6,Active
+C12266,2022-01-07,Starter,Brazil,58.94,15,1,10,Churned
+C12267,2022-11-30,Starter,Brazil,57.93,3,5,5,Active
+C12268,2024-03-12,Enterprise,Canada,1496.29,20,0,9,Active
+C12269,2022-10-09,Starter,Brazil,51.06,15,3,10,Active
+C12270,2022-09-05,Starter,India,41.27,43,1,9,Active
+C12271,2024-09-06,Growth,Germany,161.73,46,0,9,Active
+C12272,2023-04-27,Starter,Germany,44.07,11,6,6,Churned
+C12273,2022-01-25,Starter,United States,73.02,21,0,8,Active
+C12274,2023-08-12,Starter,Brazil,46.62,21,4,6,Active
+C12275,2023-07-02,Growth,United States,205.51,11,0,7,Active
+C12276,2023-03-01,Growth,India,269.62,1,2,5,Active
+C12277,2024-05-04,Starter,India,51.56,47,3,8,Active
+C12278,2023-11-13,Enterprise,Canada,1033.13,31,0,6,Active
+C12279,2022-01-26,Starter,Canada,56.7,20,3,8,Active
+C12280,2023-01-09,Growth,Brazil,182.66,9,0,8,Active
+C12281,2023-07-08,Starter,India,51.92,23,3,5,Active
+C12282,2023-10-25,Enterprise,United Kingdom,1329.43,13,1,10,Active
+C12283,2023-01-15,Starter,Brazil,44.39,11,3,5,Active
+C12284,2023-03-21,Starter,India,50.86,46,3,6,Active
+C12285,2022-08-04,Starter,India,67.48,31,3,6,Active
+C12286,2023-08-24,Enterprise,India,1058.67,15,0,8,Churned
+C12287,2022-08-24,Starter,United Kingdom,63.76,10,2,6,Active
+C12288,2023-05-04,Starter,United Kingdom,43.54,37,3,9,Active
+C12289,2024-03-25,Enterprise,United States,1720.71,29,1,6,Active
+C12290,2024-07-05,Growth,Germany,167.71,41,0,10,Active
+C12291,2023-04-10,Growth,Brazil,183.93,36,1,6,Active
+C12292,2022-07-27,Starter,United States,66.25,19,4,10,Churned
+C12293,2022-02-15,Starter,Germany,66.84,31,6,7,Churned
+C12294,2024-04-24,Enterprise,Canada,1413.41,18,2,7,Active
+C12295,2023-02-13,Starter,Canada,39.47,5,2,8,Active
+C12296,2022-07-08,Growth,Canada,202.31,2,2,7,Churned
+C12297,2024-03-27,Growth,Germany,199.05,4,0,9,Active
+C12298,2023-04-27,Enterprise,Germany,1011.22,44,1,6,Active
+C12299,2023-11-21,Growth,United Kingdom,228.76,40,3,8,Active
+C12300,2022-03-05,Starter,Germany,41.95,19,5,6,Active
+C12301,2024-08-12,Growth,Brazil,153.73,43,0,7,Active
+C12302,2022-11-11,Enterprise,Brazil,867.75,35,2,8,Active
+C12303,2024-02-13,Enterprise,India,1690.09,7,2,8,Active
+C12304,2022-10-24,Starter,Germany,44.24,11,2,6,Active
+C12305,2022-06-20,Starter,Brazil,44.43,18,8,4,Churned
+C12306,2023-02-15,Growth,Germany,161.93,38,1,8,Active
+C12307,2022-03-08,Growth,United States,261.62,31,0,10,Active
+C12308,2023-05-23,Starter,Canada,37.18,19,2,7,Active
+C12309,2023-04-08,Starter,United States,38.51,40,6,7,Churned
+C12310,2022-03-19,Starter,Canada,45.95,16,1,9,Active
+C12311,2023-03-21,Starter,India,48.79,43,2,9,Active
+C12312,2023-07-25,Starter,Canada,55.9,34,4,7,Active
+C12313,2023-07-02,Enterprise,India,1048.33,33,2,6,Active
+C12314,2022-03-13,Growth,United States,271.01,5,1,9,Active
+C12315,2023-11-03,Starter,United States,42.87,7,2,7,Active
+C12316,2022-11-28,Growth,United States,162.65,47,3,8,Active
+C12317,2022-09-12,Starter,Germany,39.29,37,2,6,Churned
+C12318,2024-05-03,Growth,Brazil,170.46,13,5,5,Churned
+C12319,2024-09-15,Enterprise,India,949.91,41,1,7,Active
+C12320,2022-04-24,Starter,Brazil,56.94,15,3,5,Active
+C12321,2023-05-10,Enterprise,India,982.31,17,3,6,Active
+C12322,2022-09-22,Starter,United States,47.72,15,5,4,Active
+C12323,2023-12-16,Growth,United Kingdom,161.97,24,2,8,Active
+C12324,2023-08-31,Enterprise,United States,948.79,36,2,6,Active
+C12325,2023-02-13,Growth,Canada,248.29,8,0,7,Active
+C12326,2024-01-18,Starter,Brazil,67.52,46,2,7,Active
+C12327,2023-11-16,Starter,United States,63.16,15,3,10,Churned
+C12328,2024-07-16,Starter,United Kingdom,36.51,46,4,5,Active
+C12329,2024-09-10,Starter,United Kingdom,37.54,41,2,5,Churned
+C12330,2023-02-18,Starter,Brazil,72.78,26,5,4,Active
+C12331,2022-06-03,Starter,United States,46.57,5,5,5,Active
+C12332,2024-07-11,Growth,Canada,151.16,27,3,6,Active
+C12333,2023-03-12,Starter,United Kingdom,60.84,36,0,10,Active
+C12334,2024-06-07,Starter,Canada,49.66,47,2,9,Active
+C12335,2023-11-29,Growth,Brazil,223.01,5,3,6,Active
+C12336,2023-06-08,Starter,Germany,31.32,36,3,10,Active
+C12337,2024-05-06,Growth,United States,186.43,14,0,7,Active
+C12338,2024-01-25,Growth,India,240.58,36,0,7,Active
+C12339,2023-09-30,Starter,United States,43.11,28,2,6,Active
+C12340,2023-06-03,Starter,Brazil,62.73,41,2,9,Active
+C12341,2022-08-20,Growth,United Kingdom,152.93,1,2,7,Active
+C12342,2022-07-31,Starter,Canada,47.91,24,4,9,Active
+C12343,2023-10-08,Starter,United States,68.09,32,3,7,Active
+C12344,2023-01-20,Growth,Germany,158.09,18,5,7,Active
+C12345,2023-09-15,Growth,Germany,210.1,15,3,4,Active
+C12346,2023-12-18,Starter,Brazil,55.08,16,3,4,Active
+C12347,2022-02-13,Starter,United Kingdom,49.9,36,2,5,Active
+C12348,2022-03-28,Growth,Brazil,189.29,10,0,7,Active
+C12349,2023-08-30,Starter,United Kingdom,41.12,46,4,4,Active
+C12350,2024-09-03,Growth,United States,206.98,10,2,9,Active
+C12351,2023-06-17,Starter,Canada,48.0,20,2,7,Active
+C12352,2023-11-06,Starter,United Kingdom,36.77,47,3,8,Active
+C12353,2022-10-17,Starter,Germany,61.06,2,2,6,Active
+C12354,2022-08-05,Growth,India,165.88,16,0,9,Active
+C12355,2022-08-27,Starter,United States,36.96,40,5,3,Churned
+C12356,2024-07-29,Enterprise,India,1065.22,15,1,8,Active
+C12357,2024-02-07,Growth,India,166.46,13,1,8,Active
+C12358,2022-12-23,Growth,Brazil,188.98,1,3,8,Active
+C12359,2022-03-06,Growth,United States,155.22,7,2,7,Active
+C12360,2024-05-09,Starter,Canada,53.59,10,4,4,Churned
+C12361,2022-10-12,Starter,United States,64.59,42,3,8,Active
+C12362,2022-08-27,Starter,Canada,50.05,26,2,7,Active
+C12363,2023-12-03,Starter,United Kingdom,36.71,11,2,7,Active
+C12364,2022-05-03,Starter,United States,40.82,39,4,10,Active
+C12365,2022-07-29,Growth,United Kingdom,208.0,29,0,8,Active
+C12366,2023-05-16,Growth,Germany,134.28,15,2,6,Active
+C12367,2022-04-28,Starter,United States,38.29,12,2,6,Active
+C12368,2024-07-02,Starter,United Kingdom,35.24,11,3,8,Active
+C12369,2024-09-09,Growth,United Kingdom,203.65,34,1,6,Active
+C12370,2024-04-11,Growth,United States,306.66,34,1,8,Active
+C12371,2023-07-20,Enterprise,Germany,932.51,31,1,9,Active
+C12372,2023-06-30,Starter,United States,57.69,22,3,7,Active
+C12373,2022-09-26,Starter,United Kingdom,43.77,24,1,9,Active
+C12374,2022-05-30,Growth,United States,152.82,43,2,7,Active
+C12375,2022-06-03,Starter,United States,67.0,27,2,6,Active
+C12376,2022-05-30,Growth,Germany,306.52,29,2,5,Active
+C12377,2022-01-08,Starter,Canada,53.21,11,3,7,Active
+C12378,2024-01-13,Starter,Germany,52.68,22,2,8,Active
+C12379,2024-01-20,Growth,India,201.49,2,2,9,Active
+C12380,2023-12-30,Growth,United States,193.19,22,1,9,Churned
+C12381,2022-12-24,Starter,Brazil,52.45,38,0,10,Active
+C12382,2022-04-13,Growth,Brazil,227.81,32,0,7,Active
+C12383,2022-07-14,Growth,Germany,277.54,42,0,9,Churned
+C12384,2024-03-31,Growth,United Kingdom,179.25,16,2,6,Active
+C12385,2024-06-22,Enterprise,India,1230.97,37,0,9,Active
+C12386,2022-02-27,Growth,India,195.51,35,0,7,Active
+C12387,2023-11-28,Growth,Brazil,244.23,34,1,9,Active
+C12388,2024-06-15,Growth,United Kingdom,321.6,38,2,6,Active
+C12389,2024-03-21,Growth,Germany,245.92,23,1,9,Active
+C12390,2022-09-06,Enterprise,Brazil,1407.72,17,1,9,Churned
+C12391,2023-10-18,Growth,Brazil,238.62,28,0,6,Active
+C12392,2024-03-29,Starter,Brazil,63.14,19,2,5,Churned
+C12393,2024-07-05,Starter,Brazil,79.42,33,3,7,Active
+C12394,2023-11-12,Growth,United States,142.06,41,2,7,Active
+C12395,2022-12-11,Enterprise,United Kingdom,1352.89,2,2,7,Active
+C12396,2023-10-31,Starter,United Kingdom,29.24,30,5,5,Active
+C12397,2022-06-06,Enterprise,United Kingdom,1451.49,20,2,6,Active
+C12398,2022-03-30,Starter,Germany,54.71,5,3,7,Active
+C12399,2022-01-07,Starter,United Kingdom,43.92,11,3,5,Churned
+C12400,2023-07-04,Enterprise,Brazil,703.5,39,1,8,Active
+C12401,2022-02-03,Enterprise,India,1196.55,18,2,6,Active
+C12402,2022-05-16,Growth,United States,208.07,5,2,7,Churned
+C12403,2024-05-03,Enterprise,Brazil,1184.95,36,2,9,Active
+C12404,2023-02-14,Growth,United Kingdom,175.74,12,1,9,Active
+C12405,2023-09-07,Growth,India,166.33,18,1,6,Active
+C12406,2023-03-17,Growth,Germany,196.95,10,2,6,Active
+C12407,2022-02-15,Starter,Germany,41.74,35,5,7,Churned
+C12408,2023-08-17,Starter,United Kingdom,57.61,44,2,5,Active
+C12409,2022-04-17,Starter,Germany,48.23,46,4,9,Churned
+C12410,2023-11-03,Starter,United States,34.71,4,3,7,Active
+C12411,2023-11-28,Starter,Brazil,50.76,44,2,6,Active
+C12412,2023-12-16,Starter,India,53.23,30,1,8,Active
+C12413,2023-01-20,Starter,India,67.72,39,2,9,Active
+C12414,2023-04-24,Growth,Canada,239.59,4,5,3,Active
+C12415,2024-02-14,Starter,India,40.94,41,1,9,Active
+C12416,2023-03-16,Starter,Germany,65.17,16,4,8,Active
+C12417,2024-07-25,Starter,India,37.14,19,3,6,Active
+C12418,2023-10-13,Starter,Brazil,49.28,43,5,6,Active
+C12419,2024-01-26,Growth,Brazil,231.39,35,0,8,Active
+C12420,2023-10-28,Enterprise,India,1606.5,25,0,9,Churned
+C12421,2022-07-01,Growth,India,290.35,32,2,6,Active
+C12422,2023-04-10,Growth,Canada,256.79,17,1,8,Active
+C12423,2023-10-12,Enterprise,Brazil,1167.66,47,1,7,Active
+C12424,2023-06-02,Growth,Brazil,223.46,4,2,8,Active
+C12425,2023-08-19,Starter,India,51.25,28,2,10,Active
+C12426,2024-06-25,Starter,Canada,42.52,3,2,6,Active
+C12427,2024-04-27,Growth,Canada,194.45,21,1,8,Active
+C12428,2022-08-03,Growth,Germany,285.11,24,1,6,Active
+C12429,2022-07-20,Growth,Brazil,226.45,40,2,6,Active
+C12430,2022-05-26,Starter,India,73.97,45,8,3,Churned
+C12431,2023-12-20,Enterprise,India,966.4,36,0,6,Active
+C12432,2023-05-11,Starter,India,45.4,46,4,8,Active
+C12433,2023-08-23,Enterprise,Canada,1303.92,6,2,8,Churned
+C12434,2024-05-17,Starter,Canada,56.84,25,4,7,Active
+C12435,2023-04-23,Starter,Canada,47.87,29,4,5,Active
+C12436,2023-09-22,Starter,United Kingdom,57.51,4,3,7,Active
+C12437,2022-10-19,Starter,Germany,57.42,28,0,6,Active
+C12438,2024-04-09,Starter,United States,37.12,2,6,6,Churned
+C12439,2022-01-27,Enterprise,Brazil,1395.16,30,1,8,Active
+C12440,2023-08-01,Starter,Brazil,60.73,11,3,6,Active
+C12441,2024-03-16,Starter,Canada,51.99,45,0,7,Active
+C12442,2023-12-17,Starter,Brazil,33.91,16,4,6,Active
+C12443,2022-04-18,Growth,United Kingdom,188.28,29,1,9,Active
+C12444,2024-05-03,Starter,United Kingdom,53.49,29,2,8,Active
+C12445,2023-01-13,Starter,Germany,41.21,41,2,5,Active
+C12446,2023-06-04,Growth,Brazil,239.12,16,2,8,Active
+C12447,2023-05-12,Starter,Germany,56.7,17,6,6,Churned
+C12448,2022-12-11,Enterprise,Canada,1232.71,33,2,7,Active
+C12449,2022-11-26,Starter,India,49.17,3,4,9,Churned
+C12450,2024-07-03,Growth,Germany,206.83,27,0,8,Active
+C12451,2023-10-25,Growth,Canada,198.84,18,2,8,Active
+C12452,2024-09-19,Starter,India,37.89,46,5,7,Active
+C12453,2022-11-25,Growth,United Kingdom,182.6,26,1,9,Active
+C12454,2022-10-25,Starter,Germany,49.72,37,4,6,Churned
+C12455,2023-06-01,Starter,Brazil,65.08,40,2,6,Active
+C12456,2023-09-03,Growth,United States,228.54,7,2,9,Active
+C12457,2022-04-06,Enterprise,Brazil,1610.89,30,1,9,Active
+C12458,2022-12-28,Starter,United States,37.0,32,3,9,Churned
+C12459,2023-03-11,Growth,Brazil,185.32,21,2,8,Active
+C12460,2022-03-27,Starter,Brazil,74.19,10,2,5,Active
+C12461,2023-08-07,Starter,India,42.23,22,2,7,Active
+C12462,2022-05-01,Starter,United Kingdom,42.07,3,1,8,Active
+C12463,2024-05-11,Growth,India,188.47,47,1,9,Active
+C12464,2023-06-03,Growth,Brazil,297.95,5,0,10,Active
+C12465,2022-07-01,Starter,United Kingdom,42.84,7,1,9,Active
+C12466,2023-06-07,Enterprise,Canada,1341.54,7,2,4,Active
+C12467,2022-12-05,Growth,United States,215.23,10,2,6,Active
+C12468,2023-03-16,Starter,Canada,33.32,9,5,5,Active
+C12469,2022-09-17,Starter,Germany,48.85,30,4,6,Active
+C12470,2023-03-01,Growth,Brazil,178.17,6,5,6,Active
+C12471,2022-06-02,Starter,United Kingdom,56.12,33,4,9,Active
+C12472,2022-10-19,Starter,India,69.38,20,2,8,Churned
+C12473,2023-01-21,Starter,India,45.74,19,2,6,Active
+C12474,2024-02-19,Starter,Germany,45.74,24,2,6,Active
+C12475,2024-06-27,Starter,Canada,81.08,2,4,5,Churned
+C12476,2024-05-25,Growth,Canada,172.6,24,4,6,Churned
+C12477,2023-01-08,Growth,United States,152.13,25,4,8,Active
+C12478,2023-01-05,Enterprise,Brazil,1580.65,36,1,9,Active
+C12479,2022-09-30,Growth,India,196.99,7,2,7,Active
+C12480,2023-05-27,Starter,India,51.86,3,1,8,Churned
+C12481,2024-08-16,Starter,United States,76.56,3,3,9,Active
+C12482,2022-09-04,Starter,India,37.01,46,1,5,Churned
+C12483,2023-12-17,Enterprise,Germany,1153.99,17,2,8,Active
+C12484,2022-09-11,Starter,United States,38.27,12,0,9,Active
+C12485,2023-01-05,Starter,United Kingdom,52.4,7,2,7,Active
+C12486,2023-06-08,Growth,United States,178.16,13,1,8,Active
+C12487,2024-01-20,Starter,United Kingdom,38.75,21,3,7,Active
+C12488,2024-04-20,Enterprise,United Kingdom,1389.27,46,0,8,Active
+C12489,2023-10-01,Starter,Canada,49.1,36,4,5,Active
+C12490,2023-08-29,Starter,United Kingdom,38.15,41,4,5,Active
+C12491,2024-05-04,Enterprise,Germany,945.77,3,2,10,Active
+C12492,2023-09-17,Starter,Brazil,51.08,27,1,7,Active
+C12493,2022-04-22,Starter,United States,35.08,24,5,6,Active
+C12494,2022-02-22,Growth,Germany,208.26,10,0,9,Churned
+C12495,2023-06-24,Growth,United Kingdom,260.14,24,0,8,Active
+C12496,2022-01-10,Starter,India,55.99,28,2,7,Active
+C12497,2023-12-04,Starter,Canada,43.26,1,3,8,Churned
+C12498,2024-02-17,Starter,India,51.76,47,2,6,Active
+C12499,2024-09-24,Starter,Germany,38.15,35,4,4,Churned
