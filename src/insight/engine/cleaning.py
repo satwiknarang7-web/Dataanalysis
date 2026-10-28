@@ -218,7 +218,7 @@ def _clean_column(s: pd.Series, name: str, checks: _Checks, merges: list[Merge])
     if pd.api.types.is_bool_dtype(s):
         return s.map({True: "Yes", False: "No"}).astype("object"), ColumnReport(name=name, kind="boolean")
     if pd.api.types.is_numeric_dtype(s):
-        return _as_number_dtype(s.astype("float64")), ColumnReport(name=name, kind="number")
+        return as_number_dtype(s.astype("float64")), ColumnReport(name=name, kind="number")
     if pd.api.types.is_datetime64_any_dtype(s):
         if getattr(s.dt, "tz", None) is not None:
             s = s.dt.tz_convert("UTC").dt.tz_localize(None)
@@ -242,7 +242,7 @@ def _clean_column(s: pd.Series, name: str, checks: _Checks, merges: list[Merge])
             col.kind, col.changed = "number", int(mapped.notna().sum())
             if stray:
                 col.notes.append(f"{stray} value(s) that were not numbers set missing")
-            return _as_number_dtype(mapped.astype("float64")), col
+            return as_number_dtype(mapped.astype("float64")), col
 
     dates = _read_dates(uniques, col)
     if dates is not None:
@@ -370,7 +370,7 @@ def _naive_utc(t: pd.Timestamp) -> pd.Timestamp:
     return t if t.tzinfo is None else t.tz_convert("UTC").tz_localize(None)
 
 
-def _as_number_dtype(s: pd.Series) -> pd.Series:
+def as_number_dtype(s: pd.Series) -> pd.Series:
     """Whole numbers as nullable integers, so 2024 stays "2024", not "2024.0"."""
     filled = s.dropna()
     if len(filled) and np.all(np.isfinite(filled)) and np.all(filled == np.round(filled)) and filled.abs().max() < 2**53:

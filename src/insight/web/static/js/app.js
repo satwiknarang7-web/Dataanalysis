@@ -195,7 +195,7 @@
     }
 
     function send(file) {
-      if (file.size > maxBytes) return fail(`That file is ${(file.size / 1048576).toFixed(1)} MB; your plan takes up to ${zone.dataset.maxMb} MB.`);
+      if (file.size > maxBytes) return fail(`That file is ${(file.size / 1048576).toFixed(1)} MB; the most that can be uploaded here is ${zone.dataset.maxMb} MB. Import larger files from a link.`);
       zone.classList.add("busy");
       title.textContent = `Uploading ${file.name}…`;
       fill.classList.remove("indeterminate");

@@ -13,12 +13,12 @@
 
 <div class="grid-2">
   <div class="stack" style="--gap:0">
-    <form class="dropzone" id="dropzone" action="/upload" method="post" enctype="multipart/form-data" data-upload data-max-mb="{{ plan.max_upload_mb }}">
+    <form class="dropzone" id="dropzone" action="/upload" method="post" enctype="multipart/form-data" data-upload data-max-mb="{{ '%g' | format(upload_mb) }}">
       <input type="file" name="file" id="file" accept=".csv,.tsv,.txt,.xlsx,.xlsm,.xls,.json,.ndjson,.jsonl,.parquet" aria-label="Choose a file">
       <div class="idle">
         <div class="ic">{{ ui.icon("upload", "lg") }}</div>
         <h2>Drop a file here, or click to browse</h2>
-        <p class="muted">Up to {{ plan.max_upload_mb }} MB on {{ plan.name }}. We clean it, read it and build your board.</p>
+        <p class="muted">Up to {{ "%g" | format(upload_mb) }} MB{% if upload_mb == plan.max_upload_mb %} on {{ plan.name }}{% endif %}. We clean it, read it and build your board.</p>
         <div class="formats">
           {% for f in ["CSV", "Excel", "JSON", "Parquet", "TSV"] %}<span class="badge">{{ f }}</span>{% endfor %}
         </div>

@@ -165,12 +165,21 @@ async def quality_page(request: Request, src: Source, ws: Workspace, user: Curre
     return templates.TemplateResponse(request, "pages/quality.html", ctx)
 
 
+EXPORT_CHUNK_ROWS = 5000
+
+
 def export_csv(src: Source) -> Response:
-    buf = io.StringIO()
-    src.df.to_csv(buf, index=False)
+    """The cleaned rows as CSV, streamed in chunks so a large table is never one response body in memory."""
+
+    def chunks():
+        for start in range(0, max(len(src.df), 1), EXPORT_CHUNK_ROWS):
+            buf = io.StringIO()
+            src.df.iloc[start : start + EXPORT_CHUNK_ROWS].to_csv(buf, index=False, header=start == 0)
+            yield buf.getvalue()
+
     name = "".join(ch if ch.isalnum() or ch in "-_ " else "_" for ch in src.name).strip() or "data"
     return StreamingResponse(
-        iter([buf.getvalue()]), media_type="text/csv", headers={"Content-Disposition": f'attachment; filename="{name} (cleaned).csv"'}
+        chunks(), media_type="text/csv", headers={"Content-Disposition": f'attachment; filename="{name} (cleaned).csv"'}
     )
 
 

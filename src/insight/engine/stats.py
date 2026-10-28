@@ -2,16 +2,93 @@
 
 A caption only claims a pattern when one of these says it is unlikely to be
 noise. Each test returns a p-value; the planner reads it, never the wording.
+
+Student's t distribution is computed here (through the regularised incomplete
+beta function) rather than taken from SciPy, which would add ~140 MB to a
+serverless bundle for four functions. tests/test_stats.py holds every value
+to SciPy's where SciPy is installed.
 """
 
 from __future__ import annotations
 
 import math
+from functools import lru_cache
 
 import numpy as np
-from scipy import stats as sps
 
 SIGNIFICANT = 0.05
+
+
+def _betacf(a: float, b: float, x: float) -> float:
+    """Continued fraction for the incomplete beta function (modified Lentz)."""
+    tiny, eps = 1e-300, 3e-16
+    qab, qap, qam = a + b, a + 1.0, a - 1.0
+    c, d = 1.0, 1.0 - qab * x / qap
+    d = 1.0 / (d if abs(d) > tiny else tiny)
+    h = d
+    for m in range(1, 300):
+        m2 = 2 * m
+        aa = m * (b - m) * x / ((qam + m2) * (a + m2))
+        d = 1.0 + aa * d
+        d = 1.0 / (d if abs(d) > tiny else tiny)
+        c = 1.0 + aa / c
+        c = c if abs(c) > tiny else tiny
+        h *= d * c
+        aa = -(a + m) * (qab + m) * x / ((a + m2) * (qap + m2))
+        d = 1.0 + aa * d
+        d = 1.0 / (d if abs(d) > tiny else tiny)
+        c = 1.0 + aa / c
+        c = c if abs(c) > tiny else tiny
+        delta = d * c
+        h *= delta
+        if abs(delta - 1.0) < eps:
+            break
+    return h
+
+
+def incomplete_beta(x: float, a: float, b: float) -> float:
+    """The regularised incomplete beta function I_x(a, b)."""
+    if x <= 0:
+        return 0.0
+    if x >= 1:
+        return 1.0
+    front = math.exp(math.lgamma(a + b) - math.lgamma(a) - math.lgamma(b) + a * math.log(x) + b * math.log1p(-x))
+    if x < (a + 1) / (a + b + 2):
+        return front * _betacf(a, b, x) / a
+    return 1.0 - front * _betacf(b, a, 1.0 - x) / b
+
+
+def t_two_sided_p(t: float, df: float) -> float:
+    """P(|T| >= |t|) for Student's t with df degrees of freedom."""
+    if df <= 0 or math.isnan(t):
+        return 1.0
+    if math.isinf(t):
+        return 0.0
+    return incomplete_beta(df / (df + t * t), df / 2.0, 0.5)
+
+
+@lru_cache(maxsize=512)
+def t_critical(df: int, two_sided_alpha: float = 0.05) -> float:
+    """The t value with two_sided_alpha in the tails, by bisection on the p-value."""
+    lo, hi = 0.0, 1.0
+    while t_two_sided_p(hi, df) > two_sided_alpha:
+        hi *= 2
+    for _ in range(80):
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if t_two_sided_p(mid, df) > two_sided_alpha else (lo, mid)
+    return (lo + hi) / 2
+
+
+def welch_p(a: np.ndarray, b: np.ndarray) -> float:
+    """Two-sided p-value of Welch's t test (unequal variances)."""
+    na, nb = len(a), len(b)
+    va, vb = float(np.var(a, ddof=1)) / na, float(np.var(b, ddof=1)) / nb
+    se2 = va + vb
+    if se2 == 0:
+        return 0.0 if np.mean(a) != np.mean(b) else 1.0
+    t = (float(np.mean(a)) - float(np.mean(b))) / math.sqrt(se2)
+    df = se2 * se2 / ((va * va) / (na - 1) + (vb * vb) / (nb - 1))
+    return t_two_sided_p(t, df)
 
 
 def wilson_range(hits: float, n: int, z: float = 1.96) -> tuple[float, float] | None:
@@ -31,7 +108,7 @@ def mean_range(values: np.ndarray) -> tuple[float, float] | None:
     if n < 2:
         return None
     m, sd = float(np.mean(values)), float(np.std(values, ddof=1))
-    half = float(sps.t.ppf(0.975, n - 1)) * sd / math.sqrt(n)
+    half = t_critical(n - 1) * sd / math.sqrt(n)
     return (m - half, m + half)
 
 
@@ -40,8 +117,15 @@ def trend_test(ys: list[float]) -> tuple[float, float]:
     y = np.asarray(ys, dtype=float)
     if len(y) < 3 or np.all(y == y[0]):
         return 0.0, 1.0
-    res = sps.linregress(np.arange(len(y)), y)
-    return float(res.slope), float(res.pvalue)
+    x = np.arange(len(y), dtype=float)
+    xc, yc = x - x.mean(), y - y.mean()
+    slope = float((xc @ yc) / (xc @ xc))
+    resid = yc - slope * xc
+    df = len(y) - 2
+    se = math.sqrt(float(resid @ resid) / df / float(xc @ xc))
+    if se == 0:
+        return slope, 0.0
+    return slope, t_two_sided_p(slope / se, df)
 
 
 def standout_rates(groups: list[tuple[float, int]]) -> tuple[float, int]:
@@ -77,10 +161,7 @@ def standout_means(samples: list[np.ndarray]) -> tuple[float, int]:
     best = (1.0, -1)
     for i, s in enumerate(gs):
         rest = np.concatenate([g for j, g in enumerate(gs) if j != i])
-        if np.std(s) == 0 and np.std(rest) == 0:
-            p = 0.0 if np.mean(s) != np.mean(rest) else 1.0
-        else:
-            p = float(sps.ttest_ind(s, rest, equal_var=False).pvalue)
+        p = welch_p(s, rest)
         if not math.isnan(p) and p < best[0]:
             best = (p, i)
     return min(1.0, best[0] * len(gs)), best[1]
@@ -92,8 +173,11 @@ def correlation(x: np.ndarray, y: np.ndarray) -> tuple[float, float]:
     x, y = x[ok], y[ok]
     if len(x) < 10 or np.std(x) == 0 or np.std(y) == 0:
         return 0.0, 1.0
-    r, p = sps.pearsonr(x, y)
-    return float(r), float(p)
+    r = float(np.clip(np.corrcoef(x, y)[0, 1], -1.0, 1.0))
+    df = len(x) - 2
+    if abs(r) >= 1:
+        return r, 0.0
+    return r, t_two_sided_p(r * math.sqrt(df / (1 - r * r)), df)
 
 
 def concentration(values: list[float]) -> float:

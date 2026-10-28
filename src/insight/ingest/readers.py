@@ -13,6 +13,8 @@ from pathlib import PurePath
 
 import pandas as pd
 
+from insight.ingest.parquet import read_parquet
+
 SUPPORTED = {".csv", ".tsv", ".txt", ".xlsx", ".xlsm", ".xls", ".json", ".ndjson", ".jsonl", ".parquet"}
 MAX_ROWS = 2_000_000
 
@@ -33,7 +35,7 @@ def read_table(content: bytes, filename: str) -> pd.DataFrame:
         if ext in {".xlsx", ".xlsm", ".xls"}:
             df = _excel(content)
         elif ext == ".parquet":
-            df = pd.read_parquet(io.BytesIO(content))
+            df = read_parquet(content)
         elif ext in {".json", ".ndjson", ".jsonl"}:
             df = _json(content)
         else:

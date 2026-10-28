@@ -20,14 +20,22 @@ router = APIRouter()
 READ_CHUNK = 1024 * 1024
 
 
+def _upload_limit_mb(request: Request, user: CurrentUser) -> float:
+    return request.app.state.insight.settings.upload_limit_mb(plan_of(user.plan).max_upload_mb)
+
+
 async def _home(request: Request, db: AsyncSession, user: CurrentUser, error: str | None = None, status: int = 200) -> Response:
     recent = await datasets_service.list_datasets(db, user)
-    return templates.TemplateResponse(
-        request,
-        "pages/home.html",
-        {"user": user, "recent": recent, "samples": SAMPLES.values(), "error": error, "plan": plan_of(user.plan), "tab": "home"},
-        status_code=status,
-    )
+    ctx = {
+        "user": user,
+        "recent": recent,
+        "samples": SAMPLES.values(),
+        "error": error,
+        "plan": plan_of(user.plan),
+        "upload_mb": _upload_limit_mb(request, user),
+        "tab": "home",
+    }
+    return templates.TemplateResponse(request, "pages/home.html", ctx, status_code=status)
 
 
 def _wants_json(request: Request) -> bool:
@@ -57,12 +65,12 @@ async def upload(
     db: AsyncSession = Depends(get_db),
     user: CurrentUser = Depends(require_user),
 ):
-    limit = plan_of(user.plan).max_upload_mb * 1024 * 1024
+    limit_mb = _upload_limit_mb(request, user)
     content = bytearray()
     while chunk := await file.read(READ_CHUNK):
         content.extend(chunk)
-        if len(content) > limit:
-            return await _failed(request, db, user, f"That file is over {plan_of(user.plan).max_upload_mb} MB, the limit on your plan.")
+        if len(content) > limit_mb * 1024 * 1024:
+            return await _failed(request, db, user, f"That file is over {limit_mb:g} MB, the most that can be uploaded here.")
     try:
         ds = await datasets_service.ingest(state, db, user, bytes(content), file.filename or "upload.csv", "file", file.filename or "")
     except (UnreadableFile, PlanLimit) as e:

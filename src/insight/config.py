@@ -8,12 +8,12 @@ from __future__ import annotations
 from functools import lru_cache
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-from pydantic import Field
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore", populate_by_name=True)
 
     environment: str = Field("development", description="development | production | test")
     app_name: str = "Insight"
@@ -23,18 +23,41 @@ class Settings(BaseSettings):
     # Neon: paste the connection string from the Neon console (the pooled one, "-pooler" in the host).
     database_url: str = "sqlite+aiosqlite:///./insight.db"
     # Neon's direct (non-pooled) endpoint, for Alembic: DDL is best run outside PgBouncer. Defaults to DATABASE_URL.
-    migration_database_url: str = ""
+    # DATABASE_URL_UNPOOLED is the name Vercel's Neon integration gives it.
+    migration_database_url: str = Field("", validation_alias=AliasChoices("MIGRATION_DATABASE_URL", "DATABASE_URL_UNPOOLED"))
     db_pool_size: int = 5
     db_max_overflow: int = 10
     auto_create_tables: bool = Field(True, description="Create tables on start-up (dev). Use Alembic in production.")
 
     # Redis (Upstash, Redis Cloud, local…). Empty: an in-process cache is used instead.
-    redis_url: str = ""
+    # KV_URL is the name Vercel's Upstash integration gives it.
+    redis_url: str = Field("", validation_alias=AliasChoices("REDIS_URL", "KV_URL"))
     cache_ttl_seconds: int = 60 * 60 * 24
     frame_cache_items: int = 12
 
     max_concurrent_analyses: int = 4
     session_days: int = 30
+
+    # Serverless (Vercel sets VERCEL=1): no local connection pool, and uploads capped at the platform's request limit.
+    serverless: bool = Field(False, validation_alias=AliasChoices("SERVERLESS", "VERCEL"))
+    # The largest request body the platform accepts. Vercel Functions take 4.5 MB, so 4 MB of file plus the form.
+    platform_upload_limit_mb: float | None = None
+
+    @property
+    def secure_cookies(self) -> bool:
+        """Cookies only over HTTPS: in production, and on serverless platforms, which serve every deployment over HTTPS."""
+        return self.is_production or self.serverless
+
+    @property
+    def upload_cap_mb(self) -> float | None:
+        if self.platform_upload_limit_mb:
+            return self.platform_upload_limit_mb
+        return 4.0 if self.serverless else None
+
+    def upload_limit_mb(self, plan_limit_mb: float) -> float:
+        """What a user can upload: their plan's limit, or the platform's if that is lower."""
+        cap = self.upload_cap_mb
+        return min(plan_limit_mb, cap) if cap else plan_limit_mb
 
     @property
     def is_production(self) -> bool:

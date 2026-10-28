@@ -57,6 +57,42 @@ ENVIRONMENT=production
 Then apply the schema with `alembic upgrade head`. The Docker image does this
 on start.
 
+## Deploy to Vercel
+
+The repository is ready for Vercel's Python runtime. `app.py` is the entry
+point, `vercel.json` places the function in `iad1` (next to Neon's us-east-1),
+and the function bundle is about 225 MB. That fits Vercel's limit because the
+app needs neither SciPy nor pyarrow (see docs/ARCHITECTURE.md).
+
+1. **Import the repository** in Vercel (Add New → Project). It detects FastAPI;
+   leave the build settings as they are.
+2. **Connect Neon.** Either add the Neon integration from the Vercel
+   Marketplace, which sets `DATABASE_URL` and `DATABASE_URL_UNPOOLED`, or add
+   them yourself under Settings → Environment Variables: the pooled string as
+   `DATABASE_URL`, the direct one as `MIGRATION_DATABASE_URL`.
+3. **Add Redis.** Add Upstash for Redis from the Marketplace (it sets
+   `KV_URL`, which is read as the cache URL), or set `REDIS_URL`. Without it
+   every function instance keeps its own small cache, which works but is far
+   less effective.
+4. **Set** `ENVIRONMENT=production`, `AUTO_CREATE_TABLES=false`,
+   `BASE_URL=https://your-domain` and `CONTACT_EMAIL`.
+5. **Migrations** run outside the deploy: `.github/workflows/migrate.yml`
+   applies them to Neon on every push to `main` that changes them (add the
+   direct connection string as the `MIGRATION_DATABASE_URL` repository
+   secret). Or run `alembic upgrade head` yourself.
+
+What changes on Vercel (it sets `VERCEL=1`, and the app reads it):
+
+- **No local connection pool.** Each request borrows a connection from
+  Neon's pooler.
+- **Secure cookies on every deployment**, previews included.
+- **Uploads are capped at 4 MB**, because Vercel Functions accept at most
+  4.5 MB per request. Larger files can still be imported from a link. Taking
+  big uploads directly would mean sending them to Vercel Blob from the
+  browser, which isn't built yet.
+- **Static files** are served with content-hashed URLs and `immutable`
+  cache headers, so Vercel's CDN serves them after the first request.
+
 ## Project layout
 
 ```
@@ -81,6 +117,7 @@ src/insight/
 migrations/      Alembic
 tests/           pytest: engine, cleaning, infrastructure, end-to-end web
 docs/ARCHITECTURE.md   the system design and its trade-offs
+app.py, vercel.json    the Vercel entry point and function settings
 ```
 
 ## Checks

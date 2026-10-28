@@ -7,7 +7,6 @@ Write path: read → clean → Parquet → hash → store blob once → dataset 
 from __future__ import annotations
 
 import hashlib
-import io
 from dataclasses import dataclass
 from pathlib import Path
 from uuid import UUID
@@ -22,6 +21,7 @@ from insight.db.models import Analysis, AnalysisShare, Dataset, DatasetBlob, utc
 from insight.engine.cleaning import CleaningReport, clean
 from insight.engine.fields import read_dataset
 from insight.engine.models import Reading
+from insight.ingest.parquet import read_parquet, to_parquet
 from insight.ingest.readers import read_table
 from insight.services.auth import CurrentUser
 from insight.services.plans import PlanLimit, plan_of
@@ -65,15 +65,16 @@ def prepare(content: bytes, filename: str) -> Prepared:
     """The CPU-bound half of an upload; runs on a worker thread."""
     df, report = clean(read_table(content, filename))
     reading = read_dataset(df, report.percent_columns())
-    buf = io.BytesIO()
-    df.to_parquet(buf, index=False, compression="zstd")
-    parquet = buf.getvalue()
+    parquet = to_parquet(df)
     return Prepared(df, report, reading, parquet, hashlib.sha256(parquet).hexdigest())
 
 
 async def ingest(state: AppState, db: AsyncSession, user: CurrentUser, content: bytes, filename: str, source: str, label: str) -> Dataset:
     plan = plan_of(user.plan)
-    if len(content) > plan.max_upload_mb * 1024 * 1024:
+    limit_mb = state.settings.upload_limit_mb(plan.max_upload_mb)
+    if len(content) > limit_mb * 1024 * 1024:
+        if limit_mb < plan.max_upload_mb:
+            raise PlanLimit(f"Files up to {limit_mb:g} MB can be uploaded here. For a larger file, import it from a link.")
         raise PlanLimit(f"Files up to {plan.max_upload_mb} MB are included on {plan.name}. Upgrade to Pro for 100 MB.")
     if plan.max_datasets is not None:
         count = await db.scalar(select(func.count()).select_from(Dataset).where(Dataset.owner_id == user.id))
@@ -153,7 +154,7 @@ async def load_frame(state: AppState, db: AsyncSession, dataset: Dataset) -> pd.
     blob = await db.get(DatasetBlob, dataset.content_hash)
     if blob is None:
         raise NotFound(dataset.content_hash)
-    df = await state.run_cpu(pd.read_parquet, io.BytesIO(blob.parquet))
+    df = await state.run_cpu(read_parquet, blob.parquet)
     state.frames.put(dataset.content_hash, df)
     return df
 

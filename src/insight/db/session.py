@@ -6,12 +6,15 @@ Neon specifics handled here:
   prepared statements between transactions: asyncpg's statement cache is off.
 - Neon suspends idle computes and drops their connections, so every
   connection is pinged on checkout and recycled after five minutes.
+- On serverless platforms (Vercel) there is no local pool at all: each
+  request takes a connection from Neon's pooler and gives it back.
 """
 
 from __future__ import annotations
 
 from sqlalchemy import event
 from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, async_sessionmaker, create_async_engine
+from sqlalchemy.pool import NullPool
 
 from insight.config import Settings
 from insight.db.models import Base
@@ -27,6 +30,9 @@ def make_engine(settings: Settings) -> AsyncEngine:
     if settings.uses_pgbouncer:
         connect_args["statement_cache_size"] = 0  # asyncpg's own cache
         url += ("&" if "?" in url else "?") + "prepared_statement_cache_size=0"  # SQLAlchemy's
+    if settings.serverless:
+        # Instances are short-lived and many: Neon's PgBouncer does the pooling, so hold nothing open here.
+        return create_async_engine(url, poolclass=NullPool, connect_args=connect_args)
     return create_async_engine(
         url,
         pool_size=settings.db_pool_size,

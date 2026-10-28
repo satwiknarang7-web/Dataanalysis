@@ -18,8 +18,9 @@ from insight.web import view
 
 SESSION_COOKIE = "insight_session"
 
+STATIC_DIR = Path(__file__).parent / "static"
 templates = Jinja2Templates(directory=Path(__file__).parent / "templates")
-templates.env.globals.update(plan_of=plan_of, view=view)
+templates.env.globals.update(plan_of=plan_of, view=view, asset_v=view.asset_version(STATIC_DIR))
 templates.env.filters.update(view.FILTERS)
 
 

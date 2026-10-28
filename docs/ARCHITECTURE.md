@@ -9,7 +9,7 @@ Browser ── HTML + htmx partials, Plotly charts
 FastAPI (uvicorn, N workers × M containers, stateless)
    ├── web/        routes, templates, security middleware
    ├── services/   auth, datasets, insights, library, plans
-   ├── engine/     pure pandas/numpy/scipy; runs on a bounded thread pool
+   ├── engine/     pure pandas/numpy; runs on a bounded thread pool
    │
    ├── L1  FrameCache        in-process LRU of parsed tables (by content hash)
    ├── L2  Redis             plans, boards, answers, sessions, rate limits
@@ -124,9 +124,37 @@ findings.
 - **Redirects:** `next` must be a path on this site, so sign-in can't be
   used as an open redirect.
 
+**Small enough for serverless.** The function bundle is about 225 MB:
+DuckDB, pandas, numpy, SQLAlchemy and asyncpg make up nearly all of it. Two
+large libraries were removed on purpose:
+
+- **SciPy** (~140 MB) supplied four p-values. Student's t distribution is
+  now computed in `engine/stats.py` through the regularised incomplete beta
+  function, and `tests/test_stats.py` holds it to SciPy's values within
+  1e-7. SciPy remains a dev dependency, for that test only.
+- **pyarrow** (~170 MB) only read and wrote Parquet. DuckDB, already present
+  for the SQL console, does both (`ingest/parquet.py`).
+
+uvicorn is a `server` extra (Docker, local runs). Vercel runs the ASGI app
+itself.
+
+**Serverless specifics** (Vercel sets `VERCEL=1`):
+
+- The database engine holds no pool (`NullPool`); Neon's PgBouncer is the
+  pool.
+- Uploads are capped below the platform's 4.5 MB request limit, and the CSV
+  export streams in chunks.
+- Static assets carry content-hashed URLs with year-long `immutable` cache
+  headers, so the CDN serves them.
+
+The in-process frame cache still helps: a warm instance (Fluid compute
+reuses them across requests) parses each table once. Redis keeps boards,
+answers and sessions shared across all instances.
+
 ## Not yet built
 
 Billing (Pro is assigned in the database; the pricing page links to sales),
+uploads larger than 4 MB on Vercel (they need direct-to-Blob uploads from the browser),
 email verification and password reset (these need an email provider), the
 database and warehouse connectors of the original, maps, PDF, Word and
 PowerPoint exports, and an optional language model for rewriting captions.

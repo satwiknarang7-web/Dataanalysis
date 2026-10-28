@@ -28,7 +28,7 @@ def _signed_in(state: AppState, token: str, target: str) -> Response:
         token,
         max_age=state.settings.session_days * 86400,
         httponly=True,
-        secure=state.settings.is_production,
+        secure=state.settings.secure_cookies,
         samesite="lax",
         path="/",
     )

@@ -5,7 +5,6 @@ from __future__ import annotations
 import asyncio
 import logging
 from contextlib import asynccontextmanager
-from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
@@ -20,7 +19,7 @@ from insight.config import Settings, get_settings
 from insight.db.session import create_tables, make_engine, make_sessionmaker
 from insight.services.datasets import NotFound
 from insight.state import AppState
-from insight.web.deps import SignInRequired, templates
+from insight.web.deps import STATIC_DIR, SignInRequired, templates
 from insight.web.routes import analyses, auth, datasets, health, public, workspace
 from insight.web.security import SecurityMiddleware
 
@@ -53,7 +52,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app = FastAPI(title=settings.app_name, lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
     app.add_middleware(GZipMiddleware, minimum_size=1024)
     app.add_middleware(SecurityMiddleware, production=settings.is_production)
-    app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
     for router in (public.router, auth.router, workspace.router, datasets.router, analyses.router, health.router):
         app.include_router(router)
 

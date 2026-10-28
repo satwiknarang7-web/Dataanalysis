@@ -1,10 +1,8 @@
-"""Entry point: `insight` (or `uvicorn insight.main:app`)."""
+"""Entry point: `insight` (or `uvicorn insight.main:app`). Vercel imports `app` via /app.py."""
 
 from __future__ import annotations
 
 import os
-
-import uvicorn
 
 from insight.web.app import create_app
 
@@ -12,6 +10,8 @@ app = create_app()
 
 
 def run() -> None:
+    import uvicorn  # the `server` extra; not needed where the platform runs the ASGI app
+
     uvicorn.run(
         "insight.main:app",
         host=os.environ.get("HOST", "0.0.0.0"),

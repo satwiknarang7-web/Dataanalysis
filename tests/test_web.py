@@ -174,3 +174,12 @@ async def test_deleting_a_dataset_removes_its_rows(client):
     dataset_id = board.split("/")[2]
     assert (await client.post(f"/datasets/{dataset_id}/delete")).status_code == 303
     assert (await client.get(board)).status_code == 404
+
+
+async def test_static_assets_are_versioned_and_cacheable(client):
+    page = await client.get("/")
+    css = re.search(r'href="(/static/css/app\.css\?v=[0-9a-f]{10})"', page.text).group(1)
+    r = await client.get(css)
+    assert r.status_code == 200 and "immutable" in r.headers["cache-control"]
+    r = await client.get("/static/favicon.svg")
+    assert r.headers["cache-control"] == "public, max-age=3600"

@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
+from pathlib import Path
 from uuid import UUID
 
 from insight.engine.models import Measure, RenderedTile
@@ -38,6 +40,14 @@ class Workspace:
     @property
     def board_url(self) -> str:
         return f"/analyses/{self.analysis_id}" if self.analysis_id else f"{self.base}/dashboard"
+
+
+def asset_version(static_dir: Path) -> str:
+    """A short hash of our own CSS and JS, so their URLs change exactly when they do and can be cached for good."""
+    digest = hashlib.sha256()
+    for path in sorted(static_dir.glob("css/*.css")) + sorted(static_dir.glob("js/*.js")):
+        digest.update(path.read_bytes())
+    return digest.hexdigest()[:10]
 
 
 def sparkline(values: list[float | None], width: int = 120, height: int = 32) -> dict | None:
