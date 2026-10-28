@@ -47,6 +47,8 @@ Copy `.env.example` to `.env` and set:
 ```bash
 # Neon console → Connect → the *pooled* connection string ("-pooler" in the host)
 DATABASE_URL=postgresql://user:pass@ep-xxxx-pooler.eu-central-1.aws.neon.tech/insight?sslmode=require
+# Same database without "-pooler", used by migrations
+MIGRATION_DATABASE_URL=postgresql://user:pass@ep-xxxx.eu-central-1.aws.neon.tech/insight?sslmode=require
 REDIS_URL=rediss://default:pass@your-redis.upstash.io:6379
 AUTO_CREATE_TABLES=false
 ENVIRONMENT=production

@@ -14,8 +14,16 @@ from insight.db.session import make_engine
 target_metadata = Base.metadata
 
 
+def _settings():
+    """The app's settings, pointed at the direct endpoint when one is configured."""
+    settings = get_settings()
+    if settings.migration_database_url:
+        return settings.model_copy(update={"database_url": settings.migration_database_url})
+    return settings
+
+
 def run_offline() -> None:
-    context.configure(url=get_settings().async_database_url, target_metadata=target_metadata, literal_binds=True)
+    context.configure(url=_settings().async_database_url, target_metadata=target_metadata, literal_binds=True)
     with context.begin_transaction():
         context.run_migrations()
 
@@ -27,7 +35,7 @@ def _migrate(connection: Connection) -> None:
 
 
 async def run_online() -> None:
-    engine = make_engine(get_settings())
+    engine = make_engine(_settings())
     async with engine.connect() as connection:
         await connection.run_sync(_migrate)
     await engine.dispose()

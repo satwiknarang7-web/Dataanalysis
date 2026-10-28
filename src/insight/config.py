@@ -22,6 +22,8 @@ class Settings(BaseSettings):
 
     # Neon: paste the connection string from the Neon console (the pooled one, "-pooler" in the host).
     database_url: str = "sqlite+aiosqlite:///./insight.db"
+    # Neon's direct (non-pooled) endpoint, for Alembic: DDL is best run outside PgBouncer. Defaults to DATABASE_URL.
+    migration_database_url: str = ""
     db_pool_size: int = 5
     db_max_overflow: int = 10
     auto_create_tables: bool = Field(True, description="Create tables on start-up (dev). Use Alembic in production.")
