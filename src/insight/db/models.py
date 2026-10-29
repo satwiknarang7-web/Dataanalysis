@@ -69,7 +69,11 @@ class Dataset(Base):
     name: Mapped[str] = mapped_column(String(200))
     source: Mapped[str] = mapped_column(String(20))  # file | link | sample
     source_label: Mapped[str] = mapped_column(String(500), default="")
+    # The rows the board reads: the cleaned upload with the shaping steps applied.
     content_hash: Mapped[str] = mapped_column(ForeignKey("dataset_blobs.content_hash"), index=True)
+    # The cleaned upload before any step; null until the first step is added.
+    base_hash: Mapped[str | None] = mapped_column(ForeignKey("dataset_blobs.content_hash"), index=True, default=None)
+    steps: Mapped[list] = mapped_column(JsonType, default=list, server_default="[]")  # transforms.Step, in order
     row_count: Mapped[int] = mapped_column(Integer)
     column_count: Mapped[int] = mapped_column(Integer)
     size_bytes: Mapped[int] = mapped_column(Integer)

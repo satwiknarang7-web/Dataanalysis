@@ -29,15 +29,23 @@ def retail_sales(rng: np.random.Generator) -> pd.DataFrame:
     revenue = np.round(price * units * growth, 2)
     discount = np.round(np.where(channel == "Partner", rng.uniform(0.1, 0.25, n), rng.uniform(0, 0.12, n)), 3)
     returned = np.where(rng.random(n) < np.where(category == "Clothing", 0.18, 0.06), "Yes", "No")
+    # Drawn from their own generator, so adding them left every other sample value as it was.
+    extra = np.random.default_rng(7)
+    cost_share = np.array([{"Electronics": 0.78, "Home": 0.62, "Clothing": 0.48, "Sports": 0.58, "Beauty": 0.42}[c] for c in category])
+    cost = np.round(revenue * cost_share * extra.lognormal(0, 0.06, n), 2)
+    ship_days = extra.integers(1, 5, n) + np.where(channel == "Partner", extra.integers(2, 6, n), 0)
+    shipped = dates + pd.to_timedelta(ship_days, unit="D")
     return pd.DataFrame(
         {
             "order_id": [f"ORD-{100000 + i}" for i in range(n)],
             "order_date": dates.strftime("%Y-%m-%d"),
+            "ship_date": shipped.strftime("%Y-%m-%d"),
             "region": region,
             "product_category": category,
             "channel": channel,
             "units_sold": units,
             "revenue": revenue,
+            "cost": cost,
             "discount_rate": discount,
             "returned": returned,
         }

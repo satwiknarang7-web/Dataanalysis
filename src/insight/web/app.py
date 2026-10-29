@@ -20,7 +20,7 @@ from insight.db.session import create_tables, make_engine, make_sessionmaker
 from insight.services.datasets import NotFound
 from insight.state import AppState
 from insight.web.deps import STATIC_DIR, SignInRequired, templates
-from insight.web.routes import analyses, auth, datasets, health, public, workspace
+from insight.web.routes import analyses, auth, datasets, health, public, transform, workspace
 from insight.web.security import SecurityMiddleware
 
 log = logging.getLogger("insight")
@@ -53,7 +53,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.add_middleware(GZipMiddleware, minimum_size=1024)
     app.add_middleware(SecurityMiddleware, production=settings.is_production)
     app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
-    for router in (public.router, auth.router, workspace.router, datasets.router, analyses.router, health.router):
+    for router in (public.router, auth.router, workspace.router, datasets.router, transform.router, analyses.router, health.router):
         app.include_router(router)
 
     @app.exception_handler(SignInRequired)

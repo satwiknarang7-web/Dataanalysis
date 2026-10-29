@@ -1,0 +1,91 @@
+{% extends "layouts/app.html" %}
+{% import "macros.html" as ui %}
+{% block title %}Transform · {{ ws.name }} · Insight{% endblock %}
+{% block content %}
+{% include "partials/workspace_head.html" %}
+
+<div class="shape">
+  <div class="stack" style="--gap:14px">
+    <section class="card ask-step rise">
+      <span class="kicker">What do you want to change?</span>
+      <form class="ask-box" style="margin-top:12px" hx-post="{{ ws.base }}/transform/preview" hx-target="#preview" hx-indicator="#loading-bar" data-busy-form>
+        <label class="sr-only" for="phrase">Describe a step</label>
+        <input class="input lg" id="phrase" name="phrase" autocomplete="off" maxlength="300" required placeholder="e.g. {{ examples[0] if examples else 'remove duplicates' }}">
+        <button class="btn primary">{{ ui.icon("eye", "sm") }}Preview</button>
+      </form>
+      {% if examples %}
+      <div class="chips" style="margin-top:12px">
+        {% for e in examples %}<button class="chip" type="button" data-phrase="{{ e }}">{{ e }}</button>{% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="or" style="margin:20px 0 6px">or build a step</div>
+      <div class="kinds">
+        {% for kind, hint in primary %}
+        <button class="kind" type="button" hx-get="{{ ws.base }}/transform/form?kind={{ kind }}" hx-target="#step-builder" data-kind><b>{{ labels[kind] }}</b><span>{{ hint }}</span></button>
+        {% endfor %}
+      </div>
+      <div class="more-kinds">
+        {% for kind in more %}<button class="chip" type="button" hx-get="{{ ws.base }}/transform/form?kind={{ kind }}" hx-target="#step-builder" data-kind>{{ labels[kind] }}</button>{% endfor %}
+      </div>
+    </section>
+
+    <div id="step-builder"></div>
+
+    <div id="preview">
+      {% with pending=None, error=None %}{% include "partials/step_preview.html" %}{% endwith %}
+    </div>
+  </div>
+
+  <aside>
+    <section class="card rise" style="--i:1">
+      <div class="card-head"><span class="kicker">Applied steps</span><span class="spacer"></span><span class="subtle tiny mono">{{ base_rows | number }} → {{ preview.total_rows | number }} rows</span></div>
+      {% if steps %}
+      <ol class="step-list">
+        {% for step, result in steps %}
+        {% set i = loop.index0 %}
+        <li class="step-item{{ ' off' if not result.enabled }}">
+          <div>
+            <div class="s">{{ result.sentence }}</div>
+            {% if result.error %}<div class="e">{{ result.error }} This step is skipped.</div>
+            {% elif result.enabled %}<div class="m">{{ result.rows | number }} rows{% if result.added %} · +{{ result.added | join(", ") }}{% endif %}{% if result.removed %} · −{{ result.removed | join(", ") }}{% endif %}</div>{% endif %}
+          </div>
+          {% if can_save %}
+          <div class="step-tools">
+            <button type="button" title="{{ 'Switch off' if result.enabled else 'Switch on' }}" aria-label="{{ 'Switch off' if result.enabled else 'Switch on' }} step {{ loop.index }}" hx-post="{{ ws.base }}/transform/steps/{{ i }}/toggle" hx-target="#toasts" hx-swap="beforeend">{{ ui.icon("power", "sm") }}</button>
+            <button type="button" title="Move up" aria-label="Move step {{ loop.index }} up" hx-post="{{ ws.base }}/transform/steps/{{ i }}/up" hx-target="#toasts" hx-swap="beforeend" {% if loop.first %}disabled{% endif %}>{{ ui.icon("up", "sm") }}</button>
+            <button type="button" title="Move down" aria-label="Move step {{ loop.index }} down" hx-post="{{ ws.base }}/transform/steps/{{ i }}/down" hx-target="#toasts" hx-swap="beforeend" {% if loop.last %}disabled{% endif %}>{{ ui.icon("down", "sm") }}</button>
+            <button type="button" title="Remove" aria-label="Remove step {{ loop.index }}" hx-post="{{ ws.base }}/transform/steps/{{ i }}/delete" hx-target="#toasts" hx-swap="beforeend">{{ ui.icon("x", "sm") }}</button>
+          </div>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}
+      <p class="subtle small" style="padding:16px 20px 18px">No steps yet. The board reads the cleaned file as it arrived. Each step you add runs on every row, in order, and the dashboard rebuilds from the result.</p>
+      {% endif %}
+    </section>
+
+    {% if suggestions %}
+    <section class="card rise" style="--i:2">
+      <div class="card-head"><span class="kicker">Suggested for this table</span></div>
+      {% for s in suggestions %}
+      <div class="suggestion">
+        <div class="s">{{ s.sentence }}</div>
+        <div class="r">{{ s.reason }}</div>
+        <div class="row" style="--gap:6px;margin-top:2px">
+          <form hx-post="{{ ws.base }}/transform/preview" hx-target="#preview"><input type="hidden" name="step" value="{{ s.step | tojson | forceescape }}"><button class="btn sm">{{ ui.icon("eye", "sm") }}Preview</button></form>
+          {% if can_save %}<form hx-post="{{ ws.base }}/transform/steps" hx-target="#toasts" hx-swap="beforeend" data-busy-form><input type="hidden" name="step" value="{{ s.step | tojson | forceescape }}"><button class="btn sm primary">{{ ui.icon("plus", "sm") }}Add</button></form>{% endif %}
+          {% if s.additive %}<span class="subtle tiny">Only adds a column</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if not can_save %}
+    <div class="alert info">{{ ui.icon("sparkle") }}<span>{% if ws.demo %}This is the demo: preview any step on its rows. <a href="{{ '/home' if user else '/signup' }}">Use your own data</a> to keep steps.{% else %}Only the owner can change the steps on this dataset.{% endif %}</span></div>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

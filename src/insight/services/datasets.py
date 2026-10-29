@@ -82,7 +82,7 @@ async def ingest(state: AppState, db: AsyncSession, user: CurrentUser, content: 
             raise PlanLimit(f"{plan.name} holds {plan.max_datasets} datasets. Delete one, or upgrade to Pro for unlimited.")
 
     prepared = await state.run_cpu(prepare, content, filename)
-    await _store_blob(db, prepared)
+    await store_blob(db, prepared.content_hash, prepared.parquet)
     dataset = Dataset(
         owner_id=user.id,
         name=_display_name(filename),
@@ -101,12 +101,10 @@ async def ingest(state: AppState, db: AsyncSession, user: CurrentUser, content: 
     return dataset
 
 
-async def _store_blob(db: AsyncSession, prepared: Prepared) -> None:
+async def store_blob(db: AsyncSession, content_hash: str, parquet: bytes) -> None:
     """Store the rows once per content hash. Idempotent, so two identical uploads at once cannot collide."""
     insert = pg_insert if db.bind.dialect.name == "postgresql" else sqlite_insert
-    stmt = insert(DatasetBlob).values(
-        content_hash=prepared.content_hash, parquet=prepared.parquet, size_bytes=len(prepared.parquet), created_at=utcnow()
-    )
+    stmt = insert(DatasetBlob).values(content_hash=content_hash, parquet=parquet, size_bytes=len(parquet), created_at=utcnow())
     await db.execute(stmt.on_conflict_do_nothing(index_elements=["content_hash"]))
 
 
@@ -148,14 +146,18 @@ async def get_dataset(db: AsyncSession, user: CurrentUser, dataset_id: UUID) -> 
 
 
 async def load_frame(state: AppState, db: AsyncSession, dataset: Dataset) -> pd.DataFrame:
-    df = state.frames.get(dataset.content_hash)
+    return await load_blob_frame(state, db, dataset.content_hash)
+
+
+async def load_blob_frame(state: AppState, db: AsyncSession, content_hash: str) -> pd.DataFrame:
+    df = state.frames.get(content_hash)
     if df is not None:
         return df
-    blob = await db.get(DatasetBlob, dataset.content_hash)
+    blob = await db.get(DatasetBlob, content_hash)
     if blob is None:
-        raise NotFound(dataset.content_hash)
+        raise NotFound(content_hash)
     df = await state.run_cpu(read_parquet, blob.parquet)
-    state.frames.put(dataset.content_hash, df)
+    state.frames.put(content_hash, df)
     return df
 
 
@@ -181,15 +183,21 @@ async def delete_dataset(db: AsyncSession, user: CurrentUser, dataset_id: UUID) 
     dataset = await db.get(Dataset, dataset_id)
     if dataset is None or dataset.owner_id != user.id:
         raise NotFound(str(dataset_id))
-    content_hash = dataset.content_hash
+    hashes = {dataset.content_hash, dataset.base_hash} - {None}
     await db.delete(dataset)
     await db.flush()
-    still_used = await db.scalar(select(exists().where(Dataset.content_hash == content_hash)))
-    if not still_used:
-        blob = await db.get(DatasetBlob, content_hash)
-        if blob is not None:
-            await db.delete(blob)
+    await release_blobs(db, hashes)  # type: ignore[arg-type]
     await db.commit()
+
+
+async def release_blobs(db: AsyncSession, hashes: set[str]) -> None:
+    """Delete the stored rows no dataset reads any more (as its rows or as its base)."""
+    for h in hashes:
+        used = await db.scalar(select(exists().where((Dataset.content_hash == h) | (Dataset.base_hash == h))))
+        if not used:
+            blob = await db.get(DatasetBlob, h)
+            if blob is not None:
+                await db.delete(blob)
 
 
 def _display_name(filename: str) -> str:

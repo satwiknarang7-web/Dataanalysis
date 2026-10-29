@@ -14,6 +14,12 @@
     {% if ws %}
       <div class="side-label">{{ "Live demo" if ws.demo else "Open dataset" }}</div>
       <a class="side-link" href="{{ ws.board_url }}" {% if tab == "dashboard" %}aria-current="page"{% endif %}>{{ ui.icon("grid") }}<span class="name">{{ ws.analysis_title or ws.name }}</span></a>
+      <div class="side-sub">
+        <a class="side-link" href="{{ ws.base }}/ask" {% if tab == "ask" %}aria-current="page"{% endif %}><span class="name">Ask a question</span></a>
+        <a class="side-link" href="{{ ws.base }}/transform" {% if tab == "transform" %}aria-current="page"{% endif %}><span class="name">Transform data</span></a>
+        <a class="side-link" href="{{ ws.base }}/data" {% if tab == "data" %}aria-current="page"{% endif %}><span class="name">Data</span></a>
+        <a class="side-link" href="{{ ws.base }}/quality" {% if tab == "quality" %}aria-current="page"{% endif %}><span class="name">Cleaning report</span></a>
+      </div>
     {% endif %}
     <div class="side-foot">
       {% if user %}
@@ -44,7 +50,7 @@
     </div>
     {% if ws and ws.demo %}
     <div class="demo-banner">
-      {{ ui.icon("eye") }}<span>You're exploring a live demo built from sample data. Try it on your own spreadsheet in under a minute.</span>
+      {{ ui.icon("eye") }}<span>A live demo on sample data. Everything works here; try it on your own spreadsheet in under a minute.</span>
       <span class="spacer"></span>
       <a class="btn" href="{{ '/home' if user else '/signup' }}">Use my own data</a>
     </div>

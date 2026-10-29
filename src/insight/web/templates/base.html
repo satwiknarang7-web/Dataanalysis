@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}Insight{% endblock %}</title>
   <meta name="description" content="Drop in a spreadsheet and get the dashboard an analyst would build: headline numbers, trends, and findings in plain English.">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark light">
   <script src="/static/js/theme.js?v={{ asset_v }}"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
   <link rel="stylesheet" href="/static/css/app.css?v={{ asset_v }}">
   <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
   <script src="/static/vendor/htmx-2.0.4.min.js" defer></script>
@@ -18,6 +18,7 @@
 </head>
 <body hx-headers='{"X-Requested-With": "htmx"}'>
   <div class="loading-bar" id="loading-bar"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" class="stop-a"/><stop offset="1" class="stop-b"/></linearGradient></defs></svg>
   {% block body %}{% endblock %}
   <div class="toast-zone" id="toasts" aria-live="polite"></div>
 </body>

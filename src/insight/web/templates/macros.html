@@ -36,7 +36,11 @@
   "search": '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
   "trend": '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
   "plus": '<path d="M12 5v14M5 12h14"/>',
-  "logo": '<path d="M4 18 9 12l4 3 7-9"/>'
+  "logo": '<path d="M4 18 9 12l4 3 7-9"/>',
+  "info": '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
+  "wand": '<path d="m15 4 5 5M4 20l9-9M14 6l4 4M17 3v2M21 7h-2M3 13h2M7 17v2"/>',
+  "power": '<path d="M12 3v8M6.4 6.4a8 8 0 1 0 11.2 0"/>'
+
 } %}
 
 {% macro icon(name, cls="") -%}
@@ -57,48 +61,57 @@
 {% if change %}<span class="delta {{ tone }}">{% if tone != "flat" %}{{ icon("up" if change.startswith("+") else "down", "sm") }}{% endif %}{{ change.lstrip("+-") }}</span>{% endif %}
 {%- endmacro %}
 
-{% macro kpi(k, measure) -%}
-{% set spark = view.sparkline(k.data.get("spark", [])) %}
-<div class="card kpi">
+{% macro kpi(k, measure, i=0) -%}
+{% set spark = view.sparkline(k.data.get("spark", []), 240, 44) %}
+<div class="card kpi rise" style="--i: {{ i }}">
   <span class="label">{{ k.tile.title }}</span>
-  <span class="value">{{ k.value }}</span>
+  <span class="value" data-count="{{ k.value }}">{{ k.value }}</span>
   <div class="foot">
     {{ delta(k.change, view.change_tone(k.change, measure)) }}
     {% if k.caption.text %}<span class="vs" title="{{ k.caption.text }}">{{ k.caption.text }}</span>{% endif %}
   </div>
   {% if spark %}
-  <svg class="spark" width="{{ spark.width }}" height="{{ spark.height }}" viewBox="0 0 {{ spark.width }} {{ spark.height }}" aria-hidden="true">
+  <svg class="spark" viewBox="0 0 {{ spark.width }} {{ spark.height }}" preserveAspectRatio="none" aria-hidden="true">
     <path class="area" d="{{ spark.area }}"/><path class="line" d="{{ spark.line }}"/>
-    <circle cx="{{ spark.last[0] }}" cy="{{ spark.last[1] }}" r="2.6"/>
   </svg>
   {% endif %}
 </div>
 {%- endmacro %}
 
-{% macro tile(t, wide=false) -%}
-<article class="card tile{{ ' wide' if wide or t.tile.kind == 'trend' }}" id="tile-{{ t.tile.id | replace(':', '-') | replace('=', '-') | replace(' ', '-') }}">
+{% macro tile_id(t) -%}tile-{{ t.tile.id | replace(':', '-') | replace('=', '-') | replace(' ', '-') | replace('.', '-') }}{%- endmacro %}
+
+{% macro tile(t, wide=false, i=0, hero=false) -%}
+{% set ranges = t.data.get("ranges") and (t.data["ranges"] | select | list) %}
+<article class="card tile rise{{ ' wide' if wide or t.tile.kind == 'trend' }}{{ ' glow' if hero }}" id="{{ tile_id(t) }}" style="--i: {{ i }}">
   <div class="tile-head">
     <div class="t">
-      <h3>{{ t.tile.title }}</h3>
-      {% if t.caption.headline %}<div class="h">{{ t.caption.headline }}</div>{% endif %}
+      <h3 title="{{ t.tile.title }}">{{ t.tile.title }}</h3>
+      <div class="h">{{ t.caption.headline or t.tile.title }}</div>
     </div>
-    {% if t.caption.tone == "finding" %}<span class="badge accent">{{ icon("sparkle", "sm") }}Finding</span>
-    {% elif t.caption.tone == "flat" %}<span class="badge">No clear pattern</span>{% endif %}
+    <div class="tile-tools">
+      {% if t.caption.tone == "finding" %}<span class="badge accent" title="Passes a significance test">{{ icon("sparkle", "sm") }}Finding</span>{% endif %}
+      {% if t.caption.text or ranges %}
+      <span class="tip">
+        <button type="button" aria-label="What this shows: {{ t.caption.text }}">{{ icon("info", "sm") }}</button>
+        <span class="bubble panel" role="tooltip"><span class="kicker">What this shows</span>{{ t.caption.text }}{% if ranges %}<span class="subtle tiny" style="display:block;margin-top:8px">The line on each bar is the range its value likely lies in (95%).</span>{% endif %}{% if t.tile.kind == "breakdown" %}<span class="subtle tiny" style="display:block;margin-top:8px">Click a bar to filter the whole board by it.</span>{% endif %}</span>
+      </span>
+      {% endif %}
+    </div>
   </div>
   {% if t.tile.viz == "table" %}
     {% set top = (t.data["values"] | select("number") | list | max) if t.data["values"] | select("number") | list else 0 %}
-    <div class="table-wrap"><table class="rank-table">
+    <table class="rank-table">
       {% for label in t.data["labels"] %}
       <tr>
-        <td class="pos">{{ loop.index }}</td>
+        <td class="pos">{{ "%02d" | format(loop.index) }}</td>
         <td>{{ label }}{% if top and t.data["values"][loop.index0] %}<div class="bar" style="width: {{ (t.data['values'][loop.index0] / top * 100) | round(1) }}%"></div>{% endif %}</td>
         <td class="n">{{ t.data["text"][loop.index0] }}</td>
       </tr>
       {% endfor %}
-    </table></div>
+    </table>
   {% else %}
-    <div class="chart" data-chart='{{ view.chart_payload(t) }}' role="img" aria-label="{{ t.tile.title }}"></div>
+    <div class="chart" data-chart='{{ view.chart_payload(t) }}'{% if t.tile.kind == "breakdown" and t.tile.spec %} data-filter-field="{{ t.tile.spec.by[0].field }}"{% endif %} role="img" aria-label="{{ t.tile.title }}: {{ t.caption.text }}"></div>
   {% endif %}
-  {% if t.caption.text %}<p class="caption{{ ' flat' if t.caption.tone == 'flat' }}">{{ t.caption.text }}</p>{% endif %}
+  {% if t.caption.tone == "flat" %}<p class="caption flat">{{ t.caption.text }}</p>{% endif %}
 </article>
 {%- endmacro %}

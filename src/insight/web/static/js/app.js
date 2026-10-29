@@ -22,12 +22,10 @@
   // ── Number formatting (matches the server's) ──────────────────────────
   function compact(x) {
     const ax = Math.abs(x);
-    const units = [[1e12, "T"], [1e9, "B"], [1e6, "M"], [1e3, "K"]];
-    for (const [size, suffix] of units) {
+    for (const [size, suffix] of [[1e12, "T"], [1e9, "B"], [1e6, "M"], [1e3, "K"]]) {
       if (ax >= size) {
         const v = x / size;
-        const d = Math.abs(v) < 10 ? 2 : Math.abs(v) < 100 ? 1 : 0;
-        return parseFloat(v.toFixed(d)) + suffix;
+        return parseFloat(v.toFixed(Math.abs(v) < 10 ? 2 : Math.abs(v) < 100 ? 1 : 0)) + suffix;
       }
     }
     return Number.isInteger(x) ? x.toLocaleString() : parseFloat(x.toFixed(ax < 10 ? 2 : 1)).toLocaleString();
@@ -38,107 +36,118 @@
     if (spec.format === "currency") return (x < 0 ? "-$" : "$") + compact(Math.abs(x));
     return compact(x);
   }
-  function axis(spec) {
+  function axisFormat(spec) {
     if (spec.format === "percent") return spec.percent_scale === 100 ? { ticksuffix: "%" } : { tickformat: ".0%" };
     if (spec.format === "currency") return { tickprefix: "$", tickformat: "~s" };
     return { tickformat: "~s" };
   }
 
   // ── Charts ──────────────────────────────────────────────────────────────
-  function palette() {
-    return [1, 2, 3, 4, 5, 6, 7, 8].map((i) => css(`--chart-${i}`));
-  }
-  function alpha(hex, a) {
-    const h = hex.replace("#", "");
-    const n = parseInt(h.length === 3 ? h.split("").map((c) => c + c).join("") : h, 16);
+  // One emphasis hue says "this one" (the bar the headline names); the rest stay quiet, as in the original.
+  const ink = () => ({
+    palette: [1, 2, 3, 4, 5, 6, 7, 8].map((i) => css(`--chart-${i}`)),
+    emphasis: css("--chart-emphasis"),
+    quiet: css("--chart-quiet"),
+    other: css("--chart-other"),
+    grid: css("--chart-grid"),
+    axis: css("--chart-axis"),
+    text: css("--text"),
+    surface: css("--surface"),
+    border: css("--card-border"),
+  });
+  function rgba(color, a) {
+    const m = color.match(/^#([0-9a-f]{6})$/i);
+    if (!m) return color;
+    const n = parseInt(m[1], 16);
     return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${a})`;
   }
 
-  function layoutBase(extra = {}) {
-    const text = css("--text-2");
-    const grid = css("--chart-grid");
+  function base(c, extra = {}) {
+    const axis = { gridcolor: c.grid, zeroline: false, showline: false, automargin: true, fixedrange: true, ticks: "", tickfont: { size: 11, color: c.axis }, title: { font: { size: 11, color: c.axis } } };
     return Object.assign({
-      margin: { l: 56, r: 16, t: 12, b: 44 },
+      margin: { l: 44, r: 12, t: 8, b: 34 },
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
-      font: { family: "Inter, system-ui, sans-serif", size: 12, color: text },
-      hoverlabel: { bgcolor: css("--bg-elev"), bordercolor: css("--border"), font: { color: css("--text"), family: "Inter, sans-serif", size: 13 } },
-      xaxis: { gridcolor: grid, zeroline: false, linecolor: grid, automargin: true, fixedrange: true },
-      yaxis: { gridcolor: grid, zeroline: false, linecolor: grid, automargin: true, fixedrange: true },
+      font: { family: "Inter, system-ui, sans-serif", size: 12, color: c.axis },
+      hoverlabel: { bgcolor: c.surface, bordercolor: c.border, font: { color: c.text, family: "Inter, sans-serif", size: 12.5 }, align: "left" },
+      xaxis: Object.assign({}, axis, { showgrid: false }),
+      yaxis: Object.assign({}, axis),
       showlegend: false,
-      bargap: 0.28,
+      bargap: 0.34,
       hovermode: "closest",
+      dragmode: false,
     }, extra);
   }
 
-  function figure(spec) {
-    const colors = palette();
-    const accent = colors[0];
-    const other = css("--chart-other");
-    const bars = () => (spec.labels || []).map((l) => (l === "Other" ? other : accent));
-    const errors = (spec.ranges || []).some(Boolean)
-      ? {
-          type: "data", symmetric: false, thickness: 1.4, width: 4, color: css("--text-3"),
-          array: spec.ranges.map((r, i) => (r ? r[1] - spec.values[i] : 0)),
-          arrayminus: spec.ranges.map((r, i) => (r ? spec.values[i] - r[0] : 0)),
-        }
-      : undefined;
+  function barColors(spec, c) {
+    const focus = spec.focus;
+    return (spec.labels || []).map((l) => (l === "Other" ? c.other : !focus || l === focus ? (focus ? c.emphasis : rgba(c.emphasis, 0.8)) : c.quiet));
+  }
 
+  function figure(spec) {
+    const c = ink();
+    const errors = (spec.ranges || []).some(Boolean)
+      ? { type: "data", symmetric: false, thickness: 1.2, width: 3, color: c.axis,
+          array: spec.ranges.map((r, i) => (r ? r[1] - spec.values[i] : 0)), arrayminus: spec.ranges.map((r, i) => (r ? spec.values[i] - r[0] : 0)) }
+      : undefined;
     switch (spec.viz) {
       case "line":
       case "area": {
         const many = spec.series.length > 1;
-        const data = spec.series.map((s, i) => ({
-          type: "scatter", mode: spec.x.length > 40 ? "lines" : "lines+markers", name: s.name, x: spec.x, y: s.y,
-          line: { color: colors[i % colors.length], width: 2.4, shape: "spline", smoothing: 0.6 },
-          marker: { size: 5 },
-          fill: spec.viz === "area" && !many ? "tozeroy" : "none",
-          fillcolor: alpha(colors[i % colors.length], 0.1),
-          hovertemplate: `%{x}<br><b>%{customdata}</b><extra>${many ? s.name : ""}</extra>`,
-          customdata: s.y.map((v) => fmt(v, spec)),
-          connectgaps: true,
-        }));
-        return { data, layout: layoutBase({ yaxis: Object.assign(layoutBase().yaxis, axis(spec)), showlegend: many, legend: { orientation: "h", y: -0.2 }, hovermode: "x unified" }) };
+        const data = spec.series.map((s, i) => {
+          const color = many ? c.palette[i % c.palette.length] : c.emphasis;
+          const trace = {
+            type: "scatter", mode: spec.x.length > 36 ? "lines" : "lines+markers", name: s.name, x: spec.x, y: s.y,
+            line: { color, width: many ? 2 : 2.4, shape: "spline", smoothing: 0.5 },
+            marker: { size: 5, color, line: { width: 2, color: c.surface } },
+            customdata: s.y.map((v) => fmt(v, spec)), connectgaps: true,
+            hovertemplate: `<b>%{customdata}</b>${many ? " · " + s.name : ""}<extra></extra>`,
+          };
+          if (!many) {
+            trace.fill = "tozeroy";
+            trace.fillgradient = { type: "vertical", colorscale: [[0, rgba(color, 0)], [1, rgba(color, 0.28)]] };
+          }
+          return trace;
+        });
+        return { data, layout: base(c, { yaxis: Object.assign(base(c).yaxis, axisFormat(spec)), showlegend: many, legend: { orientation: "h", y: -0.18, font: { size: 11.5 } }, hovermode: "x unified",
+          xaxis: Object.assign(base(c).xaxis, { showspikes: true, spikemode: "across", spikethickness: 1, spikecolor: c.axis, spikedash: "dot" }) }) };
       }
       case "bar":
         return {
-          data: [{ type: "bar", x: spec.labels, y: spec.values, marker: { color: bars(), cornerradius: 5 }, error_y: errors,
+          data: [{ type: "bar", x: spec.labels, y: spec.values, marker: { color: barColors(spec, c), cornerradius: 5 }, error_y: errors,
                    customdata: spec.text, hovertemplate: "%{x}<br><b>%{customdata}</b><extra></extra>" }],
-          layout: layoutBase({ yaxis: Object.assign(layoutBase().yaxis, axis(spec)) }),
+          layout: base(c, { yaxis: Object.assign(base(c).yaxis, axisFormat(spec)) }),
         };
       case "hbar":
         return {
-          data: [{ type: "bar", orientation: "h", y: spec.labels, x: spec.values, marker: { color: bars(), cornerradius: 5 }, error_x: errors,
-                   text: spec.text, textposition: "outside", cliponaxis: false, customdata: spec.text,
+          data: [{ type: "bar", orientation: "h", y: spec.labels, x: spec.values, marker: { color: barColors(spec, c), cornerradius: 4 }, error_x: errors,
+                   text: spec.text, textposition: "outside", textfont: { size: 11.5, color: c.axis }, cliponaxis: false, customdata: spec.text,
                    hovertemplate: "%{y}<br><b>%{customdata}</b><extra></extra>" }],
-          layout: layoutBase({ margin: { l: 8, r: 56, t: 8, b: 24 }, yaxis: Object.assign(layoutBase().yaxis, { autorange: "reversed", gridcolor: "rgba(0,0,0,0)" }),
-                               xaxis: Object.assign(layoutBase().xaxis, axis(spec), { showticklabels: false }) }),
+          layout: base(c, { margin: { l: 8, r: 52, t: 4, b: 8 }, bargap: 0.38, yaxis: Object.assign(base(c).yaxis, { autorange: "reversed", showgrid: false, tickfont: { size: 12, color: c.text } }),
+                            xaxis: Object.assign(base(c).xaxis, axisFormat(spec), { showticklabels: false, showgrid: false }) }),
         };
       case "donut": {
         const total = spec.values.reduce((a, b) => a + (b || 0), 0);
         return {
-          data: [{ type: "pie", hole: 0.64, labels: spec.labels, values: spec.values, sort: false, direction: "clockwise",
-                   marker: { colors: spec.labels.map((l, i) => (l === "Other" ? other : colors[i % colors.length])), line: { color: css("--bg-elev"), width: 2 } },
-                   textinfo: "percent", textposition: "outside", customdata: spec.text,
-                   hovertemplate: "%{label}<br><b>%{customdata}</b> · %{percent}<extra></extra>" }],
-          layout: layoutBase({ margin: { l: 16, r: 16, t: 16, b: 16 }, showlegend: true, legend: { orientation: "v", x: 1.02, y: 0.5 },
-                               annotations: [{ text: `<b>${fmt(total, spec)}</b><br><span style="font-size:11px">${spec.measure}</span>`, showarrow: false, font: { size: 17, color: css("--text") } }] }),
+          data: [{ type: "pie", hole: 0.7, labels: spec.labels, values: spec.values, sort: false, direction: "clockwise", rotation: 0,
+                   marker: { colors: spec.labels.map((l, i) => (l === "Other" ? c.other : c.palette[i % c.palette.length])), line: { color: c.surface, width: 3 } },
+                   textinfo: "none", customdata: spec.text, hovertemplate: "%{label}<br><b>%{customdata}</b> · %{percent}<extra></extra>" }],
+          layout: base(c, { margin: { l: 8, r: 8, t: 8, b: 8 }, showlegend: true, legend: { orientation: "v", x: 1, xanchor: "left", y: 0.5, font: { size: 12, color: c.text } },
+                            annotations: [{ text: `<span style="font-family:Inter Tight;font-size:22px;font-weight:600">${fmt(total, spec)}</span><br><span style="font-size:11px">${spec.measure}</span>`, showarrow: false, font: { color: c.text } }] }),
         };
       }
       case "scatter": {
         const fit = trendline(spec.x, spec.y);
-        const data = [{ type: "scatter", mode: "markers", x: spec.x, y: spec.y,
-                        marker: { color: alpha(accent, 0.45), size: 6, line: { width: 0 } },
-                        hovertemplate: `${spec.x_label}: %{x}<br>${spec.y_label}: %{y}<extra></extra>` }];
-        if (fit) data.push({ type: "scatter", mode: "lines", x: fit.x, y: fit.y, line: { color: colors[3], width: 2.2, dash: "dot" }, hoverinfo: "skip" });
-        return { data, layout: layoutBase({ xaxis: Object.assign(layoutBase().xaxis, { title: { text: spec.x_label, font: { size: 12 } } }),
-                                            yaxis: Object.assign(layoutBase().yaxis, { title: { text: spec.y_label, font: { size: 12 } } }) }) };
+        const data = [{ type: "scatter", mode: "markers", x: spec.x, y: spec.y, marker: { color: rgba(c.emphasis, 0.38), size: 6, line: { width: 0 } },
+                        hovertemplate: `${spec.x_label}: %{x}<br>${spec.y_label}: <b>%{y}</b><extra></extra>` }];
+        if (fit) data.push({ type: "scatter", mode: "lines", x: fit.x, y: fit.y, line: { color: c.palette[1], width: 2, dash: "dot" }, hoverinfo: "skip" });
+        return { data, layout: base(c, { margin: { l: 52, r: 12, t: 8, b: 44 }, xaxis: Object.assign(base(c).xaxis, { showgrid: true, title: { text: spec.x_label, font: { size: 11.5 } } }),
+                                         yaxis: Object.assign(base(c).yaxis, { title: { text: spec.y_label, font: { size: 11.5 } } }) }) };
       }
       case "histogram":
         return {
-          data: [{ type: "bar", x: spec.x, y: spec.counts, customdata: spec.labels, marker: { color: alpha(accent, 0.85), cornerradius: 3 },
-                   hovertemplate: "%{customdata}<br><b>%{y} rows</b><extra></extra>" }],
-          layout: layoutBase({ bargap: 0.06, xaxis: Object.assign(layoutBase().xaxis, axis(spec)) }),
+          data: [{ type: "bar", x: spec.x, y: spec.counts, customdata: spec.labels, marker: { color: rgba(c.emphasis, 0.75), cornerradius: 2 }, hovertemplate: "%{customdata}<br><b>%{y} rows</b><extra></extra>" }],
+          layout: base(c, { bargap: 0.08, xaxis: Object.assign(base(c).xaxis, axisFormat(spec)) }),
         };
       default:
         return null;
@@ -157,6 +166,11 @@
     return { x: [lo, hi], y: [a + b * lo, a + b * hi] };
   }
 
+  // A bar of a split filters the whole board by it, when that split is one of the board's filters.
+  function filterInput(field, label) {
+    return $$(`#filters input[name="f.${CSS.escape(field)}"]`).find((i) => i.value === String(label));
+  }
+
   function renderCharts(root, force) {
     if (!window.Plotly) return;
     $$("[data-chart]", root).forEach((el) => {
@@ -166,7 +180,42 @@
       const fig = figure(spec);
       if (!fig) return;
       window.Plotly.react(el, fig.data, fig.layout, { displayModeBar: false, responsive: true });
+      const field = el.dataset.filterField;
+      if (field && !el.dataset.rendered && (spec.labels || []).some((l) => filterInput(field, l))) {
+        el.classList.add("clickable");
+        el.on("plotly_click", (ev) => {
+          const p = ev.points && ev.points[0];
+          const input = p && filterInput(field, spec.viz === "hbar" ? p.y : p.x !== undefined ? p.x : p.label);
+          if (!input) return;
+          input.checked = !input.checked;
+          input.dispatchEvent(new Event("change", { bubbles: true }));
+        });
+      }
       el.dataset.rendered = "1";
+    });
+  }
+
+  // Headline figures count up once, from zero, the way the original's did.
+  function countUp(root) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    $$("[data-count]", root).forEach((el, i) => {
+      if (el.dataset.counted) return;
+      el.dataset.counted = "1";
+      const m = el.dataset.count.match(/^([^\d-]*)(-?[\d,]*\.?\d+)(.*)$/);
+      if (!m) return;
+      const target = parseFloat(m[2].replace(/,/g, ""));
+      const decimals = (m[2].split(".")[1] || "").length;
+      const commas = m[2].includes(",");
+      const start = performance.now() + i * 60;
+      const step = (now) => {
+        const t = Math.min(1, Math.max(0, (now - start) / 900));
+        const v = target * (1 - Math.pow(1 - t, 3));
+        let s = v.toFixed(decimals);
+        if (commas) s = Number(s).toLocaleString(undefined, { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+        el.textContent = m[1] + s + m[3];
+        if (t < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
     });
   }
 
@@ -263,6 +312,22 @@
       form.requestSubmit();
       return;
     }
+    const phrase = e.target.closest("[data-phrase]");
+    if (phrase) {
+      const input = $("#phrase");
+      input.value = phrase.dataset.phrase;
+      input.form.requestSubmit();
+      return;
+    }
+    if (e.target.closest("[data-close-builder]")) {
+      $("#step-builder").innerHTML = "";
+      $$("[data-kind]").forEach((k) => k.removeAttribute("aria-pressed"));
+      return;
+    }
+    const kind = e.target.closest("[data-kind]");
+    if (kind) {
+      $$("[data-kind]").forEach((k) => k.setAttribute("aria-pressed", String(k === kind)));
+    }
     const jump = e.target.closest("[data-jump]");
     if (jump) {
       const target = document.querySelector(jump.getAttribute("href"));
@@ -290,9 +355,15 @@
   });
 
   // htmx: re-arm what a swap brings in, and end busy states.
+  // htmx:load fires on each piece of new content once it is in the page. afterSwap's target can be
+  // the element an outerHTML swap just removed, so charts are drawn from here, never from there.
+  document.addEventListener("htmx:load", (e) => {
+    renderCharts(e.detail.elt.parentElement || document, false);
+    if (e.detail.elt.parentElement && e.detail.elt.parentElement.id === "step-builder") e.detail.elt.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    countUp(e.detail.elt.parentElement || document);
+    $$("[data-toast]", document).forEach(autoHide);
+  });
   document.addEventListener("htmx:afterSwap", (e) => {
-    renderCharts(e.detail.target, false);
-    $$("[data-toast]", e.detail.target).forEach(autoHide);
     const empty = $("#ask-empty");
     if (empty && e.detail.target.id === "answers") empty.remove();
     if (e.detail.target.id === "toasts") $$("dialog[open]").forEach((d) => d.close());
@@ -305,12 +376,13 @@
   });
   document.addEventListener("htmx:beforeSwap", (e) => {
     // Plan limits (402) and validation messages come back as a toast to show.
-    if (e.detail.xhr.status === 402 || e.detail.xhr.status === 400) { e.detail.shouldSwap = true; e.detail.isError = false; }
+    if ([400, 402, 403].includes(e.detail.xhr.status)) { e.detail.shouldSwap = true; e.detail.isError = false; }
   });
   window.addEventListener("pageshow", () => $$("[aria-busy]").forEach((b) => b.removeAttribute("aria-busy")));
 
   document.addEventListener("DOMContentLoaded", () => {
     renderCharts(document, false);
+    countUp(document);
     initUpload();
   });
 })();

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
@@ -36,6 +37,7 @@ class Workspace:
     analysis_title: str | None = None
     owner: bool = True
     shares: list[str] = field(default_factory=list)
+    steps: int = 0  # shaping steps applied
 
     @property
     def board_url(self) -> str:
@@ -76,7 +78,16 @@ def change_tone(change: str | None, m: Measure | None) -> str:
 
 
 def chart_payload(t: RenderedTile) -> str:
-    return json.dumps({"viz": t.tile.viz, "kind": t.tile.kind, **t.data}, separators=(",", ":"), default=str)
+    return json.dumps({"viz": t.tile.viz, "kind": t.tile.kind, "focus": focus_label(t), **t.data}, separators=(",", ":"), default=str)
+
+
+def focus_label(t: RenderedTile) -> str | None:
+    """The bar a chart's headline speaks of ("Clothing has the highest…"), drawn in the emphasis colour."""
+    if t.caption.tone != "finding":
+        return None
+    said = t.caption.headline or t.caption.text
+    named = [str(label) for label in t.data.get("labels", []) if label and re.search(rf"(?<!\w){re.escape(str(label))}(?!\w)", said)]
+    return max(named, key=len) if named else None
 
 
 def ago(dt: datetime | None) -> str:

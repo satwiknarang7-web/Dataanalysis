@@ -8,31 +8,31 @@
       <a class="btn" href="{{ ws.board_url }}">Clear filters</a>
     </div>
   {% else %}
-    <section class="headline">
-      <span class="ic">{{ ui.icon("sparkle") }}</span>
+    <section class="headline rise">
+      <span class="live" aria-hidden="true"></span>
       <div>
-        <h2>{{ board.headline }}</h2>
-        <p>{{ board.rows | number }} rows{% if board.filters %} match your filters{% endif %} · {{ board.findings | length }} key finding{{ 's' if board.findings | length != 1 }} · computed over every row</p>
+        <h2 class="serif">{{ board.headline }}</h2>
+        <p>{{ board.rows | number }} rows{% if board.filters %} match your filters{% endif %} · {{ board.findings | length }} finding{{ 's' if board.findings | length != 1 }} that pass a significance test · every row counted</p>
       </div>
     </section>
 
     <section class="kpis" aria-label="Headline numbers">
-      {% for k in board.kpis %}{{ ui.kpi(k, measure_of(k.tile)) }}{% endfor %}
+      {% for k in board.kpis %}{{ ui.kpi(k, measure_of(k.tile), loop.index0) }}{% endfor %}
     </section>
 
     {% if board.findings %}
-    <section class="card findings" aria-label="Key findings">
-      <div class="card-head"><h2>Key findings</h2><span class="spacer"></span><span class="subtle small">Only patterns that pass a significance test</span></div>
+    <section class="card findings rise" style="--i: 4" aria-label="Key findings">
+      <div class="card-head"><span class="kicker">Key findings</span><span class="spacer"></span><span class="subtle tiny">Click one to see its chart</span></div>
       <ol>
         {% for f in board.findings %}
-        <li><a href="#tile-{{ f.tile_id | replace(':', '-') | replace('=', '-') | replace(' ', '-') }}" data-jump>{{ f.brief }}<span class="go">{{ ui.icon("arrow", "sm") }}</span></a></li>
+        <li><a href="#tile-{{ f.tile_id | replace(':', '-') | replace('=', '-') | replace(' ', '-') | replace('.', '-') }}" data-jump>{{ f.brief }}<span class="go">{{ ui.icon("arrow", "sm") }}</span></a></li>
         {% endfor %}
       </ol>
     </section>
     {% endif %}
 
     <section class="tiles" aria-label="Charts">
-      {% for t in board.tiles %}{{ ui.tile(t) }}{% endfor %}
+      {% for t in board.tiles %}{{ ui.tile(t, i=loop.index0 + 5, hero=loop.first and t.tile.kind == "trend") }}{% endfor %}
     </section>
   {% endif %}
 </div>

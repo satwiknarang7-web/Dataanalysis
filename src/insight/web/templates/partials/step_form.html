@@ -1,0 +1,138 @@
+{% import "macros.html" as ui %}
+{% macro pick(name, label, options, multiple=false, blank=None, selected=None) -%}
+<div class="field">
+  <label for="sf-{{ name }}">{{ label }}</label>
+  <select class="input" id="sf-{{ name }}" name="{{ name }}" {% if multiple %}multiple size="{{ [options | length, 6] | min }}" style="height:auto;padding:6px"{% else %}{% if blank is none %}required{% endif %}{% endif %}>
+    {% if blank is not none %}<option value="">{{ blank }}</option>{% endif %}
+    {% for o in options %}
+      {% if o is string %}<option value="{{ o }}" {% if o == selected %}selected{% endif %}>{{ o }}</option>
+      {% else %}<option value="{{ o[0] }}" {% if o[0] == selected %}selected{% endif %}>{{ o[1] }}</option>{% endif %}
+    {% endfor %}
+  </select>
+</div>
+{%- endmacro %}
+{% macro text(name, label, placeholder="", value="", required=true, mono=false) -%}
+<div class="field">
+  <label for="sf-{{ name }}">{{ label }}</label>
+  <input class="input{{ ' mono' if mono }}" id="sf-{{ name }}" name="{{ name }}" value="{{ value }}" placeholder="{{ placeholder }}" autocomplete="off" {% if required %}required{% endif %}>
+</div>
+{%- endmacro %}
+{% set any_number = numbers[0] if numbers else (columns[0] if columns else "") %}
+{% set any_text = texts[0] if texts else (columns[0] if columns else "") %}
+
+<section class="card fade">
+  <div class="card-head"><span class="kicker">{{ labels[kind] }}</span><span class="spacer"></span><button class="btn ghost sm" type="button" data-close-builder aria-label="Close">{{ ui.icon("x", "sm") }}</button></div>
+  <form class="step-form" hx-post="{{ ws.base }}/transform/preview" hx-target="#preview" hx-indicator="#loading-bar" data-busy-form>
+    <input type="hidden" name="kind" value="{{ kind }}">
+
+    {% if kind == "filter" %}
+      <div class="grid">
+        {{ pick("mode", "Rows that match", [("keep", "Keep them"), ("remove", "Remove them")], selected="keep") }}
+      </div>
+      {{ text("condition", "Condition", placeholder=any_text ~ " is " ~ "…  ·  " ~ any_number ~ " > 100  ·  " ~ any_number ~ " between 10 and 50") }}
+
+    {% elif kind == "derive" %}
+      <div class="grid">{{ text("name", "New column", placeholder="e.g. Profit") }}</div>
+      {{ text("formula", "Formula", placeholder="[" ~ any_number ~ "] * 1.2", mono=true) }}
+      <details class="subtle small"><summary>Functions you can use</summary>
+        <div class="row" style="--gap:6px;flex-wrap:wrap;margin-top:8px">{% for name in function_help.split(", ") %}<span class="badge">{{ name }}</span>{% endfor %}</div>
+        <p class="tiny" style="margin-top:8px">Refer to a column as <code>[Column name]</code>. Use + − × ÷ with <code>* /</code>, and <code>and</code>, <code>or</code>, <code>not</code>.</p>
+      </details>
+
+    {% elif kind == "conditional" %}
+      <div class="grid">
+        {{ pick("target", "Write the result to", [("new", "A new column"), ("column", "An existing column")], selected="new") }}
+        {{ text("name", "New column name", placeholder="e.g. Size", required=false) }}
+        {{ pick("column", "Or this column", columns, blank="—") }}
+      </div>
+      {% for i in range(1, max_rules + 1) %}
+      <div class="rule">
+        <span class="kw">{{ "If" if loop.first else "Else if" }}</span>
+        <input class="input" name="when_{{ i }}" placeholder="{{ (any_number ~ ' > 1000') if loop.first else 'Optional' }}" autocomplete="off" {% if loop.first %}required{% endif %}>
+        <span class="kw">then</span>
+        <input class="input" name="then_{{ i }}" placeholder="{{ 'Large' if loop.first else '' }}" autocomplete="off" {% if loop.first %}required{% endif %}>
+      </div>
+      {% endfor %}
+      <div class="grid">{{ text("otherwise", "Otherwise", placeholder="e.g. Small", required=false) }}</div>
+
+    {% elif kind == "group" %}
+      {{ pick("by", "One row for each", columns, multiple=true) }}
+      {% for i in range(1, max_aggregates + 1) %}
+      <div class="grid">
+        {{ pick("fn_" ~ i, "Work out" if loop.first else "and", group_fns, blank=None if loop.first else "—", selected="sum" if loop.first else None) }}
+        {{ pick("column_" ~ i, "Of", numbers or columns, blank="—") }}
+      </div>
+      {% if loop.index == 2 %}<details><summary class="subtle small">More totals</summary>{% endif %}
+      {% if loop.last and max_aggregates > 2 %}</details>{% endif %}
+      {% endfor %}
+
+    {% elif kind == "rename" %}
+      <div class="grid">{{ pick("column", "Column", columns) }}{{ text("to", "New name") }}</div>
+
+    {% elif kind == "split" %}
+      <div class="grid">
+        {{ pick("column", "Column", texts or columns) }}
+        {{ text("separator", "Split at", value=",", mono=true) }}
+        {{ text("into", "Into columns", placeholder="City, Region") }}
+      </div>
+      <label class="check"><input type="checkbox" name="drop_original" value="1"> Remove the original column</label>
+
+    {% elif kind == "datepart" %}
+      <div class="grid">{{ pick("column", "Date column", dates or columns) }}{{ pick("part", "Take its", date_parts.items() | list, selected="month") }}{{ text("name", "New column", placeholder="Optional", required=false) }}</div>
+
+    {% elif kind == "bucket" %}
+      <div class="grid">{{ pick("column", "Number column", numbers or columns) }}{{ text("name", "New column", placeholder="e.g. Size band", required=false) }}</div>
+      <div class="grid">{{ text("edges", "Break at", placeholder="100, 500, 1000", mono=true) }}{{ text("labels", "Band names", placeholder="Optional: Small, Medium, Large, Huge", required=false) }}</div>
+
+    {% elif kind == "retype" %}
+      <div class="grid">{{ pick("column", "Column", columns) }}{{ pick("to", "Read it as", [("number", "Number"), ("date", "Date"), ("text", "Text"), ("integer", "Whole number")], selected="number") }}</div>
+
+    {% elif kind == "replace" %}
+      <div class="grid">
+        {{ pick("column", "Column", columns) }}
+        {{ pick("mode", "Match", [("value", "The whole value"), ("text", "Text anywhere in it")], selected="value") }}
+      </div>
+      <div class="grid">{{ text("find", "Find") }}{{ text("replacement", "Replace with", required=false) }}</div>
+
+    {% elif kind == "fill" %}
+      <div class="grid">
+        {{ pick("column", "Column", columns) }}
+        {{ pick("method", "Fill blanks with", [("value", "A value"), ("previous", "The value above"), ("average", "The average"), ("median", "The median"), ("zero", "Zero")], selected="value") }}
+        {{ text("value", "Value", placeholder="Only for “a value”", required=false) }}
+      </div>
+
+    {% elif kind == "text" %}
+      <div class="grid">{{ pick("column", "Column", texts or columns) }}{{ pick("op", "Make it", [("trim", "Trimmed"), ("lower", "lower case"), ("upper", "UPPER CASE"), ("proper", "Title Case")], selected="trim") }}</div>
+
+    {% elif kind == "merge" %}
+      {{ pick("columns", "Join these columns", columns, multiple=true) }}
+      <div class="grid">{{ text("separator", "With", value=" ", mono=true, required=false) }}{{ text("name", "New column") }}</div>
+
+    {% elif kind in ("dedupe", "blanks", "drop", "keep") %}
+      {% set what = {"dedupe": "Rows count as the same when these match (none = every column)", "blanks": "Remove rows blank in (none = any column)", "drop": "Remove these columns", "keep": "Keep only these columns"}[kind] %}
+      {{ pick("columns", what, columns, multiple=true) }}
+
+    {% elif kind == "sort" %}
+      <div class="grid">{{ pick("column", "Sort by", columns) }}{{ pick("direction", "Order", [("desc", "Largest first"), ("asc", "Smallest first")], selected="desc") }}</div>
+
+    {% elif kind == "limit" %}
+      <div class="grid">
+        {{ text("count", "Keep", value="10", mono=true) }}
+        {{ pick("direction", "Rows with the", [("desc", "Largest"), ("asc", "Smallest")], selected="desc") }}
+        {{ pick("by", "Of", numbers or columns, blank="(first rows as they are)") }}
+      </div>
+
+    {% elif kind == "unpivot" %}
+      {{ pick("columns", "Turn these columns into rows", numbers or columns, multiple=true) }}
+      <div class="grid">{{ text("name_column", "Name column", value="Attribute") }}{{ text("value_column", "Value column", value="Value") }}</div>
+
+    {% elif kind == "pivot" %}
+      <div class="grid">{{ pick("column", "A column for each", texts or columns) }}{{ pick("fn", "Holding the", group_fns, selected="sum") }}{{ pick("measure", "Of", numbers or columns) }}</div>
+
+    {% elif kind == "index" %}
+      <div class="grid">{{ text("name", "Column name", value="Row number") }}</div>
+    {% endif %}
+
+    <div class="row" style="--gap:8px"><button class="btn primary">{{ ui.icon("eye", "sm") }}Preview</button><span class="subtle tiny">Nothing changes until you add the step.</span></div>
+  </form>
+</section>

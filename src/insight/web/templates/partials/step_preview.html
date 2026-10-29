@@ -1,0 +1,41 @@
+{% import "macros.html" as ui %}
+{% if error and not preview %}
+  <div class="alert error fade">{{ ui.icon("x") }}<span>{{ error }}</span></div>
+{% elif preview %}
+<section class="card preview-card fade">
+  <div class="card-head">
+    {% if pending %}
+      <div class="stack" style="--gap:4px;flex:1;min-width:240px">
+        <span class="kicker">Preview of the new step</span>
+        <span class="sentence">{{ sentence }}</span>
+      </div>
+      {% if error %}
+        <span class="badge bad">Can't run: {{ error }}</span>
+      {% else %}
+        <div class="effect">
+          <span class="badge">{{ preview.before_rows | number }} → {{ preview.total_rows | number }} rows</span>
+          {% for c in preview.added %}<span class="badge accent">+ {{ c }}</span>{% endfor %}
+          {% for c in preview.removed %}<span class="badge bad">− {{ c }}</span>{% endfor %}
+        </div>
+        {% if can_save %}
+        <form hx-post="{{ ws.base }}/transform/steps" hx-target="#toasts" hx-swap="beforeend" data-busy-form>
+          <input type="hidden" name="step" value="{{ pending_json | forceescape }}">
+          <button class="btn primary">{{ ui.icon("check", "sm") }}Add step</button>
+        </form>
+        {% endif %}
+      {% endif %}
+    {% else %}
+      <span class="kicker">The table after your steps</span><span class="spacer"></span>
+      <span class="subtle tiny mono">{{ preview.total_rows | number }} rows · {{ preview.columns | length }} columns · first {{ preview.rows | length }} shown</span>
+    {% endif %}
+  </div>
+  <div class="table-scroll" style="max-height:440px">
+    <table class="data">
+      <thead><tr>{% for c in preview.columns %}<th class="{{ 'added' if c in preview.added }}">{{ c }}</th>{% endfor %}</tr></thead>
+      <tbody>
+        {% for r in preview.rows %}<tr>{% for v in r %}{% set c = preview.columns[loop.index0] %}<td class="{{ 'added' if c in preview.added }}{{ ' blank' if v == '' }}" title="{{ v }}">{{ v }}</td>{% endfor %}</tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}

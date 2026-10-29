@@ -44,7 +44,13 @@ async def dataset_source(state: AppState, db: AsyncSession, user: CurrentUser, d
         name=ds.name, df=df, reading=datasets_service.reading_of(ds), report=datasets_service.report_of(ds), content_hash=ds.content_hash
     )
     ws = Workspace(
-        name=ds.name, base=f"/datasets/{ds.id}", rows=ds.row_count, columns=ds.column_count, dataset_id=ds.id, owner=ds.owner_id == user.id
+        name=ds.name,
+        base=f"/datasets/{ds.id}",
+        rows=ds.row_count,
+        columns=ds.column_count,
+        dataset_id=ds.id,
+        owner=ds.owner_id == user.id,
+        steps=len([s for s in ds.steps or [] if s.get("enabled", True)]),
     )
     return src, ws
 
